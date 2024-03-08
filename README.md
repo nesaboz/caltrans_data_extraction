@@ -26,8 +26,13 @@ or alternatively, you can install the libraries using the requirements.txt file:
 pip install -r requirements.txt
 ```
 
-To deactivate the environment, run:
+You are now ready to run main.ipynb notebook.
 
-```bash
-deactivate
-```
+## Questions
+
+- contract number is not unique identifier (tag in the filename or date might be). Should we add date or tag to the bid_subcontractor, contract_bid, and line_item data? Examples of same contract numbers: 01-366004.pdf_12150, and 01-366004.pdf_12901, 01-364314.pdf_1094 and 01-362914.pdf_6320, etc.
+- what OS will be used for evaluation?
+- is UI needed
+- what to do with A) and B), and A) + B)
+- how to handle AMOUNT_ABOVE_UNDER, convert UNDER to be negative?
+- some fields have quotes, for example: "TRUESDELL CORPORATION OF CALIFORNIA, INC." and STEWART ENGINEERING INC, does it need to be standardized?
