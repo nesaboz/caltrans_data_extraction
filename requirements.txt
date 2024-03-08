@@ -7,6 +7,7 @@ comm @ file:///home/conda/feedstock_root/build_artifacts/comm_1704278392174/work
 debugpy @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/debugpy_1699267934478/work
 decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
 distlib==0.3.8
+et-xmlfile==1.1.0
 exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1704921103267/work
 executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1698579936712/work
 filelock==3.13.1
@@ -20,6 +21,7 @@ jupyter_core @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/j
 matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1660814786464/work
 nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1705850609492/work
 numpy==1.26.4
+openpyxl==3.1.2
 packaging==23.2
 pandas==2.2.1
 parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1638334955874/work
