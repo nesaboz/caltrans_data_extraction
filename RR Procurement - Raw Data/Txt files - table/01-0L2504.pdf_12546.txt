@@ -1,0 +1,985 @@
+                                               State of California Department of Transportation
+
+                                                                  Bid Summary
+
+Bid Opening Date: 04/12/2022                                                                                                                 Page 1
+
+Contract Number:    01-0L2504                                                                                                              04/13/2022
+
+Location: 01-Hum-96-26.0/R37.3     HUMBOLDT COUNTY NEAR ORLEANS FROM 1.6 MILES WEST OF                       Contract Code:        C
+
+                                   BLUFF CREEK ROAD TO CAMP CREEK BRIDGE
+
+                                   Precoated aggregate, replace AC surfacing, and asphalt-rubber binder.     Number of Items:      25
+
+DVBE - 3.0%                                                                                                  Federal Aid #1: NONE
+
+Proposals Issued:   6          Total Number of Working Days:  35  Overrun/Underrun:              445,691.03
+
+Number of Bidders:  5          Engineers Est:    2,245,244.47     % Over/Under Est:              19.85%
+
+Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Address/Location)
+
+1                   $2,690,935.50  VC1400003400  AMERICAN PAVEMENT SYSTEMS, INC.                             Phone  (209)522-2277
+
+                                                 1012 11TH STREET                                            CSLB#  00943792       NSB PREF
+
+                                                 MODESTO CA       95354                                                            CLAIMED
+
+2                   $2,895,882.13  VC1300003799  VSS INTERNATIONAL, INC.                                     Phone  (916)373-1500
+
+                                                 3785 CHANNEL DRIVE                                          CSLB#  00293727       NSB PREF
+
+                                                 WEST SACRAMENTO         CA CA  95624                                              CLAIMED
+
+                                                                                                                                   BID IS OVER NSB
+
+                                                                                                                                   PREFERENCE
+
+                                                                                                                                   LIMITS
+
+3                   $3,214,214.00  VC0000003985  MERCER FRASER COMPANY                                       Phone  (707)443-6371
+
+                                                 200 DINSMORE DR                                             CSLB#  00105709       CC PREF CLAIMED
+
+                                                 FORTUNA CA       95540                                      Fax    (707)443-0277
+
+4                   $3,326,182.30  VC2100001318  DOOLITTLE CONSTRUCTION LLC                                  Phone  (206)953-6445
+
+                                                 1900 118th Avenue SE                                        CSLB#  01066710       CC PREF CLAIMED
+
+                                                 Bellevue WA      98005
+Bid Opening Date: 04/12/2022                                                                                                Page 2
+
+Contract Number:  01-0L2504                                                                                                 04/13/2022
+
+5                 $3,432,530.00  VC0000015345  NORTHWEST PAVING            Phone  (530)246-4388
+
+                                               8115 SECLUDED VALLEY DRIVE  CSLB#  00822126       SB PREF CLAIMED
+
+                                               REDDING CA  96001                                 BID IS OVER SB
+
+                                                                                                 PREFERENCE
+
+                                                                                                 LIMITS
+
+IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS  FIRST,
+
+THEN APPLIES THE NON-SMALL BUSINESS PREFERENCE IF DOING SO WOULD NOT DISPLACE A SMALL BUSINESS FROM AWARD OF THE CONTRACT.
+Bid Opening Date:  04/12/2022                                                                                                Page 3
+
+Contract Number:   01-0L2504                                                                                                 04/13/2022
+
+                                                          Contract Proposal of Low Bidder
+
+Item  Item                                     Item Description                             Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                  Measure  Quantity
+
+0001  070030       LEAD COMPLIANCE PLAN                                                     LS       LUMP SUM   2,500.00     2,500.00
+
+0002  090105       TIME-RELATED OVERHEAD (LS)                                               LS       LUMP SUM   128,000.00   128,000.00
+
+0003  120090       CONSTRUCTION AREA SIGNS                                                  LS       LUMP SUM   75,000.00    75,000.00
+
+0004  120100       TRAFFIC CONTROL SYSTEM                                                   LS       LUMP SUM   464,180.00   464,180.00
+
+0005  120149       TEMPORARY PAVEMENT MARKING (PAINT)                                       SQFT     520.0           1.50    780.00
+
+0006  120159       TEMPORARY TRAFFIC STRIPE (PAINT)                                         LF       215,000.0       0.16    34,400.00
+
+0007  010413       PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS (LS)                          LS       LUMP SUM   20,000.00    20,000.00
+
+0008  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                    LS       LUMP SUM   25,000.00    25,000.00
+
+0009  130100       JOB SITE MANAGEMENT                                                      LS       LUMP SUM   30,000.00    30,000.00
+
+0010  130200       PREPARE WATER POLLUTION CONTROL PROGRAM                                  LS       LUMP SUM   2,500.00     2,500.00
+
+0011  190185       SHOULDER BACKING                                                         TON      160.0           300.00  48,000.00
+
+0012  370001       SAND COVER (SEAL)                                                        TON      550.0           50.00   27,500.00
+
+0013  370120       ASPHALT-RUBBER BINDER                                                    TON      500.0           650.00  325,000.00
+
+0014  374004       ASPHALTIC EMULSION (FLUSH COAT)                                          TON      49.0       1,500.00     73,500.00
+
+0015  374207       CRACK TREATMENT                                                          LNMI     21.0       7,500.00     157,500.00
+
+0016  375036       PRECOATED AGGREGATE (SEAL COAT)                                          TON      3,640.0         76.00   276,640.00
+
+0017  390095       REPLACE ASPHALT CONCRETE SURFACING                                       CY       1,230.0         600.00  738,000.00
+
+0018  810120       REMOVE PAVEMENT MARKER                                                   EA       4,570.0         1.00    4,570.00
+
+0019  810250       PAVEMENT MARKER (RETROREFLECTIVE-RECESSED)                               EA       4,570.0         8.00    36,560.00
+
+0020  840516       THERMOPLASTIC PAVEMENT MARKING (ENHANCED WET NIGHT VISIBILITY)           SQFT     520.0           5.00    2,600.00
+
+0021  840619       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN  LF       1,230.0         0.65    799.50
+
+                   12-3)
+
+0022  840623       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN  LF       5,440.0         0.65    3,536.00
+
+                   36-12)
+
+0023  846007       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)          LF       209,000.0       0.87    181,830.00
+Bid Opening Date:  04/12/2022                                                                                                  Page 4
+
+Contract Number:   01-0L2504                                                                                                   04/13/2022
+
+                                                         Contract  Proposal  of  Low  Bidder
+
+Item  Item                               Item Description                                     Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                    Measure  Quantity
+
+0024  846030       REMOVE THERMOPLASTIC  TRAFFIC STRIPE                                       LF       210,000.0         0.15  31,500.00
+
+0025  846035       REMOVE THERMOPLASTIC  PAVEMENT MARKING                                     SQFT     520.0             2.00  1,040.00
+
+                                                                                                                  Total        2,690,935.50
+Bid Opening Date: 04/12/2022                                                                                           Page 5
+
+Contract Number:  01-0L2504                                                                                            04/13/2022
+
+                                                 Summary of Remaining   Bidders
+
+                  Second                         Third                           Fourth                        Fifth
+
+Item    Bid                   Amount        Bid          Amount         Bid                Amount         Bid          Amount
+
+0001              1,605.00    1,605.00      2,800.00     2,800.00                3,530.00  3,530.00       2,000.00     2,000.00
+
+0002              75,000.00   75,000.00     200,148.50   200,148.50     30,000.00          30,000.00      50,000.00    50,000.00
+
+0003              32,490.00   32,490.00     9,000.00     9,000.00                9,140.00  9,140.00       22,000.00    22,000.00
+
+0004    702,224.73            702,224.73    220,000.00   220,000.00     300,000.00         300,000.00     778,000.00   778,000.00
+
+0005              1.61        837.20             1.50    780.00                  3.08      1,601.60            3.00    1,560.00
+
+0006              0.17        36,550.00          0.16    34,400.00               0.36      77,400.00           0.30    64,500.00
+
+0007              13,424.00   13,424.00     10,000.00    10,000.00               5,377.00  5,377.00       10,000.00    10,000.00
+
+0008              24,494.00   24,494.00     12,000.00    12,000.00               6,652.00  6,652.00       10,000.00    10,000.00
+
+0009              25,885.00   25,885.00     17,000.00    17,000.00      35,000.00          35,000.00      25,000.00    25,000.00
+
+0010              2,570.00    2,570.00      2,500.00     2,500.00                5,540.00  5,540.00       2,500.00     2,500.00
+
+0011              293.40      46,944.00          250.00  40,000.00               449.40    71,904.00           410.00  65,600.00
+
+0012              25.00       13,750.00          65.00   35,750.00               40.00     22,000.00           75.00   41,250.00
+
+0013              725.00      362,500.00    1,320.00     660,000.00              500.00    250,000.00          850.00  425,000.00
+
+0014              650.00      31,850.00     1,100.00     53,900.00               400.00    19,600.00      1,200.00     58,800.00
+
+0015              6,206.00    130,326.00    6,000.00     126,000.00     17,140.00          359,940.00     7,500.00     157,500.00
+
+0016              115.00      418,600.00         200.00  728,000.00              40.00     145,600.00          101.00  367,640.00
+
+0017              560.59      689,525.70         650.00  799,500.00              1,159.36  1,426,012.80        755.00  928,650.00
+
+0018              1.07        4,889.90           1.00    4,570.00                4.02      18,371.40           2.00    9,140.00
+
+0019              10.04       45,882.80          8.00    36,560.00               18.16     82,991.20           8.00    36,560.00
+
+0020              5.35        2,782.00           5.00    2,600.00                10.22     5,314.40            6.00    3,120.00
+
+0021              0.70        861.00             0.65    799.50                  1.33      1,635.90            1.00    1,230.00
+
+0022              0.70        3,808.00           0.65    3,536.00                1.33      7,235.20            1.00    5,440.00
+
+0023              0.93        194,370.00         0.87    181,830.00              1.79      374,110.00          1.50    313,500.00
+
+0024              0.16        33,600.00          0.15    31,500.00               0.31      65,100.00           0.25    52,500.00
+
+0025              2.14        1,112.80           2.00    1,040.00                4.09      2,126.80            2.00    1,040.00
+
+Total:                       $2,895,882.13               $3,214,214.00                     $3,326,182.30               $3,432,530.00
+01-0L2504                                                                                              PAGE S1
+
+01-HUM-96-26.0/R37.3                                                                                   4/13/2022
+
+4/12/2022
+
+                                              LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION  OF WORK  SUBCONTRACTED
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.                          ITEM 1 (50%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.                          ITEM 5 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.                          ITEM 6 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.                          ITEM 18 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.                          ITEM 19 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.                          LCP FOR STRIPE REMOVAL  ONLY
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.  CONTINUED               ITEM 20 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.  CONTINUED               ITEM 21 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.  CONTINUED               ITEM 22 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.  CONTINUED               ITEM 23 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  CENTRAL STRIPING SERVICE  INC.  CONTINUED               ITEM 24 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                              PAGE S2
+
+01-HUM-96-26.0/R37.3                                                                                   4/13/2022
+
+4/12/2022
+
+                                              LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000003985  CENTRAL STRIPING SERVICE INC. CONTINUED                 ITEM 25 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000003985  ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 3 (100%)
+
+              MOUNT SHASTA CA                 971838
+
+VC0000003985  ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 4 (60%)
+
+              MOUNT SHASTA CA                 971838
+
+VC0000003985  ROLL 'N ROCK CONSTRUCTION INC.                          TRAFFIC CONTROL FOR PAVING WORK
+
+              MOUNT SHASTA CA                 971838
+01-0L2504                                                                                                PAGE S3
+
+01-HUM-96-26.0/R37.3                                                                                     4/13/2022
+
+4/12/2022
+
+                                               LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                 LICENSE NUMBER          DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000015345  AUSTIN ENTERPRISES                                       ITEM 15 (100%)
+
+              BAKERSFIELD CA                   764893
+
+VC0000015345  AUSTIN ENTERPRISES                                       CRACK TREATMENT
+
+              BAKERSFIELD CA                   764893
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 1 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 5 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 6 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 18 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 19 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          LEAD PLAN
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          TEMPORARY MARKINGS
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          TEMPORARY STRIPE
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          REMOVE MARKERS
+
+              RANCHO CORDOVA CA                403896
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                                PAGE S4
+
+01-HUM-96-26.0/R37.3                                                                                     4/13/2022
+
+4/12/2022
+
+                                               LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                 LICENSE NUMBER          DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          PAVEMENT MARKERS
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 20 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 21 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 22 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 23 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          ITEM 24 (100%)
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          THERMO MARKINGS
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          6" THERMO STRIPE
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          6" THERMO STRIPE
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          6" THERMO STRIPE
+
+              RANCHO CORDOVA CA                403896
+
+VC0000015345  CENTRAL STRIPING SERVICE,  INC.                          REMOVE THERMO STRIPE
+
+              RANCHO CORDOVA CA                403896
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                              PAGE S5
+
+01-HUM-96-26.0/R37.3                                                                                   4/13/2022
+
+4/12/2022
+
+                                              LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
+
+VC0000015345  CENTRAL STRIPING SERVICE, INC.                          ITEM 25 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC0000015345  CENTRAL STRIPING SERVICE, INC.                          REMOVE THERMO MMARKING
+
+              RANCHO CORDOVA CA               403896
+
+VC0000015345  ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 3 (100%)
+
+              MOUNT SHASTA CA                 971838
+
+VC0000015345  ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 4 (23%)
+
+              MOUNT SHASTA CA                 971838
+
+VC0000015345  ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 7 (100%)
+
+              MOUNT SHASTA CA                 971838
+
+VC0000015345  ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 8 (100%)
+
+              MOUNT SHASTA CA                 971838
+
+VC0000015345  ROLL 'N ROCK CONSTRUCTION INC.                          CONSTRUCTION AREA SIGNS
+
+              MOUNT SHASTA CA                 971838
+
+VC0000015345  ROLL 'N ROCK CONSTRUCTION INC.                          TRAFFIC CONTROL
+
+              MOUNT SHASTA CA                 971838
+
+VC0000015345  ROLL 'N ROCK CONSTRUCTION INC.                          RADAR SPEED SIGNS
+
+              MOUNT SHASTA CA                 971838
+
+VC0000015345  ROLL 'N ROCK CONSTRUCTION INC.                          MESSAGE SIGNS
+
+              MOUNT SHASTA CA                 971838
+
+VC0000015345  AC DIKE COMPANY                                         ITEM 11 (10%)
+
+              LINCOLN CA                      407417
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                 PAGE S6
+
+01-HUM-96-26.0/R37.3                                                      4/13/2022
+
+4/12/2022
+
+                                LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000015345  AC DIKE COMPANY                           SHOULDER BACKING
+
+              LINCOLN CA        407417
+01-0L2504                                                                                                   PAGE S7
+
+01-HUM-96-26.0/R37.3                                                                                        4/13/2022
+
+4/12/2022
+
+                                                LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1300003799  DARREN TAYLOR CONSTRUCTION, INC.                          ITEM 4 (5.30%)
+
+              ANDERSON CA                       903262
+
+VC1300003799  DARREN TAYLOR CONSTRUCTION, INC.                          ITEM 11 (93.46%)
+
+              ANDERSON CA                       903262
+
+VC1300003799  DARREN TAYLOR CONSTRUCTION, INC.                          ITEM 17 (93.46%)
+
+              ANDERSON CA                       903262
+
+VC1300003799  DARREN TAYLOR CONSTRUCTION, INC.                          TRAFFIC CONTROL SYSTEM
+
+              ANDERSON CA                       903262
+
+VC1300003799  DARREN TAYLOR CONSTRUCTION, INC.                          SHOULDER BACKING
+
+              ANDERSON CA                       903262
+
+VC1300003799  DARREN TAYLOR CONSTRUCTION, INC.                          REPLACE ASPHALT CONCRETE SURFACING
+
+              ANDERSON CA                       903262
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                           ITEM 1 (93.46%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                           ITEM 4 (4.87%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                           ITEM 5 (93.17%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                           ITEM 6 (94.12%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                           ITEM 18 (93.46%)
+
+              RANCHO CORDOVA CA                 403896
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                                   PAGE S8
+
+01-HUM-96-26.0/R37.3                                                                                        4/13/2022
+
+4/12/2022
+
+                                                LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          LEAD COMPLIANCE PLAN
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          TRAFFIC CONTROL SYSTEM
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          TEMPORARY PAVEMENT MARKING (PAINT)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          TEMPORARY TRAFFIC STRIPE (PAINT)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          REMOVE PAVEMENT MARKER
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          ITEM 19 (79.68%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          ITEM 20 (93.46%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          ITEM 21 (92.86%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          ITEM 22 (92.86%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          ITEM 23 (93.55%)
+
+              RANCHO CORDOVA CA                 403896
+
+VC1300003799  CENTRAL STRIPING SERVICES,  INC.                          PAVEMENT MARKER (RETROREFLECTIVE-RECESSED)
+
+              RANCHO CORDOVA CA                 403896
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                                     PAGE S9
+
+01-HUM-96-26.0/R37.3                                                                                          4/13/2022
+
+4/12/2022
+
+                                               LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                 LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                          THERMOPLASTIC PAVEMENT MARKING (ENHANCED WET
+
+              RANCHO CORDOVA CA                403896                  NIGHT VISIBILITY)
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                          6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+              RANCHO CORDOVA CA                403896                  NIGHT VISIBILITY) (BROKEN 12-3)
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                          6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+              RANCHO CORDOVA CA                403896                  NIGHT VISIBILITY) (BROKEN 36-12)
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                          6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+              RANCHO CORDOVA CA                403896                  NIGHT VISIBILITY)
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                          ITEM 24 (93.75%)
+
+              RANCHO CORDOVA CA                403896
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                          ITEM 25 (93.46%)
+
+              RANCHO CORDOVA CA                403896
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                          REMOVE THERMOPLASTIC TRAFFIC STRIPE
+
+              RANCHO CORDOVA CA                403896
+
+VC1300003799  CENTRAL STRIPING SERVICES, INC.                          REMOVE THERMOPLASTIC PAVEMENT MARKING
+
+              RANCHO CORDOVA CA                403896
+
+VC1300003799  ROLL N ROCK CONSTRUCTION INC.                            ITEM 3 (21.55%)
+
+              MOUNT SHASTA CA                  971838
+
+VC1300003799  ROLL N ROCK CONSTRUCTION INC.                            ITEM 4 (17.95%)
+
+              MOUNT SHASTA CA                  971838
+
+VC1300003799  ROLL N ROCK CONSTRUCTION INC.                            ITEM 7 (23.84%)
+
+              MOUNT SHASTA CA                  971838
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                                     PAGE S10
+
+01-HUM-96-26.0/R37.3                                                                                          4/13/2022
+
+4/12/2022
+
+                                               LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                 LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1300003799  ROLL N ROCK CONSTRUCTION   INC.                          ITEM 8 (17.15%)
+
+              MOUNT SHASTA CA                  971838
+
+VC1300003799  ROLL N ROCK CONSTRUCTION   INC.                          CONSTRUCTION AREA SIGNS
+
+              MOUNT SHASTA CA                  971838
+
+VC1300003799  ROLL N ROCK CONSTRUCTION   INC.                          TRAFFIC CONTROL SYSTEM
+
+              MOUNT SHASTA CA                  971838
+
+VC1300003799  ROLL N ROCK CONSTRUCTION   INC.                          PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS (LS)
+
+              MOUNT SHASTA CA                  971838
+
+VC1300003799  ROLL N ROCK CONSTRUCTION   INC.                          PORTABLE CHANGEABLE MESSAGE SIGN (LS)
+
+              MOUNT SHASTA CA                  971838
+
+VC1300003799  GLOBAL ROAD SEALING, INC.                                ITEM 3 (93.46%)
+
+              GARDEN GROVE CA                  757584
+
+VC1300003799  GLOBAL ROAD SEALING, INC.                                CRACK TREATMENT
+
+              GARDEN GROVE CA                  757584
+01-0L2504                                                                                             PAGE S11
+
+01-HUM-96-26.0/R37.3                                                                                  4/13/2022
+
+4/12/2022
+
+                                          LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS            LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1400003400  DARREN TAYLOR CONSTRUCTION                          ITEM 11 (91%)
+
+              ANDERSON CA                 903262
+
+VC1400003400  DARREN TAYLOR CONSTRUCTION                          ITEM 17 (87%)
+
+              ANDERSON CA                 903262
+
+VC1400003400  DARREN TAYLOR CONSTRUCTION                          SHOULDER BACKING
+
+              ANDERSON CA                 903262
+
+VC1400003400  DARREN TAYLOR CONSTRUCTION                          REPLACE ASPHALT CONCRETE SURFACING
+
+              ANDERSON CA                 903262
+
+VC1400003400  GLOBAL ROAD SEALING                                 ITEM 15 (77%)
+
+              GARDEN GROVE CA             757584
+
+VC1400003400  GLOBAL ROAD SEALING                                 CRACK TREATMENT
+
+              GARDEN GROVE CA             757584
+
+VC1400003400  T&S DVBE                                            ITEM 3 (8%)
+
+              REDDING CA                  983087
+
+VC1400003400  T&S DVBE                                            ITEM 4 (27%)
+
+              REDDING CA                  983087
+
+VC1400003400  T&S DVBE                                            ITEM 7 (13%)
+
+              REDDING CA                  983087
+
+VC1400003400  T&S DVBE                                            ITEM 8 (27%)
+
+              REDDING CA                  983087
+
+VC1400003400  T&S DVBE                                            FURNISH, INSTALL, REMOVE CAS
+
+              REDDING CA                  983087
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                            PAGE S12
+
+01-HUM-96-26.0/R37.3                                                                                               4/13/2022
+
+4/12/2022
+
+                                              LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1400003400  T&S DVBE                                                FLAGGING AND PILOT CAR
+
+              REDDING CA                      983087
+
+VC1400003400  T&S DVBE                                                FURNISH, INSTALL, REMOVE CAS PORTABLE RADAR
+
+              REDDING CA                      983087
+
+VC1400003400  T&S DVBE                                                FURNISH, INSTALL, REMOVE PCMS
+
+              REDDING CA                      983087
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 1 (60%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 5 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 6 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 18 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          LCP FOR STRIPING
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 19 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 20 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 21 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                                PAGE S13
+
+01-HUM-96-26.0/R37.3                                                                                     4/13/2022
+
+4/12/2022
+
+                                              LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 22 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 23 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 24 (100%)
+
+              RANCHO CORDOVA CA               403896
+
+VC1400003400  CENTRAL STRIPING SERVICE,  INC                          ITEM 25 (100%)
+
+              RANCHO CORDOVA CA               403896
+01-0L2504                                                                                           PAGE S14
+
+01-HUM-96-26.0/R37.3                                                                                4/13/2022
+
+4/12/2022
+
+                                        LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS          LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC2100001318  MERCER-FRASER                                     ITEM 11 (49%)
+
+              EUREKA CA                 105709
+
+VC2100001318  MERCER-FRASER                                     ITEM 15 (36%)
+
+              EUREKA CA                 105709
+
+VC2100001318  MERCER-FRASER                                     ITEM 17 (49%)
+
+              EUREKA CA                 105709
+
+VC2100001318  MERCER-FRASER                                     SHOULDER BACKING
+
+              EUREKA CA                 105709
+
+VC2100001318  MERCER-FRASER                                     CRACK TREATMENT
+
+              EUREKA CA                 105709
+
+VC2100001318  MERCER-FRASER                                     REPLACE ASPHALT CONCRETE SURFACING
+
+              EUREKA CA                 105709
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 1 (42%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 5 (49%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 6 (44%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 18 (25%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 19 (44%)
+
+              RANCHO CORDOVA CA         403896
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                           PAGE S15
+
+01-HUM-96-26.0/R37.3                                                                                4/13/2022
+
+4/12/2022
+
+                                        LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS          LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC2100001318  CENTRAL STRIPING SERVICE                          LEAD COMPLIANCE PLAN
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          TEMPORARY PAVEMENT MARKING (PAINT)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          TEMPORARY TRAFFIC STRIPE (PAINT)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          REMOVE PAVEMENT MARKER
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          PAVEMENT MARKER (RETROREFLECTIVE- RECESSED)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 20 (49%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 21 (49%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 22 (49%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 23 (49%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          ITEM 24 (48%)
+
+              RANCHO CORDOVA CA         403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                          THERMOPLASTIC PAVEMENT MARKING (ENHANCED WET
+
+              RANCHO CORDOVA CA         403896                  NIGHT VISIBILITY)
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                                   PAGE S16
+
+01-HUM-96-26.0/R37.3                                                                                        4/13/2022
+
+4/12/2022
+
+                                             LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC2100001318  CENTRAL STRIPING SERVICE                               6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+              RANCHO CORDOVA CA              403896                  NIGHT VISIBILITY) (BROKEN 12-3)
+
+VC2100001318  CENTRAL STRIPING SERVICE                               6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+              RANCHO CORDOVA CA              403896                  NIGHT VISIBILITY) (BROKEN 36-12)
+
+VC2100001318  CENTRAL STRIPING SERVICE                               6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+              RANCHO CORDOVA CA              403896                  NIGHT VISIBILITY)
+
+VC2100001318  CENTRAL STRIPING SERVICE                               REMOVE THERMOPLASTIC TRAFFIC STRIPE
+
+              RANCHO CORDOVA CA              403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                               ITEM 25 (49%)
+
+              RANCHO CORDOVA CA              403896
+
+VC2100001318  CENTRAL STRIPING SERVICE                               REMOVE THERMOPLASTIC PAVEMENT MARKING
+
+              RANCHO CORDOVA CA              403896
+
+VC2100001318  ROLL N' ROCK CONSTRUCTION INC                          ITEM 3 (77%)
+
+              MOUNT SHASTA CA                971838
+
+VC2100001318  ROLL N' ROCK CONSTRUCTION INC                          ITEM 4 (53%)
+
+              MOUNT SHASTA CA                971838
+
+VC2100001318  ROLL N' ROCK CONSTRUCTION INC                          ITEM 7 (25%)
+
+              MOUNT SHASTA CA                971838
+
+VC2100001318  ROLL N' ROCK CONSTRUCTION INC                          ITEM 8 (39%)
+
+              MOUNT SHASTA CA                971838
+
+VC2100001318  ROLL N' ROCK CONSTRUCTION INC                          CONSTRUCTION AREA SIGNS
+
+              MOUNT SHASTA CA                971838
+
+CONTINUED ON NEXT PAGE
+01-0L2504                                                                                                   PAGE S17
+
+01-HUM-96-26.0/R37.3                                                                                        4/13/2022
+
+4/12/2022
+
+                                             LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC2100001318  ROLL N' ROCK CONSTRUCTION INC                          TRAFFIC CONTROL SYSTEM (PARTIAL)
+
+              MOUNT SHASTA CA                971838
+
+VC2100001318  ROLL N' ROCK CONSTRUCTION INC                          PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS (LS)
+
+              MOUNT SHASTA CA                971838
+
+VC2100001318  ROLL N' ROCK CONSTRUCTION INC                          PORTABLE CHANGEABLE MESSAGE SIGN (LS)
+
+              MOUNT SHASTA CA                971838
+

@@ -1,0 +1,252 @@
+                      STATE    OF   CALIFORNIA                     B   I  D        S  U  M   M  A  R   Y                DEPARTMENT  OF  TRANSPORTATION                BID211
+
+                                                                                                                                                                      PAGE      1
+
+BID      OPENING     DATE      04/23/13                                   IN  HUMBOLDT          COUNTY    NEAR   FERNDALE                                             04/26/13
+
+CONTRACT     NUMBER            01-0A1504                                  FROM     0.2   MILE      SOUTH   OF    SALT   RIVER                              CONTRACT   CODE  'D     '
+
+LOCATION                       01-HUM-211-R74.4/79.2                      OVERFLOW       TO     ROUTE     101                                               31  CONTRACT    ITEMS
+
+                                                                          RUBBERIZED         HOT   MIX    ASPHALT                       FEDERAL  AID  STP-S211-(002)E
+
+             DB      GOALS:         DISADVANTAGED     BUSINESS     ENTERPRISE         -     4.0%
+
+PROPOSALS    ISSUED         3       FUND  TOTAL       HM1                       0                                       TOTAL  NUMBER   OF  WORKING   DAYS      30
+
+NUMBER   OF  BIDDERS     2     ENGINEERS       EST         1,823,447.50               AMOUNT    OVER             155,717.50              PERCENT  OVER     EST  8.54
+
+PROGRAM  ELEMENTS              RAS
+
+             BID      RANK                BID  TOTAL       BIDDER  ID                 BIDDER       INFORMATION         (NAME/ADDRESS/LOCATION)
+
+             --------               -----------            ---------                  -------------------------------------------------
+
+                      1             1,979,165.00           2                          MERCER       FRASER      COMPANY                      707  443-6371
+
+                                                                                                                                            00105709
+
+                                                                                      P  O   BOX   1006                             FAX     707  443-0277
+
+                                                                                      EUREKA       CA     95502
+
+                      2             2,462,603.00           1                          J  F   SHEA      CONSTRUCTION     INC                 530  246-4292
+
+                                                                                                                                            00769989
+
+                                                                                      P  O   BOX   494519                           FAX     530  246-9940
+
+                                                                                      REDDING      CA     96049
+            01-0A1504                                                                                                                        BID211
+
+            01-HUM-211                                                                                                                       PAGE    2
+
+            04/23/13                                                                                                                         04/26/13
+
+                                               L  I  S  T  O  F  S  U  B  C  O  N  T  R  A  C   T  O   R   S
+
+BIDDER  ID  NAME  AND     ADDRESS                                                  DESCRIPTION         OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________           ____________________________________________________________
+
+02          CENTRAL    STRIPING    SERVICE                                         ITEMS    9,     18  AND    23  THRU  30
+
+            RANCHO    CORDOVA  CA
+
+            SPENCER    ELECTRIC                                                    ITEM     31
+
+            EUREKA    CA
+
+            STATEWIDE     SAFETY   AND  SIGNS                                      ITEMS    2,     21  AND    22
+
+            FAIRFIELD     CA
+            01-0A1504                                                                                                                                   BID211
+
+            01-HUM-211                                                                                                                                  PAGE    3
+
+            04/23/13                                                                                                                                    04/26/13
+
+                                                L         I  S  T  O  F  S  U  B  C  O  N  T  R  A  C   T  O   R   S
+
+BIDDER  ID  NAME  AND     ADDRESS                                                          DESCRIPTION         OF  PORTION   OF    WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________                   ____________________________________________________________
+
+01          CENTRAL    STRIPING                                                            ITEMS    1,     9,  18,       23  THRU  30
+
+            RANCHO    CORDOVA    CA
+
+            FLATLINER      WEST  /   SOUTHMACK  GRINDING                                   ITEM     14
+
+            VISALIA    CA
+
+            S  T  RHOADES  CONSTRUCTION                                                    ITEMS    2,     4,  5,     7
+
+            REDDING    CA
+
+            SPENCER    ELECTRIC                                                            ITEM     31
+
+            CUTTEN    CA
+      01-0A1504                                                                                                                                    BID211
+
+      01-HUM-211                    C  O  N    T   R   A   C  T    P   R  O  P  O  S  A  L  O     F   L  O  W       B  I  D  D  E  R               PAGE    4
+
+      04/23/13                                                                                                                                     04/26/13
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+ITEM  ITEM                                                                                  UNIT  OF        ESTIMATED
+
+NO.   CODE                          ITEM     DESCRIPTION                                    MEASURE         QUANTITY                  BID          AMOUNT
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+1     070030      LEAD  COMPLIANCE        PLAN                                              LS        LUMP     SUM                    5,000.00     5,000.00
+
+2     120090      CONSTRUCTION         AREA    SIGNS                                        LS        LUMP     SUM                    10,000.00    10,000.00
+
+3     120100      TRAFFIC     CONTROL     SYSTEM                                            LS        LUMP     SUM                    70,000.00    70,000.00
+
+4     120200      FLASHING    BEACON      (PORTABLE)                                        EA                 1                      1,500.00     1,500.00
+
+5     128651      PORTABLE    CHANGEABLE           MESSAGE       SIGN     (EA)              EA                 4                      1,000.00     4,000.00
+
+6     130100      JOB   SITE  MANAGEMENT                                                    LS        LUMP     SUM                    31,000.00    31,000.00
+
+7     130200      PREPARE     WATER    POLLUTION           CONTROL     PROGRAM              LS        LUMP     SUM                    1,000.00     1,000.00
+
+8     130900      TEMPORARY    CONCRETE           WASHOUT                                   LS        LUMP     SUM                    500.00       500.00
+
+9     150715      REMOVE     THERMOPLASTIC            PAVEMENT     MARKING                  SQFT               780                           4.00  3,120.00
+
+10    150770      REMOVE     ASPHALT      CONCRETE         PAVEMENT       (SQFT)            SQFT               390                           5.50  2,145.00
+
+11    151224      REMOVE     DELINEATOR                                                     EA                 60                     20.00        1,200.00
+
+12    153103      COLD  PLANE  ASPHALT            CONCRETE       PAVEMENT                   SQYD         20,100                              1.00  20,100.00
+
+13    390010      PREPAVING    PROFILOGRAPH                                                 LS        LUMP     SUM                    3,000.00     3,000.00
+
+14    390020      PREPAVING    GRINDING           DAY                                       EA                 1                      25,000.00    25,000.00
+
+15    390095      REPLACE     ASPHALT     CONCRETE            SURFACING                     CY              2,830                     215.00       608,450.00
+
+16    390132      HOT   MIX   ASPHALT     (TYPE        A)                                   TON             1,760                     112.00       197,120.00
+
+17    390137      RUBBERIZED   HOT        MIX     ASPHALT        (GAP  GRADED)              TON             5,750                     150.00       862,500.00
+
+18    025424      CENTERLINE   RUMBLE          STRIP                                        STA                180                    80.00        14,400.00
+
+19    394060      DATA  CORE                                                                LS        LUMP     SUM                    2,500.00     2,500.00
+
+20    397005      TACK  COAT                                                                TON                56                     850.00       47,600.00
+
+21    820105      DELINEATOR   (SPECIAL)                                                    EA                 40                     50.00        2,000.00
+
+22    820107      DELINEATOR   (CLASS          1)                                           EA                 20                     50.00        1,000.00
+
+23    840504      4"   THERMOPLASTIC         TRAFFIC          STRIPE                        LF           85,300                              .40   34,120.00
+
+24    840506      8"   THERMOPLASTIC         TRAFFIC          STRIPE                        LF                 760                           2.00  1,520.00
+
+25    840515      THERMOPLASTIC        PAVEMENT           MARKING                           SQFT            1,600                            5.00  8,000.00
+
+26    840521      4"   THERMOPLASTIC         TRAFFIC          STRIPE                        LF                 70                            .50         35.00
+
+                  (BROKEN     6-1)
+
+27    840523      4"   THERMOPLASTIC         TRAFFIC          STRIPE                        LF              2,080                            .50   1,040.00
+
+                  (BROKEN     12-3)
+
+28    840525      4"   THERMOPLASTIC         TRAFFIC          STRIPE                        LF              8,110                            .50   4,055.00
+
+                  (BROKEN     36-12)
+
+29    850101      PAVEMENT    MARKER      (NON-REFLECTIVE)                                  EA              1,070                            2.00  2,140.00
+
+30    850111      PAVEMENT    MARKER      (RETROREFLECTIVE)                                 EA              1,780                            4.00  7,120.00
+
+31    860890      MODIFY     TRAFFIC      MONITORING          STATION                       LS        LUMP     SUM                    8,000.00     8,000.00
+
+                  (COUNT)
+
+                                                                                                                                      TOTAL        1,979,165.00
+        01-0A1504                                                                                                    BID211
+
+        01-HUM-211                        S  U  M  M  A  R  Y  O  F  R  E  M  A  I  N  I  N  G  B  I  D  D  E  R  S  PAGE    5
+
+        04/23/13                                                                                                     04/26/13
+
+     |-------------------------------
+
+ITEM|             SECOND
+
+     |  BID               AMOUNT
+
+     |-------------------------------
+
+1    |  2,500.00          2500.00
+
+2    |  9,500.00          9500.00
+
+3    |  51,000.00         51000.00
+
+4    |       800.00               800.00
+
+5    |  1,600.00          6400.00
+
+6    |  5,000.00          5000.00
+
+7    |  1,400.00          1400.00
+
+8    |       600.00               600.00
+
+9    |             3.30   2574.00
+
+10   |            18.00   7020.00
+
+11   |            55.00   3300.00
+
+12   |             3.00   60300.00
+
+13   |  3,000.00          3000.00
+
+14   |  9,000.00          9000.00
+
+15   |       300.00       849000.00
+
+16   |       147.00       258720.00
+
+17   |       180.00       1035000.00
+
+18   |            50.00   9000.00
+
+19   |  3,800.00          3800.00
+
+20   |       775.00       43400.00
+
+21   |       110.00       4400.00
+
+22   |       100.00       2000.00
+
+23   |              .61   52033.00
+
+24   |             2.20   1672.00
+
+25   |             6.00   9600.00
+
+26   |              .40           28.00
+
+27   |              .40           832.00
+
+28   |              .40   3244.00
+
+29   |             6.00   6420.00
+
+30   |             7.00   12460.00
+
+31   |  8,600.00          8600.00
+
+TOT                       2,462,603.00
+

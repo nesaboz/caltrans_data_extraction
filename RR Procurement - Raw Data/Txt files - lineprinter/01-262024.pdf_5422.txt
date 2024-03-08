@@ -1,0 +1,691 @@
+
+
+
+
+
+                     STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                          PAGE  1
+       BID OPENING DATE    10/22/13                    IN MENDOCINO COUNTY NEAR WILLITS                                   10/23/13
+       CONTRACT NUMBER     01-262024                   FROM HAEHL OVERHEAD TO REYNOLDS HWY                      CONTRACT CODE 'A '
+       LOCATION            01-MEN-101-T43.5/51.3                                                                101 CONTRACT ITEMS
+
+
+                                                       MITIGATION PLANTING, EROSION              FEDERAL AID  ACNH-Q101-(203)E
+
+
+
+                DB GOALS:   DISADVANTAGED BUSINESS ENTERPRISE -  6.0%
+   PROPOSALS ISSUED   26    FUND TOTAL                     0                         TOTAL NUMBER OF WORKING DAYS   2000
+
+   NUMBER OF BIDDERS  3    ENGINEERS EST     13,149,341.10   AMOUNT OVER     26,183,991.90         PERCENT OVER EST199.13
+
+                 BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                 --------      -----------  ---------         -------------------------------------------------
+
+                     1        39,333,333.00    2              DESILVA GATES CONSTRUCTION LP         925 829-9220
+                                                                                                    00704195
+                                                              P O BOX 2909                      FAX 925 803-4263
+                                                              DUBLIN CA  94568
+
+                     2        47,421,690.00    3              DIABLO CONTRACTORS INC                925 552-8250
+                                                                                                    00732283
+                                                              7 CROW CANYON COURT SUITE 100     FAX 925 552-8254
+                                                              SAN RAMON CA  94583
+
+                     3        48,051,355.00    1              NORDIC INDUSTRIES INC                 530 742-7124
+                                                                                                    00592271
+                                                              1437 FURNEAUX ROAD                FAX 530 742-5545
+                                                              OLIVEHURST CA  95961
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  2
+            10/22/13                                                                                                 10/23/13
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      02     DECKER LANDSCAPING INC                                       LANDSCAPING, JOB SITE PREPARATION AND SOIL AMENDMENT
+             AUBURN CA
+
+             DECKER LANDSCAPING INC                                       MULCH, PLANTS, LIVE SILTATION AND IDENTIFER STAKES
+             AUBURN CA
+
+             OUR VALLEY FENCE COMPANY                                     FENCES, GATES, RAILING AND FENCE REMOVAL
+             RIDGECREST CA
+
+             SELBY'S SOIL EROSION CONTROL                                 NETTING, STRAW, COMPOST AND INCORPORATE MATERIALS
+             LOOMIS CA
+
+             SELBY'S SOIL EROSION CONTROL                                 PERMANENT AND TEMPORARY EROSION CONTROL AND SEEDING
+             LOOMIS CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  3
+            10/22/13                                                                                                 10/23/13
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      03     EAST BAY CONSTRUCTION MARINA                                 EROSION CONTROL
+             LIVERMORE CA
+
+             WEEKS DRILLING                                               WELLS
+             SEBASTAPOL CA
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     NATURES IMAGE INC                                            ITEMS 24 THRU 39, 43 THRU 51 AND 71
+             20361 HERMANA CIRCLE
+             LAKE FOREST CA  92633
+
+             SELBY'S SOIL EROSION CO INC                                  ITEMS 9, 10, 54 THRU 70 AND 72 THRU 75
+             P O BOX 1330
+             NEWCASTLE CA  95658
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                 C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  4
+            10/22/13                                                                                                 10/23/13
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+         1     025634      REMOVE SILT FENCE                              LF        2,200                2.00         4,400.00
+         2     080050      PROGRESS SCHEDULE (CRITICAL PATH METHOD)       LS     LUMP SUM            5,000.00         5,000.00
+         3     090100      TIME-RELATED OVERHEAD (WDAY)                   WDAY      1,250              400.00       500,000.00
+         4     130100      JOB SITE MANAGEMENT                            LS     LUMP SUM          366,830.00       366,830.00
+         5     130300      PREPARE STORM WATER POLLUTION PREVENTION       LS     LUMP SUM            5,000.00         5,000.00
+                           PLAN
+         6     130310      RAIN EVENT ACTION PLAN                         EA          290              500.00       145,000.00
+         7     130320      STORM WATER SAMPLING AND ANALYSIS DAY          EA          300              200.00        60,000.00
+         8     130330      STORM WATER ANNUAL REPORT                      EA            7            2,000.00        14,000.00
+         9     130505      MOVE-IN/MOVE-OUT                               EA           30            2,000.00        60,000.00
+                           (TEMPORARY EROSION CONTROL)
+        10     130540      TEMPORARY TACKED STRAW                         SQYD    329,000                 .45       148,050.00
+        11     130570      TEMPORARY COVER                                SQYD     18,300                2.00        36,600.00
+        12     130620      TEMPORARY DRAINAGE INLET PROTECTION            EA            1              500.00           500.00
+        13     130640      TEMPORARY FIBER ROLL                           LF       44,500                3.00       133,500.00
+        14     130680      TEMPORARY SILT FENCE                           LF        9,580                3.00        28,740.00
+        15     130710      TEMPORARY CONSTRUCTION ENTRANCE                EA           12            3,000.00        36,000.00
+        16     130730      STREET SWEEPING                                LS     LUMP SUM            5,000.00         5,000.00
+        17     141000      TEMPORARY FENCE (TYPE ESA)                     LF        5,410                5.00        27,050.00
+        18     146002      CONTRACTOR-SUPPLIED BIOLOGIST (LS)             LS     LUMP SUM          900,000.00       900,000.00
+        19     150230      DESTROY WELL                                   EA            2           10,000.00        20,000.00
+        20     150605      REMOVE FENCE                                   LF      125,000                3.00       375,000.00
+        21     025635      REMOVE STOCK TANK                              EA            2           15,000.00        30,000.00
+        22     190101      ROADWAY EXCAVATION                             CY       95,600               40.00     3,824,000.00
+        23     194001      DITCH EXCAVATION                               CY        2,250               40.00        90,000.00
+        24     025636      JOB SITE PREPARATION (AREA 1)                  LS     LUMP SUM          175,000.00       175,000.00
+        25     025637      INVASIVE PLANT REMOVAL                         ACRE         18            1,000.00        18,000.00
+        26     025638      JOB SITE PREPARATION (AREA 2)                  LS     LUMP SUM          100,000.00       100,000.00
+        27     025639      JOB SITE PREPARATION (AREA 3)                  LS     LUMP SUM          550,000.00       550,000.00
+        28     025640      JOB SITE PREPARATION (AREA 4)                  LS     LUMP SUM          150,000.00       150,000.00
+        29     025641      JOB SITE PREPARATION WORK PLAN                 LS     LUMP SUM           40,000.00        40,000.00
+                           (AREA 1)
+        30     025642      JOB SITE PREPARATION WORK PLAN                 LS     LUMP SUM           40,000.00        40,000.00
+                           (AREA 2)
+        31     025643      JOB SITE PREPARATION WORK PLAN                 LS     LUMP SUM           40,000.00        40,000.00
+                           (AREA 3)
+        32     025644      JOB SITE PREPARATION WORK PLAN                 LS     LUMP SUM           40,000.00        40,000.00
+                           (AREA 4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                 C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  5
+            10/22/13                                                                                                 10/23/13
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+        33     202006      SOIL AMENDMENT                                 CY          140               75.00        10,500.00
+        34     202011      MULCH                                          CY       25,800               46.00     1,186,800.00
+        35     204006      PLANT (GROUP F)                                EA       40,300               26.00     1,047,800.00
+        36     204009      PLANT (GROUP I)                                EA       19,000               24.00       456,000.00
+        37     204010      PLANT (GROUP O)                                EA       36,700               17.00       623,900.00
+        38     204013      PLANT (GROUP M)                                EA      344,000               14.00     4,816,000.00
+        39     204017      PLANT (GROUP W)                                EA        2,180               15.00        32,700.00
+        40     025645      ROOTWAD REVETMENT (TYPE 1)                     EA           13            3,500.00        45,500.00
+        41     025646      ROOTWAD REVETMENT (TYPE 2)                     EA           18            3,000.00        54,000.00
+        42     025647      LIVE SILTATION                                 LF        1,010              100.00       101,000.00
+        43     025648      FURNISH MITIGATION PLANTS AND SEEDS            LS     LUMP SUM           40,000.00        40,000.00
+                           (AREA 1)
+        44     025649      FURNISH MITIGATION PLANTS AND SEEDS            LS     LUMP SUM          325,000.00       325,000.00
+                           (AREA 2)
+        45     025650      FURNISH MITIGATION PLANTS AND SEEDS            LS     LUMP SUM        1,300,000.00     1,300,000.00
+                           (AREA 3)
+        46     025651      FURNISH MITIGATION PLANTS AND SEEDS            LS     LUMP SUM          350,000.00       350,000.00
+                           (AREA 4)
+        47     025652      PLANT ESTABLISHMENT (AREA 1)                   LS     LUMP SUM          425,000.00       425,000.00
+        48     025653      PLANT ESTABLISHMENT (AREA 2)                   LS     LUMP SUM          350,000.00       350,000.00
+        49     025654      PLANT ESTABLISHMENT (AREA 3)                   LS     LUMP SUM        1,750,000.00     1,750,000.00
+        50     025655      PLANT ESTABLISHMENT (AREA 4)                   LS     LUMP SUM          475,000.00       475,000.00
+        51     025656      IDENTIFIER STAKE                               EA      244,000               13.50     3,294,000.00
+        52 (F) 208598      2" PLASTIC PIPE (SCHEDULE 40)                  LF       51,535                8.00       412,280.00
+                           (SUPPLY LINE)
+        53     025657      RESTORATION SITE SIGNS                         EA           68              300.00        20,400.00
+        54     210010      MOVE-IN/MOVE-OUT (EROSION CONTROL)             EA           30            3,000.00        90,000.00
+        55     210210      EROSION CONTROL (DRY SEED) (SQFT)              SQFT     60,200                 .05         3,010.00
+        56     210221      EROSION CONTROL (DRILL SEED) (ACRE)            ACRE        250            1,000.00       250,000.00
+        57     025658      SEED (MIX S-WEG1-1)                            LB          220              725.00       159,500.00
+        58     025659      SEED (MIX S-WEG1-2)                            LB          300            1,000.00       300,000.00
+        59     025660      SEED (MIX S-WEG1-3)                            LB          330              800.00       264,000.00
+        60     025661      SEED (MIX S-WEG1-4)                            LB          420            1,000.00       420,000.00
+        61     025662      SEED (MIX S-WEG2-1)                            LB          990              750.00       742,500.00
+        62     025663      SEED (MIX S-WEG2-2)                            LB           80              600.00        48,000.00
+        63     025664      SEED (MIX S-WEG2-3)                            LB          130              850.00       110,500.00
+        64     025665      SEED (MIX S-WR-1)                              LB        2,360              800.00     1,888,000.00
+        65     025666      SEED (MIX S-WR-2)                              LB        1,050              600.00       630,000.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                 C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  6
+            10/22/13                                                                                                 10/23/13
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+        66     025667      SEED (MIX S-WR-3)                              LB          110              600.00        66,000.00
+        67     025668      SEED (MIX S-WR-4)                              LB           17              800.00        13,600.00
+        68     025669      SEED (MIX S-PASTURE)                           LB          520              600.00       312,000.00
+        69     025670      SEED (MIX S-RHEB-1)                            LB           73              600.00        43,800.00
+        70     025671      SEED (MIX S-RIP-1)                             LB        2,450              450.00     1,102,500.00
+        71     210270      ROLLED EROSION CONTROL PRODUCT (NETTING)       SQFT     60,200                1.00        60,200.00
+        72     210420      STRAW                                          SQFT 10,800,000                 .05       540,000.00
+        73     210600      COMPOST                                        SQFT     60,200                1.00        60,200.00
+        74     210630      INCORPORATE MATERIALS                          SQFT 10,900,000                 .03       327,000.00
+        75     025672      DISKING                                        ACRE         13              300.00         3,900.00
+        76     025673      CLEAN SAND AND GRAVEL                          CY        3,010              100.00       301,000.00
+        77     260203      CLASS 2 AGGREGATE BASE (CY)                    CY          260              125.00        32,500.00
+        78 (F) 510502      MINOR CONCRETE (MINOR STRUCTURE)               CY            9.2          5,000.00        46,000.00
+        79     620300      48" ALTERNATIVE PIPE CULVERT                   LF           40              500.00        20,000.00
+        80     025674      STOCK TANK                                     EA           64            3,500.00       224,000.00
+        81 (F) 721013      ROCK SLOPE PROTECTION                          CY           43.2            200.00         8,640.00
+                           (1/4 T, METHOD B) (CY)
+        82 (F) 721015      ROCK SLOPE PROTECTION                          CY           32              200.00         6,400.00
+                           (LIGHT, METHOD B) (CY)
+        83 (F) 721017      ROCK SLOPE PROTECTION                          CY        1,086.8            100.00       108,680.00
+                           (FACING, METHOD B) (CY)
+        84 (F) 721019      ROCK SLOPE PROTECTION                          CY          331.6            200.00        66,320.00
+                           (NO. 3, METHOD B) (CY)
+        85 (F) 721026      ROCK SLOPE PROTECTION (NO. 1, METHOD B)        CY           37.5            200.00         7,500.00
+                           (CY)
+        86     025675      COBBLESTONE                                    CY          170              200.00        34,000.00
+        87     025676      STEP POOL STRUCTURE                            EA            7            5,000.00        35,000.00
+        88     025677      INLET POOL STRUCTURE                           EA            4            5,000.00        20,000.00
+        89     025678      ROCK SILL STRUCTURE                            EA            3            5,000.00        15,000.00
+        90     729011      ROCK SLOPE PROTECTION FABRIC (CLASS 8)         SQYD      1,150               10.00        11,500.00
+        91     800007      FENCE (TYPE BW, 5 STRAND, METAL POST)          LF      213,000                4.00       852,000.00
+        92     025679      TEMPORARY FENCE (TYPE CL-3)                    LF       35,400               11.00       389,400.00
+        93     801364      16' METAL GATE                                 EA           78            1,500.00       117,000.00
+        94     025680      DOUBLE 12' METAL GATE                          EA           84            1,500.00       126,000.00
+        95 (F) 839521      CABLE RAILING                                  LF           26               50.00         1,300.00
+        96     000001      ITEM DELETED PER ADDENDUM                      LS     LUMP SUM                 .00             0.00
+        97     026593      CATTLE SHADE                                   EA           25            3,500.00        87,500.00
+        98     170101      DEVELOP WATER SUPPLY                           LS     LUMP SUM          300,000.00       300,000.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                 C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  7
+            10/22/13                                                                                                 10/23/13
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+        99     390132      HOT MIX ASPHALT (TYPE A)                       TON          88              250.00        22,000.00
+       100     620100      18" ALTERNATIVE PIPE CULVERT                   LF          200              250.00        50,000.00
+       101     999990      MOBILIZATION                                   LS     LUMP SUM        3,933,333.00     3,933,333.00
+
+                                                                                                    TOTAL        39,333,333.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                 S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  8
+            10/22/13                                                                                                 10/23/13
+
+       |-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD
+       |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------
+     1 |             5.00      11000.00|            10.00      22000.00
+     2 |        50,000.00      50000.00|       100,000.00     100000.00
+     3 |        10,000.00   12500000.00|         6,100.00    7625000.00
+     4 |       500,000.00     500000.00|     1,000,000.00    1000000.00
+     5 |        20,000.00      20000.00|       100,000.00     100000.00
+     6 |           500.00     145000.00|           500.00     145000.00
+     7 |           500.00     150000.00|         1,000.00     300000.00
+     8 |         2,000.00      14000.00|         2,000.00      14000.00
+     9 |         4,000.00     120000.00|         3,000.00      90000.00
+    10 |              .30      98700.00|             1.00     329000.00
+    11 |             2.00      36600.00|             6.00     109800.00
+    12 |         1,000.00       1000.00|         5,000.00       5000.00
+    13 |             4.00     178000.00|            12.00     534000.00
+    14 |             4.00      38320.00|            12.00     114960.00
+    15 |         5,000.00      60000.00|        10,000.00     120000.00
+    16 |       200,000.00     200000.00|       800,000.00     800000.00
+    17 |            10.00      54100.00|            15.00      81150.00
+    18 |       500,000.00     500000.00|     1,000,000.00    1000000.00
+    19 |        20,000.00      40000.00|        40,000.00      80000.00
+    20 |             3.00     375000.00|            10.00    1250000.00
+    21 |           500.00       1000.00|         5,000.00      10000.00
+    22 |            20.00    1912000.00|            30.00    2868000.00
+    23 |            30.00      67500.00|            25.00      56250.00
+    24 |     1,200,000.00    1200000.00|       100,000.00     100000.00
+    25 |        60,000.00    1080000.00|         1,000.00      18000.00
+    26 |     1,200,000.00    1200000.00|       185,000.00     185000.00
+    27 |     1,200,000.00    1200000.00|       200,000.00     200000.00
+    28 |     1,200,000.00    1200000.00|       100,000.00     100000.00
+    29 |        20,000.00      20000.00|         5,000.00       5000.00
+    30 |        20,000.00      20000.00|         5,000.00       5000.00
+    31 |        20,000.00      20000.00|         5,000.00       5000.00
+    32 |        20,000.00      20000.00|         5,000.00       5000.00
+    33 |            80.00      11200.00|            50.00       7000.00
+    34 |            60.00    1548000.00|            30.00     774000.00
+    35 |            50.00    2015000.00|            30.00    1209000.00
+    36 |            30.00     570000.00|            20.00     380000.00
+    37 |             4.00     146800.00|             8.00     293600.00
+    38 |             3.00    1032000.00|             8.00    2752000.00
+    39 |            16.00      34880.00|             5.00      10900.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                 S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  9
+            10/22/13                                                                                                 10/23/13
+
+       |-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD
+       |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------
+    40 |         4,000.00      52000.00|        10,000.00     130000.00
+    41 |         6,000.00     108000.00|        10,000.00     180000.00
+    42 |            80.00      80800.00|           150.00     151500.00
+    43 |        20,000.00      20000.00|        30,000.00      30000.00
+    44 |       600,000.00     600000.00|       300,000.00     300000.00
+    45 |     1,300,000.00    1300000.00|       800,000.00     800000.00
+    46 |       700,000.00     700000.00|       300,000.00     300000.00
+    47 |        60,000.00      60000.00|       550,000.00     550000.00
+    48 |        60,000.00      60000.00|     1,000,000.00    1000000.00
+    49 |        60,000.00      60000.00|     1,200,000.00    1200000.00
+    50 |        60,000.00      60000.00|       650,000.00     650000.00
+    51 |             2.00     488000.00|             5.00    1220000.00
+    52 |            10.00     515350.00|             8.00     412280.00
+    53 |           300.00      20400.00|           300.00      20400.00
+    54 |         3,000.00      90000.00|         3,000.00      90000.00
+    55 |              .10       6020.00|              .25      15050.00
+    56 |           500.00     125000.00|         1,200.00     300000.00
+    57 |           500.00     110000.00|         1,000.00     220000.00
+    58 |           500.00     150000.00|         1,000.00     300000.00
+    59 |           500.00     165000.00|           800.00     264000.00
+    60 |           500.00     210000.00|         1,000.00     420000.00
+    61 |           500.00     495000.00|           900.00     891000.00
+    62 |           500.00      40000.00|           600.00      48000.00
+    63 |           500.00      65000.00|           900.00     117000.00
+    64 |           500.00    1180000.00|           850.00    2006000.00
+    65 |           500.00     525000.00|           700.00     735000.00
+    66 |           500.00      55000.00|           700.00      77000.00
+    67 |           500.00       8500.00|         1,000.00      17000.00
+    68 |           500.00     260000.00|           600.00     312000.00
+    69 |           500.00      36500.00|           500.00      36500.00
+    70 |           500.00    1225000.00|           400.00     980000.00
+    71 |             6.00     361200.00|             1.00      60200.00
+    72 |              .02     216000.00|              .08     864000.00
+    73 |             2.00     120400.00|             1.00      60200.00
+    74 |              .10    1090000.00|              .04     436000.00
+    75 |        10,000.00     130000.00|         1,500.00      19500.00
+    76 |            10.00      30100.00|           100.00     301000.00
+    77 |            50.00      13000.00|           100.00      26000.00
+    78 |         1,000.00       9200.00|         5,000.00      46000.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-262024                                                                                                BID211
+            01-MEN-101                 S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE 10
+            10/22/13                                                                                                 10/23/13
+
+       |-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD
+       |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------
+    79 |           600.00      24000.00|           600.00      24000.00
+    80 |         3,000.00     192000.00|         5,000.00     320000.00
+    81 |           200.00       8640.00|           150.00       6480.00
+    82 |           200.00       6400.00|           150.00       4800.00
+    83 |           200.00     217360.00|           150.00     163020.00
+    84 |           200.00      66320.00|           150.00      49740.00
+    85 |           200.00       7500.00|           150.00       5625.00
+    86 |           300.00      51000.00|           150.00      25500.00
+    87 |         4,000.00      28000.00|        10,000.00      70000.00
+    88 |         6,000.00      24000.00|        10,000.00      40000.00
+    89 |         5,000.00      15000.00|        10,000.00      30000.00
+    90 |            10.00      11500.00|            10.00      11500.00
+    91 |             6.00    1278000.00|            12.00    2556000.00
+    92 |            10.00     354000.00|            20.00     708000.00
+    93 |         3,000.00     234000.00|         2,000.00     156000.00
+    94 |         4,000.00     336000.00|         2,000.00     168000.00
+    95 |         1,000.00      26000.00|           100.00       2600.00
+    96 |              .00          0.00|              .00          0.00
+    97 |         5,000.00     125000.00|         8,000.00     200000.00
+    98 |       600,000.00     600000.00|     1,000,000.00    1000000.00
+    99 |           300.00      26400.00|           600.00      52800.00
+   100 |           300.00      60000.00|           300.00      60000.00
+   101 |     4,500,000.00    4500000.00|     4,008,000.00    4008000.00
+
+   TOT                   47,421,690.00                  48,051,355.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

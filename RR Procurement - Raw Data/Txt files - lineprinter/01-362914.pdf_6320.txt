@@ -1,0 +1,967 @@
+
+
+
+
+
+                     STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                          PAGE  1
+       BID OPENING DATE    11/06/14                    NEAR HOPLAND FROM HOPLAND OVERHEAD                                 11/07/14
+       CONTRACT NUMBER     01-362914                   BRIDGE TO FELIZ CREEK BRIDGE AND                         CONTRACT CODE 'C '
+       LOCATION            01-MEN-101-9.6/10.7         FROM 0.1 MILE NORTH OF FIRST STREET                       33 CONTRACT ITEMS
+                           01-MEN-101-11.2/20.9        TO ROBINSON CREEK BRIDGE
+
+                                                       RUBBERIZED HMA OVERLAY                    FEDERAL AID  NHP-Q101-(256)E
+
+
+
+                DB GOALS:   DISADVANTAGED BUSINESS ENTERPRISE -  6.0%
+   PROPOSALS ISSUED   12    FUND TOTAL   HA22              0                         TOTAL NUMBER OF WORKING DAYS    180
+
+   NUMBER OF BIDDERS 10    ENGINEERS EST     10,214,880.00  AMOUNT UNDER      1,949,613.00        PERCENT UNDER EST 19.09
+   PROGRAM ELEMENTS      RAS
+
+                 BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                 --------      -----------  ---------         -------------------------------------------------
+
+                     1         8,265,267.00    2              DESILVA GATES CONSTRUCTION LP         925 829-9220
+                                                                                                    00704195
+                                                              11555 DUBLIN BLVD.                FAX 925 803-4263
+                                                              DUBLIN  CA  94568
+
+                     2         8,394,992.00    6              GHILOTTI BROS., INC.                  415 454-7011
+                                                                                                    00132128
+                                                              525 JACOBY STREET                 FAX 415 454-8376
+                                                              SAN RAFAEL  CA  94901
+
+                     3         8,438,260.00    8              O.C. JONES & SONS, INC.               510 526-3424
+                                                                                                    00759729
+                                                              1520 FOURTH STREET                FAX 510 526-0990
+                                                              BERKELEY  CA  94710
+
+                     4         8,443,443.00    9              CHESTER BROSS CONSTRUCTION            573 221-5958
+                                                              COMPANY                               00978879
+                                                              P.O. BOX 430                      FAX 573 221-1892
+                                                              HANNIBAL  MO  63401
+
+                     5         8,579,378.00    4              GHILOTTI CONSTRUCTION COMPANY,        707 585-1221
+                                                               INC.                                 00644515
+                                                              246 GHILOTTI AVENUE               FAX 707 585-1601
+                                                              SANTA ROSA  CA  95407
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  2
+            11/06/14                                                                                                 11/07/14
+
+                     6         8,740,942.00    1              GRANITE CONSTRUCTION COMPANY          707 467-4100
+                                                                                                    00000089
+                                                              1324 S. STATE STREET              FAX 707 467-4143
+                                                              UKIAH  CA  95482
+
+                     7         8,979,712.00    7              ARGONAUT CONSTRUCTORS                 707 542-4862
+                                                                                                    00171432
+                                                              P.O. BOX 639                      FAX 707 542-4897
+                                                              SANTA ROSA  CA  95402
+
+                     8         9,584,050.00   10              TELFER HIGHWAY TECHNOLOGIES           916 383-1756
+                                                                                                    00984141
+                                                              4522 PARKER AVENUE BLDG 700 ST    FAX 916 383-4084
+                                                              MCCLELLAN  CA  95652
+
+                     9        10,127,945.00    3              MERCER-FRASER COMPANY                 707 443-6371
+                                                                                                    00105709
+                                                              P.O. BOX 1006                     FAX 707 443-0277
+                                                              EUREKA  CA  95502
+
+                    10        10,412,275.00    5              MCK SERVICES INC.                     925 957-9200
+                                                                                                    00783116
+                                                              865 HOWE RD                       FAX 925 957-9292
+                                                              MARTINEZ  CA  94553
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  3
+            11/06/14                                                                                                 11/07/14
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      02     AGGREGATE INDUSTRIES SWR, INC.                               RHMA-OPEN GRADED (BONDED WEARING COURSE)
+             NORTH LAS VEGAS NV                      314554
+
+             AUSTIN ENTERPRISE                                            CRACK TREATMENT
+             BAKERSFIELD CA                          639173
+
+             LINEAR OPTIONS, INC.                                         CONTROL
+             DURHAM CA                               704182
+
+             LINEAR OPTIONS, INC.                                         RUMBLE STRIP
+             DURHAM CA                               704182
+
+             LINEAR OPTIONS, INC.                                         STRIPING, PAVEMENT MARKERS, PAVEMENT MARKINGS, TRAFFIC
+             DURHAM CA                               704182
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  4
+            11/06/14                                                                                                 11/07/14
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      06     A. C. DIKE CO.                                               WORK AS DESCRIBED IN BID ITEM(S): 21, 22
+             LINCOLN CA                              407417
+
+             AUSTIN ENTERPRISE                                            WORK AS DESCRIBED IN BID ITEM(S): 14
+             BAKERSFIELD CA                          764893
+
+             LINEAR OPTIONS INC.                                          WORK AS DESCRIBED IN BID ITEM(S): 18, 19
+             DURHAM  CA                              704182
+
+             LINEAR OPTIONS INC.                                          WORK AS DESCRIBED IN BID ITEM(S): 25, 26, 27, 28, 29, 30
+             DURHAM CA                               704182
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      08     ANRAK CORP                                                   WORK AS DESCRIBED BY BID ITEMS 11, 12, 15
+             SACRAMENTO CA                           256390
+
+             CENTRAL STRIPING SERVICE                                     WORK AS DESCRIBED BY BID ITEMS 5,25-30, 33
+             RANCHO CORDOVA CA                       403896
+
+             CHESTER BROSS CONSTRUCTION                                   WORK AS DESCRIBED BY BID ITEMS 23, 33
+             VALLEY SPRINGS CA                       978879
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      09     CENTRAL STRIPING SERVICE, INC.                               5(P), 25, 26, 27, 28, 29, 30, 33(P)
+             RANCHO CORDOVA CA                       403896
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  5
+            11/06/14                                                                                                 11/07/14
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      04     ANRAK CORP                                                   ITEM 12
+             SACRAMENTO CA                           256390
+
+             ANRAK CORP                                                   12
+             SACRAMENTO CA                           256390
+
+             AUSTIN ENTERPRISES                                           ITEM 14
+             BAKERSFIELD CA                          764893
+
+             AUSTIN ENTERPRISES                                           14
+             BAKERSFIELD CA                          764893
+
+             CENTRAL STRIPING                                             ITEMS 25, 26, 27, 28, 29 & 30
+             RANCHO CORDOVA CA                       403896
+
+             CENTRAL STRIPING                                             25,26,27,28,29,30
+             RANCHO CORDOVA CA                       403896
+
+             DIVERSIFIED CONCRETE CUTTING                                 ITEMS 18 & 19
+             SPARKS NV                               684367
+
+             DIVERSIFIED CONCRETE CUTTING                                 18,19
+             SPARKS NV                               684367
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     AC DIKE CO.                                                  ITEMS 21 & 22
+             LINCOLN CA                              407417
+
+             AC DIKE CO.                                                  PLACE HMA DIKE (TYPE A)  PLACE HMA DIKE (TYPE E);
+             LINCOLN CA                              407417
+   CONTINUED ON NEXT PAGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  6
+            11/06/14                                                                                                 11/07/14
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     ANRAK CORPORATION                                            COLD PLANE ASPHALT CONCRETE
+             SACRAMENTO CA                           256390
+
+             ANRAK CORPORATION                                            ITEM 12
+             SACRAMENTO CA                           256390
+
+             APADANA ENGINEERING                                          ITEM 23
+             SAN FRANCISCO CA                        928048
+
+             APADANA ENGINEERING                                          RUBBERIZED HMA (TYPE O) BONDED WEARING COURSE
+             SAN FRANCISCO CA                        928048
+
+             AUSTIN ENTERPRISE                                            CRACK SEALING
+             BAKERSFIELD CA                          764893
+
+             AUSTIN ENTERPRISE                                            ITEM 14
+             BAKERSFIELD CA                          764893
+
+             CENTRAL STRIPING SERVICE                                     ITEMS 30 & 33
+             RANCHO CORDOVA CA                       403896
+
+             CENTRAL STRIPING SERVICE                                     ITEMS 5, 25, 26, 27, 28 & 29
+             RANCHO CORDOVA CA                       403896
+
+             CENTRAL STRIPING SERVICE                                     PAVEMENT MARKER  MOBILIZATION;
+             RANCHO CORDOVA CA                       403896
+
+             CENTRAL STRIPING SERVICE                                     TRAFFIC CONTROL  THERMOPLASTIC PAVEMENT MARKING; THERMOPLAST
+             RANCHO CORDOVA CA                       403896
+
+             T AND S DVBE INC.                                            CONSTRUCTION AREA SIGNS  TRAFFIC CONTROL SYSTEM;
+             REDDING CA                              983087
+   CONTINUED ON NEXT PAGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  7
+            11/06/14                                                                                                 11/07/14
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     T AND S DVBE INC.                                            ITEMS 4 & 5
+             REDDING CA                              983087
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      07     AUSTIN ENTERPRISE                                            CRACK SEAL
+             BAKERSFIELD CA                          764893
+
+             CHESTER BROSS CONSTRUCTION                                   PLACE BONDED WEAR COURSE
+             VALLEY SPRINGS CA                       978879
+
+             DELTA GRINDING                                               AC GRINDING
+             ANTIOCH CA                              736914
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      10     ANRAK CORP                                                   COLD PLANE ASPHALT CONCRETE
+             SACRAMENTO CA                           256390
+
+             ANRAK CORP                                                   ITEM 12
+             SACRAMENTO CA                           256390
+
+             CHRISP COMPANY                                               ITEMS 5, 33, 25, 26, 27, 28, 29, 30 & 1
+             WOODLAND CA                             374600
+
+             CHRISP COMPANY                                               LCP,MOB (PART), T/C (PART)THERMOPLASTIC STRIPE, PAVEMENT
+             WOODLAND CA                             374600
+
+             CHRISP COMPANY                                               MARKERS
+             WOODLAND CA                             374600
+   CONTINUED ON NEXT PAGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  8
+            11/06/14                                                                                                 11/07/14
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      10     DIVERSIFIED CONCRETE CUTTING                                 ITEMS 18 & 19
+             SPARKS NV                               684367
+
+             DIVERSIFIED CONCRETE CUTTING                                 SHLDR RUMBLE STRIP, CENTERLINE RUMBLE STRIP
+             SPARKS NV                               684367
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      03     CENTAL STRIPING SERVICE                                      ITEMS 25, 26, 27, 28, 29 & 30
+             RANCHO CORDOVA CA                       403896
+
+             CENTAL STRIPING SERVICE                                      STRIPING
+             RANCHO CORDOVA CA                       403896
+
+             DIVERSIFIED CONCRETE CUTTING                                 ITEMS 18 & 19
+             SPARKS NV                               684367
+
+             DIVERSIFIED CONCRETE CUTTING                                 RUMBLE STRIP
+             SPARKS NV                               684367
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      05     AUSTIN ENTERPRISE                                            CRACK TREATMENT
+             BAKERSFIELD  CA                         764893
+
+             AUSTIN ENTERPRISE                                            ITEM 14
+             BAKERSFIELD  CA                         764893
+
+             CHRISP COMPANY                                               ITEMS 25, 26, 27, 28, 29 & 30
+             WOODLAND CA                             374600
+   CONTINUED ON NEXT PAGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  9
+            11/06/14                                                                                                 11/07/14
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      05     CHRISP COMPANY                                               STRIPING AND MARKERS
+             WOODLAND CA                             374600
+
+             DIVERSIFIED CONCRETE CUTTING                                 ITEMS 18 & 19
+             SPARKS NV                               684367
+
+             DIVERSIFIED CONCRETE CUTTING                                 RUMBLE STRIP
+             SPARKS NV                               684367
+
+             HIGHWAY SPECIALTY CO                                         ITEMS 4  6 & 5
+             SANTA ROSA CA                           957808
+
+             HIGHWAY SPECIALTY CO                                         PCMS, TRAFFIC CONTROL, CONSTRUCTION AREA SIGNS
+             SANTA ROSA CA                           957808
+
+             PACIFIC NORTHWEST OIL                                        ITEM 24
+             STOCKTON CA                             705296
+
+             PACIFIC NORTHWEST OIL                                        TACK OIL
+             STOCKTON CA                             705296
+
+             TELFER HIGHWAY TECHNOLOGIES                                  BONDED WEARING COURSES
+             MCCLELLAN CA                            984141
+
+             TELFER HIGHWAY TECHNOLOGIES                                  ITEMS 23 & 32
+             MCCLELLAN CA                            984141
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                 C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE 10
+            11/06/14                                                                                                 11/07/14
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+         1     070030      LEAD COMPLIANCE PLAN                           LS     LUMP SUM            2,000.00         2,000.00
+         2     080050      PROGRESS SCHEDULE (CRITICAL PATH METHOD)       LS     LUMP SUM            5,000.00         5,000.00
+         3     090100      TIME-RELATED OVERHEAD (WDAY)                   WDAY        180            2,000.00       360,000.00
+         4     120090      CONSTRUCTION AREA SIGNS                        LS     LUMP SUM            5,000.00         5,000.00
+         5     120100      TRAFFIC CONTROL SYSTEM                         LS     LUMP SUM          314,000.00       314,000.00
+         6     128652      PORTABLE CHANGEABLE MESSAGE SIGN (LS)          LS     LUMP SUM           10,000.00        10,000.00
+         7     130100      JOB SITE MANAGEMENT                            LS     LUMP SUM            5,000.00         5,000.00
+         8     130200      PREPARE WATER POLLUTION CONTROL PROGRAM        LS     LUMP SUM            1,000.00         1,000.00
+         9     130620      TEMPORARY DRAINAGE INLET PROTECTION            EA           29              200.00         5,800.00
+        10     140003      ASBESTOS COMPLIANCE PLAN                       LS     LUMP SUM            2,000.00         2,000.00
+        11     150771      REMOVE ASPHALT CONCRETE DIKE                   LF       12,000                1.00        12,000.00
+        12     153103      COLD PLANE ASPHALT CONCRETE PAVEMENT           SQYD    320,000                1.60       512,000.00
+        13     190185      SHOULDER BACKING                               TON       7,540               10.00        75,400.00
+        14     374207      CRACK TREATMENT                                LNMI         33            3,500.00       115,500.00
+        15     390095      REPLACE ASPHALT CONCRETE SURFACING             CY          770              240.00       184,800.00
+        16     390136      MINOR HOT MIX ASPHALT                          TON         310               90.00        27,900.00
+        17     390137      RUBBERIZED HOT MIX ASPHALT (GAP GRADED)        TON      32,100              116.00     3,723,600.00
+        18     394053      SHOULDER RUMBLE STRIP                          STA         810               10.00         8,100.00
+                           (HMA,GROUND-IN INDENTATIONS)
+        19     028149      CENTERLINE RUMBLE STRIP                        STA         730               10.00         7,300.00
+                           (HMA, GROUND-IN INDENTATIONS)
+        20     394060      DATA CORE                                      LS     LUMP SUM            5,000.00         5,000.00
+        21     394073      PLACE HOT MIX ASPHALT DIKE (TYPE A)            LF        5,240                2.00        10,480.00
+        22     394076      PLACE HOT MIX ASPHALT DIKE (TYPE E)            LF        6,740                2.00        13,480.00
+        23     395040      RUBBERIZED HOT MIX ASPHALT-OPEN GRADED         TON      16,600              116.00     1,925,600.00
+                           (BONDED WEARING COURSE)
+        24     397005      TACK COAT                                      TON         290                1.00           290.00
+        25     840516      THERMOPLASTIC PAVEMENT MARKING                 SQFT      1,270                3.00         3,810.00
+                           (ENHANCED WET NIGHT VISIBILITY)
+        26     846001      4" THERMOPLASTIC TRAFFIC STRIPE                LF      205,000                 .30        61,500.00
+                           (ENHANCED WET NIGHT VISIBILITY)
+        27     846003      4" THERMOPLASTIC TRAFFIC STRIPE                LF          810                 .30           243.00
+                           (ENHANCED WET NIGHT VISIBILITY)
+        28     846005      4" THERMOPLASTIC TRAFFIC STRIPE                LF       60,800                 .25        15,200.00
+                           (ENHANCED WET NIGHT VISIBILITY)
+        29     846009      8" THERMOPLASTIC TRAFFIC STRIPE                LF        2,990                 .60         1,794.00
+                           (ENHANCED WET NIGHT VISIBILITY)
+        30     850111      PAVEMENT MARKER (RETROREFLECTIVE)              EA        8,400                3.00        25,200.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                 C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE 11
+            11/06/14                                                                                                 11/07/14
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+        31     000001      ITEM DELETED PER ADDENDUM                      LS     LUMP SUM                 .00             0.00
+        32     390151      ASPHALTIC EMULSION MEMBRANE                    TON         270                1.00           270.00
+                           (BONDED WEARING COURSE)
+        33     999990      MOBILIZATION                                   LS     LUMP SUM          826,000.00       826,000.00
+
+                                                                                                    TOTAL         8,265,267.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                 S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE 12
+            11/06/14                                                                                                 11/07/14
+
+       |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD              |            FOURTH             |            FIFTH
+       |       BID         AMOUNT      |       BID         AMOUNT      |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+     1 |         1,700.00       1700.00|         3,000.00       3000.00|         3,000.00       3000.00|         1,500.00       1500.00
+     2 |           500.00        500.00|         3,000.00       3000.00|         4,500.00       4500.00|         3,000.00       3000.00
+     3 |           100.00      18000.00|           600.00     108000.00|           250.00      45000.00|           500.00      90000.00
+     4 |         4,400.00       4400.00|         4,000.00       4000.00|         4,500.00       4500.00|         4,000.00       4000.00
+     5 |       320,000.00     320000.00|       138,000.00     138000.00|       198,000.00     198000.00|       138,000.00     138000.00
+     6 |        10,000.00      10000.00|        13,000.00      13000.00|        10,000.00      10000.00|        20,000.00      20000.00
+     7 |         5,000.00       5000.00|        20,000.00      20000.00|        20,000.00      20000.00|         4,000.00       4000.00
+     8 |           700.00        700.00|           700.00        700.00|         1,000.00       1000.00|           300.00        300.00
+     9 |           150.00       4350.00|           275.00       7975.00|           125.00       3625.00|           200.00       5800.00
+    10 |         1,700.00       1700.00|         1,500.00       1500.00|         2,000.00       2000.00|         1,000.00       1000.00
+    11 |              .30       3600.00|             1.50      18000.00|             2.00      24000.00|             1.00      12000.00
+    12 |             1.10     352000.00|             1.20     384000.00|             1.00     320000.00|             1.20     384000.00
+    13 |            19.00     143260.00|            28.00     211120.00|            30.00     226200.00|            33.00     248820.00
+    14 |         3,500.00     115500.00|         3,000.00      99000.00|         1,500.00      49500.00|         3,500.00     115500.00
+    15 |           250.00     192500.00|           245.00     188650.00|           325.00     250250.00|           225.00     173250.00
+    16 |            90.00      27900.00|           115.00      35650.00|           120.00      37200.00|           115.00      35650.00
+    17 |           125.00    4012500.00|           124.00    3980400.00|           124.00    3980400.00|           118.00    3787800.00
+    18 |            32.00      25920.00|            21.00      17010.00|            25.00      20250.00|            25.00      20250.00
+    19 |            19.00      13870.00|            21.00      15330.00|            25.00      18250.00|            30.00      21900.00
+    20 |         5,000.00       5000.00|        10,000.00      10000.00|         5,000.00       5000.00|         8,000.00       8000.00
+    21 |             1.55       8122.00|             1.25       6550.00|             2.00      10480.00|             1.25       6550.00
+    22 |             1.55      10447.00|             1.25       8425.00|             2.00      13480.00|             1.25       8425.00
+    23 |           141.00    2340600.00|           133.00    2207800.00|           145.00    2407000.00|           135.00    2241000.00
+    24 |             1.00        290.00|           525.00     152250.00|             1.00        290.00|           500.00     145000.00
+    25 |             4.50       5715.00|             3.20       4064.00|             4.50       5715.00|             4.50       5715.00
+    26 |              .40      82000.00|              .39      79950.00|              .39      79950.00|              .40      82000.00
+    27 |              .40        324.00|              .30        243.00|              .39        315.90|              .40        324.00
+    28 |              .25      15200.00|              .25      15200.00|              .25      15200.00|              .25      15200.00
+    29 |              .60       1794.00|              .70       2093.00|              .60       1794.00|              .60       1794.00
+    30 |             2.75      23100.00|             2.75      23100.00|             2.75      23100.00|             2.75      23100.00
+    31 |              .00          0.00|              .00          0.00|              .00          0.00|              .00          0.00
+    32 |           600.00     162000.00|           775.00     209250.00|             1.00        270.00|           650.00     175500.00
+    33 |       487,000.00     487000.00|       471,000.00     471000.00|       663,173.10     663173.10|       800,000.00     800000.00
+
+   TOT                    8,394,992.00                   8,438,260.00                   8,443,443.00                   8,579,378.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                 S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE 13
+            11/06/14                                                                                                 11/07/14
+
+       |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+   ITEM|            SIXTH              |           SEVENTH             |            EIGHTH             |            NINTH
+       |       BID         AMOUNT      |       BID         AMOUNT      |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+     1 |         3,000.00       3000.00|         2,500.00       2500.00|         2,500.00       2500.00|         3,800.00       3800.00
+     2 |         5,000.00       5000.00|        10,000.00      10000.00|        10,000.00      10000.00|        10,000.00      10000.00
+     3 |           500.00      90000.00|           800.00     144000.00|           250.00      45000.00|           500.00      90000.00
+     4 |         5,040.00       5040.00|         4,600.00       4600.00|        10,000.00      10000.00|         5,000.00       5000.00
+     5 |       250,000.00     250000.00|        80,000.00      80000.00|       450,000.00     450000.00|       300,000.00     300000.00
+     6 |        15,000.00      15000.00|        12,000.00      12000.00|        40,000.00      40000.00|        15,000.00      15000.00
+     7 |         5,000.00       5000.00|         8,000.00       8000.00|        10,000.00      10000.00|        50,000.00      50000.00
+     8 |         1,500.00       1500.00|         1,250.00       1250.00|         1,500.00       1500.00|         1,500.00       1500.00
+     9 |           250.00       7250.00|           350.00      10150.00|           225.00       6525.00|           215.00       6235.00
+    10 |         2,500.00       2500.00|         1,250.00       1250.00|         2,000.00       2000.00|        10,000.00      10000.00
+    11 |             1.20      14400.00|             4.00      48000.00|             1.00      12000.00|             2.50      30000.00
+    12 |             1.00     320000.00|             2.00     640000.00|             1.50     480000.00|             1.90     608000.00
+    13 |            25.00     188500.00|            42.00     316680.00|            48.00     361920.00|            60.00     452400.00
+    14 |         3,850.00     127050.00|         3,580.00     118140.00|         5,500.00     181500.00|         1,500.00      49500.00
+    15 |           250.00     192500.00|           258.00     198660.00|           375.00     288750.00|           300.00     231000.00
+    16 |           100.00      31000.00|           110.00      34100.00|           130.00      40300.00|           105.00      32550.00
+    17 |           122.00    3916200.00|           126.00    4044600.00|           140.00    4494000.00|           140.00    4494000.00
+    18 |            30.00      24300.00|            17.80      14418.00|             9.00       7290.00|            27.00      21870.00
+    19 |            30.00      21900.00|            18.70      13651.00|             9.00       6570.00|            27.00      19710.00
+    20 |         4,000.00       4000.00|         8,100.00       8100.00|         5,000.00       5000.00|        10,000.00      10000.00
+    21 |             1.55       8122.00|             2.90      15196.00|             2.50      13100.00|             2.40      12576.00
+    22 |             1.55      10447.00|             2.60      17524.00|             2.50      16850.00|             2.40      16176.00
+    23 |           130.00    2158000.00|           148.00    2456800.00|           140.00    2324000.00|           140.00    2324000.00
+    24 |           500.00     145000.00|           525.00     152250.00|             1.00        290.00|           600.00     174000.00
+    25 |             4.50       5715.00|             4.50       5715.00|             4.00       5080.00|             5.00       6350.00
+    26 |              .40      82000.00|              .40      82000.00|              .44      90200.00|              .40      82000.00
+    27 |              .40        324.00|              .40        324.00|              .30        243.00|              .40        324.00
+    28 |              .25      15200.00|              .25      15200.00|              .30      18240.00|              .30      18240.00
+    29 |              .60       1794.00|              .60       1794.00|              .80       2392.00|              .60       1794.00
+    30 |             2.75      23100.00|             2.75      23100.00|             3.00      25200.00|             2.80      23520.00
+    31 |              .00          0.00|              .00          0.00|              .00          0.00|              .00          0.00
+    32 |           730.00     197100.00|           752.00     203040.00|           680.00     183600.00|           920.00     248400.00
+    33 |       870,000.00     870000.00|       296,670.00     296670.00|       450,000.00     450000.00|       780,000.00     780000.00
+
+   TOT                    8,740,942.00                   8,979,712.00                   9,584,050.00                  10,127,945.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-362914                                                                                                BID211
+            01-MEN-101                 S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE 14
+            11/06/14                                                                                                 11/07/14
+
+       |-------------------------------
+   ITEM|            TENTH
+       |       BID         AMOUNT
+       |-------------------------------
+     1 |         2,500.00       2500.00
+     2 |         5,000.00       5000.00
+     3 |         1,000.00     180000.00
+     4 |         5,000.00       5000.00
+     5 |       550,000.00     550000.00
+     6 |        30,000.00      30000.00
+     7 |        10,500.00      10500.00
+     8 |         1,000.00       1000.00
+     9 |           250.00       7250.00
+    10 |         1,700.00       1700.00
+    11 |             2.00      24000.00
+    12 |             2.00     640000.00
+    13 |            35.00     263900.00
+    14 |         3,580.00     118140.00
+    15 |           325.00     250250.00
+    16 |           175.00      54250.00
+    17 |           145.00    4654500.00
+    18 |            10.00       8100.00
+    19 |            10.00       7300.00
+    20 |        15,000.00      15000.00
+    21 |             3.50      18340.00
+    22 |             3.50      23590.00
+    23 |           142.00    2357200.00
+    24 |           600.00     174000.00
+    25 |             4.00       5080.00
+    26 |              .44      90200.00
+    27 |              .30        243.00
+    28 |              .30      18240.00
+    29 |              .80       2392.00
+    30 |             3.00      25200.00
+    31 |              .00          0.00
+    32 |           720.00     194400.00
+    33 |       675,000.00     675000.00
+
+   TOT                   10,412,275.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

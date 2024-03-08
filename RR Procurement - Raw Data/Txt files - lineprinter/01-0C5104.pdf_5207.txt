@@ -1,0 +1,346 @@
+
+
+
+
+                     STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                          PAGE  1
+       BID OPENING DATE    06/26/13                    IN DEL NORTE AND HUMBOLDT COUNTIES                                 06/28/13
+       CONTRACT NUMBER     01-0C5104                   AT VARIOUS LOCATIONS                                     CONTRACT CODE 'D '
+       LOCATION            01-VAR-0999-VAR                                                                       13 CONTRACT ITEMS
+
+
+                                                       INSTALL HIGH FRICTION SURFACE             FEDERAL AID  SSTP-000C-(359)E
+
+
+
+                DB GOALS:   DISADVANTAGED BUSINESS ENTERPRISE -  8.0%
+   PROPOSALS ISSUED    5    FUND TOTAL   HB1               0                         TOTAL NUMBER OF WORKING DAYS     20
+
+   NUMBER OF BIDDERS  3    ENGINEERS EST        360,980.00  AMOUNT UNDER        148,294.00        PERCENT UNDER EST 41.08
+   PROGRAM ELEMENTS      RAS
+
+                 BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                 --------      -----------  ---------         -------------------------------------------------
+
+                     1           212,686.00    3              INTERSTATE ROAD MANAGEMENT            855 255-4475
+                                                              CORP                                  00975889
+                                                              P O BOX 188                       FAX 405 478-2880
+                                                              HAZELTON PA  18201
+
+                     2           294,050.00    2              AMERICAN CIVIL CONSTRUCTORS           707 746-8028
+                                                              WEST COAST INC                        00526319
+                                                              3701 MALLARD DR                   FAX 707 747-0593
+                                                              BENICIA CA  94510
+
+                     3           297,775.00    1              NORTHWEST PAVING                      530 246-4388
+                                                                                                    00822126
+                                                              8115 SECLUDED VALLEY DRIVE        FAX 530 246-4109
+                                                              REDDING, CA  96001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0C5104                                                                                                BID211
+            01-VAR-0999                S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  2
+            06/26/13                                                                                                 06/28/13
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      03     CENTRAL STRIPING                                             ITEMS 1, 3, 7, 8 AND 10 THRU 13
+             3489 LUYUNG DRIVE
+             RANCHO CORDOVA CA  95742
+
+             CHARLES CUSTOM EXCAVATING                                    ITEMS 2, 4
+             P O BOX 1160
+             PALO CEDRO CA  96073
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0C5104                                                                                                BID211
+            01-VAR-0999                S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  3
+            06/26/13                                                                                                 06/28/13
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      02     APPAIN UDBE SWPPP                                            PREPARE WPCP
+             EL SOBRANTE CA
+
+             APPLY A LINE                                                 LEAD COMPLIANCE PLAN, REMOVE STRIPING AND MARKERS,
+             ANDERSON CA
+
+             APPLY A LINE                                                 STRIPING AND MARKERS
+             ANDERSON CA
+
+             HIGHWAY SPECIALTY CO                                         CONSTRUCTION AREA SIGNS
+             PALO CEDRO CA
+
+             S T RHOADES CONSTRUCTION                                     TRAFFIC CONTROL SYSTEM, PCMS BOARDS, SWEEPING(HFST)
+             REDDING CA
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     APPLY A LINE                                                 ITEM 1, 7, 8, 10 THRU 13
+             ANDERSON, CA
+
+             DBI SERVICES                                                 ITEM 9
+             OKLAHOMA CITY, OK
+
+             ST RHOADES CONSTRUCTION                                      ITEM 2 THRU 4
+             REDDING, CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0C5104                                                                                                BID211
+            01-VAR-0999                C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  4
+            06/26/13                                                                                                 06/28/13
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+         1     070030      LEAD COMPLIANCE PLAN                           LS     LUMP SUM            1,320.00         1,320.00
+         2     120090      CONSTRUCTION AREA SIGNS                        LS     LUMP SUM            5,197.50         5,197.50
+         3     120100      TRAFFIC CONTROL SYSTEM                         LS     LUMP SUM           25,300.00        25,300.00
+         4     128651      PORTABLE CHANGEABLE MESSAGE SIGN (EA)          EA            6            1,204.50         7,227.00
+         5     130100      JOB SITE MANAGEMENT                            LS     LUMP SUM           10,000.00        10,000.00
+         6     130200      PREPARE WATER POLLUTION CONTROL PROGRAM        LS     LUMP SUM            2,898.50         2,898.50
+         7     150714      REMOVE THERMOPLASTIC TRAFFIC STRIPE            LF        3,000                1.65         4,950.00
+         8     150722      REMOVE PAVEMENT MARKER                         EA          200                2.20           440.00
+         9     025856      HIGH FRICTION SURFACE TREATMENT                SQYD      4,900               28.49       139,601.00
+                           (POLYMER RESIN)
+        10     840516      THERMOPLASTIC PAVEMENT MARKING                 SQFT        110               22.00         2,420.00
+                           (ENHANCED WET NIGHT VISIBILITY)
+        11     846001      4" THERMOPLASTIC TRAFFIC STRIPE                LF        9,600                1.10        10,560.00
+                           (ENHANCED WET NIGHT VISIBILITY)
+        12     846009      8" THERMOPLASTIC TRAFFIC STRIPE                LF          160                2.20           352.00
+                           (ENHANCED WET NIGHT VISIBILITY)
+        13     850122      PAVEMENT MARKER                                EA          200               12.10         2,420.00
+                           (RETROREFLECTIVE-RECESSED)
+
+                                                                                                    TOTAL           212,686.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0C5104                                                                                                BID211
+            01-VAR-0999                S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  5
+            06/26/13                                                                                                 06/28/13
+
+       |-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD
+       |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------
+     1 |         2,500.00       2500.00|         2,000.00       2000.00
+     2 |         7,500.00       7500.00|         7,200.00       7200.00
+     3 |        50,000.00      50000.00|        28,600.00      28600.00
+     4 |           900.00       5400.00|         1,500.00       9000.00
+     5 |         1,500.00       1500.00|         2,000.00       2000.00
+     6 |         1,500.00       1500.00|         2,500.00       2500.00
+     7 |             1.55       4650.00|             1.55       4650.00
+     8 |             2.00        400.00|             2.00        400.00
+     9 |            41.00     200900.00|            45.25     221725.00
+    10 |            14.00       1540.00|            14.00       1540.00
+    11 |             1.35      12960.00|             1.35      12960.00
+    12 |             5.00        800.00|             5.00        800.00
+    13 |            22.00       4400.00|            22.00       4400.00
+
+   TOT                      294,050.00                     297,775.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

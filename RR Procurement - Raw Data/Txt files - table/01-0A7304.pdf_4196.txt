@@ -1,0 +1,346 @@
+
+
+
+
+
+                     STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                          PAGE  1
+       BID OPENING DATE    05/02/12                    IN MENDOCINO COUNTY NEAR FORT BRAGG                                06/14/12
+       CONTRACT NUMBER     01-0A7304                   FROM 10.3 MILES WEST OF CHAMBERLAIN                      CONTRACT CODE 'F '
+       LOCATION            01-MEN-20-7.0/17.3          CREEK BRIDGE TO CHAMBERLAIN CREEK                         26 CONTRACT ITEMS
+                                                       BRIDGE
+
+                                                       HMA OVERLAY                               FEDERAL AID  NONE
+
+
+
+                DVBE GOALS: DISABLED VETERANS BUSINESS ENTERPRISES -  3.0%
+   PROPOSALS ISSUED    4    FUND TOTAL   HM1               0                         TOTAL NUMBER OF WORKING DAYS     45
+
+   NUMBER OF BIDDERS  3    ENGINEERS EST      2,495,646.00   AMOUNT OVER        310,883.00         PERCENT OVER EST 12.46
+   PROGRAM ELEMENTS      RAS
+
+                 BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                 --------      -----------  ---------         -------------------------------------------------
+
+                     1         2,806,529.00    1              MASCON INC - ARGONAUT                 707 542-4862  NSB PREF CLAIMED
+                                                              CONSTRUCTORS                          00971648
+                                                              8550 PIOGAWOODS DR                FAX 707 542-4897
+                                                              SACRAMENTO CA  95828-5000
+
+                     2         2,955,610.00    2              TEAM GHILOTTI INC                     707 763-8700  NSB PREF CLAIMED
+                                                                                                    00895384
+                                                              2531 PETALUMA BOULEVARD SOUTH     FAX 707 763-8711
+                                                              PETALUMA CA  94952
+
+                     3         2,991,157.00    3              GRANITE CONSTRUCTION COMPANY          831 724-1011  CC PREF CLAIMED
+                                                                                                    00000089
+                                                              P O BOX 50085                     FAX 831 768-4021
+                                                              WATSONVILLE CA  95077
+
+
+    IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS
+    FIRST, THEN APPLIES THE NON-SMALL BUSINESS PREFERENCE IF DOING SO WOULD NOT DISPLACE A SMALL BUSINESS FROM AWARD OF THE CONTRACT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A7304                                                                                                BID211
+            01-MEN-20-7                                                                                              PAGE  2
+            05/02/12                                                                                                 06/14/12
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     ANRAK                                                        ITEMS 8 AND 11
+             SACRAMENTO CA
+
+             CENTRAL STRIPING                                             ITEMS 4, 6 ,7, 9 AND 21 THRU 25
+             RANCHO CORDOVA CA
+
+             PACIFIC NORTHWEST                                            ITEM 19
+             STOCKTON CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A7304                                                                                                BID211
+            01-MEN-20-7                                                                                              PAGE  3
+            05/02/12                                                                                                 06/14/12
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      02     CENTRAL STRIPING                                             ITEMS 6, 7, 9 AND 20 THRU 26
+             RANCHO CORDOVA CA
+
+             COMMERCIAL POWER SWEEPING                                    SWEEPING
+             NAPA CA
+
+             DIVERSIFIED CONCRETE CUTTING                                 PRE-PAVEMENT GRINDING AND RUMBLE STRIPS
+             SPARKS NV
+
+             PACIFIC NORTHWEST                                            ITEM 19
+             STOCKTON CA
+
+             TRINITY ENGINEERING LABORATORIES                             ITEMS 10 AND 13
+             CLOVIS CA
+
+             TRUNXAI CONSTRUCTION                                         FLAGGING
+             SANTA ROSA CA
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      03     A C DIKE COMPANY                                             PLACE A C DIKE
+             LINCOLN CA
+
+             LINEAR OPTIONS                                               PAVEMENT MARKERS
+             DURHAM CA
+
+             LINEAR OPTIONS                                               REMOVE THERMAL PLASTIC, STRIPING, RUMBLE STRIP
+             DURHAM CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A7304                                                                                                BID211
+            01-MEN-20-7                C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  4
+            05/02/12                                                                                                 06/14/12
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+         1     074016      CONSTRUCTION SITE MANAGEMENT                   LS     LUMP SUM            2,500.00         2,500.00
+         2     074017      PREPARE WATER POLLUTION CONTROL                LS     LUMP SUM            4,000.00         4,000.00
+                           PROGRAM
+         3     120090      CONSTRUCTION AREA SIGNS                        LS     LUMP SUM           25,000.00        25,000.00
+         4     120100      TRAFFIC CONTROL SYSTEM                         LS     LUMP SUM          342,600.00       342,600.00
+         5     128650      PORTABLE CHANGEABLE MESSAGE SIGN               EA            2           12,000.00        24,000.00
+         6     150714      REMOVE THERMOPLASTIC TRAFFIC STRIPE            LF        2,540                3.00         7,620.00
+         7     150715      REMOVE THERMOPLASTIC PAVEMENT MARKING          SQFT        360                6.00         2,160.00
+         8     153103      COLD PLANE ASPHALT CONCRETE PAVEMENT           SQYD      1,010               15.00        15,150.00
+         9     190110      LEAD COMPLIANCE PLAN                           LS     LUMP SUM            3,000.00         3,000.00
+        10     390010      PREPAVING PROFILOGRAPH                         LS     LUMP SUM            6,000.00         6,000.00
+        11     390020      PREPAVING GRINDING DAY                         EA            3            6,500.00        19,500.00
+        12     390136      MINOR HOT MIX ASPHALT                          TON         160              122.00        19,520.00
+        13     390140      RUBBERIZED HOT MIX ASPHALT (GAP GRADED)        TON      16,800              126.00     2,116,800.00
+        14     022993      CENTERLINE RUMBLE STRIP                        STA         550               40.00        22,000.00
+        15     394060      DATA CORE                                      LS     LUMP SUM            8,000.00         8,000.00
+        16     394073      PLACE HOT MIX ASPHALT DIKE (TYPE A)            LF        5,230                1.30         6,799.00
+        17     394076      PLACE HOT MIX ASPHALT DIKE (TYPE E)            LF          110                1.30           143.00
+        18     394077      PLACE HOT MIX ASPHALT DIKE (TYPE F)            LF          430                1.30           559.00
+        19     397005      TACK COAT                                      TON          81              900.00        72,900.00
+        20     840504      4" THERMOPLASTIC TRAFFIC STRIPE                LF      216,000                 .40        86,400.00
+        21     840506      8" THERMOPLASTIC TRAFFIC STRIPE                LF        1,270                 .70           889.00
+        22     840515      THERMOPLASTIC PAVEMENT MARKING                 SQFT        360               12.00         4,320.00
+        23     840523      4" THERMOPLASTIC TRAFFIC STRIPE                LF          110                1.50           165.00
+                           (BROKEN 12-3)
+        24     840525      4" THERMOPLASTIC TRAFFIC STRIPE                LF        1,320                 .20           264.00
+                           (BROKEN 36-12)
+        25     000001      ITEM DELETED PER ADDENDUM                      LS     LUMP SUM                 .00             0.00
+        26     850111      PAVEMENT MARKER (RETROREFLECTIVE)              EA        4,640                3.50        16,240.00
+
+                                                                                                    TOTAL         2,806,529.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A7304                                                                                                BID211
+            01-MEN-20-7                S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  5
+            05/02/12                                                                                                 06/14/12
+
+       |-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD
+       |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------
+     1 |           450.00        450.00|         1,000.00       1000.00
+     2 |           850.00        850.00|         1,500.00       1500.00
+     3 |         4,450.00       4450.00|        10,000.00      10000.00
+     4 |        72,300.00      72300.00|       224,325.00     224325.00
+     5 |         1,200.00       2400.00|         7,500.00      15000.00
+     6 |             2.55       6477.00|              .90       2286.00
+     7 |             6.25       2250.00|             4.00       1440.00
+     8 |            20.00      20200.00|            25.00      25250.00
+     9 |         1,500.00       1500.00|         4,500.00       4500.00
+    10 |        22,000.00      22000.00|         5,700.00       5700.00
+    11 |        19,500.00      58500.00|        12,000.00      36000.00
+    12 |           120.00      19200.00|           150.00      24000.00
+    13 |           149.00    2503200.00|           141.00    2368800.00
+    14 |            30.00      16500.00|            57.00      31350.00
+    15 |         7,750.00       7750.00|         3,500.00       3500.00
+    16 |             2.50      13075.00|             2.50      13075.00
+    17 |             2.50        275.00|             2.50        275.00
+    18 |             2.50       1075.00|             2.50       1075.00
+    19 |         1,200.00      97200.00|           750.00      60750.00
+    20 |              .40      86400.00|              .60     129600.00
+    21 |              .70        889.00|              .80       1016.00
+    22 |            12.00       4320.00|             6.00       2160.00
+    23 |             1.50        165.00|              .50         55.00
+    24 |              .20        264.00|              .50        660.00
+    25 |              .00          0.00|              .00          0.00
+    26 |             3.00      13920.00|             6.00      27840.00
+
+   TOT                    2,955,610.00                   2,991,157.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -19,6 +19,7 @@ then install the following libraries:
 pip install pandas
 pip install tqdm
 pip install ipykernel
+pip install notebook
 ```
 or alternatively, you can install the libraries using the requirements.txt file:
 
@@ -36,3 +37,8 @@ You are now ready to run main.ipynb notebook.
 - what to do with A) and B), and A) + B)
 - how to handle AMOUNT_ABOVE_UNDER, convert UNDER to be negative?
 - some fields have quotes, for example: "TRUESDELL CORPORATION OF CALIFORNIA, INC." and STEWART ENGINEERING INC, does it need to be standardized?
+
+
+## TODO 
+Have to handle following bid items: 
+![](image-1.png)

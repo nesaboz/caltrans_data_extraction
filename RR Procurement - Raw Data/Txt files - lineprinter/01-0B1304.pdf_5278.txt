@@ -1,0 +1,346 @@
+
+
+
+
+
+                     STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                          PAGE  1
+       BID OPENING DATE    08/13/13                    IN DEL NORTE COUNTY NEAR KLAMATH                                   08/14/13
+       CONTRACT NUMBER     01-0B1304                   AT 0.6 MILE NORTH OF WILSON CREEK                        CONTRACT CODE 'E '
+       LOCATION            01-DN-101-13.3/13.3         BRIDGE                                                    19 CONTRACT ITEMS
+
+
+                                                       HMA LEVELING                              FEDERAL AID  HP21-6201-(009)
+
+
+
+                DB GOALS:   DISADVANTAGED BUSINESS ENTERPRISE -  9.0%
+   PROPOSALS ISSUED    6    FUND TOTAL   HC168             0                         TOTAL NUMBER OF WORKING DAYS     25
+
+   NUMBER OF BIDDERS  3    ENGINEERS EST        450,750.00  AMOUNT UNDER        155,995.50        PERCENT UNDER EST 34.61
+   PROGRAM ELEMENTS      RAS
+
+                 BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                 --------      -----------  ---------         -------------------------------------------------
+
+                     1           294,754.50    1              TIDEWATER CONTRACTORS INC             541 469-5341
+                                                                                                    00456696
+                                                              PO BOX 1956                       FAX 541 469-0137
+                                                              BROOKINGS OR  97415
+
+                     2           409,194.50    3              S T RHOADES CONSTRUCTION INC          530 223-9322
+                                                                                                    00930684
+                                                              P O BOX 494520                    FAX 530 223-9222
+                                                              REDDING CA  96049
+
+                     3           461,680.00    2              MERCER-FRASER COMPANY                 707 443-6371
+                                                                                                    00105709
+                                                              P O BOX 1006                      FAX 707 443-0277
+                                                              EUREKA CA  95502-1006
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0B1304                                                                                                BID211
+            01-DN-101-1                                                                                              PAGE  2
+            08/13/13                                                                                                 08/14/13
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     APPLY A LINE INC                                             PREPARE LEAD PLAN, THERMO STRIPING, PAVEMENT MARKERS
+             ANDERSON CA
+
+             M & S ENVIRONMENTAL LANDSCAPES INC                           EROSION CONTROL (DRY SEED), COMPOST
+             REDDING CA
+
+             TULLY CONSULTING GROUP                                       PREPARE WPCP
+             DIXON CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0B1304                                                                                                BID211
+            01-DN-101-1                                                                                              PAGE  3
+            08/13/13                                                                                                 08/14/13
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      03     APPLY A LINE                                                 ITEMS 1, 8, AND 16 THRU 19
+             ANDERSON CA
+
+             M&S ENVIRONMENTAL LANDSCAPES                                 ITEMS 12 AND 13
+             REDDING CA
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      02     APPLY-A-LINE                                                 ITEMS 8 AND 16 THRU 19
+             ANDERSON CA
+
+             NITTA EROSION CONTROL                                        ITEMS 12 AND 13
+             LOOMIS CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0B1304                                                                                                BID211
+            01-DN-101-1                C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  4
+            08/13/13                                                                                                 08/14/13
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+         1     070030      LEAD COMPLIANCE PLAN                           LS     LUMP SUM            1,300.00         1,300.00
+         2     120090      CONSTRUCTION AREA SIGNS                        LS     LUMP SUM            5,000.00         5,000.00
+         3     120100      TRAFFIC CONTROL SYSTEM                         LS     LUMP SUM           27,000.00        27,000.00
+         4     128651      PORTABLE CHANGEABLE MESSAGE SIGN (EA)          EA            2            2,500.00         5,000.00
+         5     130100      JOB SITE MANAGEMENT                            LS     LUMP SUM            5,000.00         5,000.00
+         6     130200      PREPARE WATER POLLUTION CONTROL PROGRAM        LS     LUMP SUM              650.00           650.00
+         7     130640      TEMPORARY FIBER ROLL                           LF          940                5.00         4,700.00
+         8     150714      REMOVE THERMOPLASTIC TRAFFIC STRIPE            LF          430                3.65         1,569.50
+         9     153103      COLD PLANE ASPHALT CONCRETE PAVEMENT           SQYD        570               10.00         5,700.00
+        10     160102      CLEARING AND GRUBBING (LS)                     LS     LUMP SUM            5,000.00         5,000.00
+        11     198010      IMPORTED BORROW (CY)                           CY          130               57.00         7,410.00
+        12     210210      EROSION CONTROL (DRY SEED) (SQFT)              SQFT      6,000                 .40         2,400.00
+        13     210600      COMPOST                                        SQFT      6,000                 .80         4,800.00
+        14     390132      HOT MIX ASPHALT (TYPE A)                       TON       1,820              115.00       209,300.00
+        15     397005      TACK COAT                                      TON           2            1,000.00         2,000.00
+        16     840504      4" THERMOPLASTIC TRAFFIC STRIPE                LF        2,650                1.50         3,975.00
+        17     840506      8" THERMOPLASTIC TRAFFIC STRIPE                LF          220                3.50           770.00
+        18     840525      4" THERMOPLASTIC TRAFFIC STRIPE                LF          640                1.50           960.00
+                           (BROKEN 36-12)
+        19     850122      PAVEMENT MARKER                                EA           74               30.00         2,220.00
+                           (RETROREFLECTIVE-RECESSED)
+
+                                                                                                    TOTAL           294,754.50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0B1304                                                                                                BID211
+            01-DN-101-1                S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  5
+            08/13/13                                                                                                 08/14/13
+
+       |-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD
+       |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------
+     1 |         1,300.00       1300.00|         2,000.00       2000.00
+     2 |         2,000.00       2000.00|         5,000.00       5000.00
+     3 |        25,000.00      25000.00|        60,000.00      60000.00
+     4 |         1,000.00       2000.00|         5,000.00      10000.00
+     5 |         1,000.00       1000.00|         1,500.00       1500.00
+     6 |           600.00        600.00|         2,000.00       2000.00
+     7 |             6.00       5640.00|             5.00       4700.00
+     8 |             3.65       1569.50|             4.00       1720.00
+     9 |             8.00       4560.00|            25.00      14250.00
+    10 |        10,000.00      10000.00|        10,000.00      10000.00
+    11 |            80.00      10400.00|           105.00      13650.00
+    12 |              .40       2400.00|              .25       1500.00
+    13 |              .80       4800.00|             2.00      12000.00
+    14 |           180.00     327600.00|           170.00     309400.00
+    15 |         1,200.00       2400.00|         1,400.00       2800.00
+    16 |             1.50       3975.00|             2.00       5300.00
+    17 |             3.50        770.00|             4.00        880.00
+    18 |             1.50        960.00|             2.00       1280.00
+    19 |            30.00       2220.00|            50.00       3700.00
+
+   TOT                      409,194.50                     461,680.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

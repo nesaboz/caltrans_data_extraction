@@ -1,0 +1,346 @@
+
+
+
+
+
+                     STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                          PAGE  1
+       BID OPENING DATE    04/10/12                    IN HUMBOLDT COUNTY AT VARIOUS                                      04/12/12
+       CONTRACT NUMBER     01-0A4004                   LOCATIONS                                                CONTRACT CODE 'E '
+       LOCATION            01-HUM-0999-VAR                                                                       29 CONTRACT ITEMS
+
+
+                                                       BRIDGE DECK REPAIR                        FEDERAL AID  NONE
+
+
+
+                DVBE GOALS: DISABLED VETERANS BUSINESS ENTERPRISES -  3.0%
+   PROPOSALS ISSUED    9    FUND TOTAL   HA21              0                         TOTAL NUMBER OF WORKING DAYS    110
+
+   NUMBER OF BIDDERS  3    ENGINEERS EST      1,023,384.69  AMOUNT UNDER         14,082.69        PERCENT UNDER EST  1.38
+   PROGRAM ELEMENTS      RAS
+
+                 BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                 --------      -----------  ---------         -------------------------------------------------
+
+                     1         1,009,302.00    3              AMERICAN CIVIL CONSTRUCTORS           707 746-8028  NSB PREF CLAIMED
+                                                              WEST COAST INC                        00526319
+                                                              3701 MALLARD DRIVE                FAX 707 747-0593
+                                                              BENICIA CA  94510
+
+                     2         1,025,319.50    2              J F SHEA CONSTRUCTION INC             530 246-4292  NSB PREF CLAIMED
+                                                                                                    00769989
+                                                              P O BOX 494519                    FAX 530 246-9940
+                                                              REDDING CA  96049
+
+                     3         1,099,242.00    1              MYERS AND SONS CONSTRUCTION LP        916 649-4504  SB PREF CLAIMED
+                                                                                                    00944155
+                                                              2554 MILLCREEK DRIVE              FAX 916 920-2246   BID IS OVER SBP
+                                                              SACRAMENTO CA  95833                                PREFERENCE LIMITS
+
+
+    IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS
+    FIRST, THEN APPLIES THE NON-SMALL BUSINESS PREFERENCE IF DOING SO WOULD NOT DISPLACE A SMALL BUSINESS FROM AWARD OF THE CONTRACT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A4004                                                                                                BID211
+            01-HUM-0999                                                                                              PAGE  2
+            04/10/12                                                                                                 04/12/12
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      03     CHRISP COMPANY                                               ITEMS 7, 13 AND 25 THRU 28
+             WOODLAND CA
+
+             GENI                                                         ITEMS 1, 2 AND 24
+             FOUNTAIN VALLEY CA
+
+             HIGHWAY SPECIALTY COMPANY                                    ITEM 4
+             PALO CEDRO CA
+
+             KERNEN CONSTRUCTION                                          ITEMS 9 AND 14
+             BLUE LAKE CA
+
+             TITAN DVBE                                                   ITEM 5
+             REDDING CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A4004                                                                                                BID211
+            01-HUM-0999                                                                                              PAGE  3
+            04/10/12                                                                                                 04/12/12
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      02     CHRISP COMPANY                                               ITEMS 5, 7, 13, AND 25 THRU 28
+             WOODLAND CA
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     ANRAK CONPORATION                                            REMOVE AC SURFACE
+             SACRAMENTO CA
+
+             CHRISP COMPANY                                               STRIPING AND MARKERS
+             WOODLAND CA
+
+             DARREN TAYLOR CONSTRUCTION                                   COLD PLANE/HMA
+             ANDERSON CA
+
+             HIGHWAY SPECIALITIES COMPANY                                 CONSTRUCTION AREA SIGNS
+             SANTA ROSA CA
+
+             T & G CONSTRUCTION INC                                       PREPARE BRIDGE DECK
+             YUBA CITY CA
+
+             TITAN DVBE                                                   TRAFFIC CONTROL
+             REDDING CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A4004                                                                                                BID211
+            01-HUM-0999                C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  4
+            04/10/12                                                                                                 04/12/12
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+         1     074016      CONSTRUCTION SITE MANAGEMENT                   LS     LUMP SUM            1,000.00         1,000.00
+         2     074017      PREPARE WATER POLLUTION CONTROL                LS     LUMP SUM            2,000.00         2,000.00
+                           PROGRAM
+         3     074042      TEMPORARY CONCRETE WASHOUT (PORTABLE)          LS     LUMP SUM            4,000.00         4,000.00
+         4     120090      CONSTRUCTION AREA SIGNS                        LS     LUMP SUM           15,000.00        15,000.00
+         5     120100      TRAFFIC CONTROL SYSTEM                         LS     LUMP SUM          125,000.00       125,000.00
+         6     128650      PORTABLE CHANGEABLE MESSAGE SIGN               LS     LUMP SUM            6,000.00         6,000.00
+         7     150714      REMOVE THERMOPLASTIC TRAFFIC STRIPE            LF        2,000                1.20         2,400.00
+         8     150857      REMOVE ASPHALT CONCRETE SURFACING              SQFT     52,191                1.50        78,286.50
+         9     153103      COLD PLANE ASPHALT CONCRETE PAVEMENT           SQYD      2,308               21.00        48,468.00
+        10     153223      REMOVE UNSOUND CONCRETE                        CF          265               60.00        15,900.00
+        11     153225      PREPARE CONCRETE BRIDGE DECK SURFACE           SQFT     65,258                 .20        13,051.60
+        12     043664      RECONSTRUCT EXPANSION GRID                     LS     LUMP SUM           35,000.00        35,000.00
+        13     190110      LEAD COMPLIANCE PLAN                           LS     LUMP SUM            2,000.00         2,000.00
+        14     390132      HOT MIX ASPHALT (TYPE A)                       TON         320              250.00        80,000.00
+        15     511118      CLEAN EXPANSION JOINT                          LF          843               14.00        11,802.00
+        16     511124      RAPID SETTING CONCRETE PATCH                   CF          265               10.00         2,650.00
+        17     515041      FURNISH POLYESTER CONCRETE OVERLAY             CF        3,550               80.00       284,000.00
+        18 (F) 515042      PLACE POLYESTER CONCRETE OVERLAY               SQFT     35,503                3.00       106,509.00
+        19     519081      JOINT SEAL (MR 1/2")                           LF          599               22.00        13,178.00
+        20     519088      JOINT SEAL (MR 1")                             LF           90               42.00         3,780.00
+        21     519091      JOINT SEAL (MR 1 1/2")                         LF          154               52.00         8,008.00
+        22 (F) 540102      TREAT BRIDGE DECK                              SQFT     29,755                 .50        14,877.50
+        23     540108      FURNISH BRIDGE DECK TREATMENT MATERIAL         GAL         331               60.00        19,860.00
+        24     043665      PUBLIC SAFETY PLAN                             LS     LUMP SUM            5,000.00         5,000.00
+        25     840504      4" THERMOPLASTIC TRAFFIC STRIPE                LF        8,540                1.10         9,394.00
+        26     840525      4" THERMOPLASTIC TRAFFIC STRIPE                LF        1,070                1.10         1,177.00
+                           (BROKEN 36-12)
+        27     850101      PAVEMENT MARKER (NON-REFLECTIVE)               EA          110                3.10           341.00
+        28     850111      PAVEMENT MARKER (RETROREFLECTIVE)              EA          200                3.10           620.00
+        29     999990      MOBILIZATION                                   LS     LUMP SUM           99,999.40        99,999.40
+
+                                                                                                    TOTAL         1,009,302.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A4004                                                                                                BID211
+            01-HUM-0999                S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  5
+            04/10/12                                                                                                 04/12/12
+
+       |-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD
+       |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------
+     1 |         1,500.00       1500.00|         2,000.00       2000.00
+     2 |         1,500.00       1500.00|         2,500.00       2500.00
+     3 |         1,500.00       1500.00|           500.00        500.00
+     4 |        15,000.00      15000.00|        20,000.00      20000.00
+     5 |        70,000.00      70000.00|        75,000.00      75000.00
+     6 |         7,000.00       7000.00|        10,000.00      10000.00
+     7 |             4.00       8000.00|             1.25       2500.00
+     8 |             3.00     156573.00|              .75      39143.25
+     9 |            15.00      34620.00|             6.00      13848.00
+    10 |           115.00      30475.00|            25.00       6625.00
+    11 |              .50      32629.00|              .25      16314.50
+    12 |        15,000.00      15000.00|        85,000.00      85000.00
+    13 |         1,500.00       1500.00|         2,000.00       2000.00
+    14 |           265.00      84800.00|           375.00     120000.00
+    15 |            20.00      16860.00|            25.00      21075.00
+    16 |            35.00       9275.00|            75.00      19875.00
+    17 |            75.00     266250.00|           105.00     372750.00
+    18 |             1.50      53254.50|             3.00     106509.00
+    19 |            40.00      23960.00|            20.00      11980.00
+    20 |            80.00       7200.00|            25.00       2250.00
+    21 |            82.00      12628.00|            55.00       8470.00
+    22 |             1.00      29755.00|              .35      10414.25
+    23 |            56.00      18536.00|           105.00      34755.00
+    24 |         1,500.00       1500.00|         2,000.00       2000.00
+    25 |             1.80      15372.00|             1.30      11102.00
+    26 |             1.60       1712.00|             1.30       1391.00
+    27 |            12.00       1320.00|             4.00        440.00
+    28 |            13.00       2600.00|             4.00        800.00
+    29 |       105,000.00     105000.00|       100,000.00     100000.00
+
+   TOT                    1,025,319.50                   1,099,242.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

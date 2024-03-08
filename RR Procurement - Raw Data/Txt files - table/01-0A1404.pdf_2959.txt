@@ -1,0 +1,202 @@
+                      STATE    OF   CALIFORNIA                     B   I  D        S  U  M   M     A  R  Y                   DEPARTMENT  OF   TRANSPORTATION                 BID211
+
+                                                                                                                                                                             PAGE      1
+
+BID      OPENING     DATE      05/04/11                                   IN  MENDOCINO            COUNTY        ON  STATE                                                   05/10/11
+
+CONTRACT     NUMBER            01-0A1404                                  HIGHWAY        IN  MENDOCINO           COUNTY                                          CONTRACT    CODE  'D     '
+
+LOCATION                       01-MEN-128-0.0/11.6                        NEAR     NAVARRO         FROM      ROUTE    1  TO  FLYNN                                16  CONTRACT     ITEMS
+
+                                                                          CREEK       BRIDGE
+
+                                                                          RUBBERIZED         HMA      OVERLAY                                 FEDERAL  AID  NONE
+
+             DVBE     GOALS:        DISABLED   VETERANS    BUSINESS       ENTERPRISES           -     3.0%
+
+PROPOSALS    ISSUED         5       FUND  TOTAL       HM1                       0                                            TOTAL    NUMBER  OF  WORKING   DAYS      40
+
+NUMBER   OF  BIDDERS     3     ENGINEERS       EST         2,144,993.00               AMOUNT       OVER                  418,517.00           PERCENT  OVER      EST  19.51
+
+PROGRAM  ELEMENTS              RAS
+
+             BID      RANK                BID  TOTAL       BIDDER  ID                 BIDDER          INFORMATION           (NAME/ADDRESS/LOCATION)
+
+             --------               -----------            ---------                  -------------------------------------------------
+
+                      1             2,563,510.00           1                          ARGONAUT           CONSTRUCTORS                             707  542-4862   SB  PREF   CLAIMED
+
+                                                                                                                                                  00171432
+
+                                                                                      P  O   BOX      639                                FAX      707  542-4897
+
+                                                                                      SANTA        ROSA      CA      95401
+
+                      2             2,577,417.50           3                          TEAM      GHILOTTI         INC                              707  763-8700   SB  PREF   CLAIMED
+
+                                                                                                                                                  00895384
+
+                                                                                      2531      PETALUMA         BOULEVARD   S           FAX      707  763-8711
+
+                                                                                      PETALUMA           CA      94952
+
+                      3             2,621,882.50           2                          GRANITE         CONSTRUCTION           COMPANY              831  724-1011   SB  PREF   CLAIMED
+
+                                                                                                                                                  00000089
+
+                                                                                      P  O   BOX      50085                              FAX      831  768-4021
+
+                                                                                      WATSONVILLE            CA      95077
+            01-0A1404                                                                                                                          BID211
+
+            01-MEN-128                                                                                                                         PAGE     2
+
+            05/04/11                                                                                                                           05/10/11
+
+                                              L  I  S  T  O  F  S  U  B  C  O  N  T  R  A  C   T  O   R   S
+
+BIDDER  ID  NAME   AND  ADDRESS                                                   DESCRIPTION         OF  PORTION   OF  WORK    SUBCONTRACTED
+
+_________   ____________________________________________________________          ____________________________________________________________
+
+01          APPLY-A-LINE                                                          ITEMS    8,     13  AND    16     (PARTIAL),  ITEMS  6,  14  AND  15
+
+            ANDERSON    CA
+
+            GLOBAL    ENVIRONMENTAL  NETWORK                                      ITEMS    1,     2,  5   AND    7  (PARTIAL)
+
+            OAKLAND     CA
+
+            KENTS                                                                 ITEMF    12
+
+            STOCKTON    CA
+            01-0A1404                                                                                                                               BID211
+
+            01-MEN-128                                                                                                                              PAGE    3
+
+            05/04/11                                                                                                                                05/10/11
+
+                                        L  I  S  T  O  F  S  U  B  C      O  N  T  R  A     C   T     O  R    S
+
+BIDDER  ID  NAME   AND  ADDRESS                                                 DESCRIPTION              OF   PORTION      OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________        ____________________________________________________________
+
+03          APPLY-A-LINE                                                        ITEMS       6,     8     AND     13  THRU  16
+
+            ANDERSON    CA
+
+            KENT'S     OIL                                                      ITEM     12
+
+            STOCKTON    CA
+
+BIDDER  ID  NAME   AND  ADDRESS                                                 DESCRIPTION              OF   PORTION      OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________        ____________________________________________________________
+
+02          APPLY   A   LINE                                                    ITEMS       6,     8     AND     13  THRU  16
+
+            ANDERSON    CA
+
+            HIGHWAY     SPECIALITY  CO                                          ITEM     3
+
+            WINDSOR     CA
+      01-0A1404                                                                                                                              BID211
+
+      01-MEN-128                C   O  N    T  R  A  C  T  P     R  O  P  O  S  A  L  O     F   L  O  W       B  I  D  D  E  R               PAGE    4
+
+      05/04/11                                                                                                                               05/10/11
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+ITEM  ITEM                                                                            UNIT  OF        ESTIMATED
+
+NO.   CODE                      ITEM      DESCRIPTION                                 MEASURE         QUANTITY                  BID          AMOUNT
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+1     074016      CONSTRUCTION     SITE     MANAGEMENT                                LS        LUMP     SUM                    2,500.00     2,500.00
+
+2     074017      PREPARE   WATER   POLLUTION        CONTROL                          LS        LUMP     SUM                    4,000.00     4,000.00
+
+                  PROGRAM
+
+3     120090      CONSTRUCTION     AREA     SIGNS                                     LS        LUMP     SUM                    25,000.00    25,000.00
+
+4     120100      TRAFFIC   CONTROL    SYSTEM                                         LS        LUMP     SUM                 332,000.00      332,000.00
+
+5     128650      PORTABLE    CHANGEABLE       MESSAGE     SIGN                       EA                 3                      5,000.00     15,000.00
+
+6     150714      REMOVE   THERMOPLASTIC          TRAFFIC  STRIPE                     LF              2,280                            2.00  4,560.00
+
+7     153103      COLD  PLANE  ASPHALT         CONCRETE    PAVEMENT                   SQYD               360                    20.00        7,200.00
+
+8     190110      LEAD  COMPLIANCE     PLAN                                           LS        LUMP     SUM                    5,000.00     5,000.00
+
+9     198007      IMPORTED    MATERIAL      (SHOULDER      BACKING)                   TON                630                    72.00        45,360.00
+
+10    390140      RUBBERIZED   HOT     MIX     ASPHALT     (GAP  GRADED)              TON          16,500                       118.00       1,947,000.00
+
+11    394060      DATA  CORE                                                          LS        LUMP     SUM                    10,000.00    10,000.00
+
+12    397005      TACK  COAT                                                          TON                75                     500.00       37,500.00
+
+13    840504      4"  THERMOPLASTIC       TRAFFIC       STRIPE                        LF           240,000                             .45   108,000.00
+
+14    840506      8"  THERMOPLASTIC       TRAFFIC       STRIPE                        LF              1,140                            1.00  1,140.00
+
+15    840525      4"  THERMOPLASTIC       TRAFFIC       STRIPE                        LF              3,700                            .35   1,295.00
+
+                  (BROKEN   36-12)
+
+16    850111      PAVEMENT    MARKER   (RETROREFLECTIVE)                              EA              5,130                            3.50  17,955.00
+
+                                                                                                                                TOTAL        2,563,510.00
+        01-0A1404                                                                                                        BID211
+
+        01-MEN-128                      S  U  M  M  A  R  Y  O      F  R  E    M  A  I  N  I  N  G  B  I  D  D  E  R  S  PAGE    5
+
+        05/04/11                                                                                                         05/10/11
+
+     |-------------------------------|-------------------------------
+
+ITEM|             SECOND                |                    THIRD
+
+     |  BID               AMOUNT        |           BID                AMOUNT
+
+     |-------------------------------|-------------------------------
+
+1    |       200.00               200.00|              6,500.00              6500.00
+
+2    |       750.00               750.00|              1,200.00              1200.00
+
+3    |  3,000.00          3000.00|                     4,500.00              4500.00
+
+4    |  24,500.00         24500.00|                 112,595.00            112595.00
+
+5    |  1,200.00          3600.00|                     4,500.00           13500.00
+
+6    |             2.00   4560.00|                           2.00            4560.00
+
+7    |             5.00   1800.00|                           28.00        10080.00
+
+8    |  1,100.00          1100.00|                     1,100.00              1100.00
+
+9    |            75.00   47250.00|                          88.00        55440.00
+
+10   |       139.50       2301750.00|                     136.00       2244000.00
+
+11   |  3,000.00          3000.00|                     3,500.00              3500.00
+
+12   |       880.00       66000.00|                       600.00          45000.00
+
+13   |              .42   100800.00|                         .42          100800.00
+
+14   |             1.00   1140.00|                           1.00            1140.00
+
+15   |              .35   1295.00|                           .35             1295.00
+
+16   |             3.25   16672.50|                          3.25         16672.50
+
+TOT                       2,577,417.50                              2,621,882.50
+

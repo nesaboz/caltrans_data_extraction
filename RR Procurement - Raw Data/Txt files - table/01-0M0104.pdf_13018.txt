@@ -1,0 +1,1527 @@
+                                               State of California Department of Transportation
+
+                                                                  Bid Summary
+
+Bid Opening Date: 12/14/2022                                                                                                                Page 1
+
+Contract Number:    01-0M0104                                                                                                             12/15/2022
+
+Project ID:         0122000075     DEL NORTE COUNTY NEAR HIOUCHI FROM ROUTE 199 TO ROUTE                    Contract Code:        F
+
+                                   101
+
+Location: 01-DN-197-R0.0/7.1       Micro-surfacing and replace asphalt concrete surfacing.                  Number of Items:      24
+
+DVBE - 3.0%                                                                                                 Federal Aid #1: NONE
+
+Proposals Issued:   8          Total Number of Working Days:  30  Overrun/Underrun:              79,843.80
+
+Number of Bidders:  8          Engineers Est:    1,220,493.50     % Over/Under Est:              6.54%
+
+Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Address/Location)
+
+1                   $1,300,337.30  VC0000019628  DRYCO CONSTRUCTION INC                                     Phone  (916)381-8033
+
+                                                 9390 ELDER CREEK ROAD                                      CSLB#  540379         NSB PREF
+
+                                                 SACRAMENTO CA     95829                                                          CLAIMED
+
+2                   $1,389,815.80  VC1400003400  AMERICAN PAVEMENT SYSTEMS, INC.                            Phone  (209)522-2277
+
+                                                 1012 11TH STREET                                           CSLB#  00943792       CC PREF CLAIMED
+
+                                                 MODESTO CA       95354
+
+3                   $1,395,120.00  VC1300003799  VSS INTERNATIONAL, INC.                                    Phone  (916)373-1500
+
+                                                 3785 CHANNEL DRIVE                                         CSLB#  00293727       NSB PREF
+
+                                                 WEST SACRAMENTO         CA CA  95624                                             CLAIMED
+
+                                                                                                                                  BID IS OVER NSB
+
+                                                                                                                                  PREFERENCE
+
+                                                                                                                                  LIMITS
+
+4                   $1,430,031.00  VC0000101052  INTERMOUNTAIN SLURRY SEAL, INC.                            Phone  (831)724-1011
+
+                                                 585 WEST BEACH STREET                                      CSLB#  00462443       CC PREF CLAIMED
+
+                                                 WATSONVILLE CA    95076
+Bid Opening Date: 12/14/2022                                                                                                Page 2
+
+Contract Number:  01-0M0104                                                                                                 12/15/2022
+
+5                 $1,465,366.00  VC0000004012  TIDEWATER CONTRACTORS, INC.  Phone  (541)469-5341
+
+                                               16156 Hwy 101 South          CSLB#  00456696       CC PREF CLAIMED
+
+                                               Brookings OR  97415
+
+6                 $1,512,120.00  VC0000021841  PAVEMENT COATINGS CO.        Phone  (714)826-3011
+
+                                               10240 SAN SEVAINE WAY        CSLB#  00303609       CC PREF CLAIMED
+
+                                               JURUPA VALLEY CA     91752
+
+7                 $1,607,007.00  VC0000016849  SIERRA NEVADA CONSTRUCTION   Phone  (775)355-0420
+
+                                               2055 E. GREG STREET          CSLB#  00593393       CC PREF CLAIMED
+
+                                               SPARKS NV     89432
+
+8                 $1,799,986.00  VC0000015345  NORTHWEST PAVING             Phone  (530)246-4388
+
+                                               8115 SECLUDED VALLEY DRIVE   CSLB#  00822126       SB PREF CLAIMED
+
+                                               REDDING CA    96001                                BID IS OVER SB
+
+                                                                                                  PREFERENCE
+
+                                                                                                  LIMITS
+
+IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS  FIRST,
+
+THEN APPLIES THE NON-SMALL BUSINESS PREFERENCE IF DOING SO WOULD NOT DISPLACE A SMALL BUSINESS FROM AWARD OF THE CONTRACT.
+Bid Opening Date:  12/14/2022                                                                                                Page 3
+
+Contract Number:   01-0M0104                                                                                                 12/15/2022
+
+                                                          Contract Proposal of Low Bidder
+
+Item  Item                                       Item Description                           Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                  Measure  Quantity
+
+0001  070030       LEAD COMPLIANCE PLAN                                                     LS       LUMP SUM   1,537.00     1,537.00
+
+0002  090100       TIME-RELATED OVERHEAD (WDAY)                                             WDAY     30.0       2,150.00     64,500.00
+
+0003  120090       CONSTRUCTION AREA SIGNS                                                  LS       LUMP SUM   8,162.00     8,162.00
+
+0004  120100       TRAFFIC CONTROL SYSTEM                                                   LS       LUMP SUM   81,740.00    81,740.00
+
+0005  120149       TEMPORARY PAVEMENT MARKING (PAINT)                                       SQFT     860.0           5.04    4,334.40
+
+0006  010413       PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS (LS)                          LS       LUMP SUM   1,060.00     1,060.00
+
+0007  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                    LS       LUMP SUM   2,650.00     2,650.00
+
+0008  130100       JOB SITE MANAGEMENT                                                      LS       LUMP SUM   5,000.00     5,000.00
+
+0009  130200       PREPARE WATER POLLUTION CONTROL PROGRAM                                  LS       LUMP SUM   2,500.00     2,500.00
+
+0010  148005       NOISE MONITORING                                                         LS       LUMP SUM   5,000.00     5,000.00
+
+0011  190185       SHOULDER BACKING                                                         TON      490.0           161.71  79,237.90
+
+0012  378000       MICRO-SURFACING                                                          TON      2,000.0         272.00  544,000.00
+
+0013  390095       REPLACE ASPHALT CONCRETE SURFACING                                       CY       250.0           693.53  173,382.50
+
+0014  810120       REMOVE PAVEMENT MARKER                                                   EA       3,050.0         3.18    9,699.00
+
+0015  810250       PAVEMENT MARKER (RETROREFLECTIVE-RECESSED)                               EA       3,050.0         11.40   34,770.00
+
+0016  840516       THERMOPLASTIC PAVEMENT MARKING (ENHANCED WET NIGHT VISIBILITY)           SQFT     1,270.0         11.66   14,808.20
+
+0017  840619       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN  LF       1,640.0         1.17    1,918.80
+
+                   12-3)
+
+0018  840623       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN  LF       1,220.0         1.17    1,427.40
+
+                   36-12)
+
+0019  846007       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)          LF       137,000.0       1.22    167,140.00
+
+0020  846009       8" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)          LF       1,990.0         2.92    5,810.80
+
+0021  846030       REMOVE THERMOPLASTIC TRAFFIC STRIPE                                      LF       140,000.0       0.48    67,200.00
+
+0022  846035       REMOVE THERMOPLASTIC PAVEMENT MARKING                                    SQFT     1,270.0         6.89    8,750.30
+
+0023  846053       12" RUMBLE STRIP (ASPHALT CONCRETE PAVEMENT-SINUSOIDAL)                  STA      170.0           47.70   8,109.00
+Bid Opening Date: 12/14/2022                                                                                    Page 4
+
+Contract Number:  01-0M0104                                                                                     12/15/2022
+
+                                Contract Proposal of Low Bidder
+
+Item  Item                      Item Description                                  Unit of  Estimated  Bid       Amount
+
+No.   Code                                                                        Measure  Quantity
+
+0024  870009      MAINTAINING EXISTING TRAFFIC MANAGEMENT SYSTEM ELEMENTS DURING  LS       LUMP SUM   7,600.00  7,600.00
+
+                  CONSTRUCTION
+
+                                                                                                      Total     1,300,337.30
+Bid Opening Date: 12/14/2022                                                                                           Page 5
+
+Contract Number:  01-0M0104                                                                                            12/15/2022
+
+                                                 Summary of Remaining   Bidders
+
+                  Second                         Third                           Fourth                        Fifth
+
+Item    Bid                   Amount        Bid          Amount         Bid                Amount         Bid          Amount
+
+0001              1,520.00    1,520.00      6,551.50     6,551.50       10,000.00          10,000.00      1,450.00     1,450.00
+
+0002              1,000.00    30,000.00     2,000.00     60,000.00               100.00    3,000.00            500.00  15,000.00
+
+0003              9,345.00    9,345.00      14,523.00    14,523.00      25,000.00          25,000.00      15,000.00    15,000.00
+
+0004    152,000.00            152,000.00    273,580.10   273,580.10     620,000.00         620,000.00     540,000.00   540,000.00
+
+0005              5.00        4,300.00           5.08    4,368.80                5.00      4,300.00            4.75    4,085.00
+
+0006              3,200.00    3,200.00      4,782.00     4,782.00       15,000.00          15,000.00      22,000.00    22,000.00
+
+0007              5,600.00    5,600.00      15,482.00    15,482.00      15,000.00          15,000.00      10,000.00    10,000.00
+
+0008              10,000.00   10,000.00     21,420.00    21,420.00      10,000.00          10,000.00      10,000.00    10,000.00
+
+0009              720.00      720.00        5,284.00     5,284.00                5,000.00  5,000.00       5,000.00     5,000.00
+
+0010              2,375.00    2,375.00      6,350.00     6,350.00                5,000.00  5,000.00       10,000.00    10,000.00
+
+0011              105.00      51,450.00          163.24  79,987.60               100.00    49,000.00           100.00  49,000.00
+
+0012              331.00      662,000.00         202.00  404,000.00              100.00    200,000.00          165.00  330,000.00
+
+0013              525.00      131,250.00         700.07  175,017.50              500.00    125,000.00          500.00  125,000.00
+
+0014              3.15        9,607.50           3.21    9,790.50                3.00      9,150.00            10.00   30,500.00
+
+0015              11.29       34,434.50          11.50   35,075.00               10.75     32,787.50           10.75   32,787.50
+
+0016              11.55       14,668.50          11.77   14,947.90               11.00     13,970.00           11.00   13,970.00
+
+0017              1.16        1,902.40           1.18    1,935.20                1.10      1,804.00            1.10    1,804.00
+
+0018              1.16        1,415.20           1.18    1,439.60                1.10      1,342.00            1.10    1,342.00
+
+0019              1.21        165,770.00         1.23    168,510.00              1.15      157,550.00          1.15    157,550.00
+
+0020              2.89        5,751.10           2.94    5,850.60                2.75      5,472.50            2.75    5,472.50
+
+0021              0.47        65,800.00          0.48    67,200.00               0.45      63,000.00           0.45    63,000.00
+
+0022              6.83        8,674.10           6.96    8,839.20                6.50      8,255.00            6.50    8,255.00
+
+0023              47.25       8,032.50           48.15   8,185.50                120.00    20,400.00           45.00   7,650.00
+
+0024              10,000.00   10,000.00     2,000.00     2,000.00       30,000.00          30,000.00      6,500.00     6,500.00
+
+Total:                       $1,389,815.80               $1,395,120.00                     $1,430,031.00               $1,465,366.00
+Bid Opening Date: 12/14/2022                                                                              Page 6
+
+Contract Number:  01-0M0104                                                                               12/15/2022
+
+                                                 Summary of Remaining   Bidders
+
+                  Sixth                          Seventh                         Eight
+
+Item    Bid                   Amount        Bid           Amount        Bid                Amount
+
+0001              1,600.00    1,600.00      4,000.00      4,000.00               1,500.00  1,500.00
+
+0002              500.00      15,000.00          500.00   15,000.00              2,500.00  75,000.00
+
+0003              20,000.00   20,000.00     10,000.00     10,000.00              8,900.00  8,900.00
+
+0004    258,000.00            258,000.00    418,261.50    418,261.50    325,000.00         325,000.00
+
+0005              5.00        4,300.00           5.30     4,558.00               4.75      4,085.00
+
+0006              5,500.00    5,500.00      3,600.00      3,600.00               3,000.00  3,000.00
+
+0007              10,000.00   10,000.00     6,800.00      6,800.00               4,800.00  4,800.00
+
+0008              7,500.00    7,500.00      6,500.00      6,500.00      15,000.00          15,000.00
+
+0009              1,250.00    1,250.00      2,000.00      2,000.00               2,500.00  2,500.00
+
+0010              1,500.00    1,500.00      2,000.00      2,000.00               3,500.00  3,500.00
+
+0011              225.00      110,250.00         180.00   88,200.00              153.00    74,970.00
+
+0012              281.00      562,000.00         250.00   500,000.00             406.00    812,000.00
+
+0013              750.00      187,500.00         770.00   192,500.00             655.00    163,750.00
+
+0014              3.15        9,607.50           3.50     10,675.00              3.00      9,150.00
+
+0015              11.36       34,648.00          13.00    39,650.00              10.75     32,787.50
+
+0016              11.50       14,605.00          13.00    16,510.00              11.00     13,970.00
+
+0017              1.15        1,886.00           1.25     2,050.00               1.10      1,804.00
+
+0018              1.15        1,403.00           1.25     1,525.00               1.10      1,342.00
+
+0019              1.20        164,400.00         1.25     171,250.00             1.15      157,550.00
+
+0020              2.90        5,771.00           3.25     6,467.50               2.75      5,472.50
+
+0021              0.48        67,200.00          0.50     70,000.00              0.45      63,000.00
+
+0022              6.85        8,699.50           8.00     10,160.00              6.50      8,255.00
+
+0023              100.00      17,000.00          90.00    15,300.00              45.00     7,650.00
+
+0024              2,500.00    2,500.00      10,000.00     10,000.00              5,000.00  5,000.00
+
+Total:                       $1,512,120.00               $1,607,007.00                     $1,799,986.00
+01-0M0104                                                                                                               PAGE S1
+
+01-DN-197-R0.0/7.1                                                                                  12/15/2022
+
+12/14/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000004012        INTERMOUNTAIN SLURRY SEAL, INC                          ITEM 4 (25%)
+
+                    RENO NV                         462443
+
+VC0000004012        INTERMOUNTAIN SLURRY SEAL, INC                          ITEM 12 (100%)
+
+                    RENO NV                         462443
+
+VC0000004012        INTERMOUNTAIN SLURRY SEAL, INC                          ITEM 14 (100%)
+
+                    RENO NV                         462443
+
+VC0000004012        INTERMOUNTAIN SLURRY SEAL, INC                          TRAFFIC CONTROL
+
+                    RENO NV                         462443
+
+VC0000004012        INTERMOUNTAIN SLURRY SEAL, INC                          MICROSURFACING
+
+                    RENO NV                         462443
+
+VC0000004012        INTERMOUNTAIN SLURRY SEAL, INC                          REMOVE PAVEMENT MARKER
+
+                    RENO NV                         462443
+
+VC0000004012        SPENCER ELECTRIC INC                                    ITEM 24 (100%)
+
+                    CUTTEN CA                       917603
+
+VC0000004012        SPENCER ELECTRIC INC                                    MAINTAINING EXISTING TRAFFIC MNGMNT SYSTEM
+
+                    CUTTEN CA                       917603
+
+VC0000004012        SPECIALIZED PAVEMENT MARKING                            ITEM 1 (100%)
+
+                    ANDERSON CA                     854894
+
+VC0000004012        SPECIALIZED PAVEMENT MARKING                            ITEM 5 (100%)
+
+                    ANDERSON CA                     854894
+
+VC0000004012        SPECIALIZED PAVEMENT MARKING                            ITEM 15 (100%)
+
+                    ANDERSON CA                     854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                  PAGE S2
+
+01-DN-197-R0.0/7.1                                                                                         12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          ITEM 16 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          ITEM 17 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          LEAD COMPLIANCE
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          TEMPORARY PAINT
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          PAVEMENT MARKERS RECESSED
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          THERMO PM WET NIGHT
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          6" THERMO STRIPE BROKEN 12-3
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          ITEM 18 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          ITEM 19 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          ITEM 20 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          ITEM 21 (100%)
+
+                    ANDERSON CA                    854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                      PAGE S3
+
+01-DN-197-R0.0/7.1                                                                                             12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          ITEM 22 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          6" THERMO STRIPE BROKEN 36-12
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          6" THERMO STRIPE
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          8" THERMO STRIPE
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          REMOVE THERMO STRIPE
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          REMOVE THERMO PM
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          ITEM 23 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000004012        SPECIALIZED PAVEMENT  MARKING                          12" RUMBLE STRIPE IN AC SINUSOIDAL
+
+                    ANDERSON CA                    854894
+01-0M0104                                                                                     PAGE S4
+
+01-DN-197-R0.0/7.1                                                                            12/15/2022
+
+12/14/2022
+
+                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000015345        SPM                                       ITEM 1 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 5 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 14 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 15 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 16 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       LEAD PLAN
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       TEMP PM
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       REMOVE PAVEMENT MARKER
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       PAVEMENT MARKER RECESSED
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       THERMO PM
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 17 (100%)
+
+                    ANDERSON CA       854894
+
+CONTINUED ON  NEXT PAGE
+01-0M0104                                                                                       PAGE S5
+
+01-DN-197-R0.0/7.1                                                                              12/15/2022
+
+12/14/2022
+
+                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000015345        SPM                                       ITEM 18 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 19 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 20 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 21 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       6" THERMO STRIPE
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       6" THERMO STRIPE
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       6" THERMO STRIPE
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       8" THERMO STRIPE
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       REMOVE THERMO STRIPE
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 22 (100%)
+
+                    ANDERSON CA       854894
+
+VC0000015345        SPM                                       ITEM 23 (100%)
+
+                    ANDERSON CA       854894
+
+CONTINUED ON  NEXT PAGE
+01-0M0104                                                                                                PAGE S6
+
+01-DN-197-R0.0/7.1                                                                                       12/15/2022
+
+12/14/2022
+
+                                                LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS            LICENSE NUMBER          DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
+
+VC0000015345        SPM                                                 REMOVE THERMO PM
+
+                    ANDERSON CA                 854894
+
+VC0000015345        SPM                                                 12" RUMBLE STRIPE
+
+                    ANDERSON CA                 854894
+
+VC0000015345        T AND S DVBE, INC.                                  ITEM 3 (100%)
+
+                    ANDERSON CA                 983087
+
+VC0000015345        T AND S DVBE, INC.                                  ITEM 4 (56%)
+
+                    ANDERSON CA                 983087
+
+VC0000015345        T AND S DVBE, INC.                                  ITEM 6 (100%)
+
+                    ANDERSON CA                 983087
+
+VC0000015345        T AND S DVBE, INC.                                  ITEM 7 (100%)
+
+                    ANDERSON CA                 983087
+
+VC0000015345        T AND S DVBE, INC.                                  CONSTRUCTION AREA SIGNS
+
+                    ANDERSON CA                 983087
+
+VC0000015345        T AND S DVBE, INC.                                  TRAFFIC CONTROL
+
+                    ANDERSON CA                 983087
+
+VC0000015345        T AND S DVBE, INC.                                  RADAR SIGNS
+
+                    ANDERSON CA                 983087
+
+VC0000015345        T AND S DVBE, INC.                                  MESSAGE SIGNS
+
+                    ANDERSON CA                 983087
+
+VC0000015345        DARREN TAYLOR CONSTRUCTION                          ITEM 11 (100%)
+
+                    ANDERSON CA                 903262
+
+CONTINUED ON  NEXT PAGE
+01-0M0104                                                                                                   PAGE S7
+
+01-DN-197-R0.0/7.1                                                                                          12/15/2022
+
+12/14/2022
+
+                                                LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS            LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000015345        DARREN TAYLOR CONSTRUCTION                          ITEM 13 (100%)
+
+                    ANDERSON CA                 903262
+
+VC0000015345        DARREN TAYLOR CONSTRUCTION                          SHOULDER BACKING
+
+                    ANDERSON CA                 903262
+
+VC0000015345        DARREN TAYLOR CONSTRUCTION                          REPLACE ASPHALT CONCRETE SURFACING
+
+                    ANDERSON CA                 903262
+01-0M0104                                                                                                    PAGE S8
+
+01-DN-197-R0.0/7.1                                                                                           12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 1 (48%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 5 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 14 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 15 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 16 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          LEAD COMPLIANCE PLAN
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 17 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 18 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 19 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 20 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000016849        SPECIALIZED PAVEMENT  MARKING                          ITEM 21 (100%)
+
+                    ANDERSON CA                    854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                  PAGE S9
+
+01-DN-197-R0.0/7.1                                                                                         12/15/2022
+
+12/14/2022
+
+                                                  LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS                    LICENSE NUMBER    DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
+
+VC0000016849        SPECIALIZED PAVEMENT MARKING                          ITEM 22 (100%)
+
+                    ANDERSON CA                         854894
+
+VC0000016849        SPECIALIZED PAVEMENT MARKING                          ITEM 23 (60%)
+
+                    ANDERSON CA                         854894
+
+VC0000016849        SPECIALIZED PAVEMENT MARKING                          12" RUMBLE STRIP
+
+                    ANDERSON CA                         854894
+
+VC0000016849        DARREN TAYLOR CONSTRUCTION,   INC.                    ITEM 11 (100%)
+
+                    ANDERSON CA                         903262
+
+VC0000016849        DARREN TAYLOR CONSTRUCTION,   INC.                    ITEM 13 (100%)
+
+                    ANDERSON CA                         903262
+
+VC0000016849        SPENCER ELECTRIC, INC.                                ITEM 24 (100%)
+
+                    CUTTEN CA                           917603
+
+VC0000016849        T&S, INC.                                             ITEM 3 (100%)
+
+                    REDDING CA                          983087
+
+VC0000016849        T&S, INC.                                             ITEM 4 (18.2%)
+
+                    REDDING CA                          983087
+
+VC0000016849        T&S, INC.                                             ITEM 6 (100%)
+
+                    REDDING CA                          983087
+
+VC0000016849        T&S, INC.                                             ITEM 7 (100%)
+
+                    REDDING CA                          983087
+
+VC0000016849        T&S, INC.                                             TRAFFIC CONTROL (PARTIAL)
+
+                    REDDING CA                          983087
+01-0M0104                                                     PAGE S10
+
+01-DN-197-R0.0/7.1                                            12/15/2022
+
+12/14/2022
+
+                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+01-0M0104                                                                                                   PAGE S11
+
+01-DN-197-R0.0/7.1                                                                                          12/15/2022
+
+12/14/2022
+
+                                                  LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS                   LICENSE NUMBER     DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000019628        DARREN TAYLOR CONSTRUCTION,   INC                     ITEM 11 (100%)
+
+                    ANDRESON CA                        903262
+
+VC0000019628        DARREN TAYLOR CONSTRUCTION,   INC                     ITEM 13 (100%)
+
+                    ANDRESON CA                        903262
+
+VC0000019628        DARREN TAYLOR CONSTRUCTION,   INC                     SHOULDER BACKING
+
+                    ANDRESON CA                        903262
+
+VC0000019628        DARREN TAYLOR CONSTRUCTION,   INC                     REPLACE AC SURFACING
+
+                    ANDRESON CA                        903262
+
+VC0000019628        SPECIALIZED PAVEMENT MARKING                          ITEM 1 (100%)
+
+                    ANDERSON CA                        854894
+
+VC0000019628        SPECIALIZED PAVEMENT MARKING                          ITEM 5 (100%)
+
+                    ANDERSON CA                        854894
+
+VC0000019628        SPECIALIZED PAVEMENT MARKING                          ITEM 14 (100%)
+
+                    ANDERSON CA                        854894
+
+VC0000019628        SPECIALIZED PAVEMENT MARKING                          ITEM 15-22 (100%)
+
+                    ANDERSON CA                        854894
+
+VC0000019628        SPECIALIZED PAVEMENT MARKING                          ITEM 23 (100%)
+
+                    ANDERSON CA                        854894
+
+VC0000019628        SPECIALIZED PAVEMENT MARKING                          LEAD COMPLIANCE PLAN
+
+                    ANDERSON CA                        854894
+
+VC0000019628        SPECIALIZED PAVEMENT MARKING                          TEMP PAVEMENT MARKING
+
+                    ANDERSON CA                        854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                       PAGE S12
+
+01-DN-197-R0.0/7.1                                                                                              12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000019628        SPECIALIZED PAVEMENT  MARKING                          REMOVE PAVEMENT MARKER
+
+                    ANDERSON CA                    854894
+
+VC0000019628        SPECIALIZED PAVEMENT  MARKING                          STRIPING ITEMS
+
+                    ANDERSON CA                    854894
+
+VC0000019628        SPECIALIZED PAVEMENT  MARKING                          RUMBLE STRIP AC PAVEMENT SINUSOIDAL
+
+                    ANDERSON CA                    854894
+
+VC0000019628        T AND S DVBE                                           ITEM 3 (100%)
+
+                    REDDING CA                     983087
+
+VC0000019628        T AND S DVBE                                           ITEM 4 (100%)
+
+                    REDDING CA                     983087
+
+VC0000019628        T AND S DVBE                                           ITEM 6 (100%)
+
+                    REDDING CA                     983087
+
+VC0000019628        T AND S DVBE                                           ITEM 7 (100%)
+
+                    REDDING CA                     983087
+
+VC0000019628        T AND S DVBE                                           CONSTRUCTION AREA SIGN
+
+                    REDDING CA                     983087
+
+VC0000019628        T AND S DVBE                                           TRAFFIC CONTROL SYSTEMS
+
+                    REDDING CA                     983087
+
+VC0000019628        T AND S DVBE                                           PORTABLE RADAR SPEED FEEDBACK SIGN
+
+                    REDDING CA                     983087
+
+VC0000019628        T AND S DVBE                                           PCMS
+
+                    REDDING CA                     983087
+01-0M0104                                                     PAGE S13
+
+01-DN-197-R0.0/7.1                                            12/15/2022
+
+12/14/2022
+
+                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+01-0M0104                                                                                                      PAGE S14
+
+01-DN-197-R0.0/7.1                                                                                             12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 1 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 5 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 14 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 15 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 16 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          LEAD COMPLIANCE PLAN
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          TEMPORARY PAVEMENT MARKING (PAINT)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          REMOVE PAVEMENT MARKER
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          PAVEMENT MARKER (RETROREFLECTIVE-RECESSED)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          THERMOPLASTIC PAVEMENT MARKING (ENHANCED WET
+
+                    ANDERSON CA                    854894                  NIGHT VISIBILITY)
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 17 (100%)
+
+                    ANDERSON CA                    854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                       PAGE S15
+
+01-DN-197-R0.0/7.1                                                                                              12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 18 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 19 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 20 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 21 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+                    ANDERSON CA                    854894                  NIGHT VISIBILITY) (BROKEN 12-3)
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+                    ANDERSON CA                    854894                  NIGHT VISIBILITY) (BROKEN 36-12)
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+                    ANDERSON CA                    854894                  NIGHT VISIBILITY)
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          8" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+                    ANDERSON CA                    854894                  NIGHT VISIBILITY)
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          REMOVE THERMOPLASTIC TRAFFIC STRIPE
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 22 (100%)
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          ITEM 23 (100%)
+
+                    ANDERSON CA                    854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                         PAGE S16
+
+01-DN-197-R0.0/7.1                                                                                                12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          REMOVE THERMOPLASTIC PAVEMENT MARKING
+
+                    ANDERSON CA                    854894
+
+VC0000021841        SPECIALIZED PAVEMENT  MARKING                          12" RUMBLE STRIP (ASPHALT CONCRETE PAVEMENT-
+
+                    ANDERSON CA                    854894                  SINUSOIDAL)
+
+VC0000021841        T&S DVBE, INC.                                         ITEM 3 (100%)
+
+                    REDDING CA                     983087
+
+VC0000021841        T&S DVBE, INC.                                         ITEM 4 (PARTIAL) (31.91%)
+
+                    REDDING CA                     983087
+
+VC0000021841        T&S DVBE, INC.                                         ITEM 6 (100%)
+
+                    REDDING CA                     983087
+
+VC0000021841        T&S DVBE, INC.                                         ITEM 7 (100%)
+
+                    REDDING CA                     983087
+
+VC0000021841        T&S DVBE, INC.                                         CONSTRUCTION AREA SIGNS
+
+                    REDDING CA                     983087
+
+VC0000021841        T&S DVBE, INC.                                         TRAFFIC CONTROL SYSTEM (PARTIAL)
+
+                    REDDING CA                     983087
+
+VC0000021841        T&S DVBE, INC.                                         PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS (LS)
+
+                    REDDING CA                     983087
+
+VC0000021841        T&S DVBE, INC.                                         PORTABLE CHANGEABLE MESSAGE SIGN (LS)
+
+                    REDDING CA                     983087
+
+VC0000021841        A.C. DIKE CO.                                          ITEM 11 (100%)
+
+                    LINCOLN CA                     407417
+
+CONTINUED ON  NEXT PAGE
+01-0M0104                                                                       PAGE S17
+
+01-DN-197-R0.0/7.1                                                              12/15/2022
+
+12/14/2022
+
+                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000021841        A.C. DIKE CO.                             SHOULDER BACKING
+
+                    LINCOLN CA        407417
+01-0M0104                                                                                                   PAGE S18
+
+01-DN-197-R0.0/7.1                                                                                          12/15/2022
+
+12/14/2022
+
+                                                  LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS              LICENSE NUMBER          DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000101052        SPECIALIZED PAVEMENT MARKING                          ITEM 1 (14.5%)
+
+                    ANDERSON CA                   854894
+
+VC0000101052        SPECIALIZED PAVEMENT MARKING                          ITEM 5 (95%)
+
+                    ANDERSON CA                   854894
+
+VC0000101052        SPECIALIZED PAVEMENT MARKING                          ITEM 14 (100%)
+
+                    ANDERSON CA                   854894
+
+VC0000101052        SPECIALIZED PAVEMENT MARKING                          ITEM 23 (37.5%)
+
+                    ANDERSON CA                   854894
+
+VC0000101052        SPECIALIZED PAVEMENT MARKING                          LEAD COMPLIANCE
+
+                    ANDERSON CA                   854894
+
+VC0000101052        SPECIALIZED PAVEMENT MARKING                          TEMPORARY MARKINGS
+
+                    ANDERSON CA                   854894
+
+VC0000101052        SPECIALIZED PAVEMENT MARKING                          ITEMS 14 THRU 22
+
+                    ANDERSON CA                   854894
+
+VC0000101052        SPECIALIZED PAVEMENT MARKING                          RUMBLE STRIP
+
+                    ANDERSON CA                   854894
+
+VC0000101052        TIDEWATER CONTRACTORS, INC                            ITEM 4 (4.8%)
+
+                    BOOKINGS OR                   456696
+
+VC0000101052        TIDEWATER CONTRACTORS, INC                            ITEM 11 (100%)
+
+                    BOOKINGS OR                   456696
+
+VC0000101052        TIDEWATER CONTRACTORS, INC                            ITEM 13 (100%)
+
+                    BOOKINGS OR                   456696
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                   PAGE S19
+
+01-DN-197-R0.0/7.1                                                                                          12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
+
+VC0000101052        TIDEWATER CONTRACTORS, INC                             TRAFFIC CONTROL
+
+                    BOOKINGS OR                    456696
+
+VC0000101052        TIDEWATER CONTRACTORS, INC                             SHOULDER BACKING
+
+                    BOOKINGS OR                    456696
+
+VC0000101052        TIDEWATER CONTRACTORS, INC                             REPLACE AC SURFACING
+
+                    BOOKINGS OR                    456696
+
+VC0000101052        SPENCER ELECTRIC, INC                                  ITEM 24 (21.7%)
+
+                    CUTTEN CA                      917603
+
+VC0000101052        SPENCER ELECTRIC, INC                                  MAINTAIN TMS ELEMENTS
+
+                    CUTTEN CA                      917603
+
+VC0000101052        ROLL N ROCK CONSTRUCTION INC.                          ITEM 3 (35.6%)
+
+                    MOUNT SHASTA CA                971838
+
+VC0000101052        ROLL N ROCK CONSTRUCTION INC.                          ITEM 4 (15.7%)
+
+                    MOUNT SHASTA CA                971838
+
+VC0000101052        ROLL N ROCK CONSTRUCTION INC.                          ITEM 6 (35.6%)
+
+                    MOUNT SHASTA CA                971838
+
+VC0000101052        ROLL N ROCK CONSTRUCTION INC.                          ITEM 7 (41.6%)
+
+                    MOUNT SHASTA CA                971838
+
+VC0000101052        ROLL N ROCK CONSTRUCTION INC.                          CONSTRUCTION AREA SIGNS
+
+                    MOUNT SHASTA CA                971838
+
+VC0000101052        ROLL N ROCK CONSTRUCTION INC.                          TRAFFIC CONTROL
+
+                    MOUNT SHASTA CA                971838
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                  PAGE S20
+
+01-DN-197-R0.0/7.1                                                                                         12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000101052        ROLL N ROCK CONSTRUCTION INC.                          PORTABLE RADAR FEEDBACK SIGNS
+
+                    MOUNT SHASTA CA                971838
+
+VC0000101052        ROLL N ROCK CONSTRUCTION INC.                          PCMS BOARDS
+
+                    MOUNT SHASTA CA                971838
+01-0M0104                                                                                                       PAGE S21
+
+01-DN-197-R0.0/7.1                                                                                              12/15/2022
+
+12/14/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS                     LICENSE NUMBER     DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 5 (93.50%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 14 (93.46%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 15 (93.48%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 16 (93.46%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 17 (93.22%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     TEMPORARY PAVEMENT MARKING (PAINT)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     REMOVE PAVEMENT MARKER
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     PAVEMENT MARKER (RETROREFLECTIVE-RECESSED)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     THERMOPLASTIC PAVEMENT MARKING (ENHANCED WET
+
+                    ANDERSON CA                          854894             NIGHT VISIBILITY)
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+                    ANDERSON CA                          854894             NIGHT VISIBILITY) (BROKEN 12-3)
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 18 (93.22%)
+
+                    ANDERSON CA                          854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                          PAGE S22
+
+01-DN-197-R0.0/7.1                                                                                                 12/15/2022
+
+12/14/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS                     LICENSE NUMBER     DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 19 (93.50%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 20 (93.54%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 21 (93.75%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 22 (93.39%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+                    ANDERSON CA                          854894             NIGHT VISIBILITY) (BROKEN 36-12)
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+                    ANDERSON CA                          854894             NIGHT VISIBILITY)
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     8" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET
+
+                    ANDERSON CA                          854894             NIGHT VISIBILITY)
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     REMOVE THERMOPLASTIC TRAFFIC STRIPE
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     REMOVE THERMOPLASTIC PAVEMENT MARKING
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 1 (22.13%)
+
+                    ANDERSON CA                          854894
+
+VC1300003799        SPECIALIZED PAVEMENT  MARKING,  LLC                     ITEM 23 (93.46%)
+
+                    ANDERSON CA                          854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                          PAGE S23
+
+01-DN-197-R0.0/7.1                                                                                                 12/15/2022
+
+12/14/2022
+
+                                                       LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS                   LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1300003799        SPECIALIZED PAVEMENT MARKING, LLC                          LEAD COMPLIANCE PLAN
+
+                    ANDERSON CA                        854894
+
+VC1300003799        SPECIALIZED PAVEMENT MARKING, LLC                          12" RUMBLE STRIP (ASPHALT CONCRETE PAVEMENT-
+
+                    ANDERSON CA                        854894                  SINUSOIDAL)
+
+VC1300003799        DARREN TAYLOR CONSTRUCTION, INC.                           ITEM 11 (93.46%)
+
+                    ANDERSON CA                        903262
+
+VC1300003799        DARREN TAYLOR CONSTRUCTION, INC.                           ITEM 13 (93.46%)
+
+                    ANDERSON CA                        903262
+
+VC1300003799        DARREN TAYLOR CONSTRUCTION, INC.                           ITEM 4 (16.14%)
+
+                    ANDERSON CA                        903262
+
+VC1300003799        DARREN TAYLOR CONSTRUCTION, INC.                           SHOULDER BACKING
+
+                    ANDERSON CA                        903262
+
+VC1300003799        DARREN TAYLOR CONSTRUCTION, INC.                           REPLACE ASPHALT CONCRETE SURFACING
+
+                    ANDERSON CA                        903262
+
+VC1300003799        DARREN TAYLOR CONSTRUCTION, INC.                           TRAFFIC CONTROL SYSTEM
+
+                    ANDERSON CA                        903262
+
+VC1300003799        ROLL 'N ROCK CONSTRUCTION INC.                             ITEM 3 (61.28%)
+
+                    MOUNT SHASTA CA                    971838
+
+VC1300003799        ROLL 'N ROCK CONSTRUCTION INC.                             ITEM 4 (28.95%)
+
+                    MOUNT SHASTA CA                    971838
+
+VC1300003799        ROLL 'N ROCK CONSTRUCTION INC.                             CONSTRUCTION AREA SIGNS
+
+                    MOUNT SHASTA CA                    971838
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                           PAGE S24
+
+01-DN-197-R0.0/7.1                                                                                  12/15/2022
+
+12/14/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1300003799        ROLL 'N ROCK CONSTRUCTION INC.                          TRAFFIC CONTROL SYSTEM
+
+                    MOUNT SHASTA CA                 971838
+01-0M0104                                                                                                  PAGE S25
+
+01-DN-197-R0.0/7.1                                                                                         12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 1 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 5 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 14 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 15 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 16 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          LEAD COMPLIANCE PLAN
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          TEMP PAVEMENT MARKING
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          REMOVE PAVEMENT MARKER
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          PAVEMENT MARKER RECESSED
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          THERMO PAVEMENT MARKING
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 17 (100%)
+
+                    ANDERSON CA                    854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                   PAGE S26
+
+01-DN-197-R0.0/7.1                                                                                          12/15/2022
+
+12/14/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 18 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 19 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 20 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 21 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          6" THERMO TRAFFIC STRIPE
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          6"THERMO TRAFFIC STRIPE
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          6" THERMO TRAFFIC STRIPE
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          8" THERMO TRAFFIC STRIPE
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          REMOVE THERMO STRIPE
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 22 (100%)
+
+                    ANDERSON CA                    854894
+
+VC1400003400        SPECIALIZED PAVEMENT  MARKING                          ITEM 23 (100%)
+
+                    ANDERSON CA                    854894
+
+CONTINUED ON NEXT PAGE
+01-0M0104                                                                                                     PAGE S27
+
+01-DN-197-R0.0/7.1                                                                                            12/15/2022
+
+12/14/2022
+
+                                                  LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS              LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1400003400        SPECIALIZED PAVEMENT MARKING                          REMOVE THERMO MARKING
+
+                    ANDERSON CA                   854894
+
+VC1400003400        SPECIALIZED PAVEMENT MARKING                          12"RUMBLE STRIP
+
+                    ANDERSON CA                   854894
+
+VC1400003400        T AND S DVBE                                          ITEM 3 (100%)
+
+                    REDDING CA                    983087
+
+VC1400003400        T AND S DVBE                                          ITEM 6 (100%)
+
+                    REDDING CA                    983087
+
+VC1400003400        T AND S DVBE                                          ITEM 7 (100%)
+
+                    REDDING CA                    983087
+
+VC1400003400        T AND S DVBE                                          ITEM 4 (47%)
+
+                    REDDING CA                    983087
+
+VC1400003400        T AND S DVBE                                          CONSTRUCTION AREA SIGNS
+
+                    REDDING CA                    983087
+
+VC1400003400        T AND S DVBE                                          PORTABLE RADAR SPEED FEEDBACK SIGN
+
+                    REDDING CA                    983087
+
+VC1400003400        T AND S DVBE                                          PCMS
+
+                    REDDING CA                    983087
+
+VC1400003400        T AND S DVBE                                          TRAFFIC COMTROL SYSTEM
+
+                    REDDING CA                    983087
+
+VC1400003400        TIDEWATER CONTRACTORS, INC.                           ITEM 4 (20%)
+
+                    BROOKINGS OR                  456696
+
+CONTINUED ON  NEXT PAGE
+01-0M0104                                                                                                    PAGE S28
+
+01-DN-197-R0.0/7.1                                                                                           12/15/2022
+
+12/14/2022
+
+                                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID           NAME AND ADDRESS             LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1400003400        TIDEWATER CONTRACTORS, INC.                          ITEM 11 (100%)
+
+                    BROOKINGS OR                 456696
+
+VC1400003400        TIDEWATER CONTRACTORS, INC.                          ITEM 13 (100%)
+
+                    BROOKINGS OR                 456696
+
+VC1400003400        TIDEWATER CONTRACTORS, INC.                          TRAFFIC CONSTROL SYSTEM
+
+                    BROOKINGS OR                 456696
+
+VC1400003400        TIDEWATER CONTRACTORS, INC.                          SHOULDER BACKING
+
+                    BROOKINGS OR                 456696
+
+VC1400003400        TIDEWATER CONTRACTORS, INC.                          REPALCE ASPHALT CONCRETE SURFACING
+
+                    BROOKINGS OR                 456696
+

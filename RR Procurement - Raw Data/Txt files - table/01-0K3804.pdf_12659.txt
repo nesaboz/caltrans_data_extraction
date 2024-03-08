@@ -1,0 +1,239 @@
+                                               State of California Department of Transportation
+
+                                                                  Bid Summary
+
+Bid Opening Date: 05/17/2022                                                                                                       Page 1
+
+Contract Number:    01-0K3804                                                                                                      05/18/2022
+
+Location: 01-DN-101-R27.5/R27.9     DEL NORTE COUNTY NEAR CRESCENT CITY FROM 0.1 MILE                        Contract Code:    B
+
+                                    SOUTH OF PARKWAY DRIVE TO WASHINGTON BOULEVARD
+
+                                    OVERCROSSING
+
+                                    Minor concrete, roadway excavation, and rail element wall.               Number of Items:  49
+
+DBE - 23.0%                                                                                                  Federal Aid #1: ACHSNH-Q101(404)E
+
+Proposals Issued:   3          Total Number of Working Days:  46  Overrun/Underrun:              -49,180.03
+
+Number of Bidders:  1          Engineers Est:     1,092,115.03    % Over/Under Est:              -4.50%
+
+Bid Rank            Bid Total       Bidder Id     Bidder Information (Name/Address/Location)
+
+1            A)     $1,042,935.00   VC0000007021  GR SUNDBERG, INC.
+
+             B)     46 Days * 4000                                                                           CSLB#  00732695
+
+             A+B)   $1,226,935.00
+Bid Opening Date:  05/17/2022                                                                                                     Page 2
+
+Contract Number:   01-0K3804                                                                                                      05/18/2022
+
+                                                          Contract    Proposal  of  Low  Bidder
+
+Item  Item                                          Item Description                             Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                       Measure  Quantity
+
+0001  070030       LEAD COMPLIANCE PLAN                                                          LS       LUMP SUM   1,250.00     1,250.00
+
+0002  090105       TIME-RELATED OVERHEAD (LS)                                                    LS       LUMP SUM   40,000.00    40,000.00
+
+0003  120090       CONSTRUCTION AREA SIGNS                                                       LS       LUMP SUM   7,190.00     7,190.00
+
+0004  120100       TRAFFIC CONTROL SYSTEM                                                        LS       LUMP SUM   73,500.00    73,500.00
+
+0005  124000       TEMPORARY PEDESTRIAN ACCESS ROUTE                                             LS       LUMP SUM   6,400.00     6,400.00
+
+0006  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                         LS       LUMP SUM   3,300.00     3,300.00
+
+0007  130100       JOB SITE MANAGEMENT                                                           LS       LUMP SUM   10,000.00    10,000.00
+
+0008  130200       PREPARE WATER POLLUTION CONTROL PROGRAM                                       LS       LUMP SUM   1,300.00     1,300.00
+
+0009  130505       MOVE-IN/MOVE-OUT (TEMPORARY EROSION CONTROL)                                  EA       1.0        1,100.00     1,100.00
+
+0010  130570       TEMPORARY COVER                                                               SQYD     950.0           2.80    2,660.00
+
+0011  130620       TEMPORARY DRAINAGE INLET PROTECTION                                           EA       3.0             325.00  975.00
+
+0012  130730       STREET SWEEPING                                                               LS       LUMP SUM   15,800.00    15,800.00
+
+0013  130900       TEMPORARY CONCRETE WASHOUT                                                    LS       LUMP SUM        720.00  720.00
+
+0014  141120       TREATED WOOD WASTE                                                            LB       220.0           1.00    220.00
+
+0015  160110       TEMPORARY HIGH-VISIBILITY FENCE                                               LF       200.0           11.00   2,200.00
+
+0016  170103       CLEARING AND GRUBBING (LS)                                                    LS       LUMP SUM   36,000.00    36,000.00
+
+0017  190101       ROADWAY EXCAVATION                                                            CY       1,440.0         62.00   89,280.00
+
+0018  205035       WOOD MULCH                                                                    CY       41.0            78.00   3,198.00
+
+0019  037634       HYDRAULIC BIOTIC GROWTH MEDIUM                                                SQFT     35,200.0        0.36    12,672.00
+
+0020  037633       FIBER REINFORCED MATRIX                                                       SQFT     35,200.0        0.30    10,560.00
+
+0021  210270       ROLLED EROSION CONTROL PRODUCT (NETTING)                                      SQFT     19,000.0        1.00    19,000.00
+
+0022  210350       FIBER ROLLS                                                                   LF       230.0           7.00    1,610.00
+
+0023  260203       CLASS 2 AGGREGATE BASE (CY)                                                   CY       370.0           120.00  44,400.00
+
+0024  390132       HOT MIX ASPHALT (TYPE A)                                                      TON      70.0            336.00  23,520.00
+Bid Opening Date:  05/17/2022                                                                                                  Page 3
+
+Contract Number:   01-0K3804                                                                                                   05/18/2022
+
+                                                             Contract Proposal of Low Bidder
+
+Item     Item                                      Item Description                           Unit of  Estimated  Bid          Amount
+
+No.      Code                                                                                 Measure  Quantity
+
+0025     394090    PLACE HOT MIX ASPHALT (MISCELLANEOUS AREA)                                 SQYD     310.0           44.00   13,640.00
+
+0026     398001    REMOVE ASPHALT CONCRETE PAVEMENT (SQFT)                                    SQFT     2,500.0         8.80    22,000.00
+
+0027     398100    REMOVE ASPHALT CONCRETE DIKE                                               LF       20.0            38.00   760.00
+
+0028     037231    RAIL ELEMENT WALL                                                          SQFT     1,550.0         147.00  227,850.00
+
+0029  F  520101    BAR REINFORCING STEEL                                                      LB       270.0           10.00   2,700.00
+
+0030     038493    16"X5" STEEL CHANNEL (0.375" THICK)                                        LF       21.0            340.00  7,140.00
+
+0031     723095    ROCK SLOPE PROTECTION (20 LB, CLASS I, METHOD B) (CY)                      CY       5.0             285.00  1,425.00
+
+0032     730020    MINOR CONCRETE (CURB) (CY)                                                 CY       28.0            973.00  27,244.00
+
+0033     730070    DETECTABLE WARNING SURFACE                                                 SQFT     60.0            45.00   2,700.00
+
+0034     731519    MINOR CONCRETE (STAMPED CONCRETE)                                          SQFT     50.0            41.00   2,050.00
+
+0035     731521    MINOR CONCRETE (SIDEWALK)                                                  CY       250.0           665.00  166,250.00
+
+0036     731627    MINOR CONCRETE (CURB, SIDEWALK AND CURB RAMP)                              CY       16.0       1,061.00     16,976.00
+
+0037     731760    REMOVE CONCRETE CURB AND SIDEWALK (SQYD)                                   SQYD     10.0            257.00  2,570.00
+
+0038     780256    ADJUST ACCESS BOX (UTILITY)                                                EA       5.0             720.00  3,600.00
+
+0039     800341    CHAIN LINK FENCE (TYPE CL-5, VINYL-CLAD)                                   LF       680.0           45.00   30,600.00
+
+0040     820470    RESET MILEPOST MARKER                                                      EA       5.0             280.00  1,400.00
+
+0041     820510    RESET ROADSIDE SIGN (ONE POST)                                             EA       5.0             475.00  2,375.00
+
+0042     820590    RELOCATE ROADSIDE SIGN-ONE POST                                            EA       1.0             595.00  595.00
+
+0043     820600    RELOCATE ROADSIDE SIGN-TWO POST                                            EA       1.0             685.00  685.00
+
+0044     820840    ROADSIDE SIGN - ONE POST                                                   EA       6.0             845.00  5,070.00
+
+0045     840505    6" THERMOPLASTIC TRAFFIC STRIPE                                            LF       50.0            9.00    450.00
+
+0046     846012    THERMOPLASTIC CROSSWALK AND PAVEMENT MARKING (ENHANCED WET NIGHT           SQFT     150.0           20.00   3,000.00
+
+                   VISIBILITY)
+
+0047     872131    MODIFYING LIGHTING SYSTEMS                                                 LS       LUMP SUM   37,000.00    37,000.00
+
+0048     872136    MODIFYING FLASHING BEACON SYSTEMS                                          LS       LUMP SUM   33,000.00    33,000.00
+Bid Opening Date: 05/17/2022                                                                    Page 4
+
+Contract Number:  01-0K3804                                                                     05/18/2022
+
+                                Contract Proposal of Low Bidder
+
+Item  Item                      Item Description                 Unit of  Estimated  Bid        Amount
+
+No.   Code                                                       Measure  Quantity
+
+0049  999990      MOBILIZATION                                   LS       LUMP SUM   25,000.00  25,000.00
+
+                                                                                          A)    1,042,935.00
+
+                                                                                          B)    46 Days * 4000
+
+                                                                                     A+B)       1,226,935.00
+01-0K3804                                                                                               PAGE S1
+
+01-DN-101-R27.5/R27.9                                                                                   5/19/2022
+
+5/17/2022
+
+                                                LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000007021  HUMBOLDT FENCE CO.                                        ITEM 39 (100%)
+
+              FORTUNA CA                        808339
+
+VC0000007021  APPLY-A-LINE, LLC                                         ITEM 45 (100%)
+
+              ANDERSON CA                       1031889
+
+VC0000007021  APPLY-A-LINE, LLC                                         ITEM 46 (100%)
+
+              ANDERSON CA                       1031889
+
+VC0000007021  APPLY-A-LINE, LLC                                         ITEM 19 (3.80%)
+
+              ANDERSON CA                       1031889
+
+VC0000007021  APPLY-A-LINE, LLC                                         MOBILIZATION (PARTIAL)
+
+              ANDERSON CA                       1031889
+
+VC0000007021  HIGHWAY SPECIALTY COMPANY,  INC.                          ITEM 13 (100%)
+
+              PALO CEDRO CA                     1003147
+
+VC0000007021  HIGHWAY SPECIALTY COMPANY,  INC.                          ITEM 28 (75%)
+
+              PALO CEDRO CA                     1003147
+
+VC0000007021  HIGHWAY SPECIALTY COMPANY,  INC.                          RAIL ELEMENT WALL (PARTIAL)
+
+              PALO CEDRO CA                     1003147
+
+VC0000007021  MILLER FARMS NURSERY, INC.                                ITEM 19 (100%)
+
+              MCKINLEYVILLE CA                  365302
+
+VC0000007021  MILLER FARMS NURSERY, INC.                                ITEM 20 (100%)
+
+              MCKINLEYVILLE CA                  365302
+
+VC0000007021  MILLER FARMS NURSERY, INC.                                ITEM 49 (12.00%)
+
+              MCKINLEYVILLE CA                  365302
+
+CONTINUED ON  NEXT PAGE
+01-0K3804                                                                                           PAGE S2
+
+01-DN-101-R27.5/R27.9                                                                               5/19/2022
+
+5/17/2022
+
+                                          LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS            LICENSE NUMBER          DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000007021  MILLER FARMS NURSERY, INC.                          MOBILIZATION (PARTIAL)
+
+              MCKINLEYVILLE CA            365302
+
+VC0000007021  SPENCER ELECTRIC, INC.                              ITEM 47 (100%)
+
+              CUTTEN CA                   917603
+
+VC0000007021  SPENCER ELECTRIC, INC.                              ITEM 48 (100%)
+
+              CUTTEN CA                   917603
+

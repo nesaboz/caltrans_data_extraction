@@ -1,0 +1,759 @@
+                                                State of California Department of Transportation
+
+                                                                   Bid Summary
+
+Bid Opening Date: 07/13/2022                                                                                                           Page 1
+
+Contract Number:    01-0G6104                                                                                                          07/13/2022
+
+Project ID:         0117000027       HUMBOLDT COUNTY IN AND NEAR FORTUNA FROM 0.5 MILE                       Contract Code:        C
+
+                                     SOUTH OF ROUTE 36 TO 0.4 MILE SOUTH OF HOOKTON ROAD
+
+Location: 01-Hum-101-57.1/67.8       Roadway excavation; asphalt treated perm. base & HMA(Gap Graded).       Number of Items:      56
+
+DBE - 26.0%                                                                                                  Federal Aid #1: ACNH-Q101(402)E
+
+Proposals Issued:   3          Total Number of Working Days:  140  Overrun/Underrun:              73,582.05
+
+Number of Bidders:  3          Engineers Est:      6,059,550.95    % Over/Under Est:              1.21%
+
+Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Address/Location)
+
+1            A)     $6,133,133.00    VC0000003985  MERCER FRASER COMPANY                                     Phone  (707)443-6371
+
+             B)     140 Days * 6700                200 DINSMORE DR                                           CSLB#  00105709
+
+             A+B)   $7,071,133.00                  FORTUNA CA      95540                                     Fax    (707)443-0277
+
+2            A)     $7,333,190.50    VC0000007021  GR SUNDBERG, INC.                                         Phone  (707)825-6565
+
+             B)     140 Days * 6700                5211 BOYD ROAD                                            CSLB#  00732695
+
+             A+B)   $8,271,190.50                  ARCATA CA       95521                                     Fax    (707)825-6563
+
+3            A)     $11,076,590.80   VC0000007181  S.T. RHOADES CONSTRUCTION, INC.                           Phone  (530)223-9322
+
+             B)     160 Days * 6700                8585 COMMERCIAL WAY                                       CSLB#  00930684
+
+             A+B)   $12,148,590.80                 REDDING CA      96002
+Bid Opening Date:  07/13/2022                                                                                                 Page 2
+
+Contract Number:   01-0G6104                                                                                                  07/13/2022
+
+                                                          Contract Proposal of  Low  Bidder
+
+Item  Item                                     Item Description                              Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                   Measure  Quantity
+
+0001  070030       LEAD COMPLIANCE PLAN                                                      LS       LUMP SUM   3,000.00     3,000.00
+
+0002  090105       TIME-RELATED OVERHEAD (LS)                                                LS       LUMP SUM   250,000.00   250,000.00
+
+0003  090200       DISPUTE RESOLUTION ADVISOR ON-SITE MEETING                                EA       10.0       2,000.00     20,000.00
+
+0004  090207       HOURLY OFF-SITE DISPUTE-RESOLUTION-ADVISOR-RELATED  TASKS                 HR       100.0           200.00  20,000.00
+
+0005  120090       CONSTRUCTION AREA SIGNS                                                   LS       LUMP SUM   15,000.00    15,000.00
+
+0006  120100       TRAFFIC CONTROL SYSTEM                                                    LS       LUMP SUM   450,000.00   450,000.00
+
+0007  013804       STATIONARY IMPACT ATTENUATOR VEHICLE (LS)                                 LS       LUMP SUM   27,000.00    27,000.00
+
+0008  010413       PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS (LS)                           LS       LUMP SUM   25,000.00    25,000.00
+
+0009  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                     LS       LUMP SUM   40,000.00    40,000.00
+
+0010  130100       JOB SITE MANAGEMENT                                                       LS       LUMP SUM   60,000.00    60,000.00
+
+0011  130300       PREPARE STORM WATER POLLUTION PREVENTION PLAN                             LS       LUMP SUM   3,000.00     3,000.00
+
+0012  130310       RAIN EVENT ACTION PLAN                                                    EA       43.0            500.00  21,500.00
+
+0013  130320       STORM WATER SAMPLING AND ANALYSIS DAY                                     EA       67.0            375.00  25,125.00
+
+0014  130330       STORM WATER ANNUAL REPORT                                                 EA       3.0        2,000.00     6,000.00
+
+0015  130510       TEMPORARY MULCH                                                           SQYD     440.0           10.00   4,400.00
+
+0016  130620       TEMPORARY DRAINAGE INLET PROTECTION                                       EA       99.0            120.00  11,880.00
+
+0017  130640       TEMPORARY FIBER ROLL                                                      LF       4,490.0         4.00    17,960.00
+
+0018  130730       STREET SWEEPING                                                           LS       LUMP SUM   140,000.00   140,000.00
+
+0019  130900       TEMPORARY CONCRETE WASHOUT                                                LS       LUMP SUM   5,000.00     5,000.00
+
+0020  170103       CLEARING AND GRUBBING (LS)                                                LS       LUMP SUM   37,000.00    37,000.00
+
+0021  190101       ROADWAY EXCAVATION                                                        CY       11,100.0        55.00   610,500.00
+
+0022  198300       SOIL DECOMPACTION                                                         SQFT     31,200.0        0.40    12,480.00
+
+0023  202006       SOIL AMENDMENT                                                            CY       1.0             200.00  200.00
+
+0024  202037       ORGANIC FERTILIZER                                                        LB       10.0            10.00   100.00
+Bid Opening Date:  07/13/2022                                                                                                  Page 3
+
+Contract Number:   01-0G6104                                                                                                   07/13/2022
+
+                                                        Contract   Proposal  of  Low  Bidder
+
+Item     Item                                    Item Description                             Unit of  Estimated  Bid          Amount
+
+No.      Code                                                                                 Measure  Quantity
+
+0025     204036    PLANT (GROUP B)                                                            EA       110.0           252.00  27,720.00
+
+0026     204099    PLANT ESTABLISHMENT WORK                                                   LS       LUMP SUM   64,000.00    64,000.00
+
+0027     205035    WOOD MULCH                                                                 CY       55.0            140.00  7,700.00
+
+0028     205051    FOLIAGE PROTECTOR                                                          EA       110.0           163.00  17,930.00
+
+0029     206300    TEMPORARY IRRIGATION SYSTEM                                                LS       LUMP SUM   13,700.00    13,700.00
+
+0030     037634    HYDRAULIC BIOTIC GROWTH MEDIUM                                             SQFT     31,200.0        0.24    7,488.00
+
+0031     037633    FIBER REINFORCED MATRIX                                                    SQFT     31,200.0        0.22    6,864.00
+
+0032     210610    COMPOST (CY)                                                               CY       390.0           109.00  42,510.00
+
+0033     210630    INCORPORATE MATERIALS                                                      SQFT     31,200.0        0.30    9,360.00
+
+0034     013803    PERMEABLE AGGREGATE BASE (PAB)                                             CY       5,770.0         110.00  634,700.00
+
+0035     013805    GEOSYNTHETIC REINFORCED (GEOMEMBRANE)                                      SQYD     4,470.0         7.00    31,290.00
+
+0036     290201    ASPHALT TREATED PERMEABLE BASE                                             CY       4,040.0         215.00  868,600.00
+
+0037     390132    HOT MIX ASPHALT (TYPE A)                                                   TON      640.0           210.00  134,400.00
+
+0038     013806    HOT MIX ASPHALT (GAP GRADED)                                               TON      3,090.0         195.00  602,550.00
+
+0039     394090    PLACE HOT MIX ASPHALT (MISCELLANEOUS AREA)                                 SQYD     300.0           100.00  30,000.00
+
+0040     397005    TACK COAT                                                                  TON      1.4        1,700.00     2,380.00
+
+0041     398300    REMOVE BASE AND SURFACING                                                  CY       210.0           70.00   14,700.00
+
+0042  F  510094    STRUCTURAL CONCRETE, DRAINAGE INLET                                        CY       3.3        5,200.00     17,160.00
+
+0043     641113    24" PLASTIC PIPE                                                           LF       340.0           200.00  68,000.00
+
+0044     681103    3" PLASTIC PIPE (EDGE DRAIN)                                               LF       2,760.0         80.00   220,800.00
+
+0045     710102    ABANDON CULVERT (LF)                                                       LF       220.0           82.00   18,040.00
+
+0046     710132    REMOVE CULVERT (LF)                                                        LF       130.0           65.00   8,450.00
+
+0047     710210    ADJUST FRAME AND GRATE TO GRADE                                            EA       6.0        4,500.00     27,000.00
+
+0048     710240    MODIFY INLET                                                               EA       12.0       5,000.00     60,000.00
+Bid Opening Date:  07/13/2022                                                                                               Page 4
+
+Contract Number:   01-0G6104                                                                                                07/13/2022
+
+                                                        Contract Proposal of Low Bidder
+
+Item     Item                                    Item Description                        Unit of  Estimated  Bid            Amount
+
+No.      Code                                                                            Measure  Quantity
+
+0049  F  750001    MISCELLANEOUS IRON AND STEEL                                          LB       13,422.0            4.00  53,688.00
+
+0050     832070    VEGETATION CONTROL (MINOR CONCRETE)                                   SQYD     2,510.0         115.00    288,650.00
+
+0051     037719    BARRIER MARKERS                                                       EA       570.0           15.00     8,550.00
+
+0052     870009    MAINTAINING EXISTING TRAFFIC MANAGEMENT SYSTEM  ELEMENTS  DURING      LS       LUMP SUM   5,000.00       5,000.00
+
+                   CONSTRUCTION
+
+0053     870200    LIGHTING SYSTEM                                                       LS       LUMP SUM   401,000.00     401,000.00
+
+0054     872131    MODIFYING LIGHTING SYSTEMS                                            LS       LUMP SUM   12,000.00      12,000.00
+
+0055     872141    REMOVING LIGHTING SYSTEMS                                             LS       LUMP SUM   15,000.00      15,000.00
+
+0056     999990    MOBILIZATION                                                          LS       LUMP SUM   608,758.00     608,758.00
+
+                                                                                                                  A)        6,133,133.00
+
+                                                                                                                  B)        140 Days * 6700
+
+                                                                                                             A+B)           7,071,133.00
+Bid Opening Date: 07/13/2022                                                  Page 5
+
+Contract Number:  01-0G6104                                                   07/13/2022
+
+                                               Summary of Remaining  Bidders
+
+                  Second                       Third
+
+Item  Bid                     Amount      Bid          Amount
+
+0001              1,225.00    1,225.00    1,150.00     1,150.00
+
+0002  151,200.00              151,200.00  160,000.00   160,000.00
+
+0003              2,000.00    20,000.00   2,000.00     20,000.00
+
+0004              200.00      20,000.00        200.00  20,000.00
+
+0005              11,500.00   11,500.00   11,500.00    11,500.00
+
+0006  619,000.00              619,000.00  885,865.00   885,865.00
+
+0007              21,600.00   21,600.00   56,725.00    56,725.00
+
+0008              6,100.00    6,100.00    28,940.00    28,940.00
+
+0009              4,400.00    4,400.00    17,365.00    17,365.00
+
+0010              30,000.00   30,000.00   76,000.00    76,000.00
+
+0011              2,125.00    2,125.00    2,895.00     2,895.00
+
+0012              500.00      21,500.00        500.00  21,500.00
+
+0013              425.00      28,475.00        500.00  33,500.00
+
+0014              2,000.00    6,000.00    2,000.00     6,000.00
+
+0015              58.00       25,520.00        29.00   12,760.00
+
+0016              223.00      22,077.00        260.50  25,789.50
+
+0017              7.00        31,430.00        11.60   52,084.00
+
+0018              21,000.00   21,000.00   31,460.00    31,460.00
+
+0019              1,650.00    1,650.00    2,800.00     2,800.00
+
+0020  290,000.00              290,000.00  295,160.00   295,160.00
+
+0021              51.00       566,100.00       292.80  3,250,080.00
+
+0022              2.00        62,400.00        0.27    8,424.00
+
+0023              100.00      100.00           200.00  200.00
+
+0024              10.00       100.00           10.00   100.00
+
+0025              130.00      14,300.00        252.00  27,720.00
+
+0026              25,000.00   25,000.00   63,815.00    63,815.00
+
+0027              150.00      8,250.00         140.00  7,700.00
+
+0028              125.00      13,750.00        163.00  17,930.00
+
+0029              10,000.00   10,000.00   13,700.00    13,700.00
+
+0030              0.32        9,984.00         0.24    7,488.00
+
+0031              0.25        7,800.00         0.22    6,864.00
+
+0032              125.00      48,750.00        109.00  42,510.00
+Bid Opening Date: 07/13/2022                                                            Page 6
+
+Contract Number:  01-0G6104                                                             07/13/2022
+
+                                                       Summary of Remaining    Bidders
+
+                   Second                              Third
+
+Item          Bid             Amount              Bid          Amount
+
+0033               0.50       15,600.00                0.30    9,360.00
+
+0034               136.00     784,720.00               275.25  1,588,192.50
+
+0035               11.00      49,170.00                11.40   50,958.00
+
+0036               343.00     1,385,720.00             329.00  1,329,160.00
+
+0037               330.00     211,200.00               285.20  182,528.00
+
+0038               393.00     1,214,370.00             286.00  883,740.00
+
+0039               59.00      17,700.00                307.25  92,175.00
+
+0040              2,700.00    3,780.00            1,060.00     1,484.00
+
+0041               54.00      11,340.00                131.00  27,510.00
+
+0042              3,200.00    10,560.00           6,000.00     19,800.00
+
+0043               191.00     64,940.00                300.00  102,000.00
+
+0044               96.00      264,960.00               45.00   124,200.00
+
+0045               63.00      13,860.00                60.00   13,200.00
+
+0046               96.00      12,480.00                150.00  19,500.00
+
+0047               826.00     4,956.00            3,500.00     21,000.00
+
+0048              2,256.00    27,072.00           1,750.00     21,000.00
+
+0049               3.25       43,621.50                8.40    112,744.80
+
+0050               80.00      200,800.00               115.90  290,909.00
+
+0051               26.50      15,105.00                26.50   15,105.00
+
+0052              6,900.00    6,900.00            6,900.00     6,900.00
+
+0053          499,500.00      499,500.00          499,500.00   499,500.00
+
+0054              14,500.00   14,500.00           14,500.00    14,500.00
+
+0055              37,000.00   37,000.00           37,000.00    37,000.00
+
+0056          322,000.00      322,000.00          406,100.00   406,100.00
+
+Total:  A)                   $7,333,190.50  A)                 $11,076,590.80
+
+        B)         140 Days * 6700          B)         160 Days * 6700
+
+        A+B)                 $8,271,190.50  A+B)               $12,148,590.80
+Bid Opening Date: 07/13/2022  Page 7
+
+Contract Number:  01-0G6104   07/13/2022
+01-0G6104                                                                                                      PAGE S1
+
+01-HUM-101-57.1/67.8                                                                                           7/14/2022
+
+7/13/2022
+
+                                                       LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS                    LICENSE NUMBER       DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000003985          ROLL 'N ROCK CONSTRUCTION, INC.                          ITEM 5 (100%)
+
+                      MOUNT SHASTA CA                     971838
+
+VC0000003985          ROLL 'N ROCK CONSTRUCTION, INC.                          ITEM 6 (65%)
+
+                      MOUNT SHASTA CA                     971838
+
+VC0000003985          ROLL 'N ROCK CONSTRUCTION, INC.                          ITEM 50 (100%)
+
+                      MOUNT SHASTA CA                     971838
+
+VC0000003985          ROLL 'N ROCK CONSTRUCTION, INC.                          ITEM 51 (100%)
+
+                      MOUNT SHASTA CA                     971838
+
+VC0000003985          ROLL 'N ROCK CONSTRUCTION, INC.                          TC FOR ROADWAY EXCAVATION WORK
+
+                      MOUNT SHASTA CA                     971838
+
+VC0000003985          CELL-CRETE CORPORATION                                   ITEM 45 (100%)
+
+                      HAYWARD CA                          243404
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES, INC.                       ITEM 23 (100%)
+
+                      REDDING CA                          751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES, INC.                       ITEM 24 (100%)
+
+                      REDDING CA                          751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES, INC.                       ITEM 25 (100%)
+
+                      REDDING CA                          751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES, INC.                       ITEM 26 (100%)
+
+                      REDDING CA                          751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES, INC.                       ITEM 27 (100%)
+
+                      REDDING CA                          751931
+
+CONTINUED ON NEXT PAGE
+01-0G6104                                                                                                        PAGE S2
+
+01-HUM-101-57.1/67.8                                                                                             7/14/2022
+
+7/13/2022
+
+                                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,   INC. CONTINUED          ITEM 28 (100%)
+
+                      REDDING CA                      751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,   INC. CONTINUED          ITEM 29 (100%)
+
+                      REDDING CA                      751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,   INC. CONTINUED          ITEM 30 (100%)
+
+                      REDDING CA                      751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,   INC. CONTINUED          ITEM 31 (100%)
+
+                      REDDING CA                      751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,   INC. CONTINUED          ITEM 32 (100%)
+
+                      REDDING CA                      751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,   INC. CONTINUED          ITEM 33 (100%)
+
+                      REDDING CA                      751931
+
+VC0000003985          CRYSTAL O'NEILL ELECTRIC, INC.                          ITEM 52 (100%)
+
+                      LAKEPORT CA                     1081443
+
+VC0000003985          CRYSTAL O'NEILL ELECTRIC, INC.                          ITEM 53 (100%)
+
+                      LAKEPORT CA                     1081443
+
+VC0000003985          CRYSTAL O'NEILL ELECTRIC, INC.                          ITEM 54 (100%)
+
+                      LAKEPORT CA                     1081443
+
+VC0000003985          CRYSTAL O'NEILL ELECTRIC, INC.                          ITEM 55 (100%)
+
+                      LAKEPORT CA                     1081443
+01-0G6104                                                                                                         PAGE S3
+
+01-HUM-101-57.1/67.8                                                                                              7/14/2022
+
+7/13/2022
+
+                                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF   PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000007021          HIGHWAY SPECIALTY COMPANY INC.                          ITEM 5 (100%)
+
+                      REDDING CA                      1003147
+
+VC0000007021          HIGHWAY SPECIALTY COMPANY INC.                          ITEM 50 (100%)
+
+                      REDDING CA                      1003147
+
+VC0000007021          HIGHWAY SPECIALTY COMPANY INC.                          ITEM 51 (100%)
+
+                      REDDING CA                      1003147
+
+VC0000007021          MILLER FARMS NURSERY, INC.                              ITEM 23 (100%)
+
+                      MCKINELYVILLE CA                365302
+
+VC0000007021          MILLER FARMS NURSERY, INC.                              ITEM 24 (100%)
+
+                      MCKINELYVILLE CA                365302
+
+VC0000007021          MILLER FARMS NURSERY, INC.                              ITEM 25 (1000%)
+
+                      MCKINELYVILLE CA                365302
+
+VC0000007021          MILLER FARMS NURSERY, INC.                              ITEM 26 (100%)
+
+                      MCKINELYVILLE CA                365302
+
+VC0000007021          MILLER FARMS NURSERY, INC.                              ITEM 27 (100%)
+
+                      MCKINELYVILLE CA                365302
+
+VC0000007021          MILLER FARMS NURSERY INC.                               ITEM 28 (100%)
+
+                      MCKINLEYVILLE CA                365302
+
+VC0000007021          MILLER FARMS NURSERY INC.                               ITEM 29 (100%)
+
+                      MCKINLEYVILLE CA                365302
+
+VC0000007021          MILLER FARMS NURSERY INC.                               ITEM 30 (100%)
+
+                      MCKINLEYVILLE CA                365302
+
+CONTINUED ON NEXT PAGE
+01-0G6104                                                                                                PAGE S4
+
+01-HUM-101-57.1/67.8                                                                                     7/14/2022
+
+7/13/2022
+
+                                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS           LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000007021          MILLER FARMS NURSERY INC.                          ITEM 31 (100%)
+
+                      MCKINLEYVILLE CA           365302
+
+VC0000007021          MILLER FARMS NURSERY INC.                          ITEM 32 (100%)
+
+                      MCKINLEYVILLE CA           365302
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             ITEM 1 (100%)
+
+                      APTOS CA                   N/A
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             ITEM 10 (51%)
+
+                      APTOS CA                   N/A
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             ITEM 11 (100%)
+
+                      APTOS CA                   N/A
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             ITEM 12 (85%)
+
+                      APTOS CA                   N/A
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             ITEM 13 (100%)
+
+                      APTOS CA                   N/A
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             JOB SITE MANAGEMENT
+
+                      APTOS CA                   N/A
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             RAIN EVENT ACTION PLAN
+
+                      APTOS CA                   N/A
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             ITEM 14 (75%)
+
+                      APTOS CA                   N/A
+
+VC0000007021          KINNETIC ENVIRONMENTAL                             STORM WATER ANNUAL REPORT
+
+                      APTOS CA                   N/A
+
+CONTINUED ON NEXT PAGE
+01-0G6104                                                                                          PAGE S5
+
+01-HUM-101-57.1/67.8                                                                               7/14/2022
+
+7/13/2022
+
+                                        LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000007021          SPENCER ELECTRIC                          ITEM 52 (100%)
+
+                      CUTTEN CA         917603
+
+VC0000007021          SPENCER ELECTRIC                          ITEM 53 (100%)
+
+                      CUTTEN CA         917603
+
+VC0000007021          SPENCER ELECTRIC                          ITEM 54 (100%)
+
+                      CUTTEN CA         917603
+
+VC0000007021          SPENCER ELECTRIC                          ITEM 55 (100%)
+
+                      CUTTEN CA         917603
+01-0G6104                                                                                                       PAGE S6
+
+01-HUM-101-57.1/67.8                                                                                            7/14/2022
+
+7/13/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS                    LICENSE NUMBER   DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000007181          HIGHWAY SPECIALTY CO., INC.                          ITEM 5 (100%)
+
+                      REDDING CA                          1003147
+
+VC0000007181          HIGHWAY SPECIALTY CO., INC.                          ITEM 6 (85%)
+
+                      REDDING CA                          1003147
+
+VC0000007181          HIGHWAY SPECIALTY CO., INC.                          ITEM 50 (69%)
+
+                      REDDING CA                          1003147
+
+VC0000007181          HIGHWAY SPECIALTY CO., INC.                          ITEM 51 (100%)
+
+                      REDDING CA                          1003147
+
+VC0000007181          HIGHWAY SPECIALTY CO., INC.                          CONSTRUCTION AREA SIGNS
+
+                      REDDING CA                          1003147
+
+VC0000007181          HIGHWAY SPECIALTY CO., INC.                          TRAFFIC CONTROL SYSTEM
+
+                      REDDING CA                          1003147
+
+VC0000007181          HIGHWAY SPECIALTY CO., INC.                          VEGETATION CONTROL (MINOR CONCRETE)
+
+                      REDDING CA                          1003147
+
+VC0000007181          HIGHWAY SPECIALTY CO., INC.                          BARRIER MARKERS
+
+                      REDDING CA                          1003147
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                   ITEM 26 (100%)
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                   ITEM 23 (100%)
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                   ITEM 24 (100%)
+
+                      REDDING CA                          751931
+
+CONTINUED ON NEXT PAGE
+01-0G6104                                                                                                     PAGE S7
+
+01-HUM-101-57.1/67.8                                                                                          7/14/2022
+
+7/13/2022
+
+                                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS                      LICENSE NUMBER    DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    ITEM 25 (100%)
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    PLANT ESTABLISHMENT WORK
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    SOIL AMENDMENT
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    ORGANIC FERTILIZER
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    PLANT (GROUP B)
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    ITEM 27 (100%)
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    ITEM 28 (100%)
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    ITEM 29 (100%)
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    ITEM 30 (100%)
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    ITEM 31 (100%)
+
+                      REDDING CA                      751931
+
+VC0000007181          M&S ENVIRONMENTAL  LANDSCAPES,  INC.                    WOOD MULCH
+
+                      REDDING CA                      751931
+
+CONTINUED ON NEXT PAGE
+01-0G6104                                                                                                 PAGE S8
+
+01-HUM-101-57.1/67.8                                                                                      7/14/2022
+
+7/13/2022
+
+                                              LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS                    LICENSE NUMBER  DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                  FOLIAGE PROTECTOR
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                  TEMPORARY IRRIGATION SYSTEM
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                  HYDRAULIC BIOTIC GROWTH MEDIUM
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                  FIBER REINFORCED MATRIX
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEM 32 (100%)
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEM 33 (100%)
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                  COMPOST (CY)
+
+                      REDDING CA                          751931
+
+VC0000007181          M&S ENVIRONMENTAL LANDSCAPES, INC.                  INCORPORATE MATERIALS
+
+                      REDDING CA                          751931
+
+VC0000007181          SPENCER ELECTRIC, INC.                              ITEM 52 (100%)
+
+                      CUTTEN CA                           917603
+
+VC0000007181          SPENCER ELECTRIC, INC.                              ITEM 53 (100%)
+
+                      CUTTEN CA                           917603
+
+VC0000007181          SPENCER ELECTRIC, INC.                              ITEM 54 (100%)
+
+                      CUTTEN CA                           917603
+
+CONTINUED ON NEXT PAGE
+01-0G6104                                                                                                      PAGE S9
+
+01-HUM-101-57.1/67.8                                                                                           7/14/2022
+
+7/13/2022
+
+                                              LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS        LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000007181          SPENCER ELECTRIC, INC.                          ITEM 55 (100%)
+
+                      CUTTEN CA               917603
+
+VC0000007181          SPENCER ELECTRIC, INC.                          MAINTAINING EXISTING TRAFFIC MANAGEMENT
+
+                      CUTTEN CA               917603
+
+VC0000007181          SPENCER ELECTRIC, INC.                          LIGHTING SYSTEM
+
+                      CUTTEN CA               917603
+
+VC0000007181          SPENCER ELECTRIC, INC.                          MODIFYING LIGHTING SYSTEMS
+
+                      CUTTEN CA               917603
+
+VC0000007181          SPENCER ELECTRIC, INC.                          REMOVING LIGHTING SYSTEMS
+
+                      CUTTEN CA               917603
+

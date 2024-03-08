@@ -1,0 +1,346 @@
+
+
+
+
+
+                     STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                          PAGE  1
+       BID OPENING DATE    05/16/12                    IN HUMBOLDT AND LAKE COUNTIES AT                                   05/22/12
+       CONTRACT NUMBER     01-0A6804                   VARIOUS LOCATIONS                                        CONTRACT CODE 'J '
+       LOCATION            01-VAR-0099-VAR                                                                        7 CONTRACT ITEMS
+
+
+                                                       REPLACE TRAFFIC SIGNAL HEADS              FEDERAL AID  NONE
+
+
+
+                DVBE GOALS: DISABLED VETERANS BUSINESS ENTERPRISES -  5.0%
+   PROPOSALS ISSUED   11    FUND TOTAL   HM4               0                         TOTAL NUMBER OF WORKING DAYS     35
+
+   NUMBER OF BIDDERS  5    ENGINEERS EST        454,200.00  AMOUNT UNDER        154,860.00        PERCENT UNDER EST 34.10
+   PROGRAM ELEMENTS      RAS
+
+                 BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                 --------      -----------  ---------         -------------------------------------------------
+
+                     1           299,340.00    4              MIKE BROWN ELECTRIC COMPANY           707 792-8100  NSB PREF CLAIMED
+                                                                                                    00306767
+                                                              561 A MERCANTILE DRIVE            FAX 707 792-8110
+                                                              COTATI CA  94931-3040
+
+                     2           329,500.00    5              REPUBLIC INTELLIGENT                  415 884-3000  NSB PREF CLAIMED
+                                                              TRANSPORTATION SERVICES INC           00647154
+                                                              371 BELMARIN KEYS BLVD, ST 200    FAX 415 884-4800
+                                                              NOVATO, CA  94949
+
+                     3           385,750.00    1              W BRADLEY ELECTRIC INC                415 898-1400  NSB PREF CLAIMED
+                                                                                                    00390741
+                                                              90 HILL ROAD                      FAX 415 493-2554
+                                                              NOVATO CA  94945
+
+                     4           479,800.00    2              CAL ELECTRO INC                       530 223-5937  CC PREF CLAIMED
+                                                                                                    00390480
+                                                              5199 AIRPORT ROAD                 FAX 530 221-7038
+                                                              REDDING CA  96002
+
+                     5           488,257.00    3              TENNYSON ELECTRIC INC                 925 606-1038  SB PREF CLAIMED
+                                                                                                    00717998
+                                                              7275 NATIONAL DRIVE               FAX 925 606-7656   BID IS OVER SBP
+                                                              LIVERMORE CA  94550                                 PREFERENCE LIMITS
+
+
+    IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS
+    FIRST, THEN APPLIES THE NON-SMALL BUSINESS PREFERENCE IF DOING SO WOULD NOT DISPLACE A SMALL BUSINESS FROM AWARD OF THE CONTRACT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A6804                                                                                                BID211
+            01-VAR-0099                                                                                              PAGE  2
+            05/16/12                                                                                                 05/22/12
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      04     ED SAFETY                                                    ITEM 5
+             LODI CA
+
+             GLOBAL ENVIRONMENTAL NETWORK                                 ITEMS 1, 2, 6
+             OAKLAND CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A6804                                                                                                BID211
+            01-VAR-0099                                                                                              PAGE  3
+            05/16/12                                                                                                 05/22/12
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      05     NONE                                                         NONE
+
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     NONE                                                         NONE
+
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      02     TITAN DVBE                                                   ITEMS 5 AND 6
+             REDDING CA
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      03     GLOBAL ENVIRONMENTAL                                         ITEM 2
+             8390 CAPWELL
+             OAKLAND CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A6804                                                                                                BID211
+            01-VAR-0099                C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  4
+            05/16/12                                                                                                 05/22/12
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+         1     074016      CONSTRUCTION SITE MANAGEMENT                   LS     LUMP SUM            4,180.00         4,180.00
+         2     074017      PREPARE WATER POLLUTION CONTROL                LS     LUMP SUM              930.00           930.00
+                           PROGRAM
+         3     074038      TEMPORARY DRAINAGE INLET PROTECTION            EA            6              250.00         1,500.00
+         4     074042      TEMPORARY CONCRETE WASHOUT (PORTABLE)          LS     LUMP SUM            1,000.00         1,000.00
+         5     120100      TRAFFIC CONTROL SYSTEM                         LS     LUMP SUM           24,400.00        24,400.00
+         6     128650      PORTABLE CHANGEABLE MESSAGE SIGN               EA            4            2,850.00        11,400.00
+         7     861501      MODIFY SIGNAL AND LIGHTING                     LS     LUMP SUM          255,930.00       255,930.00
+
+                                                                                                    TOTAL           299,340.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A6804                                                                                                BID211
+            01-VAR-0099                S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  5
+            05/16/12                                                                                                 05/22/12
+
+       |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD              |            FOURTH             |            FIFTH
+       |       BID         AMOUNT      |       BID         AMOUNT      |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+     1 |         2,500.00       2500.00|           500.00        500.00|         7,000.00       7000.00|         1,000.00       1000.00
+     2 |         2,000.00       2000.00|           600.00        600.00|         2,000.00       2000.00|         2,000.00       2000.00
+     3 |         1,000.00       6000.00|           150.00        900.00|           800.00       4800.00|           900.00       5400.00
+     4 |         1,500.00       1500.00|           250.00        250.00|         1,200.00       1200.00|         2,500.00       2500.00
+     5 |         7,500.00       7500.00|        10,000.00      10000.00|        28,000.00      28000.00|        48,000.00      48000.00
+     6 |         3,000.00      12000.00|         2,875.00      11500.00|         1,500.00       6000.00|         1,650.00       6600.00
+     7 |       298,000.00     298000.00|       362,000.00     362000.00|       430,800.00     430800.00|       422,757.00     422757.00
+
+   TOT                      329,500.00                     385,750.00                     479,800.00                     488,257.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

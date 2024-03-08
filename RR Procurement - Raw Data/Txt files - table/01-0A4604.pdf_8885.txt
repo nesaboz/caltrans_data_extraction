@@ -1,0 +1,208 @@
+
+
+
+
+                         STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                              PAGE  1
+           BID OPENING DATE    05/16/17                    IN HUMBOLDT AND MENDOCINO COUNTIES                                 05/17/17
+           CONTRACT NUMBER     01-0A4604                   AT VARIOUS LOCATIONS                                     CONTRACT CODE 'D '
+           LOCATION            01-VAR-0999-VAR                                                                       27 CONTRACT ITEMS
+
+
+                                                           BRIDGE REHAB - SCOUR                      FEDERAL AID  NONE
+
+
+
+                    DVBE GOALS: DISABLED VETERANS BUSINESS ENTERPRISES -  5.0%
+       PROPOSALS ISSUED    4    FUND TOTAL   HA22              0                         TOTAL NUMBER OF WORKING DAYS     40
+
+       NUMBER OF BIDDERS  1    ENGINEERS EST        820,942.00   AMOUNT OVER        564,043.00         PERCENT OVER EST 68.71
+       PROGRAM ELEMENTS      RAS
+
+                     BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                     --------      -----------  ---------         -------------------------------------------------
+
+                         1         1,384,985.00    1              SERAFIX ENGINEERING                   925 552-8253  SB PREF CLAIMED
+                                                                  CONTRACTORS, INC.                     01019229
+                                                                  1596 SERAFIX RD                   FAX 925 552-8254
+                                                                  ALAMO  CA  94507
+
+
+        IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS
+        FIRST, THEN APPLIES THE NON-SMALL BUSINESS PREFERENCE IF DOING SO WOULD NOT DISPLACE A SMALL BUSINESS FROM AWARD OF THE CONTRACT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                01-0A4604                                                                                                BID211
+                01-VAR-0999                                                                                              PAGE  2
+                05/16/17                                                                                                 05/17/17
+                                                  L I S T   O F   S U B C O N T R A C T O R S
+
+
+       BIDDER ID NAME AND ADDRESS                        LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+       _________ ____________________________________________________________ ____________________________________________________________
+
+          01     ROLL'N ROCK CONSTRUCTION, INC                                CONSTRUCTION AREA SIGNS AND FLAGGING (PARTIAL)
+                 MOUNT SHASTA CA                         971838
+
+                 ROLL'N ROCK CONSTRUCTION, INC                                ITEM 2 (60%)
+                 MOUNT SHASTA CA                         971838
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                01-0A4604                                                                                                BID211
+                01-VAR-0999                C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  3
+                05/16/17                                                                                                 05/17/17
+
+       ------------------------------------------------------------------------------------------------------------------------------------
+
+           ITEM      ITEM                                                   UNIT OF     ESTIMATED
+            NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+       ------------------------------------------------------------------------------------------------------------------------------------
+
+
+             1     070030      LEAD COMPLIANCE PLAN                           LS     LUMP SUM            2,000.00         2,000.00
+             2     100100      DEVELOP WATER SUPPLY                           LS     LUMP SUM            2,000.00         2,000.00
+             3     120100      TRAFFIC CONTROL SYSTEM                         LS     LUMP SUM          160,000.00       160,000.00
+             4     128652      PORTABLE CHANGEABLE MESSAGE SIGN (LS)          LS     LUMP SUM           20,000.00        20,000.00
+             5     130100      JOB SITE MANAGEMENT                            LS     LUMP SUM           15,000.00        15,000.00
+             6     000001      ITEM DELETED PER ADDENDUM                      LS     LUMP SUM                 .00             0.00
+             7     130730      STREET SWEEPING                                LS     LUMP SUM            5,000.00         5,000.00
+             8     130900      TEMPORARY CONCRETE WASHOUT                     LS     LUMP SUM            1,000.00         1,000.00
+             9     131103      WATER QUALITY SAMPLING AND ANALYSIS DAY        EA            8              500.00         4,000.00
+            10     131104      WATER QUALITY MONITORING REPORT                EA            2              500.00         1,000.00
+            11     141110      WORK AREA MONITORING (BRIDGE)                  LS     LUMP SUM            2,000.00         2,000.00
+            12     146002      CONTRACTOR-SUPPLIED BIOLOGIST (LS)             LS     LUMP SUM           40,000.00        40,000.00
+            13     153213      REMOVE CONCRETE (STRUCTURE)                    CY           46              800.00        36,800.00
+            14     190151      CHANNEL EXCAVATION                             CY          102              200.00        20,400.00
+            15 (F) 192003      STRUCTURE EXCAVATION (BRIDGE)                  CY        1,860              175.00       325,500.00
+            16     260203      CLASS 2 AGGREGATE BASE (CY)                    CY           56              350.00        19,600.00
+            17     511106      DRILL AND BOND DOWEL                           LF           73              100.00         7,300.00
+            18 (F) 721013      ROCK SLOPE PROTECTION                          CY          845              400.00       338,000.00
+                               (1/4 T, METHOD B) (CY)
+            19 (F) 721015      ROCK SLOPE PROTECTION                          CY          142              400.00        56,800.00
+                               (LIGHT, METHOD B) (CY)
+            20 (F) 721028      ROCK SLOPE PROTECTION (NO. 2, METHOD B)        CY          312              350.00       109,200.00
+                               (CY)
+            21     721431      CONCRETE (CONCRETE APRON)                      CY           40            1,000.00        40,000.00
+            22 (F) 721521      CONCRETED-ROCK SLOPE PROTECTION                CY           99              400.00        39,600.00
+                               (1/2 T, METHOD A) (CY)
+            23     729011      ROCK SLOPE PROTECTION FABRIC (CLASS 8)         SQYD      1,203                5.00         6,015.00
+            24 (F) 750001      MISCELLANEOUS IRON AND STEEL                   LB          177               10.00         1,770.00
+            25     000002      ITEM DELETED PER ADDENDUM                      LS     LUMP SUM                 .00             0.00
+            26     130200      PREPARE WATER POLLUTION CONTROL PROGRAM        LS     LUMP SUM            2,000.00         2,000.00
+            27     999990      MOBILIZATION                                   LS     LUMP SUM          130,000.00       130,000.00
+
+                                                                                                        TOTAL         1,384,985.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

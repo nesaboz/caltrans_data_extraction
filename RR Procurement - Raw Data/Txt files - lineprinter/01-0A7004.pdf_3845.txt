@@ -1,0 +1,346 @@
+
+
+
+
+
+                     STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
+                                                                                                                          PAGE  1
+       BID OPENING DATE    04/03/12                    IN MENDOCINO COUNTY NEAR LEGGETT                                   04/09/12
+       CONTRACT NUMBER     01-0A7004                   FROM 0.1 MI SOUTH OF RATTLESNAKE                         CONTRACT CODE 'C '
+       LOCATION            01-MEN-101-81.4/R84.7       CREEK BRIDGE #10-0027 TO CUMMINGS                         21 CONTRACT ITEMS
+                                                       ROAD UNDERCROSSING
+
+                                                       OPEN GRADED BONDED WEARING COURSE         FEDERAL AID  ACNH-Q101-(215)E
+
+
+
+                DB GOALS:   DISADVANTAGED BUSINESS ENTERPRISE -  8.0%
+   PROPOSALS ISSUED    4    FUND TOTAL   HM1               0                         TOTAL NUMBER OF WORKING DAYS     35
+
+   NUMBER OF BIDDERS  3    ENGINEERS EST      1,066,770.50   AMOUNT OVER         83,859.00         PERCENT OVER EST  7.86
+   PROGRAM ELEMENTS      RAS
+
+                 BID RANK       BID TOTAL   BIDDER ID         BIDDER INFORMATION  (NAME/ADDRESS/LOCATION)
+                 --------      -----------  ---------         -------------------------------------------------
+
+                     1         1,150,629.50    2              GRANITE CONSTRUCTION COMPANY          831 724-1011
+                                                                                                    00000089
+                                                              P O BOX 50085                     FAX 831 768-4021
+                                                              WATSONVILLE CA  95077-5085
+
+                     2         1,152,787.00    1              WINDSOR FUEL COMPANY                  925 427-5266
+                                                                                                    00776848
+                                                              P O BOX 1029                      FAX 925 427-1216
+                                                              PITTSBURG CA  94565
+
+                     3         1,330,295.00    3              MERCER-FRASER COMPANY                 707 443-6371
+                                                                                                    00105709
+                                                              P O BOX 1006                      FAX 707 443-0277
+                                                              EUREKA CA  95502-1006
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A7004                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  2
+            04/03/12                                                                                                 04/09/12
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      02     CENTRAL STRIPING SERVICE                                     STRIPE, RUMBLE STRIP
+             RANCHO CORDOVA CA  95742
+
+             TELFER OIL COMPANY                                           EMULSION
+             MARTINEZ CA
+
+             WINDSOR FUEL COMPANY                                         OPERATED PAVER AND SHUTTLE BUGGY
+             PITTSBURGH CA  94565
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A7004                                                                                                BID211
+            01-MEN-101                                                                                               PAGE  3
+            04/03/12                                                                                                 04/09/12
+                                              L I S T   O F   S U B C O N T R A C T O R S
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      01     CENTRAL STRIPING                                             ITEMS 4,6,7 AND 12 THRU 20
+             RANCHO CORDOVA CA
+
+
+   BIDDER ID NAME AND ADDRESS                                            DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+   _________ ____________________________________________________________ ____________________________________________________________
+
+      03     APPLY-A-LINE                                                 STRIPING
+             ANDERSON CA
+
+             AUSTIN ENTERPRISES                                           RUMBLE STRIP
+             BAKERSFIELD CA
+
+             ST RHOADES                                                   WPCP, CAS, COLD PLANE AC, TRAFFIC CONTROL SYSTEM
+             REDDING CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A7004                                                                                                BID211
+            01-MEN-101                 C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE  4
+            04/03/12                                                                                                 04/09/12
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+         1     074016      CONSTRUCTION SITE MANAGEMENT                   LS     LUMP SUM              550.00           550.00
+         2     074017      PREPARE WATER POLLUTION CONTROL                LS     LUMP SUM            1,500.00         1,500.00
+                           PROGRAM
+         3     120090      CONSTRUCTION AREA SIGNS                        LS     LUMP SUM            4,500.00         4,500.00
+         4     120100      TRAFFIC CONTROL SYSTEM                         LS     LUMP SUM           70,928.00        70,928.00
+         5     128650      PORTABLE CHANGEABLE MESSAGE SIGN               EA            4            1,500.00         6,000.00
+         6     150714      REMOVE THERMOPLASTIC TRAFFIC STRIPE            LF        2,940                1.30         3,822.00
+         7     150715      REMOVE THERMOPLASTIC PAVEMENT MARKING          SQFT        510                3.00         1,530.00
+         8     153103      COLD PLANE ASPHALT CONCRETE PAVEMENT           SQYD      1,470                7.00        10,290.00
+         9     190110      LEAD COMPLIANCE PLAN                           LS     LUMP SUM            1,500.00         1,500.00
+        10     390151      ASPHALTIC EMULSION MEMBRANE                    TON         140              995.00       139,300.00
+                           (BONDED WEARING COURSE)
+        11     390158      HOT MIX ASPHALT                                TON       6,110              135.00       824,850.00
+                           (BONDED WEARING COURSE-OPEN GRADED)
+        12     022755      SHOULDER RUMBLE STRIP                          STA         350                9.00         3,150.00
+        13     022756      CENTERLINE RUMBLE STRIP                        STA         350                9.00         3,150.00
+        14     840504      4" THERMOPLASTIC TRAFFIC STRIPE                LF      109,000                 .42        45,780.00
+        15     840506      8" THERMOPLASTIC TRAFFIC STRIPE                LF        1,470                 .75         1,102.50
+        16     840515      THERMOPLASTIC PAVEMENT MARKING                 SQFT        510                5.00         2,550.00
+        17     840523      4" THERMOPLASTIC TRAFFIC STRIPE                LF          320                 .35           112.00
+                           (BROKEN 12-3)
+        18     840525      4" THERMOPLASTIC TRAFFIC STRIPE                LF       38,500                 .35        13,475.00
+                           (BROKEN 36-12)
+        19     840526      4" THERMOPLASTIC TRAFFIC STRIPE                LF          200                 .35            70.00
+                           (BROKEN 17-7)
+        20     850122      PAVEMENT MARKER                                EA        2,380                6.50        15,470.00
+                           (RETROREFLECTIVE-RECESSED)
+        21     860090      MAINTAINING EXISTING TRAFFIC MANAGEMENT        LS     LUMP SUM            1,000.00         1,000.00
+                           SYSTEM ELEMENTS DURING CONSTRUCTION
+
+                                                                                                    TOTAL         1,150,629.50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            01-0A7004                                                                                                BID211
+            01-MEN-101                 S U M M A R Y   O F   R E M A I N I N G   B I D D E R S                       PAGE  5
+            04/03/12                                                                                                 04/09/12
+
+       |-------------------------------|-------------------------------
+   ITEM|            SECOND             |            THIRD
+       |       BID         AMOUNT      |       BID         AMOUNT
+       |-------------------------------|-------------------------------
+     1 |         5,000.00       5000.00|         2,500.00       2500.00
+     2 |         1,000.00       1000.00|         5,000.00       5000.00
+     3 |        10,000.00      10000.00|        15,000.00      15000.00
+     4 |       186,000.50     186000.50|       138,750.00     138750.00
+     5 |         2,000.00       8000.00|         4,000.00      16000.00
+     6 |             1.30       3822.00|             2.50       7350.00
+     7 |             3.00       1530.00|            10.00       5100.00
+     8 |            12.50      18375.00|            10.00      14700.00
+     9 |         1,000.00       1000.00|         3,500.00       3500.00
+    10 |           700.00      98000.00|           850.00     119000.00
+    11 |           120.00     733200.00|           145.00     885950.00
+    12 |             9.00       3150.00|            16.00       5600.00
+    13 |             9.00       3150.00|            16.00       5600.00
+    14 |              .42      45780.00|              .55      59950.00
+    15 |              .75       1102.50|             9.00      13230.00
+    16 |             5.00       2550.00|             9.00       4590.00
+    17 |              .35        112.00|             2.00        640.00
+    18 |              .35      13475.00|              .25       9625.00
+    19 |              .35         70.00|              .25         50.00
+    20 |             6.50      15470.00|             7.00      16660.00
+    21 |         2,000.00       2000.00|         1,500.00       1500.00
+
+   TOT                    1,152,787.00                   1,330,295.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

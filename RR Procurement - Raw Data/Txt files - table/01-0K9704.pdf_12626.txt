@@ -1,0 +1,618 @@
+                                                State of California Department of Transportation
+
+                                                                   Bid Summary
+
+Bid Opening Date: 05/04/2022                                                                                                                Page 1
+
+Contract Number:    01-0K9704                                                                                                               05/05/2022
+
+Location: 01-Men-20-26.0/28.8,     MENDOCINO COUNTY IN AND NEAR WILLITS FROM 0.3 MILE WEST                    Contract Code:        D
+
+   31.8/R33.2                      OF IRMULCO ROAD TO 1.3 MILES EAST OF TWO ROCK LOOKOUT
+
+                                   ROAD AND FROM 0.2 MILE EAST OF BROADDUS CREEK BRIDGE
+
+                                   TO SOUTH MAIN STREET
+
+                                   Replace AC surfacing, cold plane AC pavement and RHMA (gap graded).        Number of Items:      37
+
+DVBE - 3.0%                                                                                                   Federal Aid #1: NONE
+
+Proposals Issued:   3           Total Number of Working Days:  45     Overrun/Underrun:           196,781.84
+
+Number of Bidders:  3           Engineers Est:   2,076,934.00         % Over/Under Est:           9.47%
+
+Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Address/Location)
+
+1                   $2,273,715.84  VC0000000213  GRANITE CONSTRUCTION COMPANY                                 Phone  (707)467-4100
+
+                                                 1324 S. State Street                                         CSLB#  00000089       CC  PREF CLAIMED
+
+                                                 Ukiah CA      95482                                          Fax    (707)467-4143
+
+2                   $2,499,930.90  VC0000007021  GR SUNDBERG, INC.                                            Phone  (707)825-6565
+
+                                                 5211 BOYD ROAD                                               CSLB#  00732695       SB PREF CLAIMED
+
+                                                 ARCATA CA         95521                                      Fax    (707)825-6563  BID IS OVER SB
+
+                                                                                                                                    PREFERENCE
+
+                                                                                                                                    LIMITS
+
+3                   $2,609,799.60  VC0000014187  GHILOTTI CONSTRUCTION COMPANY, INC.                          Phone  (707)585-1221
+
+                                                 246 GHILOTTI AVENUE                                          CSLB#  00644515       CC PREF CLAIMED
+
+                                                 SANTA ROSA CA         95407                                  Fax    (707)585-1601
+
+IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS                  FIRST,
+
+THEN APPLIES THE NON-SMALL BUSINESS PREFERENCE IF DOING SO WOULD NOT DISPLACE A SMALL BUSINESS FROM AWARD OF THE CONTRACT.
+Bid Opening Date:  05/04/2022                                                                                                    Page 2
+
+Contract Number:   01-0K9704                                                                                                     05/05/2022
+
+                                                            Contract Proposal  of  Low  Bidder
+
+Item  Item                                       Item Description                               Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                      Measure  Quantity
+
+0001  070030       LEAD COMPLIANCE PLAN                                                         LS       LUMP SUM   1,200.00     1,200.00
+
+0002  090100       TIME-RELATED OVERHEAD (WDAY)                                                 WDAY     45.0            750.00  33,750.00
+
+0003  120090       CONSTRUCTION AREA SIGNS                                                      LS       LUMP SUM   6,040.00     6,040.00
+
+0004  120100       TRAFFIC CONTROL SYSTEM                                                       LS       LUMP SUM   200,000.00   200,000.00
+
+0005  120149       TEMPORARY PAVEMENT MARKING (PAINT)                                           SQFT     670.0           1.50    1,005.00
+
+0006  120159       TEMPORARY TRAFFIC STRIPE (PAINT)                                             LF       65,000.0        0.30    19,500.00
+
+0007  010413       PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS      (LS)                         LS       LUMP SUM   1,250.00     1,250.00
+
+0008  124000       TEMPORARY PEDESTRIAN ACCESS ROUTE                                            LS       LUMP SUM   5,000.00     5,000.00
+
+0009  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                        LS       LUMP SUM   2,000.00     2,000.00
+
+0010  130100       JOB SITE MANAGEMENT                                                          LS       LUMP SUM   2,500.00     2,500.00
+
+0011  130200       PREPARE WATER POLLUTION CONTROL PROGRAM                                      LS       LUMP SUM   1,000.00     1,000.00
+
+0012  190185       SHOULDER BACKING                                                             TON      170.0           230.00  39,100.00
+
+0013  374002       ASPHALTIC EMULSION (FOG SEAL COAT)                                           TON      0.8        3,204.45     2,563.56
+
+0014  374207       CRACK TREATMENT                                                              LNMI     8.2        6,532.00     53,562.40
+
+0015  390095       REPLACE ASPHALT CONCRETE SURFACING                                           CY       590.0           515.00  303,850.00
+
+0016  390132       HOT MIX ASPHALT (TYPE A)                                                     TON      340.0           322.00  109,480.00
+
+0017  390137       RUBBERIZED HOT MIX ASPHALT (GAP GRADED)                                      TON      4,780.0         235.00  1,123,300.00
+
+0018  394060       DATA CORE                                                                    LS       LUMP SUM   2,400.00     2,400.00
+
+0019  397005       TACK COAT                                                                    TON      32.0       1,058.59     33,874.88
+
+0020  398200       COLD PLANE ASPHALT CONCRETE PAVEMENT                                         SQYD     69,600.0        2.14    148,944.00
+
+0021  780258       ADJUST MANHOLE FRAME AND COVER (UTILITY)                                     EA       1.0        2,700.00     2,700.00
+
+0022  780260       REMOVE AND REPLACE MONUMENT                                                  EA       2.0        2,000.00     4,000.00
+
+0023  780270       LOWER AND RAISE FRAME AND COVER (UTILITY)                                    EA       2.0        1,500.00     3,000.00
+
+0024  810120       REMOVE PAVEMENT MARKER                                                       EA       1,960.0         1.00    1,960.00
+Bid Opening Date:  05/04/2022                                                                                                    Page 3
+
+Contract Number:   01-0K9704                                                                                                     05/05/2022
+
+                                                      Contract Proposal of Low Bidder
+
+Item  Item                       Item Description                                               Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                      Measure  Quantity
+
+0025  810230       PAVEMENT MARKER (RETROREFLECTIVE)                                            EA       580.0             5.00  2,900.00
+
+0026  810250       PAVEMENT MARKER (RETROREFLECTIVE-RECESSED)                                   EA       1,310.0           9.00  11,790.00
+
+0027  840516       THERMOPLASTIC PAVEMENT MARKING (ENHANCED WET NIGHT VISIBILITY)               SQFT     810.0             9.50  7,695.00
+
+0028  840619       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN      LF       120.0             0.75  90.00
+
+                   12-3)
+
+0029  840623       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN      LF       1,910.0           0.75  1,432.50
+
+                   36-12)
+
+0030  846007       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)              LF       83,000.0          1.00  83,000.00
+
+0031  846008       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN  8-  LF       48.0              0.75  36.00
+
+                   4)
+
+0032  846009       8" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)              LF       1,520.0           1.50  2,280.00
+
+0033  846051       12" RUMBLE STRIP (ASPHALT CONCRETE PAVEMENT)                                 STA      150.0           77.35   11,602.50
+
+0034  846055       8" AUDIBLE TRAFFIC STRIPE SYSTEMS                                            LF       240.0           40.00   9,600.00
+
+0035  847198       CONTRAST STRIPE THERMOPLASTIC                                                LF       430.0             3.00  1,290.00
+
+0036  870009       MAINTAINING EXISTING TRAFFIC MANAGEMENT SYSTEM ELEMENTS DURING               LS       LUMP SUM   4,000.00     4,000.00
+
+                   CONSTRUCTION
+
+0037  870600       TRAFFIC MONITORING STATION SYSTEM                                            LS       LUMP SUM   36,020.00    36,020.00
+
+                                                                                                                    Total        2,273,715.84
+Bid Opening Date: 05/04/2022                                                    Page 4
+
+Contract Number:  01-0K9704                                                     05/05/2022
+
+                                                 Summary of Remaining  Bidders
+
+                  Second                         Third
+
+Item  Bid                     Amount        Bid          Amount
+
+0001              2,200.00    2,200.00      2,500.00     2,500.00
+
+0002              1,500.00    67,500.00     1,700.00     76,500.00
+
+0003              9,000.00    9,000.00      10,500.00    10,500.00
+
+0004  250,000.00              250,000.00    235,000.00   235,000.00
+
+0005              1.50        1,005.00           4.00    2,680.00
+
+0006              0.30        19,500.00          0.45    29,250.00
+
+0007              3,500.00    3,500.00      20,000.00    20,000.00
+
+0008              5,700.00    5,700.00      2,300.00     2,300.00
+
+0009              2,500.00    2,500.00      51,000.00    51,000.00
+
+0010              27,000.00   27,000.00     5,900.00     5,900.00
+
+0011              3,000.00    3,000.00      1,295.00     1,295.00
+
+0012              106.00      18,020.00          202.00  34,340.00
+
+0013              4,100.00    3,280.00      2,000.00     1,600.00
+
+0014              6,532.00    53,562.40     6,750.00     55,350.00
+
+0015              549.00      323,910.00         658.00  388,220.00
+
+0016              412.00      140,080.00         313.00  106,420.00
+
+0017              227.00      1,085,060.00       241.00  1,151,980.00
+
+0018              1,650.00    1,650.00      4,800.00     4,800.00
+
+0019              1,800.00    57,600.00     1,712.50     54,800.00
+
+0020              3.60        250,560.00         2.40    167,040.00
+
+0021              1,400.00    1,400.00      2,200.00     2,200.00
+
+0022              1,100.00    2,200.00      3,600.00     7,200.00
+
+0023              1,200.00    2,400.00      2,200.00     4,400.00
+
+0024              2.00        3,920.00           3.00    5,880.00
+
+0025              5.00        2,900.00           5.00    2,900.00
+
+0026              9.00        11,790.00          15.00   19,650.00
+
+0027              9.50        7,695.00           12.00   9,720.00
+
+0028              0.75        90.00              0.70    84.00
+
+0029              0.75        1,432.50           0.70    1,337.00
+
+0030              1.00        83,000.00          1.00    83,000.00
+
+0031              0.75        36.00              0.70    33.60
+
+0032              1.50        2,280.00           1.50    2,280.00
+Bid Opening Date: 05/04/2022                                                     Page 5
+
+Contract Number:  01-0K9704                                                      05/05/2022
+
+                                                 Summary of Remaining   Bidders
+
+                  Second                         Third
+
+Item    Bid                   Amount        Bid          Amount
+
+0033              35.00       5,250.00           170.00  25,500.00
+
+0034              40.00       9,600.00           10.00   2,400.00
+
+0035              3.00        1,290.00           4.00    1,720.00
+
+0036              4,000.00    4,000.00      4,000.00     4,000.00
+
+0037              36,020.00   36,020.00     36,020.00    36,020.00
+
+Total:                       $2,499,930.90               $2,609,799.60
+01-0K9704                                                                                PAGE S1
+
+01-MEN-20-26.0/28.8, 31.8/R33.2                                                          5/5/2022
+
+5/4/2022
+
+                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS   LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000000213  T&S DVBE INC.                              ITEM 3 (100%)
+
+              REDDING CA         983087
+
+VC0000000213  T&S DVBE INC.                              ITEM 4 (68%)
+
+              REDDING CA         983087
+
+VC0000000213  T&S DVBE INC.                              FLAGGING & TRAFFIC CONTROL
+
+              REDDING CA         983087
+
+VC0000000213  APPLY A LINE LLC                           ITEM 5 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000000213  APPLY A LINE LLC                           ITEM 6 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000000213  APPLY A LINE LLC                           ITEM 25 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000000213  APPLY A LINE LLC                           ITEM 26 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000000213  APPLY A LINE LLC                           ITEM 27 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000000213  APPLY A LINE LLC                           ITEM 28 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000000213  APPLY A LINE LLC                           ITEM 29 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000000213  APPLY A LINE LLC                           ITEM 30 (100%)
+
+              ANDERSON CA        1031889
+
+CONTINUED ON  NEXT PAGE
+01-0K9704                                                                                       PAGE S2
+
+01-MEN-20-26.0/28.8, 31.8/R33.2                                                                 5/5/2022
+
+5/4/2022
+
+                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS     LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000000213  APPLY A LINE LLC                             ITEM 31 (100%)
+
+              ANDERSON CA          1031889
+
+VC0000000213  APPLY A LINE LLC                             ITEM 32 (100%)
+
+              ANDERSON CA          1031889
+
+VC0000000213  APPLY A LINE LLC                             ITEM 33 (45%)
+
+              ANDERSON CA          1031889
+
+VC0000000213  APPLY A LINE LLC                             ITEM 34 (100%)
+
+              ANDERSON CA          1031889
+
+VC0000000213  APPLY A LINE LLC                             ITEM 35 (100%)
+
+              ANDERSON CA          1031889
+
+VC0000000213  APPLY A LINE LLC                             12" RUMBLE STRIP (CUT & SWEEP ONLY)
+
+              ANDERSON CA          1031889
+
+VC0000000213  MIKE BROWN ELECTRIC                          ITEM 36 (100%)
+
+              COTATI CA            306767
+
+VC0000000213  MIKE BROWN ELECTRIC                          ITEM 37 (100%)
+
+              COTATI CA            306767
+
+VC0000000213  AUSTIN ENTERPRISES                           ITEM 14 (100%)
+
+              BAKERSFIELD CA       764893
+
+VC0000000213  ANRAK CORPORATION                            ITEM 15 (6%)
+
+              SACRAMENTO CA        256390
+
+VC0000000213  ANRAK CORPORATION                            ITEM 20 (26%)
+
+              SACRAMENTO CA        256390
+
+CONTINUED ON NEXT PAGE
+01-0K9704                                                                                    PAGE S3
+
+01-MEN-20-26.0/28.8, 31.8/R33.2                                                              5/5/2022
+
+5/4/2022
+
+                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS   LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000000213  ANRAK CORPORATION                          OPERATED COLD PLANE MACHINE RENTAL
+
+              SACRAMENTO CA      256390
+
+VC0000000213  ANRAK CORPORATION                          OPERATED COLD PLANE MACHINE RENTAL
+
+              SACRAMENTO CA      256390
+01-0K9704                                                                                   PAGE S4
+
+01-MEN-20-26.0/28.8, 31.8/R33.2                                                             5/5/2022
+
+5/4/2022
+
+                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS   LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 5 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 6 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 25 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 26 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 27 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 28 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 29 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 30 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 31 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 32 (100%)
+
+              ANDERSON CA        1031889
+
+VC0000007021  APPLY-A-LINE LLC                           ITEM 33 (100%)
+
+              ANDERSON CA        1031889
+
+CONTINUED ON NEXT PAGE
+01-0K9704                                                                                                PAGE S5
+
+01-MEN-20-26.0/28.8, 31.8/R33.2                                                                          5/5/2022
+
+5/4/2022
+
+                                                LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                  LICENSE NUMBER          DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
+
+VC0000007021  APPLY-A-LINE LLC                                          ITEM 34 (100%)
+
+              ANDERSON CA                       1031889
+
+VC0000007021  APPLY-A-LINE LLC                                          ITEM 35 (100%)
+
+              ANDERSON CA                       1031889
+
+VC0000007021  AUSTIN ENTERPRISE                                         ITEM 14 (100%)
+
+              BAKERSFIELD CA                    764893
+
+VC0000007021  VSS EMULTECH                                              ITEM 19 (86%)
+
+              WEST SACRAMENTO CA                809868
+
+VC0000007021  VSS EMULTECH                                              TACK COAT
+
+              WEST SACRAMENTO CA                809868
+
+VC0000007021  MIKE BROWN ELECTRIC CO.                                   ITEM 36 (100%)
+
+              COTATI CA                         306767
+
+VC0000007021  MIKE BROWN ELECTRIC CO.                                   ITEM 37 (100%)
+
+              COTATI CA                         306767
+
+VC0000007021  ROLL N' ROCK CONSTRUCTION,  INC.                          ITEM 4 (54%)
+
+              MOUNT SHASTA CA                   971838
+
+VC0000007021  ROLL N' ROCK CONSTRUCTION,  INC.                          TRAFFIC CONTROL (PARTIAL)
+
+              MOUNT SHASTA CA                   971838
+01-0K9704                                                                                     PAGE S6
+
+01-MEN-20-26.0/28.8, 31.8/R33.2                                                               5/5/2022
+
+5/4/2022
+
+                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS     LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000014187  GLOBAL ROAD SEALING                          ITEM 14 (100%)
+
+              GARDEN GROVE CA      757584
+
+VC0000014187  MIKE BROWN ELECTRIC                          ITEM 36 (100%)
+
+              COTATI CA            306767
+
+VC0000014187  MIKE BROWN ELECTRIC                          ITEM 37 (100%)
+
+              COTATI CA            306767
+
+VC0000014187  ANRAK CORP                                   ITEM 15 (10%)
+
+              SACRAMENTO CA        256390
+
+VC0000014187  ANRAK CORP                                   ITEM 17 (3%)
+
+              SACRAMENTO CA        256390
+
+VC0000014187  ANRAK CORP                                   ITEM 20 (26%)
+
+              SACRAMENTO CA        256390
+
+VC0000014187  ANRAK CORP                                   AC GRINDING
+
+              SACRAMENTO CA        256390
+
+VC0000014187  ANRAK CORP                                   AC GRINDING
+
+              SACRAMENTO CA        256390
+
+VC0000014187  ANRAK CORP                                   AC GRINDING
+
+              SACRAMENTO CA        256390
+
+VC0000014187  CHRISP COMPANY                               ITEM 33 (55%)
+
+              FREMONT CA           374600
+
+VC0000014187  CHRISP COMPANY                               RUMBLE STRIP
+
+              FREMONT CA           374600
+
+CONTINUED ON  NEXT PAGE
+01-0K9704                                                                                   PAGE S7
+
+01-MEN-20-26.0/28.8, 31.8/R33.2                                                             5/5/2022
+
+5/4/2022
+
+                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS   LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000014187  CHRISP COMPANY                             ITEM 5 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 6 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 24 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 25 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 26 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 27 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 28 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 29 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 30 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 31 (100%)
+
+              FREMONT CA         374600
+
+VC0000014187  CHRISP COMPANY                             ITEM 32 (100%)
+
+              FREMONT CA         374600
+
+CONTINUED ON  NEXT PAGE
+01-0K9704                                                                                                  PAGE S8
+
+01-MEN-20-26.0/28.8, 31.8/R33.2                                                                            5/5/2022
+
+5/4/2022
+
+                                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                   LICENSE NUMBER          DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000014187  CHRISP COMPANY                                             ITEM 34 (100%)
+
+              FREMONT CA                         374600
+
+VC0000014187  CHRISP COMPANY                                             ITEM 35 (100%)
+
+              FREMONT CA                         374600
+
+VC0000014187  PACIFIC NORTHWEST OIL                                      ITEM 19 (100%)
+
+              STOCKTON CA                        705296
+
+VC0000014187  ROLL 'N' ROCK CONSTRUCTION,  INC.                          ITEM 3 (100%)
+
+              MOUNT SHASTA CA                    971838
+
+VC0000014187  ROLL 'N' ROCK CONSTRUCTION,  INC.                          ITEM 4 (34%)
+
+              MOUNT SHASTA CA                    971838
+
+VC0000014187  ROLL 'N' ROCK CONSTRUCTION,  INC.                          TRAFFIC CONTROL
+
+              MOUNT SHASTA CA                    971838
+

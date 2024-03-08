@@ -1,0 +1,2408 @@
+                                                State of California Department of Transportation
+
+                                                                   Bid Summary
+
+Bid Opening Date: 12/01/2022                                                                                                          Page 1
+
+Contract Number:    01-0H1914                                                                                                         12/01/2022
+
+Project ID:         0117000211       HUMBOLDT COUNTY NEAR WEITCHPEC FROM 0.6 MILE TO 0.2                    Contract Code:        B
+
+                                     MILE WEST OF BLUFF CREEK ROAD
+
+Location: 01-Hum-96-27.0/27.4        Drill ground anchor holes, place soldier piles, and excavate roadway.  Number of Items:      81
+
+DBE - 22.0%                                                                                                 Federal Aid #1: ACST-ER-31S4(004)E
+
+Proposals Issued:   12         Total Number of Working Days:  110  Overrun/Underrun:  -687,097.50
+
+Number of Bidders:  6          Engineers Est:      5,998,650.00    % Over/Under Est:              -11.45%
+
+Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Address/Location)
+
+1            A)     $5,311,552.50    VC0000003985  MERCER FRASER COMPANY                                    Phone  (707)443-6371
+
+             B)     110 Days * 6700                200 DINSMORE DR                                          CSLB#  00105709
+
+             A+B)   $6,048,552.50                  FORTUNA CA      95540                                    Fax    (707)443-0277
+
+2            A)     $5,387,241.84    VC1400003011  MCCULLOUGH CONSTRUCTION INC                              Phone  (707)825-1014
+
+             B)     110 Days * 6700                57 ALDERGROVE ROAD                                       CSLB#  00715577
+
+             A+B)   $6,124,241.84                  ARCATA CA       95521
+
+3            A)     $5,526,166.00    VC0000014127  R. BROWN CONSTRUCTION COMPANY                            Phone  (530)629-3702
+
+             B)     110 Days * 6700                18 CHINA CREEK RD.                                       CSLB#  00634826
+
+             A+B)   $6,263,166.00                  WILLOW CREEK CA        95573
+
+4            A)     $6,370,559.00    VC0000014878  STEWART ENGINEERING INC.                                 Phone  (530)244-8464
+
+             B)     110 Days * 6700                4839 CATERPILLAR ROAD                                    CSLB#  00796880
+
+             A+B)   $7,107,559.00                  REDDING CA      96003                                    Fax    (530)244-8462
+Bid Opening Date:  12/01/2022                                                                                  Page 2
+
+Contract Number:   01-0H1914                                                                                   12/01/2022
+
+5  A)              $6,590,057.24    VC0000100576  SHASTA SERVICES, INC. DBA TIMBERWORKS  Phone  (530)926-4093
+
+   B)              110 Days * 6700                509 S. MT SHASTA BLVD.                 CSLB#  00449510
+
+   A+B)            $7,327,057.24                  MT. SHASTA CA   96067
+
+6  A)              $6,613,524.10    VC0000007021  GR SUNDBERG, INC.                      Phone  (707)825-6565
+
+   B)              110 Days * 6700                5211 BOYD ROAD                         CSLB#  00732695
+
+   A+B)            $7,350,524.10                  ARCATA CA  95521                       Fax    (707)825-6563
+Bid Opening Date:  12/01/2022                                                                                                 Page 3
+
+Contract Number:   01-0H1914                                                                                                  12/01/2022
+
+                                                          Contract Proposal of  Low  Bidder
+
+Item  Item                                       Item Description                            Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                   Measure  Quantity
+
+0001  070030       LEAD COMPLIANCE PLAN                                                      LS       LUMP SUM   3,000.00     3,000.00
+
+0002  090105       TIME-RELATED OVERHEAD (LS)                                                LS       LUMP SUM   230,000.00   230,000.00
+
+0003  090200       DISPUTE RESOLUTION ADVISOR ON-SITE MEETING                                EA       5.0        2,000.00     10,000.00
+
+0004  090207       HOURLY OFF-SITE DISPUTE-RESOLUTION-ADVISOR-RELATED  TASKS                 HR       10.0            200.00  2,000.00
+
+0005  120090       CONSTRUCTION AREA SIGNS                                                   LS       LUMP SUM   7,800.00     7,800.00
+
+0006  120100       TRAFFIC CONTROL SYSTEM                                                    LS       LUMP SUM   32,000.00    32,000.00
+
+0007  120116       TYPE II BARRICADE                                                         EA       8.0             150.00  1,200.00
+
+0008  120149       TEMPORARY PAVEMENT MARKING (PAINT)                                        SQFT     24.0            19.00   456.00
+
+0009  120159       TEMPORARY TRAFFIC STRIPE (PAINT)                                          LF       400.0           7.50    3,000.00
+
+0010  120165       CHANNELIZER (SURFACE MOUNTED)                                             EA       56.0            45.00   2,520.00
+
+0011  120206       PORTABLE SIGNAL SYSTEMS (EA)                                              EA       1.0        65,000.00    65,000.00
+
+0012  010413       PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS (LS)                           LS       LUMP SUM   16,500.00    16,500.00
+
+0013  120320       TEMPORARY BARRIER SYSTEM                                                  LF       1,960.0         28.00   54,880.00
+
+0014  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                     LS       LUMP SUM   11,500.00    11,500.00
+
+0015  010877       ALTERNATIVE TEMPORARY CRASH CUSHION                                       EA       4.0        5,500.00     22,000.00
+
+0016  130100       JOB SITE MANAGEMENT                                                       LS       LUMP SUM   30,000.00    30,000.00
+
+0017  130200       PREPARE WATER POLLUTION CONTROL PROGRAM                                   LS       LUMP SUM   1,000.00     1,000.00
+
+0018  130570       TEMPORARY COVER                                                           SQYD     4,750.0         3.50    16,625.00
+
+0019  130610       TEMPORARY CHECK DAM                                                       LF       500.0           12.00   6,000.00
+
+0020  130620       TEMPORARY DRAINAGE INLET PROTECTION                                       EA       3.0             300.00  900.00
+
+0021  130680       TEMPORARY SILT FENCE                                                      LF       900.0           6.50    5,850.00
+
+0022  130710       TEMPORARY CONSTRUCTION ENTRANCE                                           EA       2.0        2,500.00     5,000.00
+
+0023  130730       STREET SWEEPING                                                           LS       LUMP SUM   15,000.00    15,000.00
+
+0024  130900       TEMPORARY CONCRETE WASHOUT                                                LS       LUMP SUM   14,000.00    14,000.00
+Bid Opening Date:  12/01/2022                                                                                                   Page 4
+
+Contract Number:   01-0H1914                                                                                                    12/01/2022
+
+                                                           Contract Proposal  of  Low  Bidder
+
+Item     Item                                       Item Description                           Unit of  Estimated  Bid          Amount
+
+No.      Code                                                                                  Measure  Quantity
+
+0025     141120    TREATED WOOD WASTE                                                          LB       1,200.0         1.00    1,200.00
+
+0026     146002    CONTRACTOR-SUPPLIED BIOLOGIST (LS)                                          LS       LUMP SUM   12,000.00    12,000.00
+
+0027     146007    INVASIVE SPECIES CONTROL                                                    LS       LUMP SUM   8,000.00     8,000.00
+
+0028     149001    DUST CONTROL PLAN (NATURALLY OCCURRING ASBESTOS)                            LS       LUMP SUM   2,500.00     2,500.00
+
+0029     160110    TEMPORARY HIGH-VISIBILITY FENCE                                             LF       500.0           4.00    2,000.00
+
+0030     190101    ROADWAY EXCAVATION                                                          CY       3,740.0         52.00   194,480.00
+
+0031     190185    SHOULDER BACKING                                                            TON      28.0            195.00  5,460.00
+
+0032  F  192049    STRUCTURE EXCAVATION (SOLDIER PILE WALL)                                    CY       373.0           330.00  123,090.00
+
+0033  F  193029    STRUCTURE BACKFILL (SOLDIER PILE WALL)                                      CY       17.0       6,600.00     112,200.00
+
+0034  F  193116    CONCRETE BACKFILL (SOLDIER PILE WALL)                                       CY       466.0           400.00  186,400.00
+
+0035  F  193119    LEAN CONCRETE BACKFILL                                                      CY       200.0           400.00  80,000.00
+
+0036     205035    WOOD MULCH                                                                  CY       33.0            170.00  5,610.00
+
+0037     037634    HYDRAULIC BIOTIC GROWTH MEDIUM                                              SQFT     18,600.0        0.43    7,998.00
+
+0038     037633    FIBER REINFORCED MATRIX                                                     SQFT     18,600.0        0.25    4,650.00
+
+0039     210350    FIBER ROLLS                                                                 LF       500.0           8.50    4,250.00
+
+0040     220101    FINISHING ROADWAY                                                           LS       LUMP SUM   10,000.00    10,000.00
+
+0041     260203    CLASS 2 AGGREGATE BASE (CY)                                                 CY       540.0           125.00  67,500.00
+
+0042     390132    HOT MIX ASPHALT (TYPE A)                                                    TON      990.0           190.00  188,100.00
+
+0043     391006    ASPHALT BINDER (GEOSYNTHETIC PAVEMENT INTERLAYER)                           TON      0.1        5,500.00     550.00
+
+0044     393004    GEOSYNTHETIC PAVEMENT INTERLAYER (PAVING FABRIC)                            SQYD     89.0            86.00   7,654.00
+
+0045     394073    PLACE HOT MIX ASPHALT DIKE (TYPE A)                                         LF       690.0           17.00   11,730.00
+
+0046     394090    PLACE HOT MIX ASPHALT (MISCELLANEOUS AREA)                                  SQYD     4.2             100.00  420.00
+
+0047     397005    TACK COAT                                                                   TON      0.9        1,100.00     990.00
+
+0048     460210    GROUND ANCHOR (SUBHORIZONTAL)                                               EA       64.0       11,500.00    736,000.00
+Bid Opening Date:  12/01/2022                                                                                                      Page 5
+
+Contract Number:   01-0H1914                                                                                                       12/01/2022
+
+                                                            Contract   Proposal  of  Low  Bidder
+
+Item     Item                                        Item Description                             Unit of  Estimated  Bid          Amount
+
+No.      Code                                                                                     Measure  Quantity
+
+0049     048099    STEEL SOLDIER PILE (W 12 X 58)                                                 LF       97.0            100.00  9,700.00
+
+0050     048100    STEEL SOLDIER PILE (2-W 12 X 58)                                               LF       1,812.0         200.00  362,400.00
+
+0051     490409    42" DRILLED HOLE                                                               LF       1,981.0         475.00  940,975.00
+
+0052  F  510072    STRUCTURAL CONCRETE, BARRIER SLAB                                              CY       128.0      1,500.00     192,000.00
+
+0053  F  510094    STRUCTURAL CONCRETE, DRAINAGE INLET                                            CY       14.0       6,100.00     85,400.00
+
+0054  F  048068    PRECAST CONCRETE LAGGING                                                       SQFT     1,214.0         83.00   100,762.00
+
+0055  F  575004    TIMBER LAGGING                                                                 MFBM     10.0       9,100.00     91,000.00
+
+0056     590120    CLEAN AND PAINT STEEL SOLDIER PILING                                           LS       LUMP SUM   145,000.00   145,000.00
+
+0057     665006    8" CORRUGATED STEEL PIPE (.079" THICK)                                         LF       10.0            127.00  1,270.00
+
+0058     665025    24" CORRUGATED STEEL PIPE (.138" THICK)                                        LF       620.0           330.00  204,600.00
+
+0059     680404    8" PERFORATED STEEL PIPE UNDERDRAIN                                            LF       204.0           160.00  32,640.00
+
+0060     710132    REMOVE CULVERT (LF)                                                            LF       160.0           42.00   6,720.00
+
+0061     710150    REMOVE INLET                                                                   EA       3.0        1,600.00     4,800.00
+
+0062  F  750001    MISCELLANEOUS IRON AND STEEL                                                   LB       2,375.0         4.50    10,687.50
+
+0063     760010    DESTROY WELL                                                                   EA       4.0        7,500.00     30,000.00
+
+0064     780440    PREPARE AND STAIN CONCRETE                                                     SQFT     1,214.0         10.00   12,140.00
+
+0065     810120    REMOVE PAVEMENT MARKER                                                         EA       35.0            10.00   350.00
+
+0066     810180    DELINEATOR (CLASS 2)                                                           EA       26.0            65.00   1,690.00
+
+0067     810250    PAVEMENT MARKER (RETROREFLECTIVE-RECESSED)                                     EA       130.0           40.00   5,200.00
+
+0068     820112    MARKER (CULVERT)                                                               EA       10.0            65.00   650.00
+
+0069     820134    OBJECT MARKER (TYPE P)                                                         EA       2.0             85.00   170.00
+
+0070     832006    MIDWEST GUARDRAIL SYSTEM (STEEL POST)                                          LF       700.0           31.00   21,700.00
+
+0071     832070    VEGETATION CONTROL (MINOR CONCRETE)                                            SQYD     390.0           57.00   22,230.00
+
+0072  F  833094    TUBULAR BICYCLE RAILING                                                        LF       191.0           160.00  30,560.00
+Bid Opening Date:  12/01/2022                                                                                                  Page 6
+
+Contract Number:   01-0H1914                                                                                                   12/01/2022
+
+                                                        Contract Proposal of Low    Bidder
+
+Item     Item                                       Item Description                        Unit of  Estimated  Bid            Amount
+
+No.      Code                                                                               Measure  Quantity
+
+0073     839543    TRANSITION RAILING (TYPE WB-31)                                          EA       2.0        4,800.00       9,600.00
+
+0074     839584    ALTERNATIVE IN-LINE TERMINAL SYSTEM                                      EA       2.0        3,800.00       7,600.00
+
+0075  F  048043    CONCRETE BARRIER (TYPE 85 MODIFIED)                                      LF       201.0           630.00    126,630.00
+
+0076     839752    REMOVE GUARDRAIL                                                         LF       700.0               5.00  3,500.00
+
+0077     846007    6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)          LF       4,970.0             2.00  9,940.00
+
+0078     846030    REMOVE THERMOPLASTIC TRAFFIC STRIPE                                      LF       750.0               3.50  2,625.00
+
+0079     000001    ITEM DELETED PER ADDENDUM                                                LS       LUMP SUM            0.00          0.00
+
+0080     170103    CLEARING AND GRUBBING (LS)                                               LS       LUMP SUM   35,000.00      35,000.00
+
+0081     999990    MOBILIZATION                                                             LS       LUMP SUM   475,000.00     475,000.00
+
+                                                                                                                     A)        5,311,552.50
+
+                                                                                                                     B)        110 Days * 6700
+
+                                                                                                                A+B)           6,048,552.50
+Bid Opening Date: 12/01/2022                                                                                     Page 7
+
+Contract Number:  01-0H1914                                                                                      12/01/2022
+
+                                               Summary of Remaining  Bidders
+
+                  Second                       Third                          Fourth                     Fifth
+
+Item  Bid                     Amount      Bid          Amount        Bid                Amount      Bid          Amount
+
+0001              1,450.00    1,450.00    2,000.00     2,000.00               1,400.00  1,400.00    3,350.00     3,350.00
+
+0002  289,767.00              289,767.00  100,000.00   100,000.00    363,000.00         363,000.00  200,000.00   200,000.00
+
+0003              2,000.00    10,000.00   2,000.00     10,000.00              2,000.00  10,000.00   2,000.00     10,000.00
+
+0004              200.00      2,000.00         200.00  2,000.00               200.00    2,000.00         200.00  2,000.00
+
+0005              15,000.00   15,000.00   7,500.00     7,500.00               7,400.00  7,400.00    7,725.00     7,725.00
+
+0006  251,421.00              251,421.00  130,000.00   130,000.00    178,000.00         178,000.00  42,400.00    42,400.00
+
+0007              100.00      800.00           100.00  800.00                 84.00     672.00           123.63  989.04
+
+0008              19.00       456.00           40.00   960.00                 24.00     576.00           19.00   456.00
+
+0009              7.50        3,000.00         10.00   4,000.00               9.00      3,600.00         7.50    3,000.00
+
+0010              60.00       3,360.00         50.00   2,800.00               56.00     3,136.00         45.00   2,520.00
+
+0011              80,000.00   80,000.00   60,000.00    60,000.00     61,600.00          61,600.00   87,350.00    87,350.00
+
+0012              10,000.00   10,000.00   6,000.00     6,000.00      22,500.00          22,500.00   13,600.00    13,600.00
+
+0013              17.83       34,946.80        25.00   49,000.00              23.50     46,060.00        51.07   100,097.20
+
+0014              12,000.00   12,000.00   16,000.00    16,000.00              5,700.00  5,700.00    19,200.00    19,200.00
+
+0015              5,000.00    20,000.00   2,500.00     10,000.00              1,800.00  7,200.00    4,500.00     18,000.00
+
+0016              14,000.00   14,000.00   20,000.00    20,000.00     28,000.00          28,000.00   17,300.00    17,300.00
+
+0017              1,500.00    1,500.00    2,000.00     2,000.00               1,600.00  1,600.00         750.00  750.00
+
+0018              3.00        14,250.00        2.00    9,500.00               4.00      19,000.00        8.00    38,000.00
+
+0019              12.00       6,000.00         15.00   7,500.00               34.00     17,000.00        12.00   6,000.00
+
+0020              400.00      1,200.00         300.00  900.00                 600.00    1,800.00         500.00  1,500.00
+
+0021              5.34        4,806.00         10.00   9,000.00               6.50      5,850.00         5.35    4,815.00
+
+0022              1,500.00    3,000.00    2,500.00     5,000.00               6,200.00  12,400.00   7,500.00     15,000.00
+
+0023              15,000.00   15,000.00   10,000.00    10,000.00     50,800.00          50,800.00   107,316.00   107,316.00
+
+0024              3,000.00    3,000.00    2,000.00     2,000.00      18,200.00          18,200.00   5,000.00     5,000.00
+
+0025              2.25        2,700.00         2.00    2,400.00               1.00      1,200.00         1.00    1,200.00
+
+0026              6,000.00    6,000.00    3,500.00     3,500.00      17,700.00          17,700.00   11,550.00    11,550.00
+
+0027              4,000.00    4,000.00    2,000.00     2,000.00               8,300.00  8,300.00    5,600.00     5,600.00
+
+0028              1,500.00    1,500.00    2,000.00     2,000.00               1,350.00  1,350.00    1,700.00     1,700.00
+
+0029              10.80       5,400.00         6.00    3,000.00               13.00     6,500.00         10.80   5,400.00
+
+0030              92.29       345,164.60       70.00   261,800.00             86.50     323,510.00       115.00  430,100.00
+
+0031              140.00      3,920.00         100.00  2,800.00               220.00    6,160.00         400.00  11,200.00
+
+0032              204.32      76,211.36        140.00  52,220.00              822.00    306,606.00       85.00   31,705.00
+Bid Opening Date: 12/01/2022                                                                                       Page 8
+
+Contract Number:  01-0H1914                                                                                        12/01/2022
+
+                                               Summary of Remaining  Bidders
+
+                  Second                       Third                          Fourth                       Fifth
+
+Item  Bid                     Amount      Bid          Amount        Bid                Amount        Bid          Amount
+
+0033              200.00      3,400.00         100.00  1,700.00      13,000.00          221,000.00    2,150.00     36,550.00
+
+0034              369.00      171,954.00       450.00  209,700.00             413.00    192,458.00         400.00  186,400.00
+
+0035              369.00      73,800.00        500.00  100,000.00             413.00    82,600.00          400.00  80,000.00
+
+0036              170.00      5,610.00         200.00  6,600.00               200.00    6,600.00           170.00  5,610.00
+
+0037              0.27        5,022.00         0.35    6,510.00               0.41      7,626.00           0.27    5,022.00
+
+0038              0.24        4,464.00         0.30    5,580.00               0.37      6,882.00           0.24    4,464.00
+
+0039              8.50        4,250.00         11.00   5,500.00               10.00     5,000.00           8.50    4,250.00
+
+0040              26,820.00   26,820.00   15,000.00    15,000.00              9,500.00  9,500.00      7,825.00     7,825.00
+
+0041              164.97      89,083.80        220.00  118,800.00             170.00    91,800.00          225.00  121,500.00
+
+0042              230.00      227,700.00       280.00  277,200.00             304.00    300,960.00         270.00  267,300.00
+
+0043              1,500.00    150.00      4,000.00     400.00                 10.00             1.00       1.00            0.10
+
+0044              180.00      16,020.00        200.00  17,800.00              100.00    8,900.00           88.00   7,832.00
+
+0045              14.00       9,660.00         24.00   16,560.00              10.00     6,900.00           20.00   13,800.00
+
+0046              300.00      1,260.00         500.00  2,100.00               230.00    966.00             206.00  865.20
+
+0047              3,300.00    2,970.00    4,000.00     3,600.00               730.00    657.00             650.00  585.00
+
+0048              8,620.00    551,680.00  9,700.00     620,800.00             9,800.00  627,200.00    14,975.00    958,400.00
+
+0049              52.12       5,055.64         630.00  61,110.00              115.00    11,155.00          91.00   8,827.00
+
+0050              104.25      188,901.00       228.00  413,136.00             210.00    380,520.00         138.00  250,056.00
+
+0051              336.00      665,616.00       460.00  911,260.00             405.00    802,305.00         640.00  1,267,840.00
+
+0052              2,000.13    256,016.64  2,200.00     281,600.00             1,515.00  193,920.00    1,968.00     251,904.00
+
+0053              3,361.00    47,054.00   2,000.00     28,000.00              3,500.00  49,000.00     2,060.00     28,840.00
+
+0054              74.60       90,564.40        175.00  212,450.00             114.00    138,396.00         179.00  217,306.00
+
+0055              6,285.00    62,850.00   13,500.00    135,000.00    11,800.00          118,000.00    20,194.00    201,940.00
+
+0056  251,075.00              251,075.00  170,000.00   170,000.00    153,000.00         153,000.00    302,947.21   302,947.21
+
+0057              300.00      3,000.00         100.00  1,000.00               495.00    4,950.00           25.00   250.00
+
+0058              472.52      292,962.40       425.00  263,500.00             560.00    347,200.00         490.00  303,800.00
+
+0059              174.85      35,669.40        250.00  51,000.00              46.00     9,384.00           31.00   6,324.00
+
+0060              20.00       3,200.00         25.00   4,000.00               154.00    24,640.00          11.00   1,760.00
+
+0061              1,500.00    4,500.00         500.00  1,500.00               3,700.00  11,100.00          606.00  1,818.00
+
+0062              3.00        7,125.00         4.00    9,500.00               6.00      14,250.00          4.40    10,450.00
+
+0063              9,000.00    36,000.00   3,500.00     14,000.00              2,350.00  9,400.00      7,213.50     28,854.00
+
+0064              9.75        11,836.50        10.00   12,140.00              24.50     29,743.00          24.43   29,658.02
+Bid Opening Date: 12/01/2022                                                                                                       Page 9
+
+Contract Number:  01-0H1914                                                                                                        12/01/2022
+
+                                                       Summary of Remaining   Bidders
+
+                   Second                              Third                             Fourth                            Fifth
+
+Item          Bid             Amount              Bid          Amount               Bid          Amount               Bid          Amount
+
+0065               10.00      350.00                   80.00   2,800.00                  12.00   420.00                    10.00   350.00
+
+0066               60.50      1,573.00                 100.00  2,600.00                  74.00   1,924.00                  65.00   1,690.00
+
+0067               40.00      5,200.00                 50.00   6,500.00                  50.00   6,500.00                  40.00   5,200.00
+
+0068               65.00      650.00                   100.00  1,000.00                  67.00   670.00                    65.00   650.00
+
+0069               120.00     240.00                   250.00  500.00                    159.00  318.00                    85.00   170.00
+
+0070               40.50      28,350.00                40.00   28,000.00                 34.00   23,800.00                 31.00   21,700.00
+
+0071               113.96     44,444.40                70.00   27,300.00                 63.00   24,570.00                 57.00   22,230.00
+
+0072               205.00     39,155.00                180.00  34,380.00                 179.00  34,189.00                 160.00  30,560.00
+
+0073              5,300.00    10,600.00           4,000.00     8,000.00                4,370.00  8,740.00             3,900.00     7,800.00
+
+0074              4,950.00    9,900.00            4,000.00     8,000.00                4,260.00  8,520.00             3,800.00     7,600.00
+
+0075               527.40     106,007.40               720.00  144,720.00                700.00  140,700.00                620.97  124,814.97
+
+0076               11.50      8,050.00                 6.00    4,200.00                  6.00    4,200.00                  5.00    3,500.00
+
+0077               1.95       9,691.50                 2.00    9,940.00                  2.50    12,425.00                 1.95    9,691.50
+
+0078               4.00       3,000.00                 6.00    4,500.00                  5.00    3,750.00                  4.00    3,000.00
+
+0079               0.00               0.00             0.00            0.00              0.00            0.00              0.00            0.00
+
+0080          160,137.00      160,137.00          20,000.00    20,000.00            83,000.00    83,000.00            3,300.00     3,300.00
+
+0081          562,771.00      562,771.00          450,000.00   450,000.00           612,000.00   612,000.00           530,000.00   530,000.00
+
+Total:  A)                  $5,387,241.84   A)                 $5,526,166.00  A)                 $6,370,559.00  A)                 $6,590,057.24
+
+        B)         110 Days * 6700          B)         110 Days * 6700        B)         110 Days * 6700        B)         110 Days * 6700
+
+        A+B)                $6,124,241.84   A+B)               $6,263,166.00  A+B)               $7,107,559.00  A+B)               $7,327,057.24
+Bid Opening Date: 12/01/2022                                            Page 10
+
+Contract Number:  01-0H1914                                             12/01/2022
+
+                                          Summary of Remaining Bidders
+
+                  Sixth
+
+Item  Bid                     Amount
+
+0001              1,550.00    1,550.00
+
+0002  440,000.00              440,000.00
+
+0003              2,000.00    10,000.00
+
+0004              200.00      2,000.00
+
+0005              15,000.00   15,000.00
+
+0006  125,000.00              125,000.00
+
+0007              342.00      2,736.00
+
+0008              19.00       456.00
+
+0009              7.50        3,000.00
+
+0010              38.00       2,128.00
+
+0011              53,000.00   53,000.00
+
+0012              9,000.00    9,000.00
+
+0013              44.00       86,240.00
+
+0014              11,000.00   11,000.00
+
+0015              5,700.00    22,800.00
+
+0016              29,330.00   29,330.00
+
+0017              2,000.00    2,000.00
+
+0018              10.00       47,500.00
+
+0019              21.00       10,500.00
+
+0020              230.00      690.00
+
+0021              10.00       9,000.00
+
+0022              1,026.00    2,052.00
+
+0023              21,400.00   21,400.00
+
+0024              29,000.00   29,000.00
+
+0025              2.25        2,700.00
+
+0026              46,200.00   46,200.00
+
+0027              5,600.00    5,600.00
+
+0028              1,550.00    1,550.00
+
+0029              11.50       5,750.00
+
+0030              48.00       179,520.00
+
+0031              218.00      6,104.00
+
+0032              125.00      46,625.00
+Bid Opening Date: 12/01/2022                                              Page 11
+
+Contract Number:  01-0H1914                                               12/01/2022
+
+                                            Summary of Remaining Bidders
+
+                  Sixth
+
+Item  Bid                     Amount
+
+0033              726.00      12,342.00
+
+0034              456.00      212,496.00
+
+0035              456.00      91,200.00
+
+0036              183.00      6,039.00
+
+0037              0.27        5,022.00
+
+0038              0.24        4,464.00
+
+0039              10.00       5,000.00
+
+0040              4,000.00    4,000.00
+
+0041              92.00       49,680.00
+
+0042              270.00      267,300.00
+
+0043              2,500.00    250.00
+
+0044              75.00       6,675.00
+
+0045              30.00       20,700.00
+
+0046              95.00       399.00
+
+0047              3,100.00    2,790.00
+
+0048              11,700.00   748,800.00
+
+0049              59.30       5,752.10
+
+0050              119.00      215,628.00
+
+0051              604.00      1,196,524.00
+
+0052              1,950.00    249,600.00
+
+0053              1,780.00    24,920.00
+
+0054              260.00      315,640.00
+
+0055              29,300.00   293,000.00
+
+0056  470,000.00              470,000.00
+
+0057              513.00      5,130.00
+
+0058              65.00       40,300.00
+
+0059              541.00      110,364.00
+
+0060              84.00       13,440.00
+
+0061              2,900.00    8,700.00
+
+0062              3.42        8,122.50
+
+0063              3,306.00    13,224.00
+
+0064              20.00       24,280.00
+Bid Opening Date: 12/01/2022                                              Page 12
+
+Contract Number:  01-0H1914                                               12/01/2022
+
+                                            Summary of Remaining Bidders
+
+                   Sixth
+
+Item          Bid             Amount
+
+0065               3.00       105.00
+
+0066               50.00      1,300.00
+
+0067               40.00      5,200.00
+
+0068               74.00      740.00
+
+0069               120.00     240.00
+
+0070               40.50      28,350.00
+
+0071               89.50      34,905.00
+
+0072               130.00     24,830.00
+
+0073              5,300.00    10,600.00
+
+0074              4,950.00    9,900.00
+
+0075              1,400.00    281,400.00
+
+0076               11.50      8,050.00
+
+0077               1.95       9,691.50
+
+0078               4.00       3,000.00
+
+0079               0.00               0.00
+
+0080              34,000.00   34,000.00
+
+0081          500,000.00      500,000.00
+
+Total:  A)                   $6,613,524.10
+
+        B)         110 Days * 6700
+
+        A+B)                 $7,350,524.10
+01-0H1914                                                                                                      PAGE S1
+
+01-HUM-96-27.0/27.4                                                                                            12/2/2022
+
+12/1/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS              LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000003985         JARRETT FOUNDATIONS, INC.                             ITEM 34 (100%)
+
+                     MCCLELLAN CA                  999006
+
+VC0000003985         JARRETT FOUNDATIONS, INC.                             ITEM 35 (100%)
+
+                     MCCLELLAN CA                  999006
+
+VC0000003985         JARRETT FOUNDATIONS, INC.                             ITEM 51 (89%)
+
+                     MCCLELLAN CA                  999006
+
+VC0000003985         JARRETT FOUNDATIONS, INC.                             DRILL 42" HOLE
+
+                     MCCLELLAN CA                  999006
+
+VC0000003985         WHITSON INC.                                          ITEM 11 (50%)
+
+                     WILLOW CREEK CA               585179
+
+VC0000003985         WHITSON INC.                                          PORTABLE SIGNAL SYSTEM, ELECTRICAL
+
+                     WILLOW CREEK CA               585179
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING                          ITEM 1 (50%)
+
+                     ANDERSON CA                   854894
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING                          ITEM 8 (100%)
+
+                     ANDERSON CA                   854894
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING                          ITEM 9 (100%)
+
+                     ANDERSON CA                   854894
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING                          ITEM 10 (100%)
+
+                     ANDERSON CA                   854894
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING                          ITEM 65 (100%)
+
+                     ANDERSON CA                   854894
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                        PAGE S2
+
+01-HUM-96-27.0/27.4                                                                                              12/2/2022
+
+12/1/2022
+
+                                                     LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                    LICENSE NUMBER      DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING                            LCP FOR STRIPE REMOVAL, COLD PLANE
+
+                     ANDERSON CA                         854894
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING, CONTINUED                 ITEM 67 (100%)
+
+                     ANDERSON CA                         854894
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING, CONTINUED                 ITEM 77 (100%)
+
+                     ANDERSON CA                         854894
+
+VC0000003985         SPECIALIZED PAVEMENT MARKING, CONTINUED                 ITEM 78 (100%)
+
+                     ANDERSON CA                         854894
+
+VC0000003985         ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 5 (100%)
+
+                     MOUNT SHASTA CA                     971838
+
+VC0000003985         ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 66 (100%)
+
+                     MOUNT SHASTA CA                     971838
+
+VC0000003985         ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 68 (100%)
+
+                     MOUNT SHASTA CA                     971838
+
+VC0000003985         ROLL 'N ROCK CONSTRUCTION INC.                          ITEM 69 (100%)
+
+                     MOUNT SHASTA CA                     971838
+
+VC0000003985         M&S ENVIRONMENTAL LANDSCAPES, INC.                      ITEM 36 (100%)
+
+                     REDDING CA                          751931
+
+VC0000003985         M&S ENVIRONMENTAL LANDSCAPES, INC.                      ITEM 37 (64%)
+
+                     REDDING CA                          751931
+
+VC0000003985         M&S ENVIRONMENTAL LANDSCAPES, INC.                      ITEM 38 (100%)
+
+                     REDDING CA                          751931
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                  PAGE S3
+
+01-HUM-96-27.0/27.4                                                                                        12/2/2022
+
+12/1/2022
+
+                                               LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                    LICENSE NUMBER  DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000003985         M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEM 39 (100%)
+
+                     REDDING CA                          751931
+
+VC0000003985         M&S ENVIRONMENTAL LANDSCAPES, INC.                  HYDROSEEDING
+
+                     REDDING CA                          751931
+
+VC0000003985         DEES BURKE ENGINEERING CONSTRUCTORS, LLC            ITEM 75 (79%)
+
+                     ONTARIO CA                          1012305
+
+VC0000003985         DEES BURKE ENGINEERING CONSTRUCTORS, LLC            FORM & POUR RAIL
+
+                     ONTARIO CA                          1012305
+
+VC0000003985         C&N REINFORCING                                     ITEM 52 (27%)
+
+                     SAN FRANCISCO CA                    1052018
+
+VC0000003985         C&N REINFORCING                                     ITEM 75 (12%)
+
+                     SAN FRANCISCO CA                    1052018
+
+VC0000003985         C&N REINFORCING                                     REINFORCING STEEL
+
+                     SAN FRANCISCO CA                    1052018
+
+VC0000003985         C&N REINFORCING                                     REINFORCING STEEL
+
+                     SAN FRANCISCO CA                    1052018
+
+VC0000003985         APEX FENCE COMPANY, INC.                            ITEM 25 (100%)
+
+                     ANDERSON CA                         269127
+
+VC0000003985         APEX FENCE COMPANY, INC.                            ITEM 70 (100%)
+
+                     ANDERSON CA                         269127
+
+VC0000003985         APEX FENCE COMPANY, INC.                            ITEM 71 (100%)
+
+                     ANDERSON CA                         269127
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                        PAGE S4
+
+01-HUM-96-27.0/27.4                                                                                              12/2/2022
+
+12/1/2022
+
+                                                      LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                 LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000003985         APEX FENCE COMPANY, INC.                                 ITEM 72 (100%)
+
+                     ANDERSON CA                      269127
+
+VC0000003985         APEX FENCE COMPANY, INC.                                 ITEM 73 (100%)
+
+                     ANDERSON CA                      269127
+
+VC0000003985         APEX FENCE COMPANY, INC.                                 ITEM 74 (100%)
+
+                     ANDERSON CA                      269127
+
+VC0000003985         APEX FENCE COMPANY, INC.                                 ITEM 76 (100%)
+
+                     ANDERSON CA                      269127
+
+VC0000003985         TECHNO COATINGS                                          ITEM 56 (100%)
+
+                     ANAHEIM CA                       296517
+
+VC0000003985         TECHNO COATINGS                                          ITEM 64 (100%)
+
+                     ANAHEIM CA                       296517
+
+VC0000003985         NEIL'S CONTROLLED BLASTING,  LP                          ITEM 48 (100%)
+
+                     NEWCASTLE CA                     797732
+01-0H1914                                                                                                    PAGE S5
+
+01-HUM-96-27.0/27.4                                                                                          12/2/2022
+
+12/1/2022
+
+                                                     LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000007021         SPECIALIZED PAVEMENT MARKING                            ITEM 8 (100%)
+
+                     ANDERSON CA                     854894
+
+VC0000007021         SPECIALIZED PAVEMENT MARKING                            ITEM 9 (100%)
+
+                     ANDERSON CA                     854894
+
+VC0000007021         SPECIALIZED PAVEMENT MARKING                            ITEM 67 (100%)
+
+                     ANDERSON CA                     854894
+
+VC0000007021         SPECIALIZED PAVEMENT MARKING                            ITEM 77 (100%)
+
+                     ANDERSON CA                     854894
+
+VC0000007021         SPECIALIZED PAVEMENT MARKING                            ITEM 78 (100%)
+
+                     ANDERSON CA                     854894
+
+VC0000007021         SPECIALIZED PAVEMENT MARKING                            ITEM 81 (0.5%)
+
+                     ANDERSON CA                     854894
+
+VC0000007021         SPECIALIZED PAVEMENT MARKING                            MOBILIZATION (PARTIAL)
+
+                     ANDERSON CA                     854894
+
+VC0000007021         ALLUVION BIOLOGICAL CUNSULTING                          ITEM 26 (100%)
+
+                     SACRAMENTO CA                   N/A
+
+VC0000007021         ALLUVION BIOLOGICAL CUNSULTING                          ITEM 27 (100%)
+
+                     SACRAMENTO CA                   N/A
+
+VC0000007021         ALLUVION BIOLOGICAL CUNSULTING                          CONTRACTOR SUPPLIED BIOLOGIST
+
+                     SACRAMENTO CA                   N/A
+
+VC0000007021         ALLUVION BIOLOGICAL CUNSULTING                          INVASIVE SPECIES CONTROL
+
+                     SACRAMENTO CA                   N/A
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                    PAGE S6
+
+01-HUM-96-27.0/27.4                                                                                          12/2/2022
+
+12/1/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                    LICENSE NUMBER    DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000007021         KINNETIC ENVIRONMENTAL                                ITEM 1 (100%)
+
+                     MCKINLEYVILLE CA              N/A
+
+VC0000007021         KINNETIC ENVIRONMENTAL                                ITEM 16 (69%)
+
+                     MCKINLEYVILLE CA              N/A
+
+VC0000007021         KINNETIC ENVIRONMENTAL                                ITEM 17 (100%)
+
+                     MCKINLEYVILLE CA              N/A
+
+VC0000007021         KINNETIC ENVIRONMENTAL                                ITEM 28 (100%)
+
+                     MCKINLEYVILLE CA              N/A
+
+VC0000007021         KINNETIC ENVIRONMENTAL                                JOB SITE MANAGEMENT
+
+                     MCKINLEYVILLE CA              N/A
+
+VC0000007021         KINNETIC ENVIRONMENTAL                                100
+
+                     MCKINLEYVILLE CA              N/A
+
+VC0000007021         KINNETIC ENVIRONMENTAL                                100
+
+                     MCKINLEYVILLE CA              N/A
+
+VC0000007021         M&S ENVIRONMENTAL LANDSCAPES  INC.                    ITEM 37 (100%)
+
+                     REDDING CA                    751931
+
+VC0000007021         M&S ENVIRONMENTAL LANDSCAPES  INC.                    ITEM 38 (100%)
+
+                     REDDING CA                    751931
+
+VC0000007021         RICH WELL DRILLING & PUMP                             ITEM 63 (100%)
+
+                     MCKINELYVILLE CA              902702
+
+VC0000007021         RICH WELL DRILLING & PUMP                             DESTROY WELL
+
+                     MCKINELYVILLE CA              902702
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                       PAGE S7
+
+01-HUM-96-27.0/27.4                                                                                             12/2/2022
+
+12/1/2022
+
+                                                     LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 5 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 25 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 69 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 70 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 71 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 72 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 73 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 74 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         HIGHWAY SPECIALTY COMPANY                               ITEM 76 (100%)
+
+                     REDDING CA                      1003147
+
+VC0000007021         NEIL'S CONTROLLED BLASTING, LP                          ITEM 81 (9%)
+
+                     NEWCASTLE CA                    797732
+
+VC0000007021         NEIL'S CONTROLLED BLASTING, LP                          ITEM 48 (87%)
+
+                     NEWCASTLE CA                    797732
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                      PAGE S8
+
+01-HUM-96-27.0/27.4                                                                                            12/2/2022
+
+12/1/2022
+
+                                                     LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000007021         NEIL'S CONTROLLED BLASTING, LP                          MOBILIZATION
+
+                     NEWCASTLE CA                    797732
+
+VC0000007021         NEIL'S CONTROLLED BLASTING, LP                          GOUND ANCHOR (SUBHORIZONTAL)
+
+                     NEWCASTLE CA                    797732
+
+VC0000007021         DEES BURKE ENGINEERING CONSTRUCTORS LLC                 ITEM 75 (35%)
+
+                     ONTARIO CA                      1012305
+
+VC0000007021         DEES BURKE ENGINEERING CONSTRUCTORS LLC                 CONCRETE BARRIER (TYPE 85 MOD)
+
+                     ONTARIO CA                      1012305
+
+VC0000007021         C&N REINFORCING                                         ITEM 52 (20%)
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000007021         C&N REINFORCING                                         ITEM 75 (6%)
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000007021         C&N REINFORCING                                         STUCTURAL CONCRETE, BARRIER SLAB
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000007021         C&N REINFORCING                                         CONCRETE BARRIER (TYPE 85 MOD)
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000007021         JARRETT FOUNDATIONS, INC.                               ITEM 34 (88%)
+
+                     MCCLELLAN CA                    999006
+
+VC0000007021         JARRETT FOUNDATIONS, INC.                               ITEM 35 (88%)
+
+                     MCCLELLAN CA                    999006
+
+VC0000007021         JARRETT FOUNDATIONS, INC.                               ITEM 51 (95%)
+
+                     MCCLELLAN CA                    999006
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                       PAGE S9
+
+01-HUM-96-27.0/27.4                                                                                             12/2/2022
+
+12/1/2022
+
+                                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS            LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000007021         JARRETT FOUNDATIONS,  INC.                          CONCRETE BACKFILL (SOLDIER PILE WALL)
+
+                     MCCLELLAN CA                999006
+
+VC0000007021         JARRETT FOUNDATIONS,  INC.                          LEAN CONCRETE BACKFILL
+
+                     MCCLELLAN CA                999006
+
+VC0000007021         JARRETT FOUNDATIONS,  INC.                          42" DRILLED HOLE
+
+                     MCCLELLAN CA                999006
+01-0H1914                                                                                                PAGE S10
+
+01-HUM-96-27.0/27.4                                                                                      12/2/2022
+
+12/1/2022
+
+                                       LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                    LICENSE NUMBER  DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000014127         A.C. DIKE CO.                                       ITEM 45 (51.99%)
+
+                     LINCOLN CA                          407417
+
+VC0000014127         A.C. DIKE CO.                                       PLACE HMA DIKE (TYPE A) ONLY
+
+                     LINCOLN CA                          407417
+
+VC0000014127         M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEM 36 (85%)
+
+                     REDDING CA                          751931
+
+VC0000014127         M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEM 37 (77.14%)
+
+                     REDDING CA                          751931
+
+VC0000014127         M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEM 38 (80%)
+
+                     REDDING CA                          751931
+
+VC0000014127         M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEM 39 (77.27%)
+
+                     REDDING CA                          751931
+
+VC0000014127         M&S ENVIRONMENTAL LANDSCAPES, INC.                  WOOD MULCH
+
+                     REDDING CA                          751931
+
+VC0000014127         M&S ENVIRONMENTAL LANDSCAPES, INC.                  HYDRAULIC BIOTIC GROWTH MEDIUM
+
+                     REDDING CA                          751931
+
+VC0000014127         M&S ENVIRONMENTAL LANDSCAPES, INC.                  FIBER REINFORCED MATRIX
+
+                     REDDING CA                          751931
+
+VC0000014127         M&S ENVIRONMENTAL LANDSCAPES, INC.                  FIBER ROLLS
+
+                     REDDING CA                          751931
+
+VC0000014127         T&S DVBE, INC.                                      ITEM 5 (87.33%)
+
+                     REDDING CA                          983087
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                           PAGE S11
+
+01-HUM-96-27.0/27.4                                                                                 12/2/2022
+
+12/1/2022
+
+                                       LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000014127         T&S DVBE, INC.                            ITEM 7 (75%)
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            ITEM 11 (89.71%)
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            ITEM 12 (86.66%)
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            ITEM 15 (60%)
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            CONSTRUCTION AREA SIGNS
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            TYPE II BARRICADE
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            PORTABLE SIGNAL SYSTEMS
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            PORTABLE RADAR FEEDBACK SIGNS
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            ALTERNATIVE TEMPORARY CRASH CUSHION
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            ITEM 66 (60%)
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            ITEM 68 (60%)
+
+                     REDDING CA        983087
+
+CONTINUED ON  NEXT PAGE
+01-0H1914                                                                                          PAGE S12
+
+01-HUM-96-27.0/27.4                                                                                12/2/2022
+
+12/1/2022
+
+                                       LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000014127         T&S DVBE, INC.                            DELINEATOR (CLASS 2)
+
+                     REDDING CA        983087
+
+VC0000014127         T&S DVBE, INC.                            MARKER (CULVERT)
+
+                     REDDING CA        983087
+
+VC0000014127         PDM                                       ITEM 52 (71.5%)
+
+                     HOOPA CA          1047264
+
+VC0000014127         PDM                                       STRUCTURAL CONCRETE BARRIER SLAB
+
+                     HOOPA CA          1047264
+
+VC0000014127         SPM                                       ITEM 8 (47.5%)
+
+                     ANDERSON CA       854894
+
+VC0000014127         SPM                                       ITEM 9 (75%)
+
+                     ANDERSON CA       854894
+
+VC0000014127         SPM                                       ITEM 10 (90%)
+
+                     ANDERSON CA       854894
+
+VC0000014127         SPM                                       ITEM 65 (69.64%)
+
+                     ANDERSON CA       854894
+
+VC0000014127         SPM                                       ITEM 67 (80%)
+
+                     ANDERSON CA       854894
+
+VC0000014127         SPM                                       TEMPORARY PAVEMENT MARKING (PAINT)
+
+                     ANDERSON CA       854894
+
+VC0000014127         SPM                                       TEMPORARY TRAFFIC STRIPE (PAINT)
+
+                     ANDERSON CA       854894
+
+CONTINUED ON  NEXT PAGE
+01-0H1914                                                                                                       PAGE S13
+
+01-HUM-96-27.0/27.4                                                                                             12/2/2022
+
+12/1/2022
+
+                                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS            LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000014127         SPM                                                 CHANNELIZER (SURFACE MOUNTED)
+
+                     ANDERSON CA                 854894
+
+VC0000014127         SPM                                                 REMOVE PAVEMENT MARKER
+
+                     ANDERSON CA                 854894
+
+VC0000014127         SPM                                                 PAVEMENT MARKER (RETROREFLECTIVE-RECESSED)
+
+                     ANDERSON CA                 854894
+
+VC0000014127         SPM                                                 ITEM 77 (97.5%)
+
+                     ANDERSON CA                 854894
+
+VC0000014127         SPM                                                 ITEM 78 (88.89%)
+
+                     ANDERSON CA                 854894
+
+VC0000014127         SPM                                                 6" THERMOPLASTIC TRAFFIC STRIPE
+
+                     ANDERSON CA                 854894
+
+VC0000014127         SPM                                                 REMOVE THERMOPLASTIC TRAFFIC STRIPE
+
+                     ANDERSON CA                 854894
+
+VC0000014127         JARRETT FOUNDATIONS,  INC.                          ITEM 34 (88.88%)
+
+                     MCCLELLAN CA                999006
+
+VC0000014127         JARRETT FOUNDATIONS,  INC.                          ITEM 35 (80%)
+
+                     MCCLELLAN CA                999006
+
+VC0000014127         JARRETT FOUNDATIONS,  INC.                          ITEM 51 (95.65%)
+
+                     MCCLELLAN CA                999006
+
+VC0000014127         JARRETT FOUNDATIONS,  INC.                          CONCRETE BACKFILL (SOLDIER PILE WALL)
+
+                     MCCLELLAN CA                999006
+
+CONTINUED ON  NEXT PAGE
+01-0H1914                                                                                                       PAGE S14
+
+01-HUM-96-27.0/27.4                                                                                             12/2/2022
+
+12/1/2022
+
+                                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS            LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000014127         JARRETT FOUNDATIONS,  INC.                          LEAN CONCRETE BACKFILL
+
+                     MCCLELLAN CA                999006
+
+VC0000014127         JARRETT FOUNDATIONS,  INC.                          42" DRILLED HOLE
+
+                     MCCLELLAN CA                999006
+
+VC0000014127         APEX FENCE CO., INC.                                ITEM 25 (50%)
+
+                     ANDERSON CA                 269127
+
+VC0000014127         APEX FENCE CO., INC.                                ITEM 70 (76.72%)
+
+                     ANDERSON CA                 269127
+
+VC0000014127         APEX FENCE CO., INC.                                ITEM 71 (79.96%)
+
+                     ANDERSON CA                 269127
+
+VC0000014127         APEX FENCE CO., INC.                                ITEM 72 (88.88%)
+
+                     ANDERSON CA                 269127
+
+VC0000014127         APEX FENCE CO., INC.                                ITEM 73 (97.5%)
+
+                     ANDERSON CA                 269127
+
+VC0000014127         APEX FENCE CO., INC.                                TREATED WOOD WASTE
+
+                     ANDERSON CA                 269127
+
+VC0000014127         APEX FENCE CO., INC.                                MIDWEST GUARDRAIL SYSTEM (STEEL POST)
+
+                     ANDERSON CA                 269127
+
+VC0000014127         APEX FENCE CO., INC.                                VEGETATION CONTROL (MINOR CONCRETE)
+
+                     ANDERSON CA                 269127
+
+VC0000014127         APEX FENCE CO., INC.                                TUBULAR BICYCLE RAILING
+
+                     ANDERSON CA                 269127
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                               PAGE S15
+
+01-HUM-96-27.0/27.4                                                                                     12/2/2022
+
+12/1/2022
+
+                                           LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS      LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000014127         APEX FENCE CO., INC.                          TRANSITION RAILING (TYPE WB-31)
+
+                     ANDERSON CA           269127
+
+VC0000014127         APEX FENCE CO., INC.                          ITEM 74 (95%)
+
+                     ANDERSON CA           269127
+
+VC0000014127         APEX FENCE CO., INC.                          ITEM 76 (82.5%)
+
+                     ANDERSON CA           269127
+
+VC0000014127         APEX FENCE CO., INC.                          ALTERNATIVE IN-LINE TERMINAL SYSTEM
+
+                     ANDERSON CA           269127
+
+VC0000014127         APEX FENCE CO., INC.                          REMOVE GUARDRAIL
+
+                     ANDERSON CA           269127
+
+VC0000014127         KERNEN CONSTRUCTION                           ITEM 42 (93.79%)
+
+                     BLUE LAKE CA          504091
+
+VC0000014127         KERNEN CONSTRUCTION                           ITEM 43 (37.5%)
+
+                     BLUE LAKE CA          504091
+
+VC0000014127         KERNEN CONSTRUCTION                           ITEM 44 (90%)
+
+                     BLUE LAKE CA          504091
+
+VC0000014127         KERNEN CONSTRUCTION                           ITEM 46 (60%)
+
+                     BLUE LAKE CA          504091
+
+VC0000014127         KERNEN CONSTRUCTION                           ITEM 47 (82.5%)
+
+                     BLUE LAKE CA          504091
+
+VC0000014127         KERNEN CONSTRUCTION                           HMA (TYPE A)
+
+                     BLUE LAKE CA          504091
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                           PAGE S16
+
+01-HUM-96-27.0/27.4                                                                                                 12/2/2022
+
+12/1/2022
+
+                                                     LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000014127         KERNEN CONSTRUCTION                                     ASPHALT BINDER (GEOSYNTHETIC PAVEMENT
+
+                     BLUE LAKE CA                    504091                  INTERLAYER)
+
+VC0000014127         KERNEN CONSTRUCTION                                     GEOSYNTHETIC PAVEMENT INTERLAYER (PAVING FABRIC)
+
+                     BLUE LAKE CA                    504091
+
+VC0000014127         KERNEN CONSTRUCTION                                     PLACE HMA (MISCELLANEOUS AREA)
+
+                     BLUE LAKE CA                    504091
+
+VC0000014127         KERNEN CONSTRUCTION                                     TACK COAT
+
+                     BLUE LAKE CA                    504091
+
+VC0000014127         GEO STRUCTURAL                                          ITEM 48 (91.82%)
+
+                     PLEASANT HILL CA                1062689
+
+VC0000014127         GEO STRUCTURAL                                          GROUND ANCHOR (SUBHORIZONTAL)
+
+                     PLEASANT HILL CA                1062689
+
+VC0000014127         RICH WELL DRILLING & PUMP SERVICES INC.                 ITEM 63 (82.86%)
+
+                     MCKINLEYVILLE CA                902702
+
+VC0000014127         RICH WELL DRILLING & PUMP SERVICES INC.                 DESTROY WELL
+
+                     MCKINLEYVILLE CA                902702
+
+VC0000014127         JEFFCO PAINTING & COATING INC.                          ITEM 56 (21.59%)
+
+                     VALLEJO CA                      364702
+
+VC0000014127         JEFFCO PAINTING & COATING INC.                          ITEM 64 (97.5%)
+
+                     VALLEJO CA                      364702
+
+VC0000014127         JEFFCO PAINTING & COATING INC.                          CLEAN AND PAINT STEEL SOLDIER PILING
+
+                     VALLEJO CA                      364702
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                         PAGE S17
+
+01-HUM-96-27.0/27.4                                                                                               12/2/2022
+
+12/1/2022
+
+                                                     LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000014127         JEFFCO PAINTING & COATING INC.                          PREPARE AND STAIN CONCRETE
+
+                     VALLEJO CA                      364702
+
+VC0000014127         C&N REINFORCING                                         ITEM 52 (17.91%)
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000014127         C&N REINFORCING                                         ITEM 75 (11.83%)
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000014127         C&N REINFORCING                                         TYING REBAR
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000014127         C&N REINFORCING                                         TYING REBAR
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000014127         DEES BURKE ENGINEERING CONSTRUCTORS LLC                 ITEM 75 (69.58%)
+
+                     ONTARIO CA                      1012305
+
+VC0000014127         DEES BURKE ENGINEERING CONSTRUCTORS LLC                 CONCRETE BARRIER (TYPE 85 MODIFIED)
+
+                     ONTARIO CA                      1012305
+01-0H1914                                                                                                         PAGE S18
+
+01-HUM-96-27.0/27.4                                                                                               12/2/2022
+
+12/1/2022
+
+                                                        LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                   LICENSE NUMBER          DESCRIPTION OF PORTION OF   WORK  SUBCONTRACTED
+
+VC0000014878         ENDEMIC SERVICES, INC                                      ITEM 26 (100%)
+
+                     YUBA CITY CA                       1048090
+
+VC0000014878         APEX FENCE CO., INC                                        ITEM 25 (100%)
+
+                     ANDERSON CA                        269127
+
+VC0000014878         APEX FENCE CO., INC                                        ITEMS 25,70,71,72,73,74,76
+
+                     ANDERSON CA                        269127
+
+VC0000014878         C&N REINFORCING                                            ITEM 52 (26%)
+
+                     MANTECA CA                         1052018
+
+VC0000014878         C&N REINFORCING                                            ITEM 75 (12%)
+
+                     MANTECA CA                         1052018
+
+VC0000014878         C&N REINFORCING                                            F&I REINFORCING STEEL
+
+                     MANTECA CA                         1052018
+
+VC0000014878         C&N REINFORCING                                            F&I REINFORCING STEEL
+
+                     MANTECA CA                         1052018
+
+VC0000014878         JEFFCO PAINTING AND COATING,  INC                          ITEM 56 (24%)
+
+                     VALLEJO CA                         364702
+
+VC0000014878         JEFFCO PAINTING AND COATING,  INC                          ITEM 64 (40%)
+
+                     VALLEJO CA                         364702
+
+VC0000014878         JEFFCO PAINTING AND COATING,  INC                          ITEM 81 (1%)
+
+                     VALLEJO CA                         364702
+
+VC0000014878         JEFFCO PAINTING AND COATING,  INC                          FIELD FINAL PAINT COATING
+
+                     VALLEJO CA                         364702
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                      PAGE S19
+
+01-HUM-96-27.0/27.4                                                                                            12/2/2022
+
+12/1/2022
+
+                                                       LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                   LICENSE NUMBER         DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000014878         JEFFCO PAINTING AND COATING, INC                          ITEM LESS GC SUPPORT
+
+                     VALLEJO CA                         364702
+
+VC0000014878         JEFFCO PAINTING AND COATING, INC                          PAINT MOBE
+
+                     VALLEJO CA                         364702
+
+VC0000014878         DEES BURKE ENGINEERING CONSTRUCTORS, LLC                  ITEM 75 (71%)
+
+                     PASADENA CA                        1012305
+
+VC0000014878         DEES BURKE ENGINEERING CONSTRUCTORS, LLC                  FORM & PLACE RAIL
+
+                     PASADENA CA                        1012305
+
+VC0000014878         GEOSTRUCTURAL ENGINEERING INC                             ITEM 48 (82%)
+
+                     DUBLIN CA                          1062689
+
+VC0000014878         GEOSTRUCTURAL ENGINEERING INC                             ITEM 81 (9%)
+
+                     DUBLIN CA                          1062689
+
+VC0000014878         GEOSTRUCTURAL ENGINEERING INC                             F&I ANCHOR LESS GC SUPPORT
+
+                     DUBLIN CA                          1062689
+
+VC0000014878         GEOSTRUCTURAL ENGINEERING INC                             GROUND ANCHOR MOBE
+
+                     DUBLIN CA                          1062689
+
+VC0000014878         M&S ENVIRONMENTAL LANDSCAPES, INC                         ITEM 21 (100%)
+
+                     REDDING CA                         751931
+
+VC0000014878         M&S ENVIRONMENTAL LANDSCAPES, INC                         ITEM 37 (66%)
+
+                     REDDING CA                         751931
+
+VC0000014878         M&S ENVIRONMENTAL LANDSCAPES, INC                         ITEM 38 (65%)
+
+                     REDDING CA                         751931
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                   PAGE S20
+
+01-HUM-96-27.0/27.4                                                                                         12/2/2022
+
+12/1/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                     LICENSE NUMBER   DESCRIPTION OF PORTION OF WORK   SUBCONTRACTED
+
+VC0000014878         M&S ENVIRONMENTAL LANDSCAPES, INC                     ITEMS 21,29,36,39
+
+                     REDDING CA                           751931
+
+VC0000014878         M&S ENVIRONMENTAL LANDSCAPES, INC                     ITEM LESS GC WATER SUPPLY
+
+                     REDDING CA                           751931
+
+VC0000014878         M&S ENVIRONMENTAL LANDSCAPES, INC                     ITEM LESS GC WATER SUPPLY
+
+                     REDDING CA                           751931
+
+VC0000014878         PACIFIC COAST DRILLING COMPANY INC.                   ITEM 34 (100%)
+
+                     PETALUMA CA                          539855
+
+VC0000014878         PACIFIC COAST DRILLING COMPANY INC.                   ITEM 35 (100%)
+
+                     PETALUMA CA                          539855
+
+VC0000014878         PACIFIC COAST DRILLING COMPANY INC.                   ITEM 51 (83%)
+
+                     PETALUMA CA                          539855
+
+VC0000014878         PACIFIC COAST DRILLING COMPANY INC.                   ITEM 81 (4%)
+
+                     PETALUMA CA                          539855
+
+VC0000014878         PACIFIC COAST DRILLING COMPANY INC.                   DRILL & INSTALL LESS GC SUPPORT
+
+                     PETALUMA CA                          539855
+
+VC0000014878         PACIFIC COAST DRILLING COMPANY INC.                   DRILL MOBE
+
+                     PETALUMA CA                          539855
+
+VC0000014878         ST RHOADES CONSTRUCTION INC.                          ITEM 42 (100%)
+
+                     REDDING CA                           930684
+
+VC0000014878         ST RHOADES CONSTRUCTION INC.                          ITEM 81 (10%)
+
+                     REDDING CA                           930684
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                    PAGE S21
+
+01-HUM-96-27.0/27.4                                                                                          12/2/2022
+
+12/1/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS              LICENSE NUMBER          DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000014878         ST RHOADES CONSTRUCTION INC.                          ITEM 30 (7%)
+
+                     REDDING CA                    930684
+
+VC0000014878         ST RHOADES CONSTRUCTION INC.                          ITEM 52 (2%)
+
+                     REDDING CA                    930684
+
+VC0000014878         ST RHOADES CONSTRUCTION INC.                          ITEMS 42,43,44,46,47
+
+                     REDDING CA                    930684
+
+VC0000014878         ST RHOADES CONSTRUCTION INC.                          PAVING MOBE
+
+                     REDDING CA                    930684
+
+VC0000014878         ST RHOADES CONSTRUCTION INC.                          AC GRINDING
+
+                     REDDING CA                    930684
+
+VC0000014878         ST RHOADES CONSTRUCTION INC.                          AC GRINDING
+
+                     REDDING CA                    930684
+
+VC0000014878         SPECIALIZED PAVEMENT MARKING                          ITEM 8 (100%)
+
+                     ANDERSON CA                   854894
+
+VC0000014878         SPECIALIZED PAVEMENT MARKING                          ITEM 10 (80%)
+
+                     ANDERSON CA                   854894
+
+VC0000014878         SPECIALIZED PAVEMENT MARKING                          ITEMS 8,9,65,67,77,78
+
+                     ANDERSON CA                   854894
+
+VC0000014878         SPECIALIZED PAVEMENT MARKING                          F&I LESS MAINTENANCE
+
+                     ANDERSON CA                   854894
+
+VC0000014878         T AND S DVBE, INC                                     ITEM 5 (100%)
+
+                     ANDERSON CA                   983087
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                         PAGE S22
+
+01-HUM-96-27.0/27.4                                                                               12/2/2022
+
+12/1/2022
+
+                                        LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS   LICENSE NUMBER          DESCRIPTION OF PORTION OF   WORK  SUBCONTRACTED
+
+VC0000014878         T AND S DVBE, INC                          ITEM 6 (79%)
+
+                     ANDERSON CA        983087
+
+VC0000014878         T AND S DVBE, INC                          ITEM 11 (29%)
+
+                     ANDERSON CA        983087
+
+VC0000014878         T AND S DVBE, INC                          ITEMS 5,7,66,68
+
+                     ANDERSON CA        983087
+
+VC0000014878         T AND S DVBE, INC                          FLAGGING
+
+                     ANDERSON CA        983087
+
+VC0000014878         T AND S DVBE, INC                          F&I SIGNAL LESS GC SUPPORT
+
+                     ANDERSON CA        983087
+01-0H1914                                                                                                   PAGE S23
+
+01-HUM-96-27.0/27.4                                                                                         12/2/2022
+
+12/1/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC0000100576         SPECIALIZED PAVEMENT MARKING                           ITEM 1 (43%)
+
+                     ANDERSON CA                    854894
+
+VC0000100576         SPECIALIZED PAVEMENT MARKING                           ITEM 8 (100%)
+
+                     ANDERSON CA                    854894
+
+VC0000100576         SPECIALIZED PAVEMENT MARKING                           ITEM 81 (.5%)
+
+                     ANDERSON CA                    854894
+
+VC0000100576         SPECIALIZED PAVEMENT MARKING                           LCP FOR STRIPE REMOVAL
+
+                     ANDERSON CA                    854894
+
+VC0000100576         SPECIALIZED PAVEMENT MARKING                           ITEMS 8-10, 65,67,77,78
+
+                     ANDERSON CA                    854894
+
+VC0000100576         SPECIALIZED PAVEMENT MARKING                           SUBCONTRACTOR MOBILIZATION
+
+                     ANDERSON CA                    854894
+
+VC0000100576         ST RHOADES CONSTRUCTION, INC.                          ITEM 42 (100%)
+
+                     REDDING CA                     930684
+
+VC0000100576         ST RHOADES CONSTRUCTION, INC.                          ITEM 81 (10.8%)
+
+                     REDDING CA                     930684
+
+VC0000100576         ST RHOADES CONSTRUCTION, INC.                          ITEMS 42-44, 46,47
+
+                     REDDING CA                     930684
+
+VC0000100576         ST RHOADES CONSTRUCTION, INC.                          SUBCONTRACTOR MOBILIZATION
+
+                     REDDING CA                     930684
+
+VC0000100576         APEX FENCE CO., INC.                                   ITEM 25 (100%)
+
+                     ANDERSON CA                    269127
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                           PAGE S24
+
+01-HUM-96-27.0/27.4                                                                                                 12/2/2022
+
+12/1/2022
+
+                                                     LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000100576         APEX FENCE CO., INC.                                    ITEMS 25, 70-74, 76
+
+                     ANDERSON CA                     269127
+
+VC0000100576         JARRET FOUNDATIONS, INC.                                ITEM 34 (100%)
+
+                     MCCLELLAN CA                    999006
+
+VC0000100576         JARRET FOUNDATIONS, INC.                                ITEM 51 (68.8%)
+
+                     MCCLELLAN CA                    999006
+
+VC0000100576         JARRET FOUNDATIONS, INC.                                ITEMS 34,35
+
+                     MCCLELLAN CA                    999006
+
+VC0000100576         JARRET FOUNDATIONS, INC.                                42 INCH DRILLED HOLE, LESS GC SUPPORT
+
+                     MCCLELLAN CA                    999006
+
+VC0000100576         ROLL N ROCK CONSTRUCTION, INC.                          ITEM 5 (100%)
+
+                     MOUNT SHASTA CA                 971838
+
+VC0000100576         ROLL N ROCK CONSTRUCTION, INC.                          ITEMS 5-7, 12,14,66,68,69
+
+                     MOUNT SHASTA CA                 971838
+
+VC0000100576         DEES BURKE ENGINEERING CONSTRUCTORS                     ITEM 75 (79.8%)
+
+                     ONTARIO CA                      1012305
+
+VC0000100576         DEES BURKE ENGINEERING CONSTRUCTORS                     CONSTRUCT TYPE 85 BARRIER RAIL
+
+                     ONTARIO CA                      1012305
+
+VC0000100576         C&N REINFORCING                                         ITEM 52 (20%)
+
+                     SAN FRANCISCO CA                1052018
+
+VC0000100576         C&N REINFORCING                                         ITEM 75 (12.7%)
+
+                     SAN FRANCISCO CA                1052018
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                             PAGE S25
+
+01-HUM-96-27.0/27.4                                                                                                   12/2/2022
+
+12/1/2022
+
+                                                 LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                    LICENSE NUMBER  DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000100576         C&N REINFORCING                                     BARRIER SLAB REINFORING STEEL
+
+                     SAN FRANCISCO CA                    1052018
+
+VC0000100576         C&N REINFORCING                                     TYPE 85 BARRIER REINFORCING STEEL
+
+                     SAN FRANCISCO CA                    1052018
+
+VC0000100576         M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEM 21 (100%)
+
+                     REDDING CA                          751931
+
+VC0000100576         M&S ENVIRONMENTAL LANDSCAPES, INC.                  ITEMS 21,29, 36-39
+
+                     REDDING CA                          751931
+
+VC0000100576         JENSEN DRILLING COMPANY                             ITEM 48 (98%)
+
+                     EUGENE OR                           340115
+
+VC0000100576         JENSEN DRILLING COMPANY                             ITEM 81 (20%)
+
+                     EUGENE OR                           340115
+
+VC0000100576         JENSEN DRILLING COMPANY                             GROUND ANCHOR INSTALLATION
+
+                     EUGENE OR                           340115
+
+VC0000100576         JENSEN DRILLING COMPANY                             SUBCONTRACTOR MOBILIZATION
+
+                     EUGENE OR                           340115
+
+VC0000100576         CERTIFIED COATINGS COMPANY                          ITEM 56 (25%)
+
+                     FAIRFIELD CA                        887287
+
+VC0000100576         CERTIFIED COATINGS COMPANY                          ITEM 64 (100%)
+
+                     FAIRFIELD CA                        887287
+
+VC0000100576         CERTIFIED COATINGS COMPANY                          CLEAN AND PAINT SOLDIER PILES (FINISH COAT)
+
+                     FAIRFIELD CA                        887287
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                            PAGE S26
+
+01-HUM-96-27.0/27.4                                                                                  12/2/2022
+
+12/1/2022
+
+                                       LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS  LICENSE NUMBER          DESCRIPTION    OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000100576         WHITSON INC.                              ITEM 11 (41%)
+
+                     WILLOW CREEK CA   585179
+
+VC0000100576         WHITSON INC.                              ELECTRICAL
+
+                     WILLOW CREEK CA   585179
+01-0H1914                                                                                                    PAGE S27
+
+01-HUM-96-27.0/27.4                                                                                          12/2/2022
+
+12/1/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                   LICENSE NUMBER     DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1400003011         KERNEN CONSTRUCTION                                   ITEM 42 (100%)
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   ITEM 43 (100%)
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   ITEM 44 (100%)
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   ITEM 46 (100%)
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   ITEM 81 (5.74%)
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   HOT MIX ASPHALT
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   ASPHALT BINDER GPI
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   GEOSYNTHETIC PAVEMENT INTERLAYER
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   PLACE HMA MISC AREAS
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         KERNEN CONSTRUCTION                                   MOBILIZATION
+
+                     BLUE LAKE CA                       504091
+
+VC1400003011         M&S ENVIRONMENTAL LANDSCAPES  INC                     ITEM 21 (100%)
+
+                     REDDING CA                         751931
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                   PAGE S28
+
+01-HUM-96-27.0/27.4                                                                                         12/2/2022
+
+12/1/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                    LICENSE NUMBER     DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     ITEM 29 (100%)
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     ITEM 36 (100%)
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     ITEM 37 (100%)
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     ITEM 38 (100%)
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     TEMP SILT FENCE
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     TEMP HIGH VIS FENCE
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     WOOD MUKCH
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     HYDRAULIC BIOTIC GROWTH MEDIUM
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     FIBER REINFORCED MATRIX
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     ITEM 39 (100%)
+
+                     REDDING CA                          751931
+
+VC1400003011         M&S ENVIRONMENTAL  LANDSCAPES  INC                     ITEM 81 (0.36%)
+
+                     REDDING CA                          751931
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                    PAGE S29
+
+01-HUM-96-27.0/27.4                                                                                          12/2/2022
+
+12/1/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS                   LICENSE NUMBER     DESCRIPTION OF PORTION  OF  WORK  SUBCONTRACTED
+
+VC1400003011         M&S ENVIRONMENTAL LANDSCAPES  INC                     FIBER ROLLS
+
+                     REDDING CA                         751931
+
+VC1400003011         M&S ENVIRONMENTAL LANDSCAPES  INC                     MOBILIZATION
+
+                     REDDING CA                         751931
+
+VC1400003011         PACIFIC COAST DRILLING CO                             ITEM 34 (100%)
+
+                     SANTA ROSA CA                      539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                             ITEM 35 (100%)
+
+                     SANTA ROSA CA                      539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                             ITEM 48 (100%)
+
+                     SANTA ROSA CA                      539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                             ITEM 51 (100%)
+
+                     SANTA ROSA CA                      539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                             ITEM 63 (100%)
+
+                     SANTA ROSA CA                      539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                             CONCRETE BACKFILL
+
+                     SANTA ROSA CA                      539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                             LEAN BACKFILL
+
+                     SANTA ROSA CA                      539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                             GROUND ANCHORS
+
+                     SANTA ROSA CA                      539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                             42" DRILLED HOLE
+
+                     SANTA ROSA CA                      539855
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                  PAGE S30
+
+01-HUM-96-27.0/27.4                                                                                        12/2/2022
+
+12/1/2022
+
+                                                   LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS              LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC1400003011         PACIFIC COAST DRILLING CO                             DESTROY WELL
+
+                     SANTA ROSA CA                 539855
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          ITEM 1 (100%)
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          ITEM 8 (100%)
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          ITEM 9 (100%)
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          ITEM 10 (75%)
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          ITEM 65 (100%)
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          LEAD COMPLIANCE PLAN
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          TEMP PM
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          TEMP STRIPE
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          CHANNELIZER INITIAL INSTALL
+
+                     ANDERSON CA                   854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                          REMOVE PAVEMENT MARKERS
+
+                     ANDERSON CA                   854894
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                   PAGE S31
+
+01-HUM-96-27.0/27.4                                                                                         12/2/2022
+
+12/1/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                           ITEM 67 (100%)
+
+                     ANDERSON CA                    854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                           ITEM 77 (100%)
+
+                     ANDERSON CA                    854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                           ITEM 78 (100%)
+
+                     ANDERSON CA                    854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                           ITEM 81 (0.46%)
+
+                     ANDERSON CA                    854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                           RECESSED REFLECTORS
+
+                     ANDERSON CA                    854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                           6" THERMO STRIPE WET NIGHT
+
+                     ANDERSON CA                    854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                           REMOVE THERMO STRIPE
+
+                     ANDERSON CA                    854894
+
+VC1400003011         SPECIALIZED PAVEMENT MARKING                           MOBILIZATION
+
+                     ANDERSON CA                    854894
+
+VC1400003011         PACIFIC COAST DRILLING CO                              ITEM 81 (8.97%)
+
+                     SANTA ROSA CA                  539855
+
+VC1400003011         PACIFIC COAST DRILLING CO                              MOBILIZATION
+
+                     SANTA ROSA CA                  539855
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 5 (100%)
+
+                     REDDING CA                     1003147
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                    PAGE S32
+
+01-HUM-96-27.0/27.4                                                                                          12/2/2022
+
+12/1/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 11 (100%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 25 (100%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 66 (100%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 68 (100%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          CONSTRUCTION AREA SIGNS
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          PORTABLE SIGN SYSTEMS
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          TREATED WOOD WASTE
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          DELINEATOR CLASS 2
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          MARKER CULVERT
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 69 (100%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 70 (100%)
+
+                     REDDING CA                     1003147
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                   PAGE S33
+
+01-HUM-96-27.0/27.4                                                                                         12/2/2022
+
+12/1/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK  SUBCONTRACTED
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 72 (63.41%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 73 (100%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 74 (100%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          OBJECT MARKER
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          MIDWEST GUARDRAIL SYSTEM
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          TUBULAR BICYCLE RAILING
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          TRANSITION RAILING
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ALT IN LINE TERMINAL SYSTEM
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          ITEM 76 (100%)
+
+                     REDDING CA                     1003147
+
+VC1400003011         HIGHWAY SPECIALTY COMPANY INC                          REMOVE GUARDRAIL
+
+                     REDDING CA                     1003147
+
+VC1400003011         CAMBLIN STEEL SERVICE INC                              ITEM 52 (24.90%)
+
+                     ROSEVILLE CA                   218839
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                                           PAGE S34
+
+01-HUM-96-27.0/27.4                                                                                                 12/2/2022
+
+12/1/2022
+
+                                                    LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS               LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC1400003011         CAMBLIN STEEL SERVICE INC                              ITEM 75 (24.27%)
+
+                     ROSEVILLE CA                   218839
+
+VC1400003011         CAMBLIN STEEL SERVICE INC                              BARRIER SLAB REBAR
+
+                     ROSEVILLE CA                   218839
+
+VC1400003011         CAMBLIN STEEL SERVICE INC                              TYPE 85 BARRIER RAIL REBAR
+
+                     ROSEVILLE CA                   218839
+
+VC1400003011         JEFFCO PAINTING & COATING INC                          ITEM 56 (14.62%)
+
+                     VALLEJO CA                     364702
+
+VC1400003011         JEFFCO PAINTING & COATING INC                          ITEM 64 (100%)
+
+                     VALLEJO CA                     364702
+
+VC1400003011         JEFFCO PAINTING & COATING INC                          ITEM 72 (36.59%)
+
+                     VALLEJO CA                     364702
+
+VC1400003011         JEFFCO PAINTING & COATING INC                          ITEM 81 (0.53%)
+
+                     VALLEJO CA                     364702
+
+VC1400003011         JEFFCO PAINTING & COATING INC                          CLEAN & PAINT STEEL SOLDIER PILES FIELD PAINTING
+
+                     VALLEJO CA                     364702                  ONLY
+
+VC1400003011         JEFFCO PAINTING & COATING INC                          PREPARE AND STAIN CONCRETE
+
+                     VALLEJO CA                     364702
+
+VC1400003011         JEFFCO PAINTING & COATING INC                          TUBULAR BICYCLE RAILING FIELD PAINTING
+
+                     VALLEJO CA                     364702
+
+VC1400003011         JEFFCO PAINTING & COATING INC                          MOBILIZATION
+
+                     VALLEJO CA                     364702
+
+CONTINUED ON NEXT PAGE
+01-0H1914                                                                                            PAGE S35
+
+01-HUM-96-27.0/27.4                                                                                  12/2/2022
+
+12/1/2022
+
+                                          LIST OF SUBCONTRACTORS
+
+BIDDER ID            NAME AND ADDRESS     LICENSE NUMBER          DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC1400003011         KERNEN CONSTRUCTION                          ITEM 47 (100%)
+
+                     BLUE LAKE CA         504091
+
+VC1400003011         KERNEN CONSTRUCTION                          TACK COAT
+
+                     BLUE LAKE CA         504091
+

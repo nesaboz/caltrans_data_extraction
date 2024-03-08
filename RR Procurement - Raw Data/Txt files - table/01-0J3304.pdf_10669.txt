@@ -1,0 +1,638 @@
+                      STATE   OF  CALIFORNIA                 B      I  D       S  U   M  M     A   R   Y               DEPARTMENT  OF   TRANSPORTATION                     BID211
+
+                                                                                                                                                                           PAGE      1
+
+BID      OPENING     DATE     04/03/19                                 IN   MENDOCINO          COUNTY     NEAR   UKIAH  AT                                                 04/05/19
+
+CONTRACT     NUMBER           01-0J3304                                THE  UKIAH        MAINTENANCE          STATION                                      CONTRACT      CODE    'C     '
+
+LOCATION                      01-MEN-101-27.4                                                                                                               15  CONTRACT       ITEMS
+
+                                                                       MAINTENANCE          STATION       OVERLAY                       FEDERAL  AID  NONE
+
+             DVBE     GOALS:      DISABLED   VETERANS     BUSINESS     ENTERPRISES          -      3.0%
+
+PROPOSALS    ISSUED      13       FUND  TOTAL       HA12                    0                                           TOTAL   NUMBER  OF  WORKING   DAYS           30
+
+NUMBER   OF  BIDDERS     9    ENGINEERS      EST          1,106,802.50         AMOUNT       UNDER                344,660.00             PERCENT  UNDER     EST  31.14
+
+PROGRAM  ELEMENTS            RAS
+
+             BID      RANK              BID  TOTAL  BIDDER   ID                   BIDDER          INFORMATION          (NAME/ADDRESS/LOCATION)
+
+             --------             -----------       ---------                     -------------------------------------------------
+
+                      1                 762,142.50        4                       S.T.RHOADES             CONSTRUCTION,     INC.            530  223-9322   CC   PREF      CLAIMED
+
+                                                                                                                                            00930684
+
+                                                                                  8585      COMMERCIAL           WAY;              FAX      530  223-9222
+
+                                                                                  REDDING          CA     96002
+
+                      2                 855,078.00        1                       GRANITE          CONSTRUCTION        COMPANY              707  467-4100   NSB      PREF  CLAIMED
+
+                                                                                                                                            00000089
+
+                                                                                  1324      S.     STATE  STREET;                  FAX      707  467-4143       BID  IS    OVER  NSBP
+
+                                                                                  UKIAH        CA      95482                                                PREFERENCE         LIMITS
+
+                      3                 884,884.00        2                       MERCER-FRASER           COMPANY                           707  443-6371   CC   PREF      CLAIMED
+
+                                                                                                                                            00105709
+
+                                                                                  PO     BOX      1006;                            FAX      707  443-0277
+
+                                                                                  EUREKA          CA      95502
+
+                      4                 892,476.30        8                       DARREN          TAYLOR  CONSTRUCTION                      530  378-2211   SB   PREF      CLAIMED
+
+                                                                                  INC.                                                      00903262
+
+                                                                                  5750      PLEASANT      VIEW   DRIVE;            FAX      530  378-2212       BID  IS    OVER  SBP
+
+                                                                                  ANDERSON            CA  96007                                             PREFERENCE         LIMITS
+
+                      5                 932,291.30        9                       WYLATTI          RESOURCE      MANAGEMENT,                707  983-8135   SB   PREF      CLAIMED
+
+                                                                                  INC                                                       00934597
+
+                                                                                  PO     BOX      575;                             FAX      707  983-8184       BID  IS    OVER  SBP
+
+                                                                                  COVELO          CA      95428                                             PREFERENCE         LIMITS
+        01-0J3304                                                                                                                              BID211
+
+        01-MEN-101                                                                                                                             PAGE     2
+
+        04/03/19                                                                                                                               04/05/19
+
+                   6               937,024.10     3               TEAM   GHILOTTI,     INC.                               707  763-8700  NSB   PREF     CLAIMED
+
+                                                                                                                          00895384
+
+                                                                  2531   PETALUMA      BLVD   SOUTH;                 FAX  707  763-8711  BID       IS  OVER   NSBP
+
+                                                                  PETALUMA     CA      94952                                             PREFERENCE        LIMITS
+
+                   7               998,500.00     5               GHILOTTI     CONSTRUCTION        CO.                    707  585-1221  NSB   PREF     CLAIMED
+
+                                                                                                                          00644515
+
+                                                                  246    GHILOTTI      AVE;                          FAX  707  585-1601  BID       IS  OVER   NSBP
+
+                                                                  SANTA  ROSA      CA  95407                                             PREFERENCE        LIMITS
+
+                   8        1,009,850.00          7               ARGONAUT     CONSTRUCTORS                               707  542-4862  NSB   PREF     CLAIMED
+
+                                                                                                                          00171432
+
+                                                                  P.O.   BOX;                                        FAX  707  542-4897  BID       IS  OVER   NSBP
+
+                                                                  SANTA  ROSA      CA  95402                                             PREFERENCE        LIMITS
+
+                   9        1,047,327.00          6               NORTHWEST      PAVING,      INC                         530  246-4388  SB    PREF    CLAIMED
+
+                                                                                                                          00822126
+
+                                                                  8115   SECLUDED      VALLEY      DRIVE;            FAX  530  246-4109  BID       IS  OVER   SBP
+
+                                                                  REDDING    CA    96001                                                 PREFERENCE        LIMITS
+
+IN  ACCORDANCE  WITH   G.C.14838,  THE  DEPARTMENT   OF  TRANSPORTATION  SHALL     APPLY     THE   SMALL   BUSINESS  PREFERENCE     TO   ELIGIBLE      FIRMS
+
+FIRST,  THEN  APPLIES  THE  NON-SMALL   BUSINESS  PREFERENCE  IF  DOING  SO  WOULD     NOT    DISPLACE     A  SMALL  BUSINESS  FROM     AWARD  OF  THE     CONTRACT.
+            01-0J3304                                                                                                                              BID211
+
+            01-MEN-101                                                                                                                             PAGE    3
+
+            04/03/19                                                                                                                               04/05/19
+
+                                       L             I  S  T  O  F     S  U  B  C  O  N  T  R  A  C   T  O  R   S
+
+BIDDER  ID  NAME   AND  ADDRESS                               LICENSE  NUMBER            DESCRIPTION        OF  PORTION   OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________                 ____________________________________________________________
+
+04          APPLY  A    LINE    LLC                                                      ITEM     14  (100%)
+
+            ANDERSON    CA                                    1031889
+
+            APPLY  A    LINE    LLC                                                      ITEM     15  (100%)
+
+            ANDERSON    CA                                    1031889
+
+            APPLY  A    LINE    LLC                                                      THERMOPLASTIC          PAVEMENT  MARKING
+
+            ANDERSON    CA                                    1031889
+
+            APPLY  A    LINE    LLC                                                      THERMOPLASTIC          TRAFFIC   STRIPE
+
+            ANDERSON    CA                                    1031889
+
+            COLEMAN     ENVIRONMENTAL  ENGINEERING,  INC.                                ITEM     10  (42.5%)
+
+            UPPER  LAKE     CA                                764005
+
+            COLEMAN     ENVIRONMENTAL  ENGINEERING,  INC.                                OFF   HAUL      TRUCKING
+
+            UPPER  LAKE     CA                                764005
+            01-0J3304                                                                                                                              BID211
+
+            01-MEN-101                                                                                                                             PAGE    4
+
+            04/03/19                                                                                                                               04/05/19
+
+                                               L  I  S  T  O  F     S  U  B  C  O  N  T   R  A     C  T  O  R   S
+
+BIDDER  ID  NAME   AND  ADDRESS                            LICENSE  NUMBER            DESCRIPTION           OF  PORTION   OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________              ____________________________________________________________
+
+01          ABSL   CONSTRUCTION                                                       ITEM      10    (23.2%)
+
+            HAYWARD     CA                                 621781
+
+            ABSL   CONSTRUCTION                                                       OPERATED           GRINDER   RENTAL
+
+            HAYWARD     CA                                 621781
+
+            CENTRAL     STRIPING      SERVICE                                         ITEM      14    (100%)
+
+            RANCHO    CORDOVA     CA                       403896
+
+            CENTRAL     STRIPING      SERVICE                                         ITEM      15    (100%)
+
+            RANCHO    CORDOVA     CA                       403896
+
+            CENTRAL     STRIPING      SERVICE                                         THERMOPLASTIC             PAVEMENT   MARKING
+
+            RANCHO    CORDOVA     CA                       403896
+
+            CENTRAL     STRIPING      SERVICE                                         6"     THERMOPLASTIC         STRIPE
+
+            RANCHO    CORDOVA     CA                       403896
+
+            SPIRIT    ROAD    OILS                                                    FURNISH         &  SPREAD    TACK
+
+            MORGAN    HILL    CA                           472697
+
+            SPIRIT    ROAD    OILS                                                    ITEM      9     (100%)
+
+            MORGAN    HILL    CA                           472697
+
+BIDDER  ID  NAME   AND  ADDRESS                            LICENSE  NUMBER            DESCRIPTION           OF  PORTION   OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________              ____________________________________________________________
+
+02          ANRAK   CORPORATION                                                       CUT,      LOAD,       HAUL   ONLY
+
+            SACRAMENTO      CA                             256390
+
+            ANRAK   CORPORATION                                                       ITEM      10    (70%)
+
+            SACRAMENTO      CA                             256390
+
+CONTINUED   ON  NEXT    PAGE
+            01-0J3304                                                                                                                      BID211
+
+            01-MEN-101                                                                                                                     PAGE    5
+
+            04/03/19                                                                                                                       04/05/19
+
+                                 L  I  S  T  O  F     S  U  B  C          O  N  T  R  A     C  T  O   R  S
+
+BIDDER  ID  NAME  AND   ADDRESS              LICENSE  NUMBER                    DESCRIPTION          OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________        ____________________________________________________________
+
+02          CHRISP    COMPANY                                                   ITEM     14    (100%)
+
+            WOODLAND    CA                   374600
+
+            CHRISP    COMPANY                                                   ITEM     15    (100%)
+
+            WOODLAND    CA                   374600
+
+BIDDER  ID  NAME  AND   ADDRESS              LICENSE  NUMBER                    DESCRIPTION          OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________        ____________________________________________________________
+
+08          APPIAN                                                              ITEM     1     (100%)
+
+            EL  SOBANTE     CA               ABSENT
+
+            APPIAN                                                              ITEM     3     (100%)
+
+            EL  SOBANTE     CA               ABSENT
+
+            APPIAN                                                              LEAD     COMPLIANCE         PLAN
+
+            EL  SOBANTE     CA               ABSENT
+
+            APPIAN                                                              PREPARE        WPCP
+
+            EL  SOBANTE     CA               ABSENT
+
+            CHRISP                                                              ITEM     14    (100%)
+
+            WOODLAND    CA                   374600
+
+            CHRISP                                                              ITEM     15    (100%)
+
+            WOODLAND    CA                   374600
+
+            CHRISP                                                              THERMO         MARKS
+
+            WOODLAND    CA                   374600
+
+            CHRISP                                                              THERMO         STRIPE
+
+            WOODLAND    CA                   374600
+
+CONTINUED   ON  NEXT   PAGE
+            01-0J3304                                                                                                                              BID211
+
+            01-MEN-101                                                                                                                             PAGE    6
+
+            04/03/19                                                                                                                               04/05/19
+
+                                                 L  I  S  T  O  F     S  U  B  C  O  N  T  R  A     C  T  O   R  S
+
+BIDDER  ID  NAME   AND  ADDRESS                              LICENSE  NUMBER            DESCRIPTION          OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________                ____________________________________________________________
+
+08          DEPENDABLE      PETROLEUM  PRODUCTS                                         HOT   MIX      ASPHALT
+
+            VACAVILLE   CA                                   ABSENT
+
+            DEPENDABLE      PETROLEUM  PRODUCTS                                         ITEM     7     (12%)
+
+            VACAVILLE   CA                                   ABSENT
+
+BIDDER  ID  NAME   AND  ADDRESS                              LICENSE  NUMBER            DESCRIPTION          OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________                ____________________________________________________________
+
+09          ANRAK  CORPORATION                                                          ITEM     10    (29%)
+
+            SACRAMENTO      CA                               256390
+
+            ANRAK  CORPORATION                                                          ITEM     2     (16%)
+
+            SACRAMENTO      CA                               256390
+
+            ANRAK  CORPORATION                                                          MILLING        CONCRETE     ASPHALT
+
+            SACRAMENTO      CA                               256390
+
+            ANRAK  CORPORATION                                                          MOBILIZATION
+
+            SACRAMENTO      CA                               256390
+
+            APPLY-A-LINE,       LLC                                                     ITEM     14    (100%)
+
+            ANDERSON    CA                                   1031889
+
+            APPLY-A-LINE,       LLC                                                     ITEM     16    (100%)
+
+            ANDERSON    CA                                   1031889
+
+            APPLY-A-LINE,       LLC                                                     MARKING
+
+            ANDERSON    CA                                   1031889
+
+            APPLY-A-LINE,       LLC                                                     STRIPING
+
+            ANDERSON    CA                                   1031889
+
+CONTINUED   ON  NEXT    PAGE
+            01-0J3304                                                                                                                          BID211
+
+            01-MEN-101                                                                                                                         PAGE    7
+
+            04/03/19                                                                                                                           04/05/19
+
+                                           L  I  S  T       O  F  S  U  B  C  O  N  T  R  A     C  T  O   R  S
+
+BIDDER  ID  NAME   AND  ADDRESS                        LICENSE    NUMBER            DESCRIPTION          OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________            ____________________________________________________________
+
+09          SAPPER     WEST                                                         ITEM     1     (61%)
+
+            SACRAMENTO       CA                        939685
+
+            SAPPER     WEST                                                         ITEM     3     (23%)
+
+            SACRAMENTO       CA                        939685
+
+            SAPPER     WEST                                                         LEAD     COMPLIANCE         PLAN
+
+            SACRAMENTO       CA                        939685
+
+            SAPPER     WEST                                                         PREPARE        WATER     POLLUTION    CONTROL  PLAN
+
+            SACRAMENTO       CA                        939685
+
+BIDDER  ID  NAME   AND  ADDRESS                        LICENSE    NUMBER            DESCRIPTION          OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________            ____________________________________________________________
+
+03          CHRISP     COMPANY                                                      ITEM     14    (100%)
+
+            WOODLAND    CA                             374600
+
+            CHRISP     COMPANY                                                      ITEM     15    (100%)
+
+            WOODLAND    CA                             374600
+
+            CHRISP     COMPANY                                                      PAVEMENT          MARKING
+
+            WOODLAND    CA                             374600
+
+            CHRISP     COMPANY                                                      TRAFFIC        STRIPE
+
+            WOODLAND    CA                             374600
+
+            JIMMY   D   HARP     TRUCKING                                           ITEM     10    (4.09%)
+
+            WINDSOR     CA                             N/A
+
+            JIMMY   D   HARP     TRUCKING                                           ITEM     7     (4.27%)
+
+            WINDSOR     CA                             N/A
+
+CONTINUED   ON  NEXT    PAGE
+            01-0J3304                                                                                                                                     BID211
+
+            01-MEN-101                                                                                                                                    PAGE    8
+
+            04/03/19                                                                                                                                      04/05/19
+
+                                                      L  I  S  T       O  F  S  U  B  C  O  N  T  R  A     C  T  O  R   S
+
+BIDDER  ID  NAME   AND  ADDRESS                                   LICENSE    NUMBER            DESCRIPTION          OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________                       ____________________________________________________________
+
+03          JIMMY   D   HARP    TRUCKING                                                       TRUCKING
+
+            WINDSOR     CA                                        N/A
+
+            JIMMY   D   HARP    TRUCKING                                                       WATER       TRUCK
+
+            WINDSOR     CA                                        N/A
+
+            PACIFIC     NORTHWEST     OIL                                                      ITEM     9     (70.56%)
+
+            STOCKTON    CA                                        705296
+
+            PACIFIC     NORTHWEST     OIL                                                      TACK     COAT
+
+            STOCKTON    CA                                        705296
+
+            PAVEMENT    RECYCLING     SYSTEMS,  INC.                                           GRINDING
+
+            SACRAMENTO      CA                                    569352
+
+            PAVEMENT    RECYCLING     SYSTEMS,  INC.                                           ITEM     10    (17.88%)
+
+            SACRAMENTO      CA                                    569352
+
+            SAPPER     WEST,    INC.                                                           ITEM     1     (100%)
+
+            SACRAMENTO      CA                                    939685
+
+            SAPPER     WEST,    INC.                                                           ITEM     3     (100%)
+
+            SACRAMENTO      CA                                    939685
+
+            SAPPER     WEST,    INC.                                                           LEAD     COMPLIANCE         PLAN
+
+            SACRAMENTO      CA                                    939685
+
+            SAPPER     WEST,    INC.                                                           PREPARE        WATER     POLLUTION    PLAN
+
+            SACRAMENTO      CA                                    939685
+            01-0J3304                                                                                                                          BID211
+
+            01-MEN-101                                                                                                                         PAGE    9
+
+            04/03/19                                                                                                                           04/05/19
+
+                                            L  I  S  T  O  F     S  U  B  C  O  N  T   R  A     C  T  O  R   S
+
+BIDDER  ID  NAME  AND   ADDRESS                         LICENSE  NUMBER            DESCRIPTION           OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________           ____________________________________________________________
+
+05          CHRISP    COMPANY                                                      ITEM      14    (100%)
+
+            WOODLAND    CA                              374600
+
+            CHRISP    COMPANY                                                      ITEM      15    (100%)
+
+            WOODLAND    CA                              374600
+
+            PACIFIC    NORTHWEST   OIL                                             ITEM      9     (100%)
+
+            STOCKTON    CA                              705296
+
+            PAVEMENT    RECYCLING  SYSTEMS                                         COLD      PLANE       ASPHALT
+
+            JURUPA    VALLEY   CA                       569352
+
+            PAVEMENT    RECYCLING  SYSTEMS                                         ITEM      10    (20%)
+
+            JURUPA    VALLEY   CA                       569352
+
+BIDDER  ID  NAME  AND   ADDRESS                         LICENSE  NUMBER            DESCRIPTION           OF  PORTION  OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________           ____________________________________________________________
+
+07          ABSL                                                                   AC     GRINDING
+
+            HAYWARD    CA                               621781
+
+            ABSL                                                                   ITEM      10    (23%)
+
+            HAYWARD    CA                               621781
+
+            CHRISP    COMPANY                                                      ITEM      14    (100%)
+
+            WOODLAND    CA                              374600
+
+            CHRISP    COMPANY                                                      ITEM      15    (100%)
+
+            WOODLAND    CA                              374600
+
+            PACIFIC    NORTHWEST   OIL                                             ITEM      9     (100%)
+
+            STOCKTON    CA                              705296
+            01-0J3304                                                                                                                            BID211
+
+            01-MEN-101                                                                                                                           PAGE  10
+
+            04/03/19                                                                                                                             04/05/19
+
+                                               L  I  S  T  O  F     S  U  B  C  O  N  T   R  A  C   T  O  R   S
+
+BIDDER  ID  NAME  AND   ADDRESS                            LICENSE  NUMBER            DESCRIPTION         OF  PORTION   OF  WORK  SUBCONTRACTED
+
+_________   ____________________________________________________________              ____________________________________________________________
+
+06          SIERRA    TRAFFIC  MARKINGS,  INC                                         ITEM      14  (100%)
+
+            ROSEVILLE   CA                                 822126
+
+            SIERRA    TRAFFIC  MARKINGS,  INC                                         ITEM      15  (100%)
+
+            ROSEVILLE   CA                                 822126
+
+            SIERRA    TRAFFIC  MARKINGS,  INC                                         THERMOPLASTIC           PAVEMENT   MARKING
+
+            ROSEVILLE   CA                                 822126
+
+            SIERRA    TRAFFIC  MARKINGS,  INC                                         6"     THERMOPLASTIC       STRIPE
+
+            ROSEVILLE   CA                                 822126
+      01-0J3304                                                                                                                                  BID211
+
+      01-MEN-101                    C  O    N  T  R   A   C  T    P  R  O  P  O  S  A  L  O     F   L  O  W       B  I  D  D  E  R               PAGE  11
+
+      04/03/19                                                                                                                                   04/05/19
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+ITEM  ITEM                                                                                UNIT  OF        ESTIMATED
+
+NO.   CODE                          ITEM       DESCRIPTION                                MEASURE         QUANTITY                  BID          AMOUNT
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+1     070030      LEAD   COMPLIANCE         PLAN                                          LS        LUMP     SUM                    1,300.00     1,300.00
+
+2     130100      JOB   SITE   MANAGEMENT                                                 LS        LUMP     SUM                    17,500.00    17,500.00
+
+3     130200      PREPARE     WATER    POLLUTION          CONTROL    PROGRAM              LS        LUMP     SUM                    817.00       817.00
+
+4     130620      TEMPORARY     DRAINAGE          INLET      PROTECTION                   EA                 2                      109.00       218.00
+
+5     153248      REMOVE     CONCRETE       (MISCELLANEOUS)          (SQFT)               SQFT            1,330                            3.35  4,455.50
+
+6     374002      ASPHALTIC     EMULSION          (FOG    SEAL  COAT)                     TON                0.4                    1,950.00     780.00
+
+7     390132      HOT   MIX   ASPHALT       (TYPE     A)                                  TON             4,470                     138.00       616,860.00
+
+8     394090      PLACE   HOT   MIX    ASPHALT                                            SQYD               590                           7.00  4,130.00
+
+                  (MISCELLANEOUS          AREA)
+
+9     397005      TACK   COAT                                                             TON                11                     1,342.00     14,762.00
+
+10    398200      COLD   PLANE  ASPHALT           CONCRETE      PAVEMENT                  SQYD         26,100                              2.70  70,470.00
+
+11    710208      ADJUST     FRAME     AND     COVER     TO  GRADE                        EA                 2                      545.00       1,090.00
+
+12    710212      ADJUST     MANHOLE      TO   GRADE                                      EA                 2                      545.00       1,090.00
+
+13    731710      REMOVE     CONCRETE       CURB     (LF)                                 LF                 70                     25.50        1,785.00
+
+14    840505      6"   THERMOPLASTIC           TRAFFIC       STRIPE                       LF                 870                           5.50  4,785.00
+
+15    840515      THERMOPLASTIC        PAVEMENT          MARKING                          SQFT            1,300                     17.00        22,100.00
+
+                                                                                                                                    TOTAL        762,142.50
+        01-0J3304                                                                                                                            BID211
+
+        01-MEN-101                    S    U  M  M  A  R  Y  O      F  R  E    M  A  I  N  I  N  G  B    I  D  D   E  R  S                   PAGE    12
+
+        04/03/19                                                                                                                             04/05/19
+
+     |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+
+ITEM|             SECOND              |                      THIRD                      |                   FOURTH                |          FIFTH
+
+     |  BID               AMOUNT      |             BID                AMOUNT           |           BID               AMOUNT      |     BID          AMOUNT
+
+     |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+
+1    |       800.00               800.00|              2,500.00              2500.00|               2,128.00                2128.00|    2,000.00         2000.00
+
+2    |  3,820.00          3820.00|                     16,000.00          16000.00|                 3,625.00                3625.00|    64,500.00        64500.00
+
+3    |       800.00               800.00|              2,000.00              2000.00|                    770.00               770.00|   2,500.00         2500.00
+
+4    |       250.00               500.00|                 430.00               860.00|                   400.00               800.00|        200.00          400.00
+
+5    |             3.50   4655.00|                           15.00        19950.00|                         9.60            12768.00|        .90         1197.00
+
+6    |  6,500.00          2600.00|                        500.00               200.00|                   322.00               128.80|   1,800.00             720.00
+
+7    |       148.50       663795.00|                      154.00          688380.00|                     148.00             661560.00|       157.77      705231.90
+
+8    |            61.00   35990.00|                          55.00        32450.00|                         12.25           7227.50|         7.28        4295.20
+
+9    |  1,500.00          16500.00|                       800.00             8800.00|               1,685.00                18535.00|   1,395.00         15345.00
+
+10   |             3.63   94743.00|                          3.04         79344.00|                         6.00            156600.00|       3.80        99180.00
+
+11   |       625.00       1250.00|                     3,600.00              7200.00|                    690.00             1380.00|    1,000.00         2000.00
+
+12   |  1,125.00          2250.00|                     3,700.00              7400.00|                    862.00             1724.00|    1,000.00         2000.00
+
+13   |             7.00           490.00|                    35.00           2450.00|                       63.00           4410.00|         14.25           997.50
+
+14   |             5.50   4785.00|                           5.00            4350.00|                       6.00            5220.00|         6.81        5924.70
+
+15   |            17.00   22100.00|                          10.00        13000.00|                         12.00           15600.00|        20.00       26000.00
+
+TOT                       855,078.00                                   884,884.00                                     892,476.30                     932,291.30
+        01-0J3304                                                                                                                           BID211
+
+        01-MEN-101                   S    U  M  M  A  R  Y  O      F  R  E    M  A  I  N  I  N  G  B    I  D  D   E  R  S                   PAGE    13
+
+        04/03/19                                                                                                                            04/05/19
+
+     |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+
+ITEM|             SIXTH              |                   SEVENTH                       |                   EIGHTH              |            NINTH
+
+     |  BID              AMOUNT      |             BID                AMOUNT           |           BID               AMOUNT    |       BID          AMOUNT
+
+     |-------------------------------|-------------------------------|-------------------------------|-------------------------------
+
+1    |  1,225.00         1225.00|                        785.00               785.00|              1,500.00                1500.00|    2,500.00         2500.00
+
+2    |  2,577.00         2577.00|                     3,000.00              3000.00|               25,425.00               25425.00|   20,371.50        20371.50
+
+3    |       595.00              595.00|                 605.00               605.00|              17,000.00               17000.00|   2,500.00         2500.00
+
+4    |       727.00      1454.00|                        250.00               500.00|                   450.00               900.00|        750.00      1500.00
+
+5    |            13.50  17955.00|                          4.00            5320.00|                       11.00           14630.00|        20.00       26600.00
+
+6    |  5,777.00         2310.80|                     4,000.00              1600.00|                    600.00               240.00|   3,000.00         1200.00
+
+7    |       157.00      701790.00|                      161.00          719670.00|                     158.00             706260.00|       152.00      679440.00
+
+8    |            32.77  19334.30|                          20.00        11800.00|                         22.00           12980.00|        101.00      59590.00
+
+9    |  2,230.00         24530.00|                    4,420.00           48620.00|                 1,600.00                17600.00|   1,950.00         21450.00
+
+10   |             5.25  137025.00|                         7.00         182700.00|                        7.15            186615.00|       7.75        202275.00
+
+11   |  1,127.00         2254.00|                     1,200.00              2400.00|               1,100.00                2200.00|    1,000.00         2000.00
+
+12   |  1,127.00         2254.00|                     1,200.00              2400.00|               1,650.00                3300.00|    1,200.00         2400.00
+
+13   |            91.00  6370.00|                           25.00           1750.00|                       55.00           3850.00|         53.00       3710.00
+
+14   |             5.00  4350.00|                           5.00            4350.00|                       5.00            4350.00|         4.65        4045.50
+
+15   |            10.00  13000.00|                          10.00        13000.00|                         10.00           13000.00|        13.65       17745.00
+
+TOT                      937,024.10                                   998,500.00                                 1,009,850.00               1,047,327.00
+
