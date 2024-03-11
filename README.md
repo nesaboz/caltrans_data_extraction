@@ -6,39 +6,42 @@ We extract data from 11'000 PDF contracts available publicly for the purposes of
 
 ## Prerequisites
 
-### Linux/MacOSX
+### Quick install
 
-Install an environment with Python 3.6 or higher using bash commands:
+Get raw data locally from google drive and change the path in main.ipynb to point to it. Run main.ipynb.
 
+### Environment setup
+
+1) You will need Python (likely anything 3.8+ will do it).
+
+2) Clone git repository (you might need an access since this is a private repository):
 ```bash
-virtualenv env_name_of_choice
+git clone https://github.com/nesaboz/regex.git
+```
+
+3) (optional) create a virtual environment:
+```bash
+<path_to_python> -m venv <env_name>
 source env_name_of_choice/bin/activate
 ```
-then install the following libraries:
+4) Run the following command in the terminal/cmd:
 ```bash
-pip install pandas
-pip install tqdm
-pip install ipykernel
-pip install notebook
+pip install pandas numpy tqdm ipykernel notebook
 ```
-or alternatively, you can install the libraries using the requirements.txt file:
-
+or:
+```bash
+pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1
+```
+or, install the libraries using the requirements.txt file:
 ```bash
 pip install -r requirements.txt
 ```
 
-You are now ready to run main.ipynb notebook.
-
-## Questions
-
-- contract number is not unique identifier (tag in the filename or date might be). Should we add date or tag to the bid_subcontractor, contract_bid, and line_item data? Examples of same contract numbers: 01-366004.pdf_12150, and 01-366004.pdf_12901, 01-364314.pdf_1094 and 01-362914.pdf_6320, etc.
-- what OS will be used for evaluation?
-- is UI needed
-- what to do with A) and B), and A) + B)
-- how to handle AMOUNT_ABOVE_UNDER, convert UNDER to be negative?
-- some fields have quotes, for example: "TRUESDELL CORPORATION OF CALIFORNIA, INC." and STEWART ENGINEERING INC, does it need to be standardized?
-
-
-## TODO 
-Have to handle following bid items: 
-![](image-1.png)
+5) (optional) you can also create an environmental variable `RAW_DATA_PATH`. Many ways to do this including adding the following line to your .bashrc or .bash_profile file:
+```bash
+export RAW_DATA_PATH=<path_to_raw_data>
+```
+or adding .env file to the root of the project with the following line:
+```bash
+RAW_DATA_PATH=<path_to_raw_data>
+```
