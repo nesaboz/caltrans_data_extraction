@@ -5,14 +5,13 @@ We extract data from 11'000 PDF contracts available publicly for the purposes of
 ![alt text](image.png)
 
 
-
 ## Quick install
 
 Get raw data locally from google drive and change the path in main.ipynb to point to it. Run main.ipynb. Follow instructions in the notebook to set up the environment.
 
-## Extra setup
+## Extra setup (optional)
 
-1) You will need Python (likely anything 3.8+ will do it).
+1) Make sure Python is installed on the system you are using (likely anything 3.8+ will do it).
 
 2) Clone git repository (you might need an access since this is a private repository):
 ```bash
@@ -25,7 +24,7 @@ git clone https://github.com/nesaboz/regex.git
 source env_name_of_choice/bin/activate
 ```
 
-4) Run the following command in the terminal/cmd to install needed packages:
+4) Run the following command in the terminal/cmd to install required packages:
 ```bash
 pip install pandas numpy tqdm ipykernel notebook
 ```
