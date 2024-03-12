@@ -2,46 +2,50 @@
 
 We extract data from 11'000 PDF contracts available publicly for the purposes of research project. Considering well structured and high quality text, extraction was done using regex library in Python. 
 
-![alt text](image.png)
+![sample contract snapshot](sample.png)
 
+See actual contract in `sample` folder. 
 
 ## Quick install
 
-Get raw data locally from google drive and change the path in main.ipynb to point to it. Run main.ipynb. Follow instructions in the notebook to set up the environment.
+1) Get raw data locally from (ask [Maria](mkhrakov@chicagobooth.edu) for access)
+2) Change the path in main.ipynb to point to raw data folder
+3) Run main.ipynb and follow instructions in the notebook to set up the environment.
 
-## Extra setup (optional)
+## Detailed setup (optional)
 
 1) Make sure Python is installed on the system you are using (likely anything 3.8+ will do it).
 
-2) Clone git repository (you might need an access since this is a private repository):
-```bash
-git clone https://github.com/nesaboz/regex.git
-```
+2) [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) git repository (you will need access since this is a private repository), the link to the repository is:
+`https://github.com/nesaboz/caltrans_data_extraction`
 
-3) (optional) create a virtual environment (or conda environment):
+3) (optional) create a virtual environment or conda environment:
 ```bash
 <path_to_python> -m venv <env_name>
-source env_name_of_choice/bin/activate
+source <caltransenv_name>/bin/activate
 ```
 
 4) Run the following command in the terminal/cmd to install required packages:
 ```bash
-pip install pandas numpy tqdm ipykernel notebook
+pip install pandas numpy tqdm ipykernel notebook python-dotenv openpyxl
 ```
 or if there are any weird versioning issues just use frozen versions of the libraries:
 ```bash
-pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1
+pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1 python-dotenv==1.0.1 openpyxl==3.1.2
 ```
 or, install the libraries using the requirements.txt file:
 ```bash
 pip install -r requirements.txt
 ```
 
-5) (optional) instead of hard-coded path in the main.ipynb, one can also create an environmental variable `RAW_DATA_PATH`. Many ways to do this including adding the following line to your .bashrc or .bash_profile file:
-```bash
-export RAW_DATA_PATH=<path_to_raw_data>
+5) Add jupyter kernel to the virtual environment:
+```bash 
+python -m ipykernel install --user --name=<env_name>
 ```
-or adding .env file to the root of the project with the following line:
-```bash
-RAW_DATA_PATH=<path_to_raw_data>
-```
+
+6) Open jupyter notebook in your IDE (like VSCode) or run `jupyter notebook` in terminal.
+
+7) Set up kernel to the one you just created in the previous step.
+![](kernel.jpg)
+
+7) Check hard-coded path in the main.ipynb pointing to raw data, or edit path in `.env` for `RAW_DATA_PATH`.
