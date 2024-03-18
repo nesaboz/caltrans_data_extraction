@@ -106,12 +106,13 @@ def get_contract_number_and_tag_from_filename(filename:str) -> Tuple[str, str]:
 #     contract_number_regex = r"Contract Number:\s+([A-Za-z0-9-]+)"
     
 
-def get_contract_number(file_contents):
-    return extract(file_contents, r"Contract Number:\s+([A-Za-z0-9-]+)")
+def get_contract_number_and_date(file_contents):
+    match = re.search(r"Contract Number:\s+([A-Za-z0-9-]+)\s+(\d+\/\d+\/\d+)", file_contents)
+    return match.group(1), match.group(2)
 
 
 def get_dates(file_contents):
-    match = re.search(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", file_contents)
+    match = re.search(r"Bid Opening Date:\s+(\d+\/\d+\/\d+).+", file_contents)
     return match.group(1), match.group(2)
     
 
@@ -131,16 +132,32 @@ def extract_contract_data(file_contents, identifier):
     row[IDENTIFIER] = identifier
     match = extract(file_contents, r"(POSTPONED CONTRACT)")
     row[POSTPONED_CONTRACT] = 1 if match else 0
-    row[BID_OPENING_DATE], row[CONTRACT_DATE] = get_dates(file_contents)
-    row[CONTRACT_CODE] = extract(file_contents, r"CONTRACT CODE\s+'([^']+)'")  # check
-    row[CONTRACT_ITEMS] = extract(file_contents, r"(\d+)\s+CONTRACT ITEMS")
-    row[TOTAL_NUMBER_OF_WORKING_DAYS] = extract(file_contents, r"TOTAL NUMBER OF WORKING DAYS\s+(\d+)")
-    row[NUMBER_OF_BIDDERS] = extract(file_contents, r"NUMBER OF BIDDERS\s+(\d+)")
-    row[ENGINEERS_EST] = extract(file_contents, r"ENGINEERS EST\s+([\d,]+\.\d{2})")
-    row[AMOUNT_OVER] = extract(file_contents, r"AMOUNT OVER\s+([\d,]+\.\d{2})")
-    row[AMOUNT_UNDER] = extract(file_contents, r"AMOUNT UNDER\s+([\d,]+\.\d{2})")
-    row[PERCENT_OVER_EST] = extract(file_contents, r"PERCENT OVER EST\s+(\d+.\d{2})")
-    row[PERCENT_UNDER_EST] = extract(file_contents, r"PERCENT UNDER EST\s+(\d+.\d{2})")
+    
+    row[BID_OPENING_DATE] = extract(file_contents, r"Bid Opening Date:\s+(\d+\/\d+\/\d+).+")
+    _, row[CONTRACT_DATE] = get_contract_number_and_date(file_contents)
+    
+    row[CONTRACT_CODE] = extract(file_contents, r"Contract Code:\s+(.+)")
+    row[CONTRACT_ITEMS] = extract(file_contents, r"Number of Items:\s+(\d+)")
+    row[TOTAL_NUMBER_OF_WORKING_DAYS] = extract(file_contents, r"Total Number of Working Days:\s+(\d+)")
+    row[NUMBER_OF_BIDDERS] = extract(file_contents, r"Number of Bidders: \s+(\d+)")
+    row[ENGINEERS_EST] = extract(file_contents, r"Engineers Est: \s+([\d,]+\.\d{2})")
+    
+    amount = extract(file_contents, r"Overrun\/Underrun: \s+(-[\d,]+\.\d{2})")
+    if amount > 0:
+        row[AMOUNT_OVER] = amount
+        row[AMOUNT_UNDER] = ""
+    else:
+        row[AMOUNT_UNDER] = amount
+        row[AMOUNT_OVER] = ""
+    
+    percent_est = extract(file_contents, r"Over\/Under Est: \s+(-\d+.\d{2})%")    
+    if percent_est > 0:
+        row[PERCENT_OVER_EST] = percent_est
+        row[PERCENT_UNDER_EST] = ""
+    else:
+        row[PERCENT_UNDER_EST] = percent_est
+        row[PERCENT_OVER_EST] = ""
+        
     row[CONTRACT_DESCRIPTION] = extract(file_contents, r"(?:\n)?(.*?)FEDERAL AID").strip()
 
     return row
