@@ -40,6 +40,9 @@ RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / 'Txt files - lineprinter'
 OUTLIERS_PATH_LINEPRINTER = OUTLIERS_PATH / 'Txt files - lineprinter'
 OUTLIERS_PATH_LINEPRINTER.mkdir(exist_ok=True, parents=True)
 
+RAW_DATA_PATH_TABLE = RAW_DATA_PATH / 'Txt files - table'
+OUTLIERS_PATH_TABLE = OUTLIERS_PATH / 'Txt files - table'
+OUTLIERS_PATH_TABLE.mkdir(exist_ok=True, parents=True)
 
 IDENTIFIER = "Identifier"
 POSTPONED_CONTRACT = "Postponed_Contract"
@@ -130,7 +133,7 @@ def extract_contract_data(file_contents, identifier):
 def extract_contract_bid_data(file_contents, identifier):
     
     # have fixed width for name (37 characters) and CSLB number (8 digits)
-    pattern = re.compile(r"(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.{37})\s(\d{3} \d{3}-\d{4})(.*)?$\s+(.*?)(.{37})\s(\d{8})", re.MULTILINE)
+    pattern = re.compile(r"(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.{37})\s+(\d{3} \d{3}-\d{4})(.*)?$\s+(.*?)(.{37})\s+(\d{8})", re.MULTILINE)
     matches = pattern.findall(file_contents)
     
     contract_bid_data = []
