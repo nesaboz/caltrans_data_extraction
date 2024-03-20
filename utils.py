@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 load_dotenv()
 RAW_DATA_PATH = Path(os.getenv('RAW_DATA_PATH'))
 if not RAW_DATA_PATH.exists():
-    RAW_DATA_PATH = Path('./RR Procurement - Raw Data')
+    RAW_DATA_PATH = Path('./RR Procurement - Raw Data-2')
     if not RAW_DATA_PATH.exists():
         raise ValueError('Make sure to set a path to raw data in the .env file or copy data into root of the repo')
 # print(f'Current RAW_DATA_PATH is {RAW_DATA_PATH}')
@@ -32,16 +32,16 @@ RESULTS_PATH.mkdir(exist_ok=True, parents=True)
 
 OUTLIERS_PATH = RESULTS_PATH / 'outliers'
 
-RAW_DATA_PATH_PDF = RAW_DATA_PATH / 'PDFs'
-OUTLIERS_PATH_PDF = OUTLIERS_PATH / 'PDFs'
+RAW_DATA_PATH_PDF = RAW_DATA_PATH / 'PDFs - population'
+OUTLIERS_PATH_PDF = OUTLIERS_PATH / 'PDFs - population'
 OUTLIERS_PATH_PDF.mkdir(exist_ok=True, parents=True)
 
-RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / 'Txt files - lineprinter'
-OUTLIERS_PATH_LINEPRINTER = OUTLIERS_PATH / 'Txt files - lineprinter'
+RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / 'Txt files - lineprinter - population'
+OUTLIERS_PATH_LINEPRINTER = OUTLIERS_PATH / 'Txt files - lineprinter - population'
 OUTLIERS_PATH_LINEPRINTER.mkdir(exist_ok=True, parents=True)
 
-RAW_DATA_PATH_TABLE = RAW_DATA_PATH / 'Txt files - table'
-OUTLIERS_PATH_TABLE = OUTLIERS_PATH / 'Txt files - table'
+RAW_DATA_PATH_TABLE = RAW_DATA_PATH / 'Txt files - table - population'
+OUTLIERS_PATH_TABLE = OUTLIERS_PATH / 'Txt files - table - population'
 OUTLIERS_PATH_TABLE.mkdir(exist_ok=True, parents=True)
 
 IDENTIFIER = "Identifier"
@@ -185,13 +185,12 @@ def extract_bid_subcontractor_data(file_contents, identifier):
     matches1 = pattern1.findall(file_contents)
     if not matches1:
         return []
+        
+    pattern2 = re.compile(r"(?m)^\s+(\d{2})?\s+(.{58})\s+(.+)\n\s+(.{38})?(.+)")
             
     bid_subcontractor_data = []
     for match1 in matches1:
-        pattern2 = re.compile(r"(?m)^\s+(\d{2})?\s+(.{58})\s+(.+)\n\s+(.{38})?(.+)")
-        
         matches2 = pattern2.findall(match1)
-        
         for match2 in matches2:
             row = defaultdict(str)
             row[IDENTIFIER] = identifier
@@ -207,23 +206,29 @@ def extract_bid_subcontractor_data(file_contents, identifier):
 
 
 def extract_contract_line_item_data(file_contents, identifier):
-
-    pattern = re.compile(r"(?m)^\s+(\d+)\s+(\(F\))?\s+(\d+)\s+(.{45})\s+(.{35})\s+([\d,]+\.\d{2})(?:\n\s{26}(.+)\n)?")
-
-    matches = pattern.findall(file_contents)
-
+    
+    pattern1= re.compile(r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)")
+    matches1 = pattern1.findall(file_contents)
+    if not matches1:
+        return []
+    
     contract_line_item_data = []
-    for match in matches:
-        row = defaultdict(str)
-        row[IDENTIFIER] = identifier
-        row[ITEM_NUMBER] = match[0]
-        row["Extra"] = match[1]
-        row[ITEM_CODE] = match[2]
-        row[ITEM_DESCRIPTION] = match[3].strip() + ' ' + match[6]
-        row[ITEM_DOLLAR_AMOUNT] = match[5]
-        contract_line_item_data.append(row)
-        
-    contract_line_item_data
+    
+    pattern2 = re.compile(r"(?m)^\s+(\d+)\s+(\(F\))?\s+(\d+)\s+(.{45})\s+(.{35})\s+([\d,]+\.\d{2})(?:\n\s{26}(.+)\n)?")
+
+    for match1 in matches1:
+        matches2 = pattern2.findall(match1)
+        for match2 in matches2:
+            row = defaultdict(str)
+            row[IDENTIFIER] = identifier
+            row[ITEM_NUMBER] = match2[0]
+            row["Extra"] = match2[1]
+            row[ITEM_CODE] = match2[2]
+            row[ITEM_DESCRIPTION] = match2[3].strip() + ' ' + match2[6]
+            row[ITEM_DOLLAR_AMOUNT] = match2[5]
+            
+            contract_line_item_data.append(row)
+            
     return contract_line_item_data
 
 def fill_gaps_in_bidder_id(df):
