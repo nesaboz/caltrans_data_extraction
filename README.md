@@ -27,11 +27,11 @@ source <caltransenv_name>/bin/activate
 
 4) Run the following command in the terminal/cmd to install required packages:
 ```bash
-pip install pandas numpy tqdm ipykernel notebook python-dotenv openpyxl
+pip install pandas numpy tqdm ipykernel notebook python-dotenv openpyxl pytest
 ```
 or if there are any weird versioning issues just use frozen versions of the libraries:
 ```bash
-pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1 python-dotenv==1.0.1 openpyxl==3.1.2
+pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1 python-dotenv==1.0.1 openpyxl==3.1.2 pytest==8.1.1
 ```
 or, install the libraries using the requirements.txt file:
 ```bash

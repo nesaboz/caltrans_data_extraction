@@ -13,7 +13,6 @@ import shutil
 from dotenv import load_dotenv
 
 
-
 load_dotenv()
 RAW_DATA_PATH = Path(os.getenv('RAW_DATA_PATH'))
 if not RAW_DATA_PATH.exists():
@@ -21,10 +20,6 @@ if not RAW_DATA_PATH.exists():
     if not RAW_DATA_PATH.exists():
         raise ValueError('Make sure to set a path to raw data in the .env file or copy data into root of the repo')
 # print(f'Current RAW_DATA_PATH is {RAW_DATA_PATH}')
-
-
-
-# class Contract(object):
 
 
 RESULTS_PATH = RAW_DATA_PATH.parent / 'results'
@@ -79,7 +74,6 @@ CITY = "City"
 SUBCONTRACTOR_LICENSE_NUMBER = "Subcontractor_License_Number"
 
 COULD_NOT_PARSE = "COULD NOT PARSE"
-
 
 
 def get_contract_number_and_tag_from_filename(filename:str) -> Tuple[str, str]:
@@ -165,6 +159,15 @@ def extract_contract_bid_data(file_contents, identifier):
     return contract_bid_data
 
 
+def narrow_file_contents(file_contents: str, regex: str) -> List[str]:
+    """
+    Uses regex to narrow down the file_contents to a specific section.
+    """
+    pattern = re.compile(regex)
+    matches = pattern.findall(file_contents)
+    return matches if matches else []
+
+
 def extract_bid_subcontractor_data(file_contents, identifier):
     """
     We extract data in two steps.
@@ -181,10 +184,10 @@ def extract_bid_subcontractor_data(file_contents, identifier):
     2) The second step is to exact the columns, we use some fixed with columns for that in pattern2.
     """
 
-    pattern1= re.compile(r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)")
-    matches1 = pattern1.findall(file_contents)
-    if not matches1:
-        return []
+    matches1 = narrow_file_contents(
+        file_contents, 
+        r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
+        )
         
     pattern2 = re.compile(r"(?m)^\s+(\d{2})?\s+(.{58})\s+(.+)\n\s+(.{38})?(.+)")
             
@@ -199,52 +202,64 @@ def extract_bid_subcontractor_data(file_contents, identifier):
             row[SUBCONTRACTED_LINE_ITEM] = match2[2]
             row[CITY] = match2[3].strip()
             row[SUBCONTRACTOR_LICENSE_NUMBER] = match2[4].strip()
-            
             bid_subcontractor_data.append(row)
 
     return bid_subcontractor_data
 
 
+def parse_table(text, regex, regex_tag):
+    
+    pattern = re.compile(regex, re.MULTILINE)
+    
+    # Process text to attach additional lines directly to the preceding line
+    lines = text.split('\n')
+
+    processed_lines = []
+    last_line_match = False
+    for i, line in enumerate(lines):
+        if re.match(pattern, line):
+            processed_lines.append(line)
+            last_line_match = True
+        else:
+            if last_line_match:  # this means that we are now potentially on the second line
+                # append process the following line
+                processed_lines[-1] = processed_lines[-1] + ' ' + line.strip()
+                last_line_match = False
+
+    # Now, apply the regex to each processed line
+    pattern2 = re.compile(regex + regex_tag)
+    matches = [re.match(pattern2, line) for line in processed_lines]
+    
+    return matches
+
+
 def extract_contract_line_item_data(file_contents, identifier):
     
-    pattern1= re.compile(r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)")
-    matches1 = pattern1.findall(file_contents)
-    if not matches1:
-        return []
+    matches1 = narrow_file_contents(
+        file_contents, 
+        r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)"
+        )
     
-    contract_line_item_data = []
-    
-    pattern2 = re.compile(r"(?m)^\s+(\d+)\s+(\(F\))?\s+(\d+)\s+(.{45})\s+(.{35})\s+([\d,]+\.\d{2})(?:\n\s{26}(.+)\n)?")
+    regex = r'^\s+(\d+)\s+(\(F\))?\s+(\d+)\s+(.{45})\s+(.{35})\s+([\d,]+\.\d{2})'
+    regex_tag = r'(.*+)'
 
+    contract_line_item_data = []
     for match1 in matches1:
-        matches2 = pattern2.findall(match1)
+        matches2 = parse_table(match1, regex, regex_tag)
         for match2 in matches2:
             row = defaultdict(str)
             row[IDENTIFIER] = identifier
-            row[ITEM_NUMBER] = match2[0]
-            row["Extra"] = match2[1]
-            row[ITEM_CODE] = match2[2]
-            row[ITEM_DESCRIPTION] = match2[3].strip() + ' ' + match2[6]
-            row[ITEM_DOLLAR_AMOUNT] = match2[5]
+            row[ITEM_NUMBER] = match2[1]
+            row["Extra"] = match2[2]
+            row[ITEM_CODE] = match2[3]
+            row[ITEM_DESCRIPTION] = match2[4].strip() + ' ' + match2[7]
+            row['Extra1'] = match2[5]
+            row[ITEM_DOLLAR_AMOUNT] = match2[6]
             
             contract_line_item_data.append(row)
             
     return contract_line_item_data
 
-def fill_gaps_in_bidder_id(df):
-    df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
-    df[BIDDER_ID] = df[BIDDER_ID].ffill()
-    return df
-
-def write_to_results(df: pd.DataFrame | List, name: str, timestamp=None):
-    if isinstance(df, list):
-        df = pd.DataFrame(df)
-    
-    if timestamp:
-        df.to_csv(RESULTS_PATH / f'{timestamp}_{name}.csv', index=False)
-    else:
-        df.to_csv(RESULTS_PATH / f'{name}.csv', index=False)
-    
 
 def read_file(filepath: str):
     # Open the file in read mode ('r')
@@ -303,3 +318,84 @@ def parse_subcontracted_line_item(df):
     df_outliers = df[df['PARSED_5'] == COULD_NOT_PARSE]
     return df, df_outliers
 
+
+def fill_gaps_in_bidder_id(df):
+    df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
+    df[BIDDER_ID] = df[BIDDER_ID].ffill()
+    return df
+
+
+def write_to_results(df: pd.DataFrame | List, name: str, timestamp=None):
+    if isinstance(df, list):
+        df = pd.DataFrame(df)
+    
+    if timestamp:
+        df.to_csv(RESULTS_PATH / f'{timestamp}_{name}.csv', index=False)
+    else:
+        df.to_csv(RESULTS_PATH / f'{name}.csv', index=False)
+    
+
+def run_batch(files: List[Path], add_timestamp=False):
+    """
+    Run a batch or a single file (for which make `files` a single element list).
+    """
+    if add_timestamp:
+        timestamp = datetime.strftime(datetime.now(), '%m-%d-%Y-%H:%M:%S')
+    else:
+        timestamp = None
+    
+    contract_data = []
+    contract_bid_data = []
+    bid_subcontractor_data = []
+    contract_line_item_data = []
+    other_format = []
+    error_files = []
+
+    for filepath in tqdm(files):
+        try:
+            filename = filepath.stem
+            file_contents = read_file(filepath)
+            
+            contract_number_from_filename, tag, identifier = get_contract_number_and_tag_from_filename(filename)
+            contract_number_from_contents = get_contract_number(file_contents)
+            
+            if contract_number_from_filename == contract_number_from_contents:  
+                contract_data.append(extract_contract_data(file_contents, identifier))
+                contract_bid_data.extend(extract_contract_bid_data(file_contents, identifier))
+                bid_subcontractor_data.extend(extract_bid_subcontractor_data(file_contents, identifier))
+                contract_line_item_data.extend(extract_contract_line_item_data(file_contents, identifier))
+            else:
+                # if contract number doesn't match then something is off that needs investigation
+                other_format.append({'other_format_filename': filename})
+                # let's also copy the pdf to a folder for manual inspection
+                
+                shutil.copy(
+                    RAW_DATA_PATH_LINEPRINTER / f'{filename}.txt', 
+                    OUTLIERS_PATH_LINEPRINTER / f'{filename}.txt'
+                    )
+                
+                shutil.copy(
+                    RAW_DATA_PATH_TABLE / f'{filename}.txt',
+                    OUTLIERS_PATH_TABLE / f'{filename}.txt'
+                    )     
+                
+                shutil.copy(
+                    RAW_DATA_PATH_PDF / f'{filename}.pdf', 
+                    OUTLIERS_PATH_PDF / f'{filename}.pdf'
+                    )
+        except Exception as e:
+            error_files.append({'error_files': filename, 'error': e})
+
+    write_to_results(contract_data, "contract_data", timestamp=timestamp)
+    write_to_results(contract_bid_data, "contract_bid_data", timestamp=timestamp)
+
+    df_bid_subcontractor_data, df_bid_subcontractor_data_could_not_parse = parse_subcontracted_line_item(
+        fill_gaps_in_bidder_id(pd.DataFrame(bid_subcontractor_data)))
+
+    write_to_results(df_bid_subcontractor_data, "bid_subcontractor_data", timestamp=timestamp)
+    write_to_results(df_bid_subcontractor_data_could_not_parse, "bid_subcontractor_outliers", timestamp=timestamp)
+
+    write_to_results(contract_line_item_data, "contract_line_item_data", timestamp=timestamp)
+    write_to_results(other_format, "other_format", timestamp=timestamp)
+
+    write_to_results(error_files, "errors", timestamp=timestamp)
