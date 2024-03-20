@@ -1,5 +1,8 @@
 from utils import *
 
+NA_VALUES = [None, '', 'N/A', np.nan]
+TEST_DATA = Path('testing/data')
+
 
 def test_parse_table():
     
@@ -77,28 +80,42 @@ def test_parse_table():
     
     
 def test_parse_low_bidder_table():
-    filepath = Path('test_data/04-4G6404.pdf_7310.txt')
+    filepath = TEST_DATA / '04-4G6404.pdf_7310.txt'
     
     contract_number_from_filename, tag, identifier = get_contract_number_and_tag_from_filename(filepath.stem)
     file_contents = read_file(filepath)
     
-    a = pd.DataFrame(extract_contract_line_item_data(file_contents, identifier))
-
-    assert_against = pd.read_csv('test_data/04-4G6404.pdf_7310_low_bidder_table.csv', dtype=str)
+    df = pd.DataFrame(extract_contract_line_item_data(file_contents, identifier))
     
-    assert a.equals(assert_against)
+    assert_against = pd.read_csv(TEST_DATA / '04-4G6404.pdf_7310_low_bidder_table.csv', dtype=str)
+    
+    pd.testing.assert_frame_equal(df, assert_against)
     
 def test_parse_item_table():
     
-    filepath = Path('test_data/04-4G6404.pdf_7310.txt')
-    
+    filepath = TEST_DATA / '04-4G6404.pdf_7310.txt'
+
     contract_number_from_filename, tag, identifier = get_contract_number_and_tag_from_filename(filepath.stem)
     file_contents = read_file(filepath)
-    
+
     df_bid_subcontractor_data, df_bid_subcontractor_data_outliers = parse_subcontracted_line_item(fill_gaps_in_bidder_id(pd.DataFrame(extract_bid_subcontractor_data(file_contents, identifier))))
 
-    assert_against_data = pd.read_csv('test_data/04-4G6404.pdf_7310_subcontractor_data.csv', dtype=str)
-    assert_against_data_outliers = pd.read_csv('test_data/04-4G6404.pdf_7310_subcontractor_data_outliers.csv', dtype=str)
+    assert_against_data = pd.read_csv(TEST_DATA / '04-4G6404.pdf_7310_subcontractor_data.csv', dtype=str)
+    assert_against_data_outliers = pd.read_csv(TEST_DATA / '04-4G6404.pdf_7310_subcontractor_data_outliers.csv', dtype=str)
 
-    assert df_bid_subcontractor_data.equals(assert_against_data)
-    assert df_bid_subcontractor_data_outliers.equals(assert_against_data_outliers)
+    df_bid_subcontractor_data = df_bid_subcontractor_data.replace(to_replace=NA_VALUES, value=pd.NA).reset_index(drop=True)
+    df_bid_subcontractor_data_outliers = df_bid_subcontractor_data_outliers.replace(to_replace=NA_VALUES, value=pd.NA).reset_index(drop=True)
+    
+    pd.testing.assert_frame_equal(df_bid_subcontractor_data, assert_against_data)
+    pd.testing.assert_frame_equal(df_bid_subcontractor_data_outliers, assert_against_data_outliers)
+
+
+def test_line_item_parsing():
+    df = pd.read_csv(TEST_DATA / 'raw_subcontracted_line_item_examples.txt', header=None, delimiter="\t", names=['Subcontracted_Line_Item'])
+    df, df_outlier = parse_subcontracted_line_item(df)
+    
+    df = df.replace(to_replace=NA_VALUES, value=pd.NA).reset_index(drop=True)
+    
+    assert_against = pd.read_csv(TEST_DATA / 'assertion_subcontracted_line_item_examples.csv', dtype=str)
+    
+    pd.testing.assert_frame_equal(df, assert_against)

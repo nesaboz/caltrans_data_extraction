@@ -148,7 +148,6 @@ def extract_contract_bid_data(file_contents, identifier):
         row[CSLB_NUMBER] = match[9] 
         contract_bid_data.append(row)
 
-
     # if contract has A+B we need to correct the BID_TOTAL:
     pattern = re.compile(r"A\+B\)\s+([\d,]+\.\d{2})", re.MULTILINE)  # this will find many A+B) matches but it is reasonable to expect that first A+B) matches are all we need
     a_plus_b_bids = pattern.findall(file_contents)
@@ -208,7 +207,18 @@ def extract_bid_subcontractor_data(file_contents, identifier):
 
 
 def parse_table(text, regex, regex_tag):
-    
+    """
+    Parses a table from a text line by line, but 
+
+    Args:
+        text (_type_): _description_
+        regex (_type_): _description_
+        regex_tag (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
     pattern = re.compile(regex, re.MULTILINE)
     
     # Process text to attach additional lines directly to the preceding line
@@ -337,7 +347,7 @@ def write_to_results(df: pd.DataFrame | List, name: str, timestamp=None):
 
 def run_batch(files: List[Path], add_timestamp=False):
     """
-    Run a batch or a single file (for which make `files` a single element list).
+    Run a batch or a single file (by making `files` a single element list).
     """
     if add_timestamp:
         timestamp = datetime.strftime(datetime.now(), '%m-%d-%Y-%H:%M:%S')

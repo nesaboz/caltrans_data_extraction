@@ -2,7 +2,7 @@
 
 We extract data from 11'000 PDF contracts available publicly for the purposes of research project. Considering well structured and high quality text, extraction was done using regex library in Python. 
 
-![sample contract snapshot](sample.png)
+![sample contract snapshot](assets/sample.png)
 
 See actual contract in `sample` folder. 
 
@@ -46,6 +46,6 @@ python -m ipykernel install --user --name=<env_name>
 6) Open jupyter notebook in your IDE (like VSCode) or run `jupyter notebook` in terminal.
 
 7) Set up kernel to the one you just created in the previous step.
-![](kernel.jpg)
+![](assets/kernel.jpg)
 
 7) Check hard-coded path in the main.ipynb pointing to raw data, or edit path in `.env` for `RAW_DATA_PATH`.
