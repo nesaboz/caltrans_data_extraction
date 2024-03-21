@@ -1,4 +1,5 @@
 from utils import *
+from io import StringIO
 
 NA_VALUES = [None, '', 'N/A', np.nan]
 TEST_DATA = Path('testing/data')
@@ -119,3 +120,26 @@ def test_line_item_parsing():
     assert_against = pd.read_csv(TEST_DATA / 'assertion_subcontracted_line_item_examples.csv', dtype=str)
     
     pd.testing.assert_frame_equal(df, assert_against)
+    
+def test_contract_bid():
+    raw = """                         4           401,116.00    2              GOLDEN STATE BRIDGE, INC.             925 372-8000  CC PREF CLAIMED
+                                                                                                        00851187
+                                                                  3701 MALLARD DRIVE;               FAX 925 372-8001
+                                                                  BENICIA CA  94510
+
+                         5           247,247.00    3              TRUESDELL CORPORATION OF              602 437-1711  CC PREF CLAIMED
+                                 FAILED TO SUBMIT DVBE/DBE QUOTES CALIFORNIA, INC.                      00615058
+                                                                  ASDF
+                                                                  1310 W 23RD STREET;               FAX 602 437-1821
+                                                                  TEMPE AZ  85282
+"""
+
+    df = pd.DataFrame(extract_contract_bid_data(raw, '04-3Q5204.pdf_12593')).astype(str)
+    df = df.replace(to_replace=NA_VALUES, value=pd.NA)
+    
+    assert_against = """Identifier,Bid_Rank,A_plus_B_indicator,Bid_Total,Bidder_ID,Bidder_Name,Bidder_Phone,Extra,Weird_Contract_Notes,CSLB_Number,Third_Row
+04-3Q5204.pdf_12593,4,0,"401,116.00",2,"GOLDEN STATE BRIDGE, INC.",925 372-8000,  CC PREF CLAIMED,,00851187,0
+04-3Q5204.pdf_12593,5,0,"247,247.00",3,"TRUESDELL CORPORATION OF CALIFORNIA, INC. ASDF",602 437-1711,  CC PREF CLAIMED,FAILED TO SUBMIT DVBE/DBE QUOTES,00615058,1"""
+    data = StringIO(assert_against)
+    df_assert_against = pd.read_csv(data, dtype=str)
+    pd.testing.assert_frame_equal(df, df_assert_against)

@@ -21,22 +21,21 @@ if not RAW_DATA_PATH.exists():
         raise ValueError('Make sure to set a path to raw data in the .env file or copy data into root of the repo')
 # print(f'Current RAW_DATA_PATH is {RAW_DATA_PATH}')
 
+sample_type = 'population'  # 'sample' vs 'population'
 
-RESULTS_PATH = RAW_DATA_PATH.parent / 'results'
-RESULTS_PATH.mkdir(exist_ok=True, parents=True)
+RAW_DATA_PATH_PDF = RAW_DATA_PATH / f'PDFs - {sample_type}'
+RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / f'Txt files - lineprinter - {sample_type}'
+RAW_DATA_PATH_TABLE = RAW_DATA_PATH / f'Txt files - table - {sample_type}'
 
+RESULTS_PATH = RAW_DATA_PATH.parent / f'results/{sample_type}'
 OUTLIERS_PATH = RESULTS_PATH / 'outliers'
+OUTLIERS_PATH_PDF = OUTLIERS_PATH / f'PDFs - {sample_type}'
+OUTLIERS_PATH_LINEPRINTER = OUTLIERS_PATH / f'Txt files - lineprinter - {sample_type}'
+OUTLIERS_PATH_TABLE = OUTLIERS_PATH / f'Txt files - table - {sample_type}'
 
-RAW_DATA_PATH_PDF = RAW_DATA_PATH / 'PDFs - population'
-OUTLIERS_PATH_PDF = OUTLIERS_PATH / 'PDFs - population'
+RESULTS_PATH.mkdir(exist_ok=True, parents=True)
 OUTLIERS_PATH_PDF.mkdir(exist_ok=True, parents=True)
-
-RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / 'Txt files - lineprinter - population'
-OUTLIERS_PATH_LINEPRINTER = OUTLIERS_PATH / 'Txt files - lineprinter - population'
 OUTLIERS_PATH_LINEPRINTER.mkdir(exist_ok=True, parents=True)
-
-RAW_DATA_PATH_TABLE = RAW_DATA_PATH / 'Txt files - table - population'
-OUTLIERS_PATH_TABLE = OUTLIERS_PATH / 'Txt files - table - population'
 OUTLIERS_PATH_TABLE.mkdir(exist_ok=True, parents=True)
 
 IDENTIFIER = "Identifier"
@@ -61,6 +60,7 @@ BID_TOTAL = "Bid_Total"
 BIDDER_ID = "Bidder_ID"
 BIDDER_NAME = "Bidder_Name"
 CSLB_NUMBER = "CSLB_Number"
+THIRD_ROW = "Third_Row"
 
 SUBCONTRACTOR_NAME = "Subcontractor_Name"
 SUBCONTRACTED_LINE_ITEM = "Subcontracted_Line_Item"
@@ -124,10 +124,12 @@ def extract_contract_data(file_contents, identifier):
     return row
 
 
-def extract_contract_bid_data(file_contents, identifier):
-    
+def old_parse_contract_bid_data(file_contents, identifier):
+    # old method using only regex; fails to parse if BIDER NAME has 3 rows
+    # To delete unless parse_contract_bid_data starts failing
+            
     # have fixed width for name (37 characters) and CSLB number (8 digits)
-    pattern = re.compile(r"(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.{37})\s+(\d{3} \d{3}-\d{4})(.*)?$\s+(.*?)(.{37})\s+(\d{8})", re.MULTILINE)
+    pattern = re.compile(r"(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.{38})\s(\d{3} \d{3}-\d{4})(.*)?$\s+(.*?)(.{38})\s(\d+)$\s+(.+)", re.MULTILINE)
     matches = pattern.findall(file_contents)
     
     contract_bid_data = []
@@ -143,10 +145,94 @@ def extract_contract_bid_data(file_contents, identifier):
         row["Bidder_Phone"] = match[5].strip()
         row["Extra"] = match[6]
         row['Weird_Contract_Notes'] = match[7]
-        row[BIDDER_NAME] += ' ' + match[8]
+        row[BIDDER_NAME] += ' ' + match[8]  # this is the second line of the bidder name
         row[BIDDER_NAME] = row[BIDDER_NAME].strip()
-        row[CSLB_NUMBER] = match[9] 
+        row[CSLB_NUMBER] = match[9]
+        row[BIDDER_NAME] += ' ' + match[10]  # this is the third line of the bidder name
+        row[BIDDER_NAME] = row[BIDDER_NAME].strip()
         contract_bid_data.append(row)
+
+    return contract_bid_data
+
+
+def parse_contract_bid_data(text, identifier):
+    """
+    Parses a table from a text line by line, works even if BIDER NAME has 3 rows (very rare).
+    """
+    pattern1 = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.{38})\s(\d{3} \d{3}-\d{4})(.*)?")
+    pattern2 = re.compile(r"^(.{65})(.{38})\s+(\d{8})$")
+    pattern3 = re.compile(r"^.+(FAX|B\)|\d{3} \d{3}-\d{4}|;).*+$")
+    
+    lines = text.split('\n')
+
+    processed_lines = []
+    just_passed_first_line = False
+    just_passed_second_line = False
+    just_passed_third_line = False
+    row = None
+    for i, line in enumerate(lines):
+        match1 = re.match(pattern1, line)
+        match2 = re.match(pattern2, line)
+        match3 = re.match(pattern3, line)
+        if match1:
+            # write a previous row if it exists
+            if row:
+                if THIRD_ROW not in row:
+                    row[THIRD_ROW] = 0
+                processed_lines.append(row)
+            
+            match = match1.groups()
+            row = defaultdict(str)
+            row[IDENTIFIER] = identifier
+            row[BID_RANK] = match[0]
+            row[A_PLUS_B_INDICATOR] = 1 if match[1] else 0
+            row[BID_TOTAL] = match[2]
+            row[BIDDER_ID] = match[3].strip()
+            row[BIDDER_NAME] = match[4].strip()
+            row["Bidder_Phone"] = match[5].strip()
+            row["Extra"] = match[6]
+        
+            just_passed_first_line = True
+            just_passed_second_line = False
+            just_passed_third_line = False
+            
+        elif match2 and just_passed_first_line:
+            match = match2.groups()
+            
+            row['Weird_Contract_Notes'] = match[0].strip()
+            row[BIDDER_NAME] += ' ' + match[1].strip()  # this is the second line of the bidder name
+            row[BIDDER_NAME] = row[BIDDER_NAME].strip()
+            row[CSLB_NUMBER] = match[2]
+            
+            just_passed_first_line = False
+            just_passed_second_line = True
+            just_passed_third_line = False
+        
+        elif match3 is None and just_passed_second_line:
+            # this means we are on the third line and it does not have some keyword from pattern3 in it
+            # then just add this line to the name
+            row[BIDDER_NAME] += ' ' + line.strip()
+            row[BIDDER_NAME] = row[BIDDER_NAME].strip()
+            row[THIRD_ROW] = 1
+            just_passed_first_line = False
+            just_passed_second_line = False
+            just_passed_third_line = True
+        else:
+            just_passed_first_line = False
+            just_passed_second_line = False
+            just_passed_third_line = False
+
+    if row:
+        if THIRD_ROW not in row:
+            row[THIRD_ROW] = 0
+        processed_lines.append(row)   
+    
+    return processed_lines
+
+        
+def extract_contract_bid_data(file_contents, identifier):
+    
+    contract_bid_data = parse_contract_bid_data(file_contents, identifier)
 
     # if contract has A+B we need to correct the BID_TOTAL:
     pattern = re.compile(r"A\+B\)\s+([\d,]+\.\d{2})", re.MULTILINE)  # this will find many A+B) matches but it is reasonable to expect that first A+B) matches are all we need
@@ -221,20 +307,19 @@ def parse_table(text, regex, regex_tag):
 
     pattern = re.compile(regex, re.MULTILINE)
     
-    # Process text to attach additional lines directly to the preceding line
     lines = text.split('\n')
 
     processed_lines = []
-    last_line_match = False
+    just_passed_first_line = False
     for i, line in enumerate(lines):
         if re.match(pattern, line):
             processed_lines.append(line)
-            last_line_match = True
+            just_passed_first_line = True
         else:
-            if last_line_match:  # this means that we are now potentially on the second line
+            if just_passed_first_line:
                 # append process the following line
                 processed_lines[-1] = processed_lines[-1] + ' ' + line.strip()
-                last_line_match = False
+                just_passed_first_line = False
 
     # Now, apply the regex to each processed line
     pattern2 = re.compile(regex + regex_tag)
