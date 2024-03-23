@@ -4,6 +4,11 @@ from io import StringIO
 NA_VALUES = [None, '', 'N/A', np.nan]
 TEST_DATA = Path('testing/data')
 
+def assert_against(processed_lines, filename):
+    df = pd.DataFrame(processed_lines).astype(str).replace(to_replace=NA_VALUES, value=pd.NA)
+    assert_against = pd.read_csv(TEST_DATA / filename, dtype=str).replace(to_replace=NA_VALUES, value=pd.NA)
+    assert df.equals(assert_against)
+
 
 def test_parse_table():
     
@@ -181,19 +186,15 @@ def test_27():
                                                                   2231 LA MIRADA DRIVE              FAX 760 727-8702   BID IS OVER NSBP
                                                                   VISTA  CA  92081                                    PREFERENCE LIMITS
 
+                         5           247,247.00    3              TRUESDELL CORPORATION OF              602 437-1711  CC PREF CLAIMED
+                                 FAILED TO SUBMIT DVBE/DBE QUOTES CALIFORNIA, INC.                      00615058
+                                                                  1310 W 23RD STREET;               FAX 602 437-1821
+                                                                  TEMPE AZ  85282
 """
         
-    # contract = Contract('08-1F5404_6689')
-    
-    pattern1 = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)\s(\d{3} \d{3}-\d{4})(.*)?")
-    lines = raw.split('\n')
-    starts = []
-    for i, line in enumerate(lines):
-        match1 = re.match(pattern1, line)
-        if match1:
-            starts.append(match1.start(5))
-            
-    assert starts == [62, 62, 62, 62, 66, 66]
+    processed_lines = BidData._parse(raw, "test")
+        
+    assert_against(processed_lines, 'test_27.csv')
                 
 def test_29():
     contract = Contract('07-117074_406')

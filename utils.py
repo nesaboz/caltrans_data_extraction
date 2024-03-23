@@ -232,94 +232,81 @@ class ContractData(ContractBase):
 
 class BidData(ContractBase):
         
-    def _parse(self):
+    @staticmethod
+    def _parse(text, identifier):
         """
         Parses a table from a text line by line, works even if BIDER NAME has 3 rows (very rare).
         
         Old method that used only regex failed to parse if BIDER NAME has 3 rows.
         It had a long regex:
         """
-        pattern1 = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)\s(\d{3} \d{3}-\d{4})(.*)?")
-        # (^\s*)(\d+)(\s+)(A\))?(\s*)([\d,]+\.\d{2})(\s+)(\d+)(\s*)(.{37})\s(\d{3} \d{3}-\d{4})(.*)?
+        pattern = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)(\d{3} \d{3}-\d{4})(.*)?")
+        lines = text.split('\n')
         
-        pattern2 = re.compile(r"^(.{65})(.{38})\s+(\d{8})$")
-        pattern3 = re.compile(r"^.+(FAX|B\)|\d{3} \d{3}-\d{4}|;).*+$")
+        i = 0
         
-        lines = self.contract.file_contents.split('\n')
-
+        n = len(lines)
         processed_lines = []
-        just_passed_first_line = False
-        just_passed_second_line = False
-        just_passed_third_line = False
-        row = None
-        for i, line in enumerate(lines):
-            match1 = re.match(pattern1, line)
-            match2 = re.match(pattern2, line)
-            match3 = re.match(pattern3, line)
-            if match1:
-                # write a previous row if it exists
-                if row:
-                    if HAS_THIRD_ROW not in row:
-                        row[HAS_THIRD_ROW] = 0
-                    processed_lines.append(row)
-                
-                match = match1.groups()
+        while i < n:
+            match = re.match(pattern, lines[i])
+            if match:
+                # this mean we hit the first line, lets parse it and save it
                 row = defaultdict(str)
-                row[IDENTIFIER] = self.contract.identifier
-                row[BID_RANK] = match[0]
-                row[A_PLUS_B_INDICATOR] = 1 if match[1] else 0
-                row[BID_TOTAL] = match[2]
-                row[BIDDER_ID] = match[3].strip()
-                row[BIDDER_NAME] = match[4].strip()
-                row[BIDDER_PHONE] = match[5].strip()
-                row[EXTRA] = match[6]
-            
-                just_passed_first_line = True
-                just_passed_second_line = False
-                just_passed_third_line = False
+                row[IDENTIFIER] = identifier
+                row[BID_RANK] = match.group(1)
+                row[A_PLUS_B_INDICATOR] = 1 if match.group(2) else 0
+                row[BID_TOTAL] = match.group(3)
+                row[BIDDER_ID] = match.group(4).strip()
+                row[BIDDER_NAME] = match.group(5).strip()
+                row[BIDDER_PHONE] = match.group(6).strip()
+                row[EXTRA] = match.group(7)
+                    
+                # moving onto the second line:    
+                i += 1
+                name_starts = match.start(5)
+                name_ends = match.end(5)
+                delta = name_ends - name_starts
+                pattern_cslb_number = re.compile(rf"^(.{{{name_starts}}})(.{{{delta}}})(\d+)$")
+                match_cslb_number = re.match(pattern_cslb_number, lines[i])
                 
-            elif match2 and just_passed_first_line:
-                match = match2.groups()
+                if match_cslb_number:
+                    # this should be the case if second line is present
+                    row[CONTRACT_NOTES] = match_cslb_number.group(1).strip()
+                    row[BIDDER_NAME] += match_cslb_number.group(2).rstrip()  # this is the second line of the bidder name
+                    row[CSLB_NUMBER] = match_cslb_number.group(3)
+                else:
+                    # log as error:
+                    raise ValueError(f'Second line is not a standard format (notes, extra name, CLBS number)')
                 
-                row[CONTRACT_NOTES] = match[0].strip()
-                row[BIDDER_NAME] += (' ' + match[1].strip()).strip()  # this is the second line of the bidder name
-                row[CSLB_NUMBER] = match[2]
-                
-                just_passed_first_line = False
-                just_passed_second_line = True
-                just_passed_third_line = False
-            
-            elif match3 is None and just_passed_second_line:
-                # this means we are on the third line and it does not have some keyword from pattern3 in it
-                # then just add this line to the name
-                row[BIDDER_NAME] += (' ' + line.strip()).strip()
-                row[HAS_THIRD_ROW] = 1
-                just_passed_first_line = False
-                just_passed_second_line = False
-                just_passed_third_line = True
-            else:
-                just_passed_first_line = False
-                just_passed_second_line = False
-                just_passed_third_line = False
-
-        if row:
-            if HAS_THIRD_ROW not in row:
-                row[HAS_THIRD_ROW] = 0
-            processed_lines.append(row)   
-        
+                # moving onto the next line, here it might be a third line or an address followed by a FAX number:
+                i += 1
+                pattern_fax_number = re.compile(r"^.*(FAX|;).*(\d{3} \d{3}-\d{4}).*$")
+                match_fax_number = re.match(pattern_fax_number, lines[i])
+                if not match_fax_number:
+                    # this means we have a third line, so just strip and add to the name
+                    row[BIDDER_NAME] += lines[i].strip()
+                    row[HAS_THIRD_ROW] = 1
+                else:
+                    # we don't have a third row
+                    row[HAS_THIRD_ROW] = 0
+                    # if there is A) then let's also keep moving until we find the A+B) line
+                    if row[A_PLUS_B_INDICATOR]:
+                        pattern_a_plus_b = re.compile(r".*A\+B\)\s+([\d,]+\.\d{2}).*")
+                        while i < n:
+                            match_a_plus_b = re.match(pattern_a_plus_b, lines[i])
+                            if match_a_plus_b:
+                                row[BID_TOTAL] = match_a_plus_b.group(1)
+                                break
+                            i += 1
+                        if i == n:
+                            processed_lines.append(row)
+                            raise ValueError(f'MAJOR ERROR in contract {identifier}. Could not find A+B) line for BID_RANK {row[BID_RANK]}')
+                processed_lines.append(row)
+            i += 1
         return processed_lines
 
     def extract(self):
-        contract_bid_data = self._parse()
-
-        # if contract has A+B we need to correct the BID_TOTAL:
-        # the following will find many A+B) matches but it is reasonable to expect that first A+B) matches are all we need
-        pattern = re.compile(r"A\+B\)\s+([\d,]+\.\d{2})", re.MULTILINE)  
-        a_plus_b_bids = pattern.findall(self.contract.file_contents)
-        if a_plus_b_bids:
-            for i, a_plus_b_bid in zip(range(len(contract_bid_data)), a_plus_b_bids):  # this does truncation of a_plus_b_bids list 
-                contract_bid_data[i][BID_TOTAL] = a_plus_b_bid
-
+        contract_bid_data = self._parse(self.contract.file_contents, self.contract.identifier)
         self.rows = contract_bid_data
         self._df = pd.DataFrame(self.rows)
 
