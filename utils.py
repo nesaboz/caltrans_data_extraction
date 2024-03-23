@@ -12,8 +12,11 @@ from datetime import datetime
 import shutil
 from dotenv import load_dotenv
 from enum import Enum
+import random
+
 
 FILENAME = "Filename"
+RELATIVE_FOLDER = "Relative_Folder"
 CONTRACT_TYPE = "Contract_Type"
 
 IDENTIFIER = "Identifier"
@@ -51,6 +54,8 @@ ITEM_DOLLAR_AMOUNT = "Item_Dollar_Amount"
 EXTRA1 = "Extra1"
 EXTRA2 = "Extra2"
 COULD_NOT_PARSE = "COULD NOT PARSE"
+ITEM_NUMBERS = "Item_Numbers"
+PERCENT = "Percent"
 
 BIDDER_ID = "Bidder_ID"
 SUBCONTRACTOR_NAME = "Subcontractor_Name"
@@ -60,11 +65,16 @@ SUBCONTRACTOR_LICENSE_NUMBER = "Subcontractor_License_Number"
 
 ERROR_FILENAME = "Error_Filename"
 ERROR = "Error"
-    
-    
+
 class ContractType(Enum):
     TYPE1 = 1
     TYPE2 = 2
+
+
+class SampleSize(Enum):
+    SMALL = 1  # say 10 files
+    FULL = 2
+    
     
 def get_raw_data_path():
     load_dotenv()
@@ -74,8 +84,11 @@ def get_raw_data_path():
     return raw_data_path
     
 RAW_DATA_PATH = get_raw_data_path()
-RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / 'lineprinter_txt_files'
-RAW_DATA_PATH_TABLE = RAW_DATA_PATH / 'table_txt_files'
+LINEPRINTER_TXT_FILES = 'lineprinter_txt_files'
+TABLE_TXT_FILES = 'table_txt_files'
+RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_TXT_FILES
+RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_TXT_FILES
+RESULTS_PATH = Path('results')
     
     
 def read_file(filepath: str):
@@ -88,24 +101,28 @@ def save_contract_types():
     """
     Inspect quickly contract to determine if it is of type 1 or 2.
     """
-    files = RAW_DATA_PATH_LINEPRINTER.glob('*.txt')
+    filepaths = RAW_DATA_PATH_LINEPRINTER.glob('*.txt')
 
     contract_types = []
-    for i, filepath in enumerate(files):
-        filename = filepath.stem
+    for i, filepath in enumerate(filepaths):
+        filename = filepath.name
         row = defaultdict(str)
         row[FILENAME] = filename
         
         # must use this encoding to avoid errors
         file_contents = read_file(filepath)
-            
+        
         match = re.search(r"CONTRACT\s+NUMBER\s+([A-Za-z0-9-]+)", file_contents)
         
         if match:
             row[CONTRACT_TYPE] = ContractType.TYPE1.value
+            folder = LINEPRINTER_TXT_FILES
         else:
             row[CONTRACT_TYPE] = ContractType.TYPE2.value
-                    
+            folder = TABLE_TXT_FILES
+            
+        row[RELATIVE_FOLDER] = os.path.join(folder, filename)
+        
         contract_types.append(row)
         
     df = pd.DataFrame(contract_types)
@@ -113,28 +130,28 @@ def save_contract_types():
     df.to_csv('data/contract_types.csv', index=True)
     
 
-def get_contract_types_dict():
+def get_contract_types():
     """Use as:
-    d = get_contract_types_dict()
+    d = get_contract_types()
     d['01-1234.pdf_1']  # return 1 or 2
     """
     df = pd.read_csv('data/contract_types.csv')
     df.set_index('Filename', inplace=True)
-    return df['Contract_Type'].to_dict()
+    return df, df['Contract_Type'].to_dict()
 
 
 class Contract:
-    
-    def __init__(self, filename: str, contract_types) -> None:
-        self.filename = filename
-        self.contract_number, self.tag, self.identifier = self.get_contract_number_and_tag_from_filename(filename)
+    def __init__(self, filepath: Path | str) -> None:
+        if isinstance(filepath, str):
+            # this means it's an identifier
+            c1, t1 = filepath.split('_')
+            filepath = RAW_DATA_PATH_LINEPRINTER / (c1 + '.pdf_' + t1 + '.txt')
         
-        if contract_types[filename] == 1:
-            filepath = Path('data/lineprinter_txt_files') / (filename + '.txt')
-        else:
-            filepath = Path('data/table_txt_files') / (filename + '.txt')
-        self._file_contents = read_file(filepath)
-            
+        self.filepath = filepath
+        self.filename = filepath.stem
+        self.contract_number, self.tag, self.identifier = self.get_contract_number_and_tag_from_filename(self.filename)
+        self._file_contents = read_file(self.filepath)
+        
     def get_contract_number_and_tag_from_filename(self, filename:str) -> Tuple[str, str]:
         pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
         match = pattern.search(filename)
@@ -157,20 +174,21 @@ class ContractBase(object):
     def __init__(self, contract) -> None:
         self.contract = contract
         self.rows = None
-        self.df = None
+        self._df = None
     
     def pre_process(self):
         pass
     
-    def post_process(self):
-        self.df = pd.DataFrame(self.rows)
+    @property
+    def df(self):
+        return self._df
         
     def narrow_file_contents(self, regex: str) -> List[str]:
         """
         Uses regex to narrow down the file_contents to specific sections that will be returned.
         """
         pattern = re.compile(regex)
-        matches = pattern.findall(self.file_contents)
+        matches = pattern.findall(self.contract.file_contents)
         return matches if matches else []
 
 
@@ -181,9 +199,9 @@ class ContractData(ContractBase):
                CONTRACT_DESCRIPTION, PERCENT_OVER_EST, PERCENT_UNDER_EST, ENGINEERS_EST, 
                AMOUNT_OVER, AMOUNT_UNDER, CONTRACT_CODE]
         
-    def extract(self, regex, groups=(1,)):
+    def _extract(self, regex, groups=(1,)):
         # Search for the pattern in the text
-        match = re.search(regex, self.file_contents)
+        match = re.search(regex, self.contract.file_contents)
         if match:
             if len(groups) == 1:
                 return match.group(groups[0])
@@ -192,37 +210,38 @@ class ContractData(ContractBase):
         else:
             return ""
     
-    def get_row(self):
+    def extract(self):
         row = defaultdict(str)
         row[IDENTIFIER] = self.contract.identifier
-        row[POSTPONED_CONTRACT] = int(bool(self.extract(r"(POSTPONED CONTRACT)")))
-        row[BID_OPENING_DATE], row[CONTRACT_DATE] = self.extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
-        row[CONTRACT_NUMBER] = self.extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
-        row[CONTRACT_CODE] = self.extract(r"CONTRACT CODE\s+'([^']+)'")  # check
-        row[CONTRACT_ITEMS] = self.extract(r"(\d+)\s+CONTRACT ITEMS")
-        row[TOTAL_NUMBER_OF_WORKING_DAYS] = self.extract(r"TOTAL NUMBER OF WORKING DAYS\s+(\d+)")
-        row[NUMBER_OF_BIDDERS] = self.extract(r"NUMBER OF BIDDERS\s+(\d+)")
-        row[ENGINEERS_EST] = self.extract(r"ENGINEERS EST\s+([\d,]+\.\d{2})")
-        row[AMOUNT_OVER] = self.extract(r"AMOUNT OVER\s+([\d,]+\.\d{2})")
-        row[AMOUNT_UNDER] = self.extract(r"AMOUNT UNDER\s+([\d,]+\.\d{2})")
-        row[PERCENT_OVER_EST] = self.extract(r"PERCENT OVER EST\s+(\d+.\d{2})")
-        row[PERCENT_UNDER_EST] = self.extract(r"PERCENT UNDER EST\s+(\d+.\d{2})")
-        row[CONTRACT_DESCRIPTION] = self.extract(r"(?:\n)?(.*?)FEDERAL AID").strip()
+        row[POSTPONED_CONTRACT] = int(bool(self._extract(r"(POSTPONED CONTRACT)")))
+        row[BID_OPENING_DATE], row[CONTRACT_DATE] = self._extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
+        row[CONTRACT_NUMBER] = self._extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
+        row[CONTRACT_CODE] = self._extract(r"CONTRACT CODE\s+'([^']+)'").strip()
+        row[CONTRACT_ITEMS] = self._extract(r"(\d+)\s+CONTRACT ITEMS")
+        row[TOTAL_NUMBER_OF_WORKING_DAYS] = self._extract(r"TOTAL NUMBER OF WORKING DAYS\s+(\d+)")
+        row[NUMBER_OF_BIDDERS] = self._extract(r"NUMBER OF BIDDERS\s+(\d+)")
+        row[ENGINEERS_EST] = self._extract(r"ENGINEERS EST\s+([\d,]+\.\d{2})")
+        row[AMOUNT_OVER] = self._extract(r"AMOUNT OVER\s+([\d,]+\.\d{2})")
+        row[AMOUNT_UNDER] = self._extract(r"AMOUNT UNDER\s+([\d,]+\.\d{2})")
+        row[PERCENT_OVER_EST] = self._extract(r"PERCENT OVER EST\s+(\d+.\d{2})")
+        row[PERCENT_UNDER_EST] = self._extract(r"PERCENT UNDER EST\s+(\d+.\d{2})")
+        row[CONTRACT_DESCRIPTION] = self._extract(r"(?:\n)?(.*?)FEDERAL AID").strip()
         self.rows = [row]
-        return row
+        self._df = pd.DataFrame(self.rows)
 
 
-class ContractBidData(ContractBase):
+class BidData(ContractBase):
         
-    def parse(self):
+    def _parse(self):
         """
         Parses a table from a text line by line, works even if BIDER NAME has 3 rows (very rare).
         
         Old method that used only regex failed to parse if BIDER NAME has 3 rows.
         It had a long regex:
-        pattern = re.compile(r"(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.{38})\s(\d{3} \d{3}-\d{4})(.*)?$\s+(.*?)(.{38})\s(\d+)$\s+(.+)", re.MULTILINE)
         """
-        pattern1 = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.{38})\s(\d{3} \d{3}-\d{4})(.*)?")
+        pattern1 = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)\s(\d{3} \d{3}-\d{4})(.*)?")
+        # (^\s*)(\d+)(\s+)(A\))?(\s*)([\d,]+\.\d{2})(\s+)(\d+)(\s*)(.{37})\s(\d{3} \d{3}-\d{4})(.*)?
+        
         pattern2 = re.compile(r"^(.{65})(.{38})\s+(\d{8})$")
         pattern3 = re.compile(r"^.+(FAX|B\)|\d{3} \d{3}-\d{4}|;).*+$")
         
@@ -290,8 +309,8 @@ class ContractBidData(ContractBase):
         
         return processed_lines
 
-    def get_rows(self):
-        contract_bid_data = self.parse()
+    def extract(self):
+        contract_bid_data = self._parse()
 
         # if contract has A+B we need to correct the BID_TOTAL:
         # the following will find many A+B) matches but it is reasonable to expect that first A+B) matches are all we need
@@ -301,14 +320,15 @@ class ContractBidData(ContractBase):
             for i, a_plus_b_bid in zip(range(len(contract_bid_data)), a_plus_b_bids):  # this does truncation of a_plus_b_bids list 
                 contract_bid_data[i][BID_TOTAL] = a_plus_b_bid
 
-        return contract_bid_data
+        self.rows = contract_bid_data
+        self._df = pd.DataFrame(self.rows)
 
 
-class BidSubcontractorData(ContractBase):
+class SubcontractorData(ContractBase):
     
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER]
 
-    def get_rows(self):
+    def extract(self):
         """
         We extract data in two steps.
         1) First we get the relevant information from a whole contract using pattern1:
@@ -324,8 +344,7 @@ class BidSubcontractorData(ContractBase):
         2) The second step is to exact the columns, we use some fixed with columns for that in pattern2.
         """
 
-        matches1 = self.contract.narrow_file_contents(
-            self.contract.file_contents, 
+        matches1 = self.narrow_file_contents(
             r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
             )
             
@@ -342,71 +361,24 @@ class BidSubcontractorData(ContractBase):
                 row[SUBCONTRACTED_LINE_ITEM] = match2[2]
                 row[CITY] = match2[3].strip()
                 row[SUBCONTRACTOR_LICENSE_NUMBER] = match2[4].strip()
+
+                if not any([x in row[SUBCONTRACTED_LINE_ITEM] for x in ("PER BID ITEM", "WORK AS DESCRIBED BY BID ITEM(S) LISTED")]):
+                    # attempt parsing
+                    matches3 = re.search(r"^.*?(?:ITEMS|ITEM NUMBERS|ITEM\(S\):|ITEM)(.*?)(?:\((.+)\))?$", row[SUBCONTRACTED_LINE_ITEM])
+                    if matches3:  # gets two groups, for example: ' 6 THRU 8 AND 13 THRU 15 ', '10%'
+                        row[ITEM_NUMBERS] = matches3.group(1).replace('THRU', '-').replace('AND', ',').replace('&', ',')
+                        if matches3.group(2):
+                            row[PERCENT] = matches3.group(2).replace("%", "")
+                            
                 bid_subcontractor_data.append(row)
 
         self.rows = bid_subcontractor_data
-        return bid_subcontractor_data
-
-
-class ContractLineItemData(ContractBase):
-    
-    COLUMNS = [ITEM_NUMBER, EXTRA1, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
+        _df = pd.DataFrame(self.rows)
         
-    def parse_table(self, text: str, regex: str, regex_tag: str):
-            """
-            Parses a table from a text line by line.
-            """
-
-            pattern = re.compile(regex, re.MULTILINE)
-            
-            lines = text.split('\n')
-
-            processed_lines = []
-            just_passed_first_line = False
-            for i, line in enumerate(lines):
-                if re.match(pattern, line):
-                    processed_lines.append(line)
-                    just_passed_first_line = True
-                else:
-                    if just_passed_first_line:
-                        # append process the following line
-                        processed_lines[-1] = processed_lines[-1] + ' ' + line.strip()
-                        just_passed_first_line = False
-
-            # Now, apply the regex to each processed line
-            pattern2 = re.compile(regex + regex_tag)
-            matches = [re.match(pattern2, line) for line in processed_lines]
-            
-            return matches
-
-    def get_rows(self):
+        if self.rows:
+            self._df = self._fill_gaps_in_bidder_id(_df)
         
-        matches1 = self.contract.narrow_file_contents(
-            self.file_contents, 
-            r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)"
-            )
-        
-        regex = r'^\s+(\d+)\s+(\(F\))?\s+(\d+)\s+(.{45})\s+(.{35})\s+([\d,]+\.\d{2})'
-        regex_tag = r'(.*+)'
-
-        contract_line_item_data = []
-        for match1 in matches1:
-            matches2 = self.parse_table(match1, regex, regex_tag)
-            for match2 in matches2:
-                row = defaultdict(str)
-                row[IDENTIFIER] = self.contract.identifier
-                row[ITEM_NUMBER] = match2[1]
-                row[EXTRA1] = match2[2]
-                row[ITEM_CODE] = match2[3]
-                row[ITEM_DESCRIPTION] = match2[4].strip() + ' ' + match2[7]
-                row[EXTRA2] = match2[5]
-                row[ITEM_DOLLAR_AMOUNT] = match2[6]
-                
-                contract_line_item_data.append(row)
-                
-        return contract_line_item_data
-
-    def expand_ranges_in_subcontracted_line_item(self, line: str) -> str:
+    def _expand_ranges_in_subcontracted_line_item(self, line: str) -> str:
         """
         For example: takes a "6-8, 13-15" and converts to "6, 7, 8, 13, 14, 15".
         Converts NaN to empty string.
@@ -430,44 +402,73 @@ class ContractLineItemData(ContractBase):
                     # If not a range, just add the single number
                     all_numbers.append(int(part.strip()))
             
-            # Return a comma-separated string of all_numbers
-            return ", ".join(map(str, all_numbers))
+            return all_numbers
         except:
-            return COULD_NOT_PARSE
-        
+            return []
 
-    def parse_subcontracted_line_item(self, df):
-        """
-        Takes a Subcontracted_Line_Item in df, and splits into three columns: Y1, Y2, Y3.
-        For example "SOME TEXT ITEMS 6 THRU 8 AND 13 THRU 15 (PARTIALS)", will be split into:
-        - SOME TEXT, 
-        - ITEMS, 
-        - 6 THRU 8 AND 13 THRU 15, 
-        - (PARTIALS)
-        Next, the "6 THRU 8 AND 13 THRU 15" will be converted into "6-8, 13-15" and then expanded to "6, 7, 8, 13, 14, 15".
-        """
-        # splits subcontracted line item into three columns
-        df[['PARSED_1', 'PARSED_2', 'PARSED_3', 'PARSED_4']] = df[self.SUBCONTRACTED_LINE_ITEM].str.extract(r"^(.+?)?(ITEMS|ITEM NUMBERS|ITEM\(S\):|ITEM)(.+?)(\(.+\))?$")
-        # replace the 'THRU' and 'AND' with '-' and ','
-        df['PARSED_3'] = df['PARSED_3'].str.replace('THRU', '-', regex=False).str.replace('AND', ',', regex=False).str.replace('&', ',', regex=False)
-        # extend all the ranges
-        df['PARSED_5'] = df['PARSED_3'].apply(self.expand_ranges_in_subcontracted_line_item)
-        df_outliers = df[df['PARSED_5'] == self.COULD_NOT_PARSE]
-        return df, df_outliers
-
-    def fill_gaps_in_bidder_id(self, df):
+    def _fill_gaps_in_bidder_id(self, df):
         df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
         df[BIDDER_ID] = df[BIDDER_ID].ffill()
         return df
+
+
+class LineItemData(ContractBase):
     
-    def post_process(self) -> Tuple[pd.DataFrame, pd.DataFrame]:
-        contract_line_item_data = self.get_rows()
-        return self.parse_subcontracted_line_item(self.fill_gaps_in_bidder_id(pd.DataFrame(contract_line_item_data)))
+    COLUMNS = [ITEM_NUMBER, EXTRA1, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
+        
+    def _parse_table(self, text: str, regex: str, regex_tag: str):
+            """
+            Parses a table from a text line by line.
+            """
+            pattern = re.compile(regex, re.MULTILINE)
+            
+            lines = text.split('\n')
 
+            processed_lines = []
+            just_passed_first_line = False
+            for i, line in enumerate(lines):
+                if re.match(pattern, line):
+                    processed_lines.append(line)
+                    just_passed_first_line = True
+                else:
+                    if just_passed_first_line:
+                        # append process the following line
+                        processed_lines[-1] = processed_lines[-1] + ' ' + line.strip()
+                        just_passed_first_line = False
 
-class SampleSize(Enum):
-    SMALL = 1  # say 10 files
-    FULL = 2
+            # Now, apply the regex to each processed line
+            pattern2 = re.compile(regex + regex_tag)
+            matches = [re.match(pattern2, line) for line in processed_lines]
+            
+            return matches
+
+    def extract(self):
+        
+        matches1 = self.narrow_file_contents(
+            r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)"
+            )
+        
+        regex = r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.{35})\s+([\d,]+\.\d{2})'
+        regex_tag = r'(.*+)'
+
+        contract_line_item_data = []
+        for match1 in matches1:
+            matches2 = self._parse_table(match1, regex, regex_tag)
+            for match2 in matches2:
+                row = defaultdict(str)
+                row[IDENTIFIER] = self.contract.identifier
+                row[ITEM_NUMBER] = match2[1]
+                row[EXTRA1] = match2[2]
+                row[ITEM_CODE] = match2[3]
+                row[ITEM_DESCRIPTION] = match2[4].strip() + ' ' + match2[7]
+                row[EXTRA2] = match2[5]
+                row[ITEM_DOLLAR_AMOUNT] = match2[6]
+                
+                contract_line_item_data.append(row)
+        
+        self.rows = contract_line_item_data
+        self._df = pd.DataFrame(self.rows)
+
 
 class Experiment:
     """
@@ -476,44 +477,25 @@ class Experiment:
     
     The results folder will be determined automatically.
     """
-
-    RESULTS_PATH = Path('data/results')
     
-    def __init__(self, contract_types, contract_type: ContractType, sample_size: SampleSize, add_timestamp=False, tag=None):
-        self.contract_types = contract_types
-        self.contract_type = contract_type
-        self.sample_size = sample_size
-        
-        if contract_type == ContractType.TYPE1:
-            files = list(RAW_DATA_PATH_LINEPRINTER.glob('*.txt'))
-        elif contract_type == ContractType.TYPE2:
-            files = list(RAW_DATA_PATH_TABLE.glob('*.txt'))
-        else:
-            raise ValueError('contract_type must be either TYPE1 or TYPE2')
-        
-        if sample_size == SampleSize.SMALL:
-            files = files[:10]
-        elif sample_size == SampleSize.FULL:
-            pass
-        else:
-            raise ValueError('sample_size must be either SMALL or FULL')
-        
+    def __init__(self, filepaths, add_timestamp=False, tag=None):
+        self.filepaths = filepaths
         if add_timestamp:
             timestamp = datetime.strftime(datetime.now(), '%m-%d-%Y-%H:%M:%S')
         else:
             timestamp = ''
         
         # Define result path for this specific experiment
-        self.results_path = self.RESULTS_PATH / ((f'{timestamp}_' if timestamp else '') + f'{contract_type.name}_{sample_size.name}' + (f'_{tag}' if tag else ''))
+        if add_timestamp or tag:
+            self.results_path = RESULTS_PATH / ((f'{timestamp}_' if timestamp else '') + (f'_{tag}' if tag else ''))
+        else:
+            self.results_path = RESULTS_PATH 
         self.outliers_path = self.results_path / 'outliers'
-        self.outliers_path_lineprinter = self.outliers_path / 'lineprinter_txt_files'
-        self.outliers_path_table = self.outliers_path / 'table_txt_files'
         
         # Create the results folders
         self.results_path.mkdir(exist_ok=True, parents=True)
         self.outliers_path.mkdir(exist_ok=True, parents=True)
-        self.outliers_path_lineprinter.mkdir(exist_ok=True, parents=True)
-        self.outliers_path_table.mkdir(exist_ok=True, parents=True)
+        self.outliers_path.mkdir(exist_ok=True, parents=True)
     
     def write_to_results(self, df: pd.DataFrame | List, name: str):
         if isinstance(df, list):
@@ -535,7 +517,7 @@ class Experiment:
                 csv_path = Path(csv_file)
                 
                 # Extract the file name without the extension for the sheet name
-                sheet_name = csv_path.stem
+                sheet_name = csv_path.name
                 
                 # Read each CSV file into a DataFrame
                 try:
@@ -553,34 +535,40 @@ class Experiment:
         Run a batch or a single file (by making `files` a single element list).
         """
         
-        contract_data = []
-        contract_bid_data = []
-        bid_subcontractor_data = []
-        contract_line_item_data = []
-        error_files = []
-
-        for filepath in tqdm(self.files):
-            
-            filename = filepath.stem
-            contract = Contract(filename)
-            
-            contract_data = ContractData(contract)
-            contract_bid_data = ContractBidData(contract)
-            bid_subcontractor_data = BidSubcontractorData(contract)
-            contract_line_item_data = ContractLineItemData(contract)
-            try:
-                contract_data.append(contract_data.get_row())
-                contract_bid_data.extend(contract_bid_data.get_rows())
-                bid_subcontractor_data.extend(bid_subcontractor_data.get_rows())
-                contract_line_item_data.extend(contract_line_item_data.get_rows())
-            except Exception as e:
-                error_files.append({ERROR_FILENAME: filename, ERROR: e})
+        df_contract_data = pd.DataFrame()
+        df_contract_bid_data = pd.DataFrame()
+        df_bid_subcontractor_data = pd.DataFrame()
+        df_contract_line_item_data = pd.DataFrame()
         
-        df_bid_subcontractor_data, df_bid_subcontractor_data_could_not_parse = <sometjhing>(bid_subcontractor_data)
-
-        self.write_to_results(contract_data, "contract_data")
-        self.write_to_results(contract_bid_data, "contract_bid_data")
+        error_files = []
+        
+        for filepath in tqdm(self.filepaths):
+            
+            try:
+                filename = filepath.stem
+                contract = Contract(filename)
+                
+                contract_data = ContractData(contract)
+                contract_bid_data = BidData(contract)
+                bid_subcontractor_data = SubcontractorData(contract)
+                contract_line_item_data = LineItemData(contract)
+                
+                contract_data.extract()
+                contract_bid_data.extract()
+                bid_subcontractor_data.extract()
+                contract_line_item_data.extract()
+                
+                df_contract_data = pd.concat([df_contract_data, contract_data.df])
+                df_contract_bid_data = pd.concat([df_contract_bid_data, contract_bid_data.df])
+                df_bid_subcontractor_data = pd.concat([df_bid_subcontractor_data, bid_subcontractor_data.df])
+                df_contract_line_item_data = pd.concat([df_contract_line_item_data, contract_line_item_data.df])
+                
+            except Exception as e:
+                print({ERROR_FILENAME: filename, ERROR: e})
+                error_files.append({ERROR_FILENAME: filename, ERROR: e})
+                
+        self.write_to_results(df_contract_data, "contract_data")
+        self.write_to_results(df_contract_bid_data, "contract_bid_data")
         self.write_to_results(df_bid_subcontractor_data, "bid_subcontractor_data")
-        self.write_to_results(df_bid_subcontractor_data_could_not_parse, "bid_subcontractor_outliers")
-        self.write_to_results(contract_line_item_data, "contract_line_item_data")
+        self.write_to_results(df_contract_line_item_data, "contract_line_item_data")
         self.write_to_results(error_files, "errors")

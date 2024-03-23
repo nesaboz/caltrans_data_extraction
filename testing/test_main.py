@@ -143,3 +143,60 @@ def test_contract_bid():
     data = StringIO(assert_against)
     df_assert_against = pd.read_csv(data, dtype=str)
     pd.testing.assert_frame_equal(df, df_assert_against)
+    
+    
+def test_27():
+    raw = \
+"""
+                     9         2,402,135.00    4              HIGHLAND CONSTRUCTION, INC.           714 538-5156  SB PREF CLAIMED
+                                                                                                    00743775
+                                                              133 N. PIXLEY STREET              FAX 714 538-5157   BID IS OVER SBP
+                                                              ORANGE  CA  92868                                   PREFERENCE LIMITS
+
+                    10               100.00    7              SKANSKA USA CIVIL WEST                951 684-5360  CC PREF CLAIMED
+                                          (IRREGULAR)         CALIFORNIA DISTRICT INC.              00140069
+                                                              1995 AGUA MANSA ROAD              FAX 951 788-2449
+                                                              RIVERSIDE  CA  92509
+
+                     6 A)      4,219,762.00    2              DISNEY CONSTRUCTION, INC.             650 259-9545
+                                                                                                    00866974
+                       B)  130 DAYS X   3000                  859 COWAN RD #3                   FAX 650 259-9673
+                      --------------------
+                     A+B)     4,609,762.00                    BURLINGAME  CA  94010
+
+                     7 A)      4,168,691.00    6              VALENTINE CORPORATION                 415 453-3732
+                                                                                                    00229225
+                       B)  200 DAYS X   3000                  111 PELICAN WAY                   FAX 415 457-5820
+                      --------------------
+                     A+B)     4,768,691.00                    SAN RAFAEL  CA  94901
+
+                         2         5,272,727.00    5              NEVADA BARRICADE & SIGN CO INC        775 331-5100  CC PREF CLAIMED
+                                                                   DBA GOLDEN STATE STRIPING & S        00836173
+                                                                  IGNS
+                                                                  975 INDUSTRIAL WAY                FAX 775 331-5103
+                                                                  SPARKS NV  89431
+
+                         3         5,797,295.00    2              PAVE-TECH INC.                        760 727-8700  NSB PREF CLAIMED
+                                                                                                        00720394
+                                                                  2231 LA MIRADA DRIVE              FAX 760 727-8702   BID IS OVER NSBP
+                                                                  VISTA  CA  92081                                    PREFERENCE LIMITS
+
+"""
+        
+    # contract = Contract('08-1F5404_6689')
+    
+    pattern1 = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)\s(\d{3} \d{3}-\d{4})(.*)?")
+    lines = raw.split('\n')
+    starts = []
+    for i, line in enumerate(lines):
+        match1 = re.match(pattern1, line)
+        if match1:
+            starts.append(match1.start(5))
+            
+    assert starts == [62, 62, 62, 62, 66, 66]
+                
+def test_29():
+    contract = Contract('07-117074_406')
+    lid = LineItemData(contract)
+    lid.extract()
+    assert list(lid.df.loc[123:132][EXTRA1]) == ['F', 'S', 'S', 'S', 'S', 'S', 'SF', 'SF', 'SF', 'SF']
