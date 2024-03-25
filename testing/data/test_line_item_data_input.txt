@@ -1,0 +1,34 @@
+            04-SM-84-21                C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R                 PAGE 48
+            11/03/15                                                                                                 11/05/15
+
+   ------------------------------------------------------------------------------------------------------------------------------------
+       ITEM      ITEM                                                   UNIT OF     ESTIMATED
+        NO.      CODE                  ITEM DESCRIPTION                 MEASURE     QUANTITY          BID              AMOUNT
+   ------------------------------------------------------------------------------------------------------------------------------------
+
+       106 (F) 839727      CONCRETE BARRIER (TYPE 736 MODIFIED)           LF          454              101.00        45,854.00
+       107     840504      4" THERMOPLASTIC TRAFFIC STRIPE                LF        1,240                1.00         1,240.00
+       108 (S) 840505      6" THERMOPLASTIC TRAFFIC STRIPE                LF          320                1.50           480.00
+       109 (SF)840506      8" THERMOPLASTIC TRAFFIC STRIPE                LF          530                2.20         1,166.00
+       110     840507      6" THERMOPLASTIC TRAFFIC STRIPE                LF          300                1.40           420.00
+                           (BROKEN 8-4)
+       111     840515      THERMOPLASTIC PAVEMENT MARKING                 SQFT        230                3.30           759.00
+       112     840526      4" THERMOPLASTIC TRAFFIC STRIPE                LF          470                1.00           470.00
+                           (BROKEN 17-7)
+       113     850111      PAVEMENT MARKER (RETROREFLECTIVE)              EA           46                5.00           230.00
+       114     860090      MAINTAINING EXISTING TRAFFIC MANAGEMENT        LS     LUMP SUM              500.00           500.00
+                           SYSTEM ELEMENTS DURING CONSTRUCTION
+       115     860400      LIGHTING (TEMPORARY)                           LS     LUMP SUM           54,000.00        54,000.00
+       116     861503      MODIFY LIGHTING                                LS     LUMP SUM           71,000.00        71,000.00
+       117     995100      WATER METER CHARGES                            LS     LUMP SUM            6,600.00         6,600.00
+       
+       118     995200      IRRIGATION WATER SERVICE CHARGES               LS     LUMP SUM            1,000.00         1,000.00
+       119     000003      ITEM DELETED PER ADDENDUM                      LS     LUMP SUM                 .00             0.00
+       120     208424      1 1/4" BACKFLOW PREVENTER ASSEMBLY             EA            1            4,000.00         4,000.00
+       121     999990      MOBILIZATION                                   LS     LUMP SUM          325,000.00       325,000.00
+
+                                                                                                      A)          3,387,137.00
+                                                                                                      B)   90 DAYS X    3000
+                                                                                                             -----------------
+                                                                                                     A+B)         3,657,137.00
+

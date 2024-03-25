@@ -190,6 +190,27 @@ class ContractBase(object):
         pattern = re.compile(regex)
         matches = pattern.findall(self.contract.file_contents)
         return matches if matches else []
+    
+    def _parse(self, text: str, identifier: str):
+        raise NotImplementedError
+    
+    def postprocess(self, df):
+        return df
+    
+    def extract(self):
+        if self.NARROW_REGEX:
+            matches = self.narrow_file_contents(self.NARROW_REGEX)
+            
+        processed_lines = []
+        for match in matches:
+            rows = self._parse(match, self.contract.identifier)
+            processed_lines.extend(rows)
+    
+        self.rows = processed_lines
+        self._df = pd.DataFrame(self.rows)
+        
+        if self.rows:
+            self._df = self.postprocess(self._df)
 
 
 class ContractData(ContractBase):
@@ -199,46 +220,51 @@ class ContractData(ContractBase):
                CONTRACT_DESCRIPTION, PERCENT_OVER_EST, PERCENT_UNDER_EST, ENGINEERS_EST, 
                AMOUNT_OVER, AMOUNT_UNDER, CONTRACT_CODE]
         
-    def _extract(self, regex, groups=(1,)):
-        # Search for the pattern in the text
-        match = re.search(regex, self.contract.file_contents)
-        if match:
-            if len(groups) == 1:
-                return match.group(groups[0])
-            else:
-                return (match.group(i) for i in groups)
-        else:
-            return ""
+    # narrow from the beginning of the file to the first occurrence of BID RANK
+    NARROW_REGEX = r'(?s)^.*?(?:BID RANK)'
     
-    def extract(self):
+    @staticmethod
+    def _parse(text: str, identifier: str):
+        
+        def _extract(regex, groups=(1,)):
+            # Search for the pattern in the text
+            match = re.search(regex, text)
+            if match:
+                if len(groups) == 1:
+                    return match.group(groups[0])
+                else:
+                    return (match.group(i) for i in groups)
+            else:
+                return ""
+        
         row = defaultdict(str)
-        row[IDENTIFIER] = self.contract.identifier
-        row[POSTPONED_CONTRACT] = int(bool(self._extract(r"(POSTPONED CONTRACT)")))
-        row[BID_OPENING_DATE], row[CONTRACT_DATE] = self._extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
-        row[CONTRACT_NUMBER] = self._extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
-        row[CONTRACT_CODE] = self._extract(r"CONTRACT CODE\s+'([^']+)'").strip()
-        row[CONTRACT_ITEMS] = self._extract(r"(\d+)\s+CONTRACT ITEMS")
-        row[TOTAL_NUMBER_OF_WORKING_DAYS] = self._extract(r"TOTAL NUMBER OF WORKING DAYS\s+(\d+)")
-        row[NUMBER_OF_BIDDERS] = self._extract(r"NUMBER OF BIDDERS\s+(\d+)")
-        row[ENGINEERS_EST] = self._extract(r"ENGINEERS EST\s+([\d,]+\.\d{2})")
-        row[AMOUNT_OVER] = self._extract(r"AMOUNT OVER\s+([\d,]+\.\d{2})")
-        row[AMOUNT_UNDER] = self._extract(r"AMOUNT UNDER\s+([\d,]+\.\d{2})")
-        row[PERCENT_OVER_EST] = self._extract(r"PERCENT OVER EST\s+(\d+.\d{2})")
-        row[PERCENT_UNDER_EST] = self._extract(r"PERCENT UNDER EST\s+(\d+.\d{2})")
-        row[CONTRACT_DESCRIPTION] = self._extract(r"(?:\n)?(.*?)FEDERAL AID").strip()
-        self.rows = [row]
-        self._df = pd.DataFrame(self.rows)
+        row[IDENTIFIER] = identifier
+        row[POSTPONED_CONTRACT] = int(bool(_extract(r"(POSTPONED CONTRACT)")))
+        row[BID_OPENING_DATE], row[CONTRACT_DATE] = _extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
+        row[CONTRACT_NUMBER] = _extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
+        row[CONTRACT_CODE] = _extract(r"CONTRACT CODE\s+'([^']+)'").strip()
+        row[CONTRACT_ITEMS] = _extract(r"(\d+)\s+CONTRACT ITEMS")
+        row[TOTAL_NUMBER_OF_WORKING_DAYS] = _extract(r"TOTAL NUMBER OF WORKING DAYS\s+(\d+)")
+        row[NUMBER_OF_BIDDERS] = _extract(r"NUMBER OF BIDDERS\s+(\d+)")
+        row[ENGINEERS_EST] = _extract(r"ENGINEERS EST\s+([\d,]+\.\d{2})")
+        row[AMOUNT_OVER] = _extract(r"AMOUNT OVER\s+([\d,]+\.\d{2})")
+        row[AMOUNT_UNDER] = _extract(r"AMOUNT UNDER\s+([\d,]+\.\d{2})")
+        row[PERCENT_OVER_EST] = _extract(r"PERCENT OVER EST\s+(\d+.\d{2})")
+        row[PERCENT_UNDER_EST] = _extract(r"PERCENT UNDER EST\s+(\d+.\d{2})")
+        row[CONTRACT_DESCRIPTION] = _extract(r"(?:\n)?(.*?)FEDERAL AID").strip()
+        processed_lines = [row]
+        return processed_lines
 
 
 class BidData(ContractBase):
-        
+    
+    NARROW_REGEX = r"(?s)BID RANK\s+BID TOTAL\s+BIDDER ID\s+BIDDER INFORMATION\s+\(NAME\/ADDRESS\/LOCATION\)(.*?)(?=L I S T   O F   S U B C O N T R A C T O R S)"
+    
     @staticmethod
     def _parse(text, identifier):
         """
-        Parses a table from a text line by line, works even if BIDER NAME has 3 rows (very rare).
-        
-        Old method that used only regex failed to parse if BIDER NAME has 3 rows.
-        It had a long regex:
+        Parses a table from a text line by line, works even if BIDER NAME has 3 rows (very rare). Just having a regex pattern does not work since columns are very variable in width, and we need
+        extra logic, hence, we parse line by line in 3 steps.
         """
         pattern = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)(\d{3} \d{3}-\d{4})(.*)?")
         lines = text.split('\n')
@@ -302,69 +328,52 @@ class BidData(ContractBase):
                             processed_lines.append(row)
                             raise ValueError(f'MAJOR ERROR in contract {identifier}. Could not find A+B) line for BID_RANK {row[BID_RANK]}')
                 processed_lines.append(row)
-            i += 1
+            i += 1  # we can allow this double jump since there is always empty line between the rows
         return processed_lines
-
-    def extract(self):
-        contract_bid_data = self._parse(self.contract.file_contents, self.contract.identifier)
-        self.rows = contract_bid_data
-        self._df = pd.DataFrame(self.rows)
 
 
 class SubcontractorData(ContractBase):
     
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER]
+    
+    NARROW_REGEX = r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
 
-    def extract(self):
-        """
-        We extract data in two steps.
-        1) First we get the relevant information from a whole contract using pattern1:
-        "X(.*?)(?=X|Y|Z)"
-        this means starting phrase must be X, then text that we want extracted and then the match can either finish with X, Y or Z.
-        In our case:
-        X = BIDDER ID NAME AND ADDRESS LICENSE NUMBER DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
-        Y = \f (this is a new page character, in the text is denoted as FF, but this is not a pure FF text but /f)
-        Z = CONTINUED ON NEXT PAGE
+    @staticmethod
+    def _parse(text, identifier):
+        
+        processed_lines = []
+        
+        pattern = re.compile(r"(?m)^\s+(\d+)?\s+(.{58})\s+(.+)\n\s+(.{38})?(.+)")
+        
+        matches = pattern.findall(text)
+        
+        for match in matches:
+            row = defaultdict(str)
+            row[IDENTIFIER] = identifier
+            row[BIDDER_ID] = match[0]
+            row[SUBCONTRACTOR_NAME] = match[1].strip()
+            row[SUBCONTRACTED_LINE_ITEM] = match[2]
+            row[CITY] = match[3].strip()
+            row[SUBCONTRACTOR_LICENSE_NUMBER] = match[4].strip()
 
-        I also ensure that we are doing positive lookahead (using ?=), so the matches do not overlap.
-
-        2) The second step is to exact the columns, we use some fixed with columns for that in pattern2.
-        """
-
-        matches1 = self.narrow_file_contents(
-            r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
-            )
+            if not any([x in row[SUBCONTRACTED_LINE_ITEM] for x in ("PER BID ITEM", "WORK AS DESCRIBED BY BID ITEM(S) LISTED")]):
+                # attempt parsing
+                matches3 = re.search(r"^.*?(?:ITEMS|ITEM NUMBERS|ITEM\(S\):|ITEM)(.*?)(?:\((.+)\))?$", row[SUBCONTRACTED_LINE_ITEM])
+                if matches3:  # gets two groups, for example: ' 6 THRU 8 AND 13 THRU 15 ', '10%'
+                    row[ITEM_NUMBERS] = matches3.group(1).replace('THRU', '-').replace('AND', ',').replace('&', ',')
+                    if matches3.group(2):
+                        row[PERCENT] = matches3.group(2).replace("%", "")
+                        
+            processed_lines.append(row)
             
-        pattern2 = re.compile(r"(?m)^\s+(\d{2})?\s+(.{58})\s+(.+)\n\s+(.{38})?(.+)")
-                
-        bid_subcontractor_data = []
-        for match1 in matches1:
-            matches2 = pattern2.findall(match1)
-            for match2 in matches2:
-                row = defaultdict(str)
-                row[IDENTIFIER] = self.contract.identifier
-                row[BIDDER_ID] = match2[0]
-                row[SUBCONTRACTOR_NAME] = match2[1].strip()
-                row[SUBCONTRACTED_LINE_ITEM] = match2[2]
-                row[CITY] = match2[3].strip()
-                row[SUBCONTRACTOR_LICENSE_NUMBER] = match2[4].strip()
-
-                if not any([x in row[SUBCONTRACTED_LINE_ITEM] for x in ("PER BID ITEM", "WORK AS DESCRIBED BY BID ITEM(S) LISTED")]):
-                    # attempt parsing
-                    matches3 = re.search(r"^.*?(?:ITEMS|ITEM NUMBERS|ITEM\(S\):|ITEM)(.*?)(?:\((.+)\))?$", row[SUBCONTRACTED_LINE_ITEM])
-                    if matches3:  # gets two groups, for example: ' 6 THRU 8 AND 13 THRU 15 ', '10%'
-                        row[ITEM_NUMBERS] = matches3.group(1).replace('THRU', '-').replace('AND', ',').replace('&', ',')
-                        if matches3.group(2):
-                            row[PERCENT] = matches3.group(2).replace("%", "")
-                            
-                bid_subcontractor_data.append(row)
-
-        self.rows = bid_subcontractor_data
-        _df = pd.DataFrame(self.rows)
-        
-        if self.rows:
-            self._df = self._fill_gaps_in_bidder_id(_df)
-        
+        return processed_lines
+    
+    def postprocess(self, df):
+        # fill gaps in BIDDER_ID
+        df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
+        df[BIDDER_ID] = df[BIDDER_ID].ffill()
+        return df
+    
     def _expand_ranges_in_subcontracted_line_item(self, line: str) -> str:
         """
         For example: takes a "6-8, 13-15" and converts to "6, 7, 8, 13, 14, 15".
@@ -393,68 +402,55 @@ class SubcontractorData(ContractBase):
         except:
             return []
 
-    def _fill_gaps_in_bidder_id(self, df):
-        df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
-        df[BIDDER_ID] = df[BIDDER_ID].ffill()
-        return df
-
 
 class LineItemData(ContractBase):
     
     COLUMNS = [ITEM_NUMBER, EXTRA1, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
+    
+    NARROW_REGEX = r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)"
+    
+    @staticmethod
+    def _parse(text: str, identifier: str):
+        """
+        Parses a table from a text line by line.
+        """
+        pattern = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
+        lines = text.split('\n')
         
-    def _parse_table(self, text: str, regex: str, regex_tag: str):
-            """
-            Parses a table from a text line by line.
-            """
-            pattern = re.compile(regex, re.MULTILINE)
-            
-            lines = text.split('\n')
-
-            processed_lines = []
-            just_passed_first_line = False
-            for i, line in enumerate(lines):
-                if re.match(pattern, line):
-                    processed_lines.append(line)
-                    just_passed_first_line = True
-                else:
-                    if just_passed_first_line:
-                        # append process the following line
-                        processed_lines[-1] = processed_lines[-1] + ' ' + line.strip()
-                        just_passed_first_line = False
-
-            # Now, apply the regex to each processed line
-            pattern2 = re.compile(regex + regex_tag)
-            matches = [re.match(pattern2, line) for line in processed_lines]
-            
-            return matches
-
-    def extract(self):
+        i = 0
         
-        matches1 = self.narrow_file_contents(
-            r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)"
-            )
-        
-        regex = r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.{35})\s+([\d,]+\.\d{2})'
-        regex_tag = r'(.*+)'
-
-        contract_line_item_data = []
-        for match1 in matches1:
-            matches2 = self._parse_table(match1, regex, regex_tag)
-            for match2 in matches2:
-                row = defaultdict(str)
-                row[IDENTIFIER] = self.contract.identifier
-                row[ITEM_NUMBER] = match2[1]
-                row[EXTRA1] = match2[2]
-                row[ITEM_CODE] = match2[3]
-                row[ITEM_DESCRIPTION] = match2[4].strip() + ' ' + match2[7]
-                row[EXTRA2] = match2[5]
-                row[ITEM_DOLLAR_AMOUNT] = match2[6]
+        n = len(lines)
+        processed_lines = []
+        row = None
+        first_line = False
+        while i < n:
+            line = lines[i]
+            match = re.match(pattern, line)
+            if match:
+                # this mean we hit the first line, lets parse it and save it
+                # but first we need to save any previous line to precessed_lines
+                if row:
+                    processed_lines.append(row)
                 
-                contract_line_item_data.append(row)
+                row = defaultdict(str)
+                row[IDENTIFIER] = identifier
+                row[ITEM_NUMBER] = match.group(1)
+                row[EXTRA1] = match.group(2)
+                row[ITEM_CODE] = match.group(3)
+                row[ITEM_DESCRIPTION] = match.group(4).strip()
+                row[EXTRA2] = match.group(5)
+                row[ITEM_DOLLAR_AMOUNT] = match.group(6)
+                first_line = True
+            elif row and first_line:
+                # this means we have a second line, let's append it to the ITEM_DESCRIPTION
+                row[ITEM_DESCRIPTION] += line.strip()
+                first_line = False
+            i += 1  
         
-        self.rows = contract_line_item_data
-        self._df = pd.DataFrame(self.rows)
+        # save last line
+        if row:
+            processed_lines.append(row)  
+        return processed_lines
 
 
 class Experiment:
