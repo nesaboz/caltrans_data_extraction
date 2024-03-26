@@ -49,9 +49,10 @@ def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
 def get_some_contracts(contract_type=ContractType.TYPE1, num_contracts=5, seed=42):
     df_contract_types, _ = get_contract_types()
     files = list(df_contract_types[df_contract_types[CONTRACT_TYPE] == contract_type.value][RELATIVE_PATH].values)
-    if not seed:
+    if seed:
         random.seed(seed)
-    files = random.sample(files, num_contracts)
+    if num_contracts:
+        files = random.sample(files, num_contracts)
     filepaths = [RAW_DATA_PATH / x for x in files]
     return filepaths
 
@@ -100,7 +101,10 @@ class Experiment:
         self.df_items = pd.DataFrame()
         self.df_errors = pd.DataFrame()
         
-        for filepath in self.filepaths:
+        for i, filepath in enumerate(self.filepaths):
+            if i % 100 == 0:
+                print(f"Processing file {i+1}/{len(self.filepaths)}")
+                
             try:
                 contract = Contract(filepath, self.contract_type)
                 contract.extract()
@@ -112,8 +116,9 @@ class Experiment:
                 
             except Exception as e:
                 filename = filepath.stem
+                _, _, identifier = parse_filename(filename)
                 print({ERROR_FILENAME: filename, ERROR: e})
-                self.df_errors = pd.concat([self.df_errors, pd.DataFrame({ERROR_FILENAME: filename, ERROR: e, CONTRACT_TYPE: self.contract_type})])
+                self.df_errors = pd.concat([self.df_errors, pd.DataFrame([{ERROR_FILENAME: filename, IDENTIFIER: identifier, ERROR: str(e), CONTRACT_TYPE: str(self.contract_type.value)}])])
                 
                 self.outliers_path.mkdir(exist_ok=True, parents=True)
                 shutil.copy(filepath, self.outliers_path / filepath.name)

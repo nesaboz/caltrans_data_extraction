@@ -311,7 +311,7 @@ class Bids(ContractPortionBase):
                             i += 1
                         if i == n:
                             processed_lines.append(row)
-                            raise ValueError(f'MAJOR ERROR in contract {identifier}. Could not find A+B) line for BID_RANK {row[BID_RANK]}')
+                            raise ValueError(f'MAJOR ERROR in contract {identifier}. Could not find A+B) line for BID_RANK number: {row[BID_RANK]}')
                 processed_lines.append(row)
             i += 1  # we can allow this double jump since there is always empty line between the rows
         return processed_lines
