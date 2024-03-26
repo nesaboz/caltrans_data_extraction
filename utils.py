@@ -89,6 +89,8 @@ TABLE_TXT_FILES = 'table_txt_files'
 RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_TXT_FILES
 RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_TXT_FILES
 RESULTS_PATH = Path('results')
+RESULTS_PATH_SINGLE_CONTRACTS = RESULTS_PATH / 'single_contracts'
+RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
     
     
 def read_file(filepath: str):
@@ -152,6 +154,17 @@ class Contract:
         self.contract_number, self.tag, self.identifier = self.get_contract_number_and_tag_from_filename(self.filename)
         self._file_contents = read_file(self.filepath)
         
+        self.info = Info(self.file_contents, self.identifier)
+        self.bids = Bids(self.file_contents, self.identifier)
+        self.subcontractors = Subcontractors(self.file_contents, self.identifier)
+        self.items = Items(self.file_contents, self.identifier)
+        
+    def extract(self):
+        self.info.extract()
+        self.bids.extract()
+        self.subcontractors.extract()
+        self.items.extract()
+        
     def get_contract_number_and_tag_from_filename(self, filename:str) -> Tuple[str, str]:
         pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
         match = pattern.search(filename)
@@ -169,51 +182,60 @@ class Contract:
             to_folder / f'{self.filename}.txt'
             )
 
+    def write_to_excel(self):
+        # Create a Pandas Excel writer using openpyxl as the engine
+        with pd.ExcelWriter(RESULTS_PATH_SINGLE_CONTRACTS / (self.identifier + '.xlsx'), engine='openpyxl') as writer:
+            for obj in (self.info, self.bids, self.subcontractors, self.items):
+                # Write the DataFrame to a new sheet in the Excel file using the file name as the sheet name
+                obj.df.to_excel(writer, sheet_name=obj.__class__.__name__, index=False)
 
-class ContractBase(object):
-    def __init__(self, contract) -> None:
-        self.contract = contract
+
+class ContractPortionBase(object):
+    def __init__(self, file_contents, identifier) -> None:
+        self.file_contents = file_contents
+        self.identifier = identifier
         self.rows = None
         self._df = None
-    
-    def pre_process(self):
-        pass
     
     @property
     def df(self):
         return self._df
         
-    def narrow_file_contents(self, regex: str) -> List[str]:
+    def preprocess(self, regex: str) -> List[str]:
         """
         Uses regex to narrow down the file_contents to specific sections that will be returned.
         """
         pattern = re.compile(regex)
-        matches = pattern.findall(self.contract.file_contents)
+        matches = pattern.findall(self.file_contents)
         return matches if matches else []
     
     def _parse(self, text: str, identifier: str):
         raise NotImplementedError
     
-    def postprocess(self, df):
-        return df
+    @staticmethod
+    def postprocess(df):
+        """
+        Optional postprocessing of extracted dataframe.
+        """
+        raise NotImplementedError
     
     def extract(self):
         if self.NARROW_REGEX:
-            matches = self.narrow_file_contents(self.NARROW_REGEX)
+            matches = self.preprocess(self.NARROW_REGEX)
             
         processed_lines = []
         for match in matches:
-            rows = self._parse(match, self.contract.identifier)
+            rows = self._parse(match, self.identifier)
             processed_lines.extend(rows)
     
         self.rows = processed_lines
         self._df = pd.DataFrame(self.rows)
         
-        if self.rows:
+        if self.rows and 'postprocess' in self.__class__.__dict__:  # this checks if postprocess is implemented in the class
             self._df = self.postprocess(self._df)
 
 
-class ContractData(ContractBase):
+class Info(ContractPortionBase):
     
     COLUMNS = [IDENTIFIER, POSTPONED_CONTRACT, NUMBER_OF_BIDDERS, BID_OPENING_DATE, 
                CONTRACT_DATE, CONTRACT_NUMBER, TOTAL_NUMBER_OF_WORKING_DAYS, CONTRACT_ITEMS, 
@@ -256,7 +278,7 @@ class ContractData(ContractBase):
         return processed_lines
 
 
-class BidData(ContractBase):
+class Bids(ContractPortionBase):
     
     NARROW_REGEX = r"(?s)BID RANK\s+BID TOTAL\s+BIDDER ID\s+BIDDER INFORMATION\s+\(NAME\/ADDRESS\/LOCATION\)(.*?)(?=L I S T   O F   S U B C O N T R A C T O R S)"
     
@@ -332,17 +354,34 @@ class BidData(ContractBase):
         return processed_lines
 
 
-class SubcontractorData(ContractBase):
+class Subcontractors(ContractPortionBase):
     
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER]
     
-    NARROW_REGEX = r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
-
+    # NARROW_REGEX = r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
+    NARROW_REGEX = r"(?s)BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
+    
+    # NARROW_REGEX = r"(?s)(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
+    
     @staticmethod
     def _parse(text, identifier):
         
-        processed_lines = []
+        # processed_lines = []
         
+        # pattern = re.compile(r"(?s)(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)")
+        # lines = text.split('\n')
+        
+        # # the first line will be header
+        # match = re.match(pattern, lines[0])
+        
+        # i = 0
+        
+        # n = len(lines)
+        # processed_lines = []
+        # while i < n:
+        #     match = re.match(pattern, lines[i])
+            
+            
         pattern = re.compile(r"(?m)^\s+(\d+)?\s+(.{58})\s+(.+)\n\s+(.{38})?(.+)")
         
         matches = pattern.findall(text)
@@ -368,7 +407,8 @@ class SubcontractorData(ContractBase):
             
         return processed_lines
     
-    def postprocess(self, df):
+    @staticmethod
+    def postprocess(df):
         # fill gaps in BIDDER_ID
         df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
         df[BIDDER_ID] = df[BIDDER_ID].ffill()
@@ -403,7 +443,7 @@ class SubcontractorData(ContractBase):
             return []
 
 
-class LineItemData(ContractBase):
+class Items(ContractPortionBase):
     
     COLUMNS = [ITEM_NUMBER, EXTRA1, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
     
@@ -531,10 +571,10 @@ class Experiment:
                 filename = filepath.stem
                 contract = Contract(filename)
                 
-                contract_data = ContractData(contract)
-                contract_bid_data = BidData(contract)
-                bid_subcontractor_data = SubcontractorData(contract)
-                contract_line_item_data = LineItemData(contract)
+                contract_data = Info(contract)
+                contract_bid_data = Bids(contract)
+                bid_subcontractor_data = Subcontractors(contract)
+                contract_line_item_data = Items(contract)
                 
                 contract_data.extract()
                 contract_bid_data.extract()

@@ -18,7 +18,7 @@ def test_contract_data():
     with open(TEST_DATA / 'test_contract_data_input.txt') as f:
         raw = f.read()
         
-    processed_lines = ContractData._parse(raw, "test")
+    processed_lines = Info._parse(raw, "test")
     
     assert_against(processed_lines, 'test_contract_data_output.csv')
     
@@ -27,7 +27,7 @@ def test_bid_data():
     with open(TEST_DATA / 'test_bid_data_input.txt') as f:
         raw = f.read()
         
-    processed_lines = BidData._parse(raw, "test")
+    processed_lines = Bids._parse(raw, "test")
     
     assert_against(processed_lines, 'test_bid_data_output.csv')
     
@@ -36,7 +36,7 @@ def test_subcontractor_data():
     with open(TEST_DATA / 'test_subcontractor_data_input.txt') as f:
         raw = f.read()
         
-    processed_lines = SubcontractorData._parse(raw, "test")
+    processed_lines = Subcontractors._parse(raw, "test")
     
     assert_against(processed_lines, 'test_subcontractor_data_output.csv')
 
@@ -46,26 +46,17 @@ def test_line_item_data():
     with open(TEST_DATA / 'test_line_item_data_input.txt') as f:
         raw = f.read()
 
-    processed_lines = LineItemData._parse(raw, "test")
+    processed_lines = Items._parse(raw, "test")
     assert_against(processed_lines, 'test_line_item_data_output.csv')
 
                 
 def test_29():
     contract = Contract('07-117074_406')
-    lid = LineItemData(contract)
-    lid.extract()
-    assert list(lid.df.loc[123:132][EXTRA1]) == ['F', 'S', 'S', 'S', 'S', 'S', 'SF', 'SF', 'SF', 'SF']
+    contract.items.extract()
+    assert list(contract.items.df.loc[123:132][EXTRA1]) == ['F', 'S', 'S', 'S', 'S', 'S', 'SF', 'SF', 'SF', 'SF']
 
-def test_write_to_excel():
-    import pandas as pd
-
-    # Assuming you have two dataframes df1 and df2
-    df1 = pd.DataFrame({'Column1': [1, 2, 3], 'Column2': ['A', 'B', 'C']})
-    df2 = pd.DataFrame({'Column3': [4, 5, 6], 'Column4': ['D', 'E', 'F']})
-
-    # Create a Pandas Excel writer using openpyxl as the engine
-    with pd.ExcelWriter('test.xlsx', engine='openpyxl') as writer:
-        # Iterate over your CSV files
-        for df, name in zip([df1, df2], ['name1', 'name2']):
-            # Write the DataFrame to a new sheet in the Excel file using the file name as the sheet name
-            df.to_excel(writer, sheet_name=name, index=False)
+# def test_write_to_excel():
+#     # contract = Contract('07-117074_406')
+#     contract = Contract('01-0A0904_2724')
+#     contract.extract()
+#     contract.write_to_excel()
