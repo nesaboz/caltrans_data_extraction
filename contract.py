@@ -71,11 +71,6 @@ ERROR = "Error"
 class ContractType(Enum):
     TYPE1 = 1
     TYPE2 = 2
-
-
-class SampleSize(Enum):
-    SMALL = 1  # say 10 files
-    FULL = 2
     
     
 def get_raw_data_path():
@@ -85,6 +80,7 @@ def get_raw_data_path():
         raise ValueError('Make sure to set a path to raw data in the .env file or copy data into root of the repo')
     return raw_data_path
     
+
 RAW_DATA_PATH = get_raw_data_path()
 LINEPRINTER_TXT_FILES = 'lineprinter_txt_files'
 TABLE_TXT_FILES = 'table_txt_files'
@@ -93,67 +89,34 @@ RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_TXT_FILES
 RESULTS_PATH = Path('results')
 RESULTS_PATH_SINGLE_CONTRACTS = RESULTS_PATH / 'single_contracts'
 RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
+
+
+def get_contract_number_and_tag_from_filename(filename:str) -> Tuple[str, str]:
+    pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
+    match = pattern.search(filename)
+    contract_number, tag = match.groups()
+    identifier = f"{contract_number}_{tag}"
+    return contract_number, tag, identifier
     
     
 def read_file(filepath: str):
     # must use this encoding to avoid errors
     with open(filepath, 'r', encoding='ISO-8859-1') as file:
         return file.read()
-    
-    
-def save_contract_types():
-    """
-    Inspect quickly contract to determine if it is of type 1 or 2.
-    """
-    filepaths = RAW_DATA_PATH_LINEPRINTER.glob('*.txt')
-
-    contract_types = []
-    for i, filepath in enumerate(filepaths):
-        filename = filepath.name
-        row = defaultdict(str)
-        row[FILENAME] = filename
-        
-        # must use this encoding to avoid errors
-        file_contents = read_file(filepath)
-        
-        match = re.search(r"CONTRACT\s+NUMBER\s+([A-Za-z0-9-]+)", file_contents)
-        
-        if match:
-            row[CONTRACT_TYPE] = ContractType.TYPE1.value
-            folder = LINEPRINTER_TXT_FILES
-        else:
-            row[CONTRACT_TYPE] = ContractType.TYPE2.value
-            folder = TABLE_TXT_FILES
-            
-        row[RELATIVE_FOLDER] = os.path.join(folder, filename)
-        
-        contract_types.append(row)
-        
-    df = pd.DataFrame(contract_types)
-    df.set_index('Filename', inplace=True)
-    df.to_csv('data/contract_types.csv', index=True)
-    
-
-def get_contract_types():
-    """Use as:
-    d = get_contract_types()
-    d['01-1234.pdf_1']  # return 1 or 2
-    """
-    df = pd.read_csv('data/contract_types.csv')
-    df.set_index('Filename', inplace=True)
-    return df, df['Contract_Type'].to_dict()
 
 
 class Contract:
-    def __init__(self, filepath: Path | str) -> None:
-        if isinstance(filepath, str):
-            # this means it's an identifier
-            c1, t1 = filepath.split('_')
-            filepath = RAW_DATA_PATH_LINEPRINTER / (c1 + '.pdf_' + t1 + '.txt')
+    def __init__(self, filepath_or_identifier: Path | str, contract_type = ContractType.TYPE1) -> None:
+        if isinstance(filepath_or_identifier, str):
+            a, b = filepath_or_identifier.split('_')
+            path = RAW_DATA_PATH_LINEPRINTER if contract_type.name == ContractType.TYPE1.name else RAW_DATA_PATH_TABLE
+            filepath = path / (a + '.pdf_' + b + '.txt')
+        else:
+            filepath = filepath_or_identifier
         
         self.filepath = filepath
         self.filename = filepath.stem
-        self.contract_number, self.tag, self.identifier = self.get_contract_number_and_tag_from_filename(self.filename)
+        self.contract_number, self.tag, self.identifier = get_contract_number_and_tag_from_filename(self.filename)
         self._file_contents = read_file(self.filepath)
         
         self.info = Info(self.file_contents, self.identifier)
@@ -167,13 +130,6 @@ class Contract:
         self.subcontractors.extract()
         self.items.extract()
         
-    def get_contract_number_and_tag_from_filename(self, filename:str) -> Tuple[str, str]:
-        pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
-        match = pattern.search(filename)
-        contract_number, tag = match.groups()
-        identifier = f"{contract_number}_{tag}"
-        return contract_number, tag, identifier
-    
     @property
     def file_contents(self):
         return self._file_contents
@@ -186,10 +142,13 @@ class Contract:
 
     def write_to_excel(self):
         # Create a Pandas Excel writer using openpyxl as the engine
-        with pd.ExcelWriter(RESULTS_PATH_SINGLE_CONTRACTS / (self.identifier + '.xlsx'), engine='openpyxl') as writer:
+        path = RESULTS_PATH_SINGLE_CONTRACTS / (self.identifier + '.xlsx')
+        with pd.ExcelWriter(path, engine='openpyxl') as writer:
             for obj in (self.info, self.bids, self.subcontractors, self.items):
                 # Write the DataFrame to a new sheet in the Excel file using the file name as the sheet name
                 obj.df.to_excel(writer, sheet_name=obj.__class__.__name__, index=False)
+                
+        print(f"Saved to Excel file at: {path}.")
 
 
 class ContractPortionBase(object):
@@ -495,105 +454,3 @@ class Items(ContractPortionBase):
         return processed_lines
 
 
-class Experiment:
-    """
-    We should be able to run this on a small sample size or full, as well as type1 or type2.
-    Also have an optional tag, and add timestamp to the results.
-    
-    The results folder will be determined automatically.
-    """
-    
-    def __init__(self, filepaths, add_timestamp=False, tag=None):
-        self.filepaths = filepaths
-        if add_timestamp:
-            timestamp = datetime.strftime(datetime.now(), '%m-%d-%Y-%H:%M:%S')
-        else:
-            timestamp = ''
-        
-        # Define result path for this specific experiment
-        if add_timestamp or tag:
-            self.results_path = RESULTS_PATH / ((f'{timestamp}_' if timestamp else '') + (f'_{tag}' if tag else ''))
-        else:
-            self.results_path = RESULTS_PATH 
-        self.outliers_path = self.results_path / 'outliers'
-        
-        # Create the results folders
-        self.results_path.mkdir(exist_ok=True, parents=True)
-        self.outliers_path.mkdir(exist_ok=True, parents=True)
-        self.outliers_path.mkdir(exist_ok=True, parents=True)
-    
-    def write_to_results(self, df: pd.DataFrame | List, name: str):
-        if isinstance(df, list):
-            df = pd.DataFrame(df)
-        df.to_csv(self.results_path / f'{name}.csv', index=False)
-    
-    def write_to_excel(self):
-        # Paths to your CSV files
-        csv_file_paths = self.results_path.glob('*.csv')
-
-        # Path to the output Excel file
-        excel_file_path = self.results_path / 'results.xlsx'
-
-        # Create a Pandas Excel writer using openpyxl as the engine
-        with pd.ExcelWriter(excel_file_path, engine='openpyxl') as writer:
-            # Iterate over your CSV files
-            for csv_file in tqdm(csv_file_paths):
-                # Use Path from pathlib to work with file paths
-                csv_path = Path(csv_file)
-                
-                # Extract the file name without the extension for the sheet name
-                sheet_name = csv_path.name
-                
-                # Read each CSV file into a DataFrame
-                try:
-                    df = pd.read_csv(csv_file)
-                except pd.errors.EmptyDataError:
-                    continue
-                
-                # Write the DataFrame to a new sheet in the Excel file using the file name as the sheet name
-                df.to_excel(writer, sheet_name=sheet_name, index=False)
-
-        print(f'Merged CSV files into {excel_file_path}')
-    
-    def run(self):
-        """
-        Run a batch or a single file (by making `files` a single element list).
-        """
-        
-        df_contract_data = pd.DataFrame()
-        df_contract_bid_data = pd.DataFrame()
-        df_bid_subcontractor_data = pd.DataFrame()
-        df_contract_line_item_data = pd.DataFrame()
-        
-        error_files = []
-        
-        for filepath in tqdm(self.filepaths):
-            
-            try:
-                filename = filepath.stem
-                contract = Contract(filename)
-                
-                contract_data = Info(contract)
-                contract_bid_data = Bids(contract)
-                bid_subcontractor_data = Subcontractors(contract)
-                contract_line_item_data = Items(contract)
-                
-                contract_data.extract()
-                contract_bid_data.extract()
-                bid_subcontractor_data.extract()
-                contract_line_item_data.extract()
-                
-                df_contract_data = pd.concat([df_contract_data, contract_data.df])
-                df_contract_bid_data = pd.concat([df_contract_bid_data, contract_bid_data.df])
-                df_bid_subcontractor_data = pd.concat([df_bid_subcontractor_data, bid_subcontractor_data.df])
-                df_contract_line_item_data = pd.concat([df_contract_line_item_data, contract_line_item_data.df])
-                
-            except Exception as e:
-                print({ERROR_FILENAME: filename, ERROR: e})
-                error_files.append({ERROR_FILENAME: filename, ERROR: e})
-                
-        self.write_to_results(df_contract_data, "contract_data")
-        self.write_to_results(df_contract_bid_data, "contract_bid_data")
-        self.write_to_results(df_bid_subcontractor_data, "bid_subcontractor_data")
-        self.write_to_results(df_contract_line_item_data, "contract_line_item_data")
-        self.write_to_results(error_files, "errors")

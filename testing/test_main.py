@@ -1,8 +1,9 @@
-from utils import *
-from io import StringIO
+from contract import *
+
 
 NA_VALUES = [None, "None", '', 'N/A', np.nan, 'nan']
 TEST_DATA = Path('testing/data')
+
 
 def assert_against(processed_lines, filename):
     df = pd.DataFrame(processed_lines).astype(str).replace(to_replace=NA_VALUES, value=pd.NA)
