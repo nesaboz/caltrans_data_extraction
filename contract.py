@@ -15,7 +15,8 @@ from enum import Enum
 
 
 FILENAME = "Filename"
-RELATIVE_FOLDER = "Relative_Folder"
+TAG = "Tag"
+RELATIVE_PATH = "Relative_Path"
 CONTRACT_TYPE = "Contract_Type"
 
 IDENTIFIER = "Identifier"
@@ -91,7 +92,7 @@ RESULTS_PATH_SINGLE_CONTRACTS = RESULTS_PATH / 'single_contracts'
 RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
 
 
-def get_contract_number_and_tag_from_filename(filename:str) -> Tuple[str, str]:
+def parse_filename(filename:str) -> Tuple[str, str]:
     pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
     match = pattern.search(filename)
     contract_number, tag = match.groups()
@@ -116,7 +117,7 @@ class Contract:
         
         self.filepath = filepath
         self.filename = filepath.stem
-        self.contract_number, self.tag, self.identifier = get_contract_number_and_tag_from_filename(self.filename)
+        self.contract_number, self.tag, self.identifier = parse_filename(self.filename)
         self._file_contents = read_file(self.filepath)
         
         self.info = Info(self.file_contents, self.identifier)

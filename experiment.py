@@ -1,3 +1,4 @@
+from typing import Dict
 from contract import *
 import random
     
@@ -10,13 +11,15 @@ def save_contract_types():
 
     contract_types = []
     for i, filepath in enumerate(filepaths):
-        filename = filepath.name
         row = defaultdict(str)
-        row[FILENAME] = filename
         
+        row[RELATIVE_PATH] = filepath.relative_to(RAW_DATA_PATH)
+        filename = filepath.stem
+        row[FILENAME] = filename
+        row[CONTRACT_NUMBER], row[TAG], row[IDENTIFIER] = parse_filename(filename)
+
         # must use this encoding to avoid errors
         file_contents = read_file(filepath)
-        
         match = re.search(r"CONTRACT\s+NUMBER\s+([A-Za-z0-9-]+)", file_contents)
         
         if match:
@@ -26,8 +29,6 @@ def save_contract_types():
             row[CONTRACT_TYPE] = ContractType.TYPE2.value
             folder = TABLE_TXT_FILES
             
-        row[RELATIVE_FOLDER] = os.path.join(folder, filename)
-        
         contract_types.append(row)
         
     df = pd.DataFrame(contract_types)
@@ -35,7 +36,7 @@ def save_contract_types():
     df.to_csv('data/contract_types.csv', index=True)
     
 
-def get_contract_types():
+def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
     """Use as:
     d = get_contract_types()
     d['01-1234.pdf_1']  # return 1 or 2
@@ -47,7 +48,7 @@ def get_contract_types():
 
 def get_some_contracts(contract_type=ContractType.TYPE1, num_contracts=5, seed=42):
     df_contract_types, _ = get_contract_types()
-    files = list(df_contract_types[df_contract_types[CONTRACT_TYPE] == contract_type.value][RELATIVE_FOLDER].values)
+    files = list(df_contract_types[df_contract_types[CONTRACT_TYPE] == contract_type.value][RELATIVE_PATH].values)
     if not seed:
         random.seed(seed)
     files = random.sample(files, num_contracts)
@@ -62,24 +63,31 @@ class Experiment:
     The results folder will be determined automatically.
     """
     
-    def __init__(self, filepaths, add_timestamp=True, tag=None):
+    def __init__(self, filepaths, add_timestamp=True, tag="run", contract_type=ContractType.TYPE1):
         self.filepaths = filepaths
+        self.contract_type = contract_type
+        
         if add_timestamp:
             timestamp = datetime.strftime(datetime.now(), '%m-%d-%Y-%H:%M:%S')
         else:
             timestamp = ''
         
         # Define result path for this specific experiment
-        if add_timestamp or tag:
-            self.results_path = RESULTS_PATH / ((f'{timestamp}_' if timestamp else '') + (f'_{tag}' if tag else ''))
+        
+        if add_timestamp and tag:
+            results_filename = f'{timestamp}_tag:_{tag}_type:_{contract_type.value}'
+        elif add_timestamp:
+            results_filename = f'{timestamp}'
+        elif tag:
+            results_filename = f'{tag}'
         else:
             self.results_path = RESULTS_PATH 
+            
+        self.results_path = RESULTS_PATH / results_filename
         self.outliers_path = self.results_path / 'outliers'
         
         # Create the results folders
         self.results_path.mkdir(exist_ok=True, parents=True)
-        self.outliers_path.mkdir(exist_ok=True, parents=True)
-        self.outliers_path.mkdir(exist_ok=True, parents=True)
     
     def run(self):
         """
@@ -92,10 +100,9 @@ class Experiment:
         self.df_items = pd.DataFrame()
         self.df_errors = pd.DataFrame()
         
-        for filepath in tqdm(self.filepaths):
+        for filepath in self.filepaths:
             try:
-                filename = filepath.stem
-                contract = Contract(filename)
+                contract = Contract(filepath, self.contract_type)
                 contract.extract()
                 
                 self.df_info = pd.concat([self.df_info, contract.info.df])
@@ -104,20 +111,20 @@ class Experiment:
                 self.df_items = pd.concat([self.df_items, contract.items.df])
                 
             except Exception as e:
+                filename = filepath.stem
                 print({ERROR_FILENAME: filename, ERROR: e})
-                self.df_errors = self.df_errors.append({ERROR_FILENAME: filename, ERROR: e}, ignore_index=True)
-
-        self.write_to_disk()
-        
+                self.df_errors = self.df_errors.append({ERROR_FILENAME: filename, ERROR: e, CONTRACT_TYPE: self.contract_type}, ignore_index=True)
+                
+                self.outliers_path.mkdir(exist_ok=True, parents=True)
+                shutil.copy(filepath, self.outliers_path / filepath.name)
+                
     # def write_to_disk(self, df: pd.DataFrame | List, name: str):
     def write_to_disk(self):
         # Create a Pandas Excel writer using openpyxl as the engine
-        with pd.ExcelWriter(self.results_path, engine='openpyxl') as writer:
-            for obj, name in zip((self.df_info, self.df_bids, self.df_subcontractors, self.df_items, self.df_errors), 
-                                 ('info', 'bids', 'subcontractors', 'items', 'errors')):
+        with pd.ExcelWriter(self.results_path / 'results.xlsx', engine='openpyxl') as writer:
+            for obj, name in zip((self.df_info, self.df_bids, self.df_subcontractors, self.df_items, self.df_errors), ('info', 'bids', 'subcontractors', 'items', 'errors')):
                 # Write the DataFrame to a new sheet in the Excel file using the file name as the sheet name
                 obj.to_csv(self.results_path / f'{name}.csv', index=False)
                 obj.to_excel(writer, sheet_name=name, index=False)
                 
         print(f"Saved data to: {self.results_path}.")
-        

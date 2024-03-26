@@ -51,7 +51,7 @@ def test_line_item_data():
     processed_lines = Items._parse(raw, "test")
     assert_against(processed_lines, 'test_line_item_data_output.csv')
 
-                
+
 def test_29():
     contract = Contract('07-117074_406')
     contract.items.extract()
