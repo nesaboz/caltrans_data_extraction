@@ -143,6 +143,7 @@ class Contract:
 
     def write_to_excel(self):
         # Create a Pandas Excel writer using openpyxl as the engine
+        RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
         path = RESULTS_PATH_SINGLE_CONTRACTS / (self.identifier + '.xlsx')
         with pd.ExcelWriter(path, engine='openpyxl') as writer:
             for obj in (self.info, self.bids, self.subcontractors, self.items):

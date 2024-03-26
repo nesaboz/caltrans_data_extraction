@@ -113,7 +113,7 @@ class Experiment:
             except Exception as e:
                 filename = filepath.stem
                 print({ERROR_FILENAME: filename, ERROR: e})
-                self.df_errors = self.df_errors.append({ERROR_FILENAME: filename, ERROR: e, CONTRACT_TYPE: self.contract_type}, ignore_index=True)
+                self.df_errors = pd.concat([self.df_errors, pd.DataFrame({ERROR_FILENAME: filename, ERROR: e, CONTRACT_TYPE: self.contract_type})])
                 
                 self.outliers_path.mkdir(exist_ok=True, parents=True)
                 shutil.copy(filepath, self.outliers_path / filepath.name)
@@ -122,7 +122,9 @@ class Experiment:
     def write_to_disk(self):
         # Create a Pandas Excel writer using openpyxl as the engine
         with pd.ExcelWriter(self.results_path / 'results.xlsx', engine='openpyxl') as writer:
-            for obj, name in zip((self.df_info, self.df_bids, self.df_subcontractors, self.df_items, self.df_errors), ('info', 'bids', 'subcontractors', 'items', 'errors')):
+            for obj, name in zip((self.df_info, self.df_bids, self.df_subcontractors, self.df_items, self.df_errors), ('Info', 'Bids', 'Subcontractors', 'Items', 'Errors')):
+                if obj.empty:
+                    continue
                 # Write the DataFrame to a new sheet in the Excel file using the file name as the sheet name
                 obj.to_csv(self.results_path / f'{name}.csv', index=False)
                 obj.to_excel(writer, sheet_name=name, index=False)
