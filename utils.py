@@ -12,7 +12,6 @@ from datetime import datetime
 import shutil
 from dotenv import load_dotenv
 from enum import Enum
-import random
 
 
 FILENAME = "Filename"
@@ -60,6 +59,9 @@ PERCENT = "Percent"
 BIDDER_ID = "Bidder_ID"
 SUBCONTRACTOR_NAME = "Subcontractor_Name"
 SUBCONTRACTED_LINE_ITEM = "Subcontracted_Line_Item"
+BIDDER_ID1 = "Bidder_ID1"
+SUBCONTRACTOR_NAME1 = "Subcontractor_Name1"
+SUBCONTRACTED_LINE_ITEM1 = "Subcontracted_Line_Item1"
 CITY = "City"
 SUBCONTRACTOR_LICENSE_NUMBER = "Subcontractor_License_Number"
 
@@ -359,54 +361,54 @@ class Subcontractors(ContractPortionBase):
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER]
     
     # NARROW_REGEX = r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
-    NARROW_REGEX = r"(?s)BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
-    
+    NARROW_REGEX = r"(?sm)^([^\S\r\n]*BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)(.*?)(?=[^\S\r\n]*BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
     # NARROW_REGEX = r"(?s)(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
     
     @staticmethod
-    def _parse(text, identifier):
+    def _parse(header_and_text, identifier):
         
-        # processed_lines = []
+        header, text = header_and_text
+        r = re.match(r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)", header)
+        lines = text.split('\n')
         
-        # pattern = re.compile(r"(?s)(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)")
-        # lines = text.split('\n')
+        delta = r.start(4) - r.start(2)
+        i = 0
+        processed_lines = []
+        while i < len(lines) - 1:
+            line = lines[i]
+            match = re.match(rf"^\s+(\d+)?\s+(.{{{delta}}})\s+(.+)$", line)
+            if match:
+                row = defaultdict(str)
+                row[IDENTIFIER] = identifier
+                
+                row[BIDDER_ID] = line[r.start(1):r.end(1)].strip()
+                row[SUBCONTRACTOR_NAME] = line[r.start(2):r.start(4)].strip()
+                row[SUBCONTRACTED_LINE_ITEM] = line[r.start(4):].strip()
+                
+                # alternate approach
+                row[BIDDER_ID1] = match.group(1)
+                row[SUBCONTRACTOR_NAME1] = match.group(2).strip()
+                row[SUBCONTRACTED_LINE_ITEM1] = match.group(3).strip()
+                
+                if not any([x in row[SUBCONTRACTED_LINE_ITEM] for x in ("PER BID ITEM", "WORK AS DESCRIBED BY BID ITEM(S) LISTED")]):
+                    # attempt parsing
+                    matches3 = re.search(r"^.*?(?:ITEMS|ITEM NUMBERS|ITEM\(S\):|ITEM)(.*?)(?:\((.+)\))?$", row[SUBCONTRACTED_LINE_ITEM])
+                    if matches3:  # gets two groups, for example: ' 6 THRU 8 AND 13 THRU 15 ', '10%'
+                        row[ITEM_NUMBERS] = matches3.group(1).replace('THRU', '-').replace('AND', ',').replace('&', ',')
+                        if matches3.group(2):
+                            row[PERCENT] = matches3.group(2).replace("%", "")
+                
+                if r.group(3) is not None:  # there is LICENSE NUMBER column
+                    i += 1
+                    line = lines[i]
+                    row[SUBCONTRACTOR_LICENSE_NUMBER] = line[r.start(3):].strip()
+                else:
+                    row[SUBCONTRACTOR_LICENSE_NUMBER] = ''
+                processed_lines.append(row)
+            i += 1
         
-        # # the first line will be header
-        # match = re.match(pattern, lines[0])
-        
-        # i = 0
-        
-        # n = len(lines)
-        # processed_lines = []
-        # while i < n:
-        #     match = re.match(pattern, lines[i])
-            
-            
-        pattern = re.compile(r"(?m)^\s+(\d+)?\s+(.{58})\s+(.+)\n\s+(.{38})?(.+)")
-        
-        matches = pattern.findall(text)
-        
-        for match in matches:
-            row = defaultdict(str)
-            row[IDENTIFIER] = identifier
-            row[BIDDER_ID] = match[0]
-            row[SUBCONTRACTOR_NAME] = match[1].strip()
-            row[SUBCONTRACTED_LINE_ITEM] = match[2]
-            row[CITY] = match[3].strip()
-            row[SUBCONTRACTOR_LICENSE_NUMBER] = match[4].strip()
-
-            if not any([x in row[SUBCONTRACTED_LINE_ITEM] for x in ("PER BID ITEM", "WORK AS DESCRIBED BY BID ITEM(S) LISTED")]):
-                # attempt parsing
-                matches3 = re.search(r"^.*?(?:ITEMS|ITEM NUMBERS|ITEM\(S\):|ITEM)(.*?)(?:\((.+)\))?$", row[SUBCONTRACTED_LINE_ITEM])
-                if matches3:  # gets two groups, for example: ' 6 THRU 8 AND 13 THRU 15 ', '10%'
-                    row[ITEM_NUMBERS] = matches3.group(1).replace('THRU', '-').replace('AND', ',').replace('&', ',')
-                    if matches3.group(2):
-                        row[PERCENT] = matches3.group(2).replace("%", "")
-                        
-            processed_lines.append(row)
-            
         return processed_lines
-    
+
     @staticmethod
     def postprocess(df):
         # fill gaps in BIDDER_ID
