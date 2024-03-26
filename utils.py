@@ -217,7 +217,7 @@ class ContractPortionBase(object):
     @staticmethod
     def postprocess(df):
         """
-        Optional postprocessing of extracted dataframe.
+        Optional postprocessing of extracted DataFrame.
         """
         raise NotImplementedError
     

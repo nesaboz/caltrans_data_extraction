@@ -1,6 +1,5 @@
 from utils import *
 from io import StringIO
-from ipykernel import display
 
 NA_VALUES = [None, "None", '', 'N/A', np.nan, 'nan']
 TEST_DATA = Path('testing/data')
@@ -10,9 +9,6 @@ def assert_against(processed_lines, filename):
     assert_against = pd.read_csv(TEST_DATA / filename, dtype=str).replace(to_replace=NA_VALUES, value=pd.NA)
     assert df.equals(assert_against)
 
-def print_df(df):
-    with pd.option_context('display.max_rows', None, 'display.max_columns', None):
-        display(df)
 
 def save_result_to_csv_as_output(processed_lines, filename):
     pd.DataFrame(processed_lines).to_csv(TEST_DATA / filename, index=False)
