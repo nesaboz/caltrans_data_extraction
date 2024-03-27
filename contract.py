@@ -101,10 +101,18 @@ RESULTS_PATH = Path('results')
 RESULTS_PATH_SINGLE_CONTRACTS = RESULTS_PATH / 'single_contracts'
 RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
 
+split_pattern = re.compile(r'[^\n]*STATE OF CALIFORNIA\s+B I D   S U M M A R Y\s+DEPARTMENT OF TRANSPORTATION')
+parse_filename_pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
+contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
+
+BIDS_FIRST_LINE_PATTERN = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)(\d{3} \d{3}-\d{4})(.*)?")
+SUBCONTRACTORS_FIRST_LINE_REGEX = r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
+ITEMS_FIRST_LINE_REGEX = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
+        
+
 
 def parse_filename(filename:str) -> Tuple[str, str]:
-    pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
-    match = pattern.search(filename)
+    match = parse_filename_pattern.search(filename)
     contract_number, tag = match.groups()
     identifier = f"{contract_number}_{tag}"
     return contract_number, tag, identifier
@@ -123,8 +131,7 @@ def split_contract(identifier, file_contents, tag) -> List[Tuple[str, str]]:
     
     Returns a list of tuples with new identifier, new_file_contents.
     """
-    pattern = re.compile(r'[^\n]*STATE OF CALIFORNIA\s+B I D   S U M M A R Y\s+DEPARTMENT OF TRANSPORTATION')
-    matches = re.finditer(pattern, file_contents)
+    matches = re.finditer(split_pattern, file_contents)
 
     # Extract and print starting positions
     positions = [match.start() for match in matches] + [None]
@@ -134,7 +141,6 @@ def split_contract(identifier, file_contents, tag) -> List[Tuple[str, str]]:
     for i in range(len(positions) - 1):
         new_file_contents = '\n\n\n' + file_contents[positions[i]:positions[i+1]]  # add some newlines at the beginning
         # read the contract from the header:
-        contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
         match = re.search(contract_number_regex, new_file_contents)
         
         new_identifier = match.group(1) + '_' + tag
@@ -295,7 +301,7 @@ class Bids(ContractPortionBase):
         Parses a table from a text line by line, works even if BIDER NAME has 3 rows (very rare). Just having a regex pattern does not work since columns are very variable in width, and we need
         extra logic, hence, we parse line by line in 3 steps.
         """
-        pattern = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)(\d{3} \d{3}-\d{4})(.*)?")
+        bids_pattern = BIDS_FIRST_LINE_PATTERN
         lines = text.split('\n')
         
         i = 0
@@ -303,7 +309,7 @@ class Bids(ContractPortionBase):
         n = len(lines)
         processed_lines = []
         while i < n:
-            match = re.match(pattern, lines[i])
+            match = re.match(bids_pattern, lines[i])
             if match:
                 # this mean we hit the first line, lets parse it and save it
                 row = defaultdict(str)
@@ -321,8 +327,7 @@ class Bids(ContractPortionBase):
                 name_starts = match.start(5)
                 name_ends = match.end(5)
                 delta = name_ends - name_starts
-                pattern_cslb_number = re.compile(rf"^(.{{{name_starts}}})(.{{{delta}}})(.+)$")
-                match_cslb_number = re.match(pattern_cslb_number, lines[i])
+                match_cslb_number = re.match(rf"^(.{{{name_starts}}})(.{{{delta}}})(.+)$", lines[i])
                 
                 if match_cslb_number:
                     # this should be the case if second line is present
@@ -335,8 +340,7 @@ class Bids(ContractPortionBase):
                 
                 # moving onto the next line, here it might be a third line or an address followed by a FAX number:
                 i += 1
-                pattern_fax_number = re.compile(r"^.*(FAX|;).*(\d{3} \d{3}-\d{4}).*$")
-                match_fax_number = re.match(pattern_fax_number, lines[i])
+                match_fax_number = re.match(r"^.*(FAX|;).*(\d{3} \d{3}-\d{4}).*$", lines[i])
                 if not match_fax_number:
                     # this means we have a third line, so just strip and add to the name
                     row[BIDDER_NAME] += lines[i].strip()
@@ -346,9 +350,8 @@ class Bids(ContractPortionBase):
                     row[HAS_THIRD_ROW] = 0
                     # if there is A) then let's also keep moving until we find the "A+B)" (or "A+ADD)") line
                     if row[A_PLUS_B_INDICATOR]:
-                        pattern_a_plus_b = re.compile(r".*(?:A\+B\)|A\+ADD\))\s+([\d,]+\.\d{2}).*")
                         while i < n:
-                            match_a_plus_b = re.match(pattern_a_plus_b, lines[i])
+                            match_a_plus_b = re.match(r".*(?:A\+B\)|A\+ADD\))\s+([\d,]+\.\d{2}).*", lines[i])
                             if match_a_plus_b:
                                 row[BID_TOTAL] = match_a_plus_b.group(1)
                                 break
@@ -365,15 +368,13 @@ class Subcontractors(ContractPortionBase):
     
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER]
     
-    # NARROW_REGEX = r"(?s)BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED(.*?)(?=BIDDER ID NAME AND ADDRESS\s+LICENSE NUMBER\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
     NARROW_REGEX = r"(?sm)^([^\S\r\n]*BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)(.*?)(?=[^\S\r\n]*BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
-    # NARROW_REGEX = r"(?s)(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
     
     @staticmethod
     def _parse(header_and_text, identifier):
         
         header, text = header_and_text
-        r = re.match(r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)", header)
+        r = re.match(SUBCONTRACTORS_FIRST_LINE_REGEX, header)
         lines = text.split('\n')
         
         delta = r.start(4) - r.start(2)
@@ -464,7 +465,7 @@ class Items(ContractPortionBase):
         """
         Parses a table from a text line by line.
         """
-        pattern = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
+        pattern = ITEMS_FIRST_LINE_REGEX
         lines = text.split('\n')
         
         i = 0
@@ -501,5 +502,3 @@ class Items(ContractPortionBase):
         if row:
             processed_lines.append(row)  
         return processed_lines
-
-
