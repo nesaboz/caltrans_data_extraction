@@ -8,9 +8,9 @@ See actual contract in `sample` folder.
 
 ## Quick install
 
-1) Get raw data locally from (ask [Maria](mkhrakov@chicagobooth.edu) for access)
-2) Change the path in main.ipynb to point to raw data folder
-3) Run main.ipynb and follow instructions in the notebook to set up the environment.
+1) Get raw data locally from [Google Drive](https://drive.google.com/drive/folders/1X-8v6XCqYComYpxVVtznc05AA6-G5Tvu?usp=share_link) (ask [Maria](mkhrakov@chicagobooth.edu) for access)
+2) Edit path in .env file to point to the raw data.
+3) Follow main.ipynb to set up the environment and perform single and buld contract parsing.
 
 ## Detailed setup (optional)
 
