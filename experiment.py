@@ -3,37 +3,79 @@ from contract import *
 import random
     
 
-def save_contract_types():
+def sort_contracts():
     """
-    Inspect quickly contract to determine if it is of type 1 or 2.
+    Goes through all the files and sorts them accordingly into 3 types. Saves contract types and other info to a CSV file.
     """
-    filepaths = RAW_DATA_PATH_LINEPRINTER.glob('*.txt')
+    
+    filepaths_lineprinter = list(RAW_DATA_PATH_LINEPRINTER.glob('*.txt'))
+    filepaths_table = list(RAW_DATA_PATH_TABLE.glob('*.txt'))
+    assert [x.name for x in filepaths_lineprinter] == [x.name for x in filepaths_table]
+
+    print(f'Found {len(filepaths_lineprinter)} files in lineprinter/table folder. Started sorting ...')
+
+    contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
+
+    TYPE1_PATH.mkdir(exist_ok=True, parents=True)
+    TYPE2_PATH.mkdir(exist_ok=True, parents=True)
+    TYPE3_PATH.mkdir(exist_ok=True, parents=True)
 
     contract_types = []
-    for i, filepath in enumerate(filepaths):
+
+    for filepath in tqdm(filepaths_lineprinter):
         row = defaultdict(str)
         
-        row[RELATIVE_PATH] = filepath.relative_to(RAW_DATA_PATH)
-        filename = filepath.stem
-        row[FILENAME] = filename
-        row[CONTRACT_NUMBER], row[TAG], row[IDENTIFIER] = parse_filename(filename)
+        filestem = filepath.stem
+        row[FILENAME] = filestem
+        row[CONTRACT_NUMBER], tag, identifier = parse_filename(filestem)
 
-        # must use this encoding to avoid errors
         file_contents = read_file(filepath)
-        match = re.search(r"CONTRACT\s+NUMBER\s+([A-Za-z0-9-]+)", file_contents)
+        matches = re.findall(contract_number_regex, file_contents) 
         
-        if match:
+        row[TAG] = tag
+        row[IDENTIFIER] = identifier
+        
+        if len(matches) == 1:
             row[CONTRACT_TYPE] = ContractType.TYPE1.value
-            folder = LINEPRINTER_TXT_FILES
-        else:
-            row[CONTRACT_TYPE] = ContractType.TYPE2.value
-            folder = TABLE_TXT_FILES
+            row[RELATIVE_PATH] = (TYPE1_PATH / (identifier + '.txt')).relative_to(RAW_DATA_PATH)
+            shutil.copy(RAW_DATA_PATH_LINEPRINTER / filepath.name, RAW_DATA_PATH / row[RELATIVE_PATH])
+            contract_types.append(row)
             
-        contract_types.append(row)
-        
+        elif len(matches) == 0:
+            row[CONTRACT_TYPE] = ContractType.TYPE2.value
+            row[RELATIVE_PATH] = (TYPE2_PATH / (identifier + '.txt')).relative_to(RAW_DATA_PATH)
+            shutil.copy(RAW_DATA_PATH_TABLE / filepath.name, RAW_DATA_PATH / row[RELATIVE_PATH])
+            contract_types.append(row)
+            
+        elif len(matches) > 1:
+            row[CONTRACT_TYPE] = ContractType.TYPE3.value
+            try:
+                # here we need to split the file into multiple contracts
+                for new_identifier, new_file_contents in split_contract(identifier, file_contents, tag):
+                    new_row = row.copy()
+                    new_row[IDENTIFIER] = new_identifier
+                    new_row[ORIGINAL_IDENTIFIER] = identifier
+                    
+                    new_path = TYPE3_PATH / (new_identifier + '.txt')
+                    new_row[RELATIVE_PATH] = new_path.relative_to(RAW_DATA_PATH)
+                    
+                    with open(new_path, 'w') as output_file:
+                        output_file.write(new_file_contents)
+                    
+                    contract_types.append(new_row)
+            except Exception as e:
+                print(f'Error processing {identifier}: {e}')
+            
+
     df = pd.DataFrame(contract_types)
     df.set_index('Filename', inplace=True)
-    df.to_csv('data/contract_types.csv', index=True)
+    df.to_csv(RAW_DATA_PATH / 'contract_types.csv', index=True)
+    
+    
+    l = [len(list(x.glob('*'))) for x in [TYPE1_PATH, TYPE2_PATH, TYPE3_PATH]]
+    print(f'Saved {l[0]} contracts to type1 folder')
+    print(f'Saved {l[1]} contracts to type2 folder')
+    print(f'Saved {l[2]} contracts to type3 folder')
     
 
 def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
@@ -64,7 +106,7 @@ class Experiment:
     The results folder will be determined automatically.
     """
     
-    def __init__(self, filepaths, add_timestamp=True, tag="run", contract_type=ContractType.TYPE1):
+    def __init__(self, filepaths: List[Path], add_timestamp=True, tag="run", contract_type=ContractType.TYPE1):
         self.filepaths = filepaths
         self.contract_type = contract_type
         
@@ -107,7 +149,7 @@ class Experiment:
             if i % 100 == 0:
                 print(f"Processing {i+1}/{n} ... ")
             try:
-                contract = Contract(filepath, self.contract_type)
+                contract = Contract(filepath.stem, self.contract_type)
                 contract.extract()
                 
                 self.df_info = pd.concat([self.df_info, contract.info.df])
@@ -116,10 +158,8 @@ class Experiment:
                 self.df_items = pd.concat([self.df_items, contract.items.df])
                 
             except Exception as e:
-                filename = filepath.stem
-                _, _, identifier = parse_filename(filename)
-                print({ERROR_FILENAME: filename, ERROR: e})
-                self.df_errors = pd.concat([self.df_errors, pd.DataFrame([{ERROR_FILENAME: filename, IDENTIFIER: identifier, ERROR: str(e), CONTRACT_TYPE: str(self.contract_type.value)}])])
+                print({ERROR_FILENAME: filepath.stem, ERROR: e})
+                self.df_errors = pd.concat([self.df_errors, pd.DataFrame([{IDENTIFIER: filepath.stem, ERROR: str(e), CONTRACT_TYPE: str(self.contract_type.value)}])])
                 
                 self.outliers_path.mkdir(exist_ok=True, parents=True)
                 shutil.copy(filepath, self.outliers_path / filepath.name)

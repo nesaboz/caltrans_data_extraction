@@ -58,9 +58,3 @@ def test_29():
     contract = Contract('07-117074_406')
     contract.items.extract()
     assert list(contract.items.df.loc[123:132][EXTRA1]) == ['F', 'S', 'S', 'S', 'S', 'S', 'SF', 'SF', 'SF', 'SF']
-
-# def test_write_to_excel():
-#     # contract = Contract('07-117074_406')
-#     contract = Contract('01-0A0904_2724')
-#     contract.extract()
-#     contract.write_to_excel()

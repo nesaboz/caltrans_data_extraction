@@ -36,6 +36,7 @@ AMOUNT_UNDER = "Amount_Under"
 CONTRACT_CODE = "Contract_Code"
 
 IDENTIFIER = "Identifier"
+ORIGINAL_IDENTIFIER = "Original_Identifier"
 BID_RANK = "Bid_Rank"
 A_PLUS_B_INDICATOR = "A_plus_B_indicator"
 BID_TOTAL = "Bid_Total"   
@@ -84,16 +85,21 @@ def get_raw_data_path():
     
 
 RAW_DATA_PATH = get_raw_data_path()
-LINEPRINTER_TXT_FILES = 'lineprinter'
-TABLE_TXT_FILES = 'table'
-SPLITS_PATH = RAW_DATA_PATH / 'splits'
+LINEPRINTER_LABEL = 'lineprinter'
+TABLE_LABEL = 'table'
 
-RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_TXT_FILES
-RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_TXT_FILES
+RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_LABEL
+RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_LABEL
+
+TYPE1_PATH = RAW_DATA_PATH / 'type1'
+TYPE2_PATH = RAW_DATA_PATH / 'type2'
+TYPE3_PATH = RAW_DATA_PATH / 'type3'
+
+contract_type_paths = {ContractType.TYPE1.name: TYPE1_PATH, ContractType.TYPE2.name: TYPE2_PATH, ContractType.TYPE3.name: TYPE3_PATH} 
+
 RESULTS_PATH = Path('results')
 RESULTS_PATH_SINGLE_CONTRACTS = RESULTS_PATH / 'single_contracts'
 RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
-SPLITS_PATH.mkdir(exist_ok=True, parents=True)
 
 
 def parse_filename(filename:str) -> Tuple[str, str]:
@@ -110,25 +116,57 @@ def read_file(filepath: str):
         return file.read()
 
 
+def split_contract(identifier, file_contents, tag) -> List[Tuple[str, str]]:
+    """
+    Uses phrase in the header to split the contract into multiple partial_texts, then saves those into separate files where new 
+    name is the contract_number + tag. If contract_number + tag is non-original, code skips at reports an issue.
+    
+    Returns a list of tuples with new identifier, new_file_contents.
+    """
+    pattern = re.compile(r'[^\n]*STATE OF CALIFORNIA\s+B I D   S U M M A R Y\s+DEPARTMENT OF TRANSPORTATION')
+    matches = re.finditer(pattern, file_contents)
+
+    # Extract and print starting positions
+    positions = [match.start() for match in matches] + [None]
+
+    splits = []
+    new_identifiers = []
+    for i in range(len(positions) - 1):
+        new_file_contents = '\n\n\n' + file_contents[positions[i]:positions[i+1]]  # add some newlines at the beginning
+        # read the contract from the header:
+        contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
+        match = re.search(contract_number_regex, new_file_contents)
+        
+        new_identifier = match.group(1) + '_' + tag
+        
+        if new_identifier in new_identifiers:
+            print(f"Found duplicate new identifier when parsing: {identifier}")
+            continue
+        
+        new_identifiers.append(new_identifier)
+        splits.append((new_identifier, new_file_contents))
+
+    return splits
+
+
 class Contract:
     def __init__(self, filepath_or_identifier: Path | str, contract_type = ContractType.TYPE1) -> None:
         if isinstance(filepath_or_identifier, str):
-            a, b = filepath_or_identifier.split('_')
-            path = RAW_DATA_PATH_LINEPRINTER if contract_type.name == ContractType.TYPE1.name else RAW_DATA_PATH_TABLE
-            filepath = path / (a + '.pdf_' + b + '.txt')
+            identifier = filepath_or_identifier
+            filepath = contract_type_paths[contract_type.name] / (identifier + '.txt')
         else:
             filepath = filepath_or_identifier
         
         self.filepath = filepath
-        self.filename = filepath.stem
-        self.contract_number, self.tag, self.identifier = parse_filename(self.filename)
+        self.identifier = filepath.stem
+        self.contract_number, self.tag = self.identifier.split('_')
         self._file_contents = read_file(self.filepath)
         
         self.info = Info(self.file_contents, self.identifier)
         self.bids = Bids(self.file_contents, self.identifier)
         self.subcontractors = Subcontractors(self.file_contents, self.identifier)
         self.items = Items(self.file_contents, self.identifier)
-        
+    
     def extract(self):
         self.info.extract()
         self.bids.extract()
@@ -189,6 +227,8 @@ class ContractPortionBase(object):
     def extract(self):
         if self.NARROW_REGEX:
             matches = self.preprocess(self.NARROW_REGEX)
+        else:
+            matches = [self.file_contents]
             
         processed_lines = []
         for match in matches:
@@ -209,8 +249,8 @@ class Info(ContractPortionBase):
                CONTRACT_DESCRIPTION, PERCENT_OVER_EST, PERCENT_UNDER_EST, ENGINEERS_EST, 
                AMOUNT_OVER, AMOUNT_UNDER, CONTRACT_CODE]
         
-    # narrow from the beginning of the file to the first occurrence of BID RANK
-    NARROW_REGEX = r'(?s)^.*?(?:BID RANK)'
+    # narrow from the beginning of the file to the first occurrence of BID RANK or POSTPONED CONTRACT
+    NARROW_REGEX = r'(?s)(^.*?(?:BID RANK|POSTPONED CONTRACT))'
     
     @staticmethod
     def _parse(text: str, identifier: str):
