@@ -49,8 +49,3 @@ python -m ipykernel install --user --name=<env_name>
 ![](assets/kernel.jpg)
 
 7) Check hard-coded path in the main.ipynb pointing to raw data, or edit path in `.env` for `RAW_DATA_PATH`.
-
-
-## Known issues:
-
-{'Error_Filename': '08-0P3604.pdf_2633', 'Error': ValueError('Second line is not a standard format (notes, extra name, CLBS number)')}

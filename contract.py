@@ -141,7 +141,7 @@ class Contract:
             to_folder / f'{self.filename}.txt'
             )
 
-    def write_to_excel(self):
+    def write_to_disk(self):
         # Create a Pandas Excel writer using openpyxl as the engine
         RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
         path = RESULTS_PATH_SINGLE_CONTRACTS / (self.identifier + '.xlsx')
@@ -287,7 +287,7 @@ class Bids(ContractPortionBase):
                     row[CSLB_NUMBER] = match_cslb_number.group(3)
                 else:
                     # log as error:
-                    raise ValueError(f'Second line is not a standard format (notes, extra name, CLBS number)')
+                    raise ValueError(f'Second line is not in the standard format (notes, extra name, CLBS number, line: `{lines[i]}`')
                 
                 # moving onto the next line, here it might be a third line or an address followed by a FAX number:
                 i += 1
@@ -346,10 +346,13 @@ class Subcontractors(ContractPortionBase):
                 row[SUBCONTRACTOR_NAME] = line[r.start(2):r.start(4)].strip()
                 row[SUBCONTRACTED_LINE_ITEM] = line[r.start(4):].strip()
                 
-                # alternate approach
-                row[BIDDER_ID1] = match.group(1)
-                row[SUBCONTRACTOR_NAME1] = match.group(2).strip()
-                row[SUBCONTRACTED_LINE_ITEM1] = match.group(3).strip()
+                # alternate approach so just check if you get the same
+                if match.group(1):
+                    assert row[BIDDER_ID] == match.group(1), f"{row[BIDDER_ID]} is not {match.group(1)}"
+                if match.group(2).strip():
+                    assert row[SUBCONTRACTOR_NAME] == match.group(2).strip(), f"{row[SUBCONTRACTOR_NAME]} is not {match.group(2).strip()}"
+                if match.group(3).strip():
+                    assert row[SUBCONTRACTED_LINE_ITEM] == match.group(3).strip(), f"{row[SUBCONTRACTED_LINE_ITEM]} is not {match.group(3).strip()}"
                 
                 if not any([x in row[SUBCONTRACTED_LINE_ITEM] for x in ("PER BID ITEM", "WORK AS DESCRIBED BY BID ITEM(S) LISTED")]):
                     # attempt parsing
