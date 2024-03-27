@@ -8,7 +8,7 @@ See actual contract in `sample` folder.
 
 ## Quick install
 
-1) Get raw data locally from [Google Drive](https://drive.google.com/drive/folders/1X-8v6XCqYComYpxVVtznc05AA6-G5Tvu?usp=share_link) (ask [Maria](mkhrakov@chicagobooth.edu) for access)
+1) Get raw data locally from [Google Drive](https://drive.google.com/drive/folders/1X-8v6XCqYComYpxVVtznc05AA6-G5Tvu?usp=share_link) (email [Maria](mkhrakov@chicagobooth.edu) for access)
 2) Edit path in .env file to point to the raw data.
 3) Follow main.ipynb to set up the environment and perform single and buld contract parsing.
 
@@ -22,16 +22,12 @@ See actual contract in `sample` folder.
 3) (optional) create a virtual environment or conda environment:
 ```bash
 <path_to_python> -m venv <env_name>
-source <caltransenv_name>/bin/activate
+source <env_name>/bin/activate
 ```
 
 4) Run the following command in the terminal/cmd to install required packages:
 ```bash
-pip install pandas numpy tqdm ipykernel notebook python-dotenv openpyxl pytest
-```
-or if there are any weird versioning issues just use frozen versions of the libraries:
-```bash
-pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1 python-dotenv==1.0.1 openpyxl==3.1.2 pytest==8.1.1
+pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1 python-dotenv==1.0.1 openpyxl==3.1.2 pytest==8.1.1 pyperclip==1.8.2
 ```
 or, install the libraries using the requirements.txt file:
 ```bash

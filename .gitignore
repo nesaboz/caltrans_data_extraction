@@ -1,9 +1,7 @@
 /data
 results
-caltrans
-
+venv
 .env
-
 .history
 .DS_Store
 .vscode

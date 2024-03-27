@@ -40,7 +40,8 @@ def test_subcontractor_data():
         
     sc = Subcontractors(raw, "test")
     sc.extract()
-
+    
+    # save_result_to_csv_as_output(sc.rows, 'test_subcontractor_data_output.csv')
     assert_against(sc.rows, 'test_subcontractor_data_output.csv')
 
 

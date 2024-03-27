@@ -101,6 +101,7 @@ class Experiment:
         self.df_items = pd.DataFrame()
         self.df_errors = pd.DataFrame()
         
+        
         for i, filepath in enumerate(self.filepaths):
             if i % 100 == 0:
                 print(f"Processing file {i+1}/{len(self.filepaths)}")

@@ -83,8 +83,8 @@ def get_raw_data_path():
     
 
 RAW_DATA_PATH = get_raw_data_path()
-LINEPRINTER_TXT_FILES = 'lineprinter_txt_files'
-TABLE_TXT_FILES = 'table_txt_files'
+LINEPRINTER_TXT_FILES = 'lineprinter'
+TABLE_TXT_FILES = 'table'
 RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_TXT_FILES
 RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_TXT_FILES
 RESULTS_PATH = Path('results')
