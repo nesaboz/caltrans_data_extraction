@@ -277,13 +277,13 @@ class Bids(ContractPortionBase):
                 name_starts = match.start(5)
                 name_ends = match.end(5)
                 delta = name_ends - name_starts
-                pattern_cslb_number = re.compile(rf"^(.{{{name_starts}}})(.{{{delta}}})(\d+)$")
+                pattern_cslb_number = re.compile(rf"^(.{{{name_starts}}})(.{{{delta}}})(.+)$")
                 match_cslb_number = re.match(pattern_cslb_number, lines[i])
                 
                 if match_cslb_number:
                     # this should be the case if second line is present
                     row[CONTRACT_NOTES] = match_cslb_number.group(1).strip()
-                    row[BIDDER_NAME] += match_cslb_number.group(2).rstrip()  # this is the second line of the bidder name
+                    row[BIDDER_NAME] += ' ' + match_cslb_number.group(2).rstrip()  # this is the second line of the bidder name
                     row[CSLB_NUMBER] = match_cslb_number.group(3)
                 else:
                     # log as error:
@@ -300,9 +300,9 @@ class Bids(ContractPortionBase):
                 else:
                     # we don't have a third row
                     row[HAS_THIRD_ROW] = 0
-                    # if there is A) then let's also keep moving until we find the A+B) line
+                    # if there is A) then let's also keep moving until we find the "A+B)" (or "A+ADD)") line
                     if row[A_PLUS_B_INDICATOR]:
-                        pattern_a_plus_b = re.compile(r".*A\+B\)\s+([\d,]+\.\d{2}).*")
+                        pattern_a_plus_b = re.compile(r".*(?:A\+B\)|A\+ADD\))\s+([\d,]+\.\d{2}).*")
                         while i < n:
                             match_a_plus_b = re.match(pattern_a_plus_b, lines[i])
                             if match_a_plus_b:

@@ -30,6 +30,7 @@ def test_bid_data():
         
     processed_lines = Bids._parse(raw, "test")
     
+    # save_result_to_csv_as_output(processed_lines, 'test_bid_data_output.csv')
     assert_against(processed_lines, 'test_bid_data_output.csv')
     
     

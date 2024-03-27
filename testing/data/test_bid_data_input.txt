@@ -35,3 +35,19 @@
                                  FAILED TO SUBMIT DVBE/DBE QUOTES CALIFORNIA, INC.                      00615058
                                                                   1310 W 23RD STREET;               FAX 602 437-1821
                                                                   TEMPE AZ  85282
+
+                      1    A)     17,320,000.00    2              SULLY-MILLER CONTRACTING              714 578-9600
+                                                                  COMPANY                               00747612
+                      ADD 1B)  1 X LS         1                   135 S. STATE COLLEGE BLVD.       FAX 714 578-9672
+                      _________________________
+                         ADD)              1.00                   BREA  CA  92821
+                      _________________________
+                       A+ADD)     17,320,001.00
+
+                      2    A)     18,763,043.30    4              C. A. RASMUSSEN, INC.                 661 367-9040
+                                                                                                        00254681
+                      ADD 1B)  1 X LS   300,000                   28548 LIVINGSTON AVENUE          FAX 661 554-7272
+                      _________________________
+                         ADD)        300,000.00                   VALENCIA  CA  91355
+                      _________________________
+                       A+ADD)     19,063,043.30
