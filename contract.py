@@ -71,7 +71,8 @@ ERROR = "Error"
 
 class ContractType(Enum):
     TYPE1 = 1
-    TYPE2 = 2
+    TYPE2 = 2 
+    TYPE3 = 3  # these files were produced by splitting the type1 files
     
     
 def get_raw_data_path():
@@ -85,11 +86,14 @@ def get_raw_data_path():
 RAW_DATA_PATH = get_raw_data_path()
 LINEPRINTER_TXT_FILES = 'lineprinter'
 TABLE_TXT_FILES = 'table'
+SPLITS_PATH = RAW_DATA_PATH / 'splits'
+
 RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_TXT_FILES
 RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_TXT_FILES
 RESULTS_PATH = Path('results')
 RESULTS_PATH_SINGLE_CONTRACTS = RESULTS_PATH / 'single_contracts'
 RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
+SPLITS_PATH.mkdir(exist_ok=True, parents=True)
 
 
 def parse_filename(filename:str) -> Tuple[str, str]:

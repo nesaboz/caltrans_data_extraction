@@ -101,11 +101,11 @@ class Experiment:
         self.df_items = pd.DataFrame()
         self.df_errors = pd.DataFrame()
         
+        n = len(self.filepaths)
         
         for i, filepath in enumerate(self.filepaths):
             if i % 100 == 0:
-                print(f"Processing file {i+1}/{len(self.filepaths)}")
-                
+                print(f"Processing {i+1}/{n} ... ")
             try:
                 contract = Contract(filepath, self.contract_type)
                 contract.extract()
@@ -123,9 +123,14 @@ class Experiment:
                 
                 self.outliers_path.mkdir(exist_ok=True, parents=True)
                 shutil.copy(filepath, self.outliers_path / filepath.name)
+        print(f"Done processing {n} files.")
+        
+        self.write_to_disk()
                 
     # def write_to_disk(self, df: pd.DataFrame | List, name: str):
     def write_to_disk(self):
+        print("Writing to disk ...")
+        
         # Create a Pandas Excel writer using openpyxl as the engine
         with pd.ExcelWriter(self.results_path / 'results.xlsx', engine='openpyxl') as writer:
             for obj, name in zip((self.df_info, self.df_bids, self.df_subcontractors, self.df_items, self.df_errors), ('Info', 'Bids', 'Subcontractors', 'Items', 'Errors')):
