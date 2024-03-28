@@ -1,6 +1,7 @@
 /data
 results
 venv
+venv3.9
 .env
 .history
 .DS_Store

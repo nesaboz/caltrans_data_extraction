@@ -14,7 +14,7 @@ See actual contract in `sample` folder.
 
 ## Detailed setup (optional)
 
-1) Make sure Python is installed on the system you are using (likely anything 3.8+ will do it).
+1) Make sure Python 3.11.4 is installed on the system you are using (likely anything 3.8+ will do it but still 3.11.4 will work for sure).
 
 2) [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) git repository (you will need access since this is a private repository), the link to the repository is:
 `https://github.com/nesaboz/caltrans_data_extraction`

@@ -108,7 +108,6 @@ contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
 BIDS_FIRST_LINE_PATTERN = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)(\d{3} \d{3}-\d{4})(.*)?")
 SUBCONTRACTORS_FIRST_LINE_REGEX = r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
 ITEMS_FIRST_LINE_REGEX = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
-        
 
 
 def parse_filename(filename:str) -> Tuple[str, str]:
@@ -165,7 +164,7 @@ class Contract:
         
         self.filepath = filepath
         self.identifier = filepath.stem
-        self.contract_number, self.tag = self.identifier.split('_')
+        _, self.tag = self.identifier.split('_')
         self._file_contents = read_file(self.filepath)
         
         self.info = Info(self.file_contents, self.identifier)
@@ -223,13 +222,6 @@ class ContractPortionBase(object):
     def _parse(self, text: str, identifier: str):
         raise NotImplementedError
     
-    @staticmethod
-    def postprocess(df):
-        """
-        Optional postprocessing of extracted DataFrame.
-        """
-        raise NotImplementedError
-    
     def extract(self):
         if self.NARROW_REGEX:
             matches = self.preprocess(self.NARROW_REGEX)
@@ -246,6 +238,13 @@ class ContractPortionBase(object):
         
         if self.rows and 'postprocess' in self.__class__.__dict__:  # this checks if postprocess is implemented in the class
             self._df = self.postprocess(self._df)
+
+    @staticmethod
+    def postprocess(df):
+        """
+        Optional postprocessing of extracted DataFrame.
+        """
+        raise NotImplementedError
 
 
 class Info(ContractPortionBase):
@@ -277,6 +276,8 @@ class Info(ContractPortionBase):
         row[POSTPONED_CONTRACT] = int(bool(_extract(r"(POSTPONED CONTRACT)")))
         row[BID_OPENING_DATE], row[CONTRACT_DATE] = _extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
         row[CONTRACT_NUMBER] = _extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
+        if row[CONTRACT_NUMBER] != identifier[:len(row[CONTRACT_NUMBER])]:
+            raise ValueError(f'Contract number {row[CONTRACT_NUMBER]} does not match the identifier {identifier}')
         row[CONTRACT_CODE] = _extract(r"CONTRACT CODE\s+'([^']+)'").strip()
         row[CONTRACT_ITEMS] = _extract(r"(\d+)\s+CONTRACT ITEMS")
         row[TOTAL_NUMBER_OF_WORKING_DAYS] = _extract(r"TOTAL NUMBER OF WORKING DAYS\s+(\d+)")
@@ -327,23 +328,24 @@ class Bids(ContractPortionBase):
                 name_starts = match.start(5)
                 name_ends = match.end(5)
                 delta = name_ends - name_starts
-                match_cslb_number = re.match(rf"^(.{{{name_starts}}})(.{{{delta}}})(.+)$", lines[i])
+                match_second_line = re.match(rf"^(.{{{name_starts}}})(.{{{delta}}})(.+)$", lines[i])
                 
-                if match_cslb_number:
+                if match_second_line:
                     # this should be the case if second line is present
-                    row[CONTRACT_NOTES] = match_cslb_number.group(1).strip()
-                    row[BIDDER_NAME] += ' ' + match_cslb_number.group(2).rstrip()  # this is the second line of the bidder name
-                    row[CSLB_NUMBER] = match_cslb_number.group(3)
+                    row[CONTRACT_NOTES] = match_second_line.group(1).strip()
+                    row[BIDDER_NAME] += ' ' + match_second_line.group(2).rstrip()  # this is the second line of the bidder name
+                    row[CSLB_NUMBER] = match_second_line.group(3)
                 else:
                     # log as error:
                     raise ValueError(f'Second line is not in the standard format (notes, extra name, CLBS number, line: `{lines[i]}`')
                 
                 # moving onto the next line, here it might be a third line or an address followed by a FAX number:
                 i += 1
-                match_fax_number = re.match(r"^.*(FAX|;).*(\d{3} \d{3}-\d{4}).*$", lines[i])
+                match_fax_number = re.match(r"^.*(FAX).*(?:\d{3} \d{3}-\d{4}).*$", lines[i])  # TODO do we need to capture text after FAX number?
                 if not match_fax_number:
                     # this means we have a third line, so just strip and add to the name
-                    row[BIDDER_NAME] += lines[i].strip()
+                    match_third_line = re.match(rf"^.{{{name_starts}}}(.+)$", lines[i])
+                    row[BIDDER_NAME] += match_third_line.group(1).strip()
                     row[HAS_THIRD_ROW] = 1
                 else:
                     # we don't have a third row

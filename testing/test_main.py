@@ -15,43 +15,44 @@ def save_result_to_csv_as_output(processed_lines, filename):
     pd.DataFrame(processed_lines).to_csv(TEST_DATA / filename, index=False)
 
 
-def test_contract_data():
-    with open(TEST_DATA / 'test_contract_data_input.txt') as f:
+def test_info():
+    with open(TEST_DATA / 'test_info_input.txt') as f:
         raw = f.read()
         
-    processed_lines = Info._parse(raw, "test")
+    processed_lines = Info._parse(raw, "01-0A0904_1234")
     
-    assert_against(processed_lines, 'test_contract_data_output.csv')
+    assert_against(processed_lines, 'test_info_output.csv')
     
     
-def test_bid_data():
-    with open(TEST_DATA / 'test_bid_data_input.txt') as f:
+def test_bids():
+    with open(TEST_DATA / 'test_bids_input.txt') as f:
         raw = f.read()
         
     processed_lines = Bids._parse(raw, "test")
     
     # save_result_to_csv_as_output(processed_lines, 'test_bid_data_output.csv')
-    assert_against(processed_lines, 'test_bid_data_output.csv')
+    assert_against(processed_lines, 'test_bids_output.csv')
     
     
-def test_subcontractor_data():
-    with open(TEST_DATA / 'test_subcontractor_data_input.txt') as f:
+def test_subcontractors():
+    with open(TEST_DATA / 'test_subcontractors_input.txt') as f:
         raw = f.read()
         
     sc = Subcontractors(raw, "test")
     sc.extract()
     
     # save_result_to_csv_as_output(sc.rows, 'test_subcontractor_data_output.csv')
-    assert_against(sc.rows, 'test_subcontractor_data_output.csv')
+    assert_against(sc.rows, 'test_subcontractors_output.csv')
 
 
-def test_line_item_data():
+def test_items():
     
-    with open(TEST_DATA / 'test_line_item_data_input.txt') as f:
+    with open(TEST_DATA / 'test_items_input.txt') as f:
         raw = f.read()
 
     processed_lines = Items._parse(raw, "test")
-    assert_against(processed_lines, 'test_line_item_data_output.csv')
+    
+    assert_against(processed_lines, 'test_items_output.csv')
 
 
 def test_29():
