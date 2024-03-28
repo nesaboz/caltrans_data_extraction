@@ -28,9 +28,11 @@ CONTRACT_NUMBER = "Contract_Number"
 TOTAL_NUMBER_OF_WORKING_DAYS = "Total_Number_of_Working_Days"
 CONTRACT_ITEMS = "Number_of_Contract_Items"
 CONTRACT_DESCRIPTION = "Contract_Description"
+PERCENT_OVER_UNDER_EST = "Percent_Over_Under_Est"
 PERCENT_OVER_EST = "Percent_Est_Over"
 PERCENT_UNDER_EST = "Percent_Est_Under"
 ENGINEERS_EST = "Engineers_Est"
+AMOUNT_OVER_UNDER = "Amount_Over_Under"
 AMOUNT_OVER = "Amount_Over"
 AMOUNT_UNDER = "Amount_Under"
 CONTRACT_CODE = "Contract_Code"
@@ -101,14 +103,15 @@ RESULTS_PATH = Path('results')
 RESULTS_PATH_SINGLE_CONTRACTS = RESULTS_PATH / 'single_contracts'
 RESULTS_PATH_SINGLE_CONTRACTS.mkdir(exist_ok=True, parents=True)
 
-split_pattern = re.compile(r'[^\n]*STATE OF CALIFORNIA\s+B I D   S U M M A R Y\s+DEPARTMENT OF TRANSPORTATION')
+split_pattern = re.compile(r'State of California Department of Transportation')
 parse_filename_pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
-contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
+contract_number_regex = re.compile(r"Contract Number:\s*([\w-]+)")
 
 BIDS_FIRST_LINE_PATTERN = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)(\d{3} \d{3}-\d{4})(.*)?")
 SUBCONTRACTORS_FIRST_LINE_REGEX = r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
 ITEMS_FIRST_LINE_REGEX = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
 
+no_bids_contract = r"NO  BIDS  FOR  THIS  CONTRACT"  # TODO some contracts have this phrase like data/type2/02-0H8004_10657.txt
 
 def parse_filename(filename:str) -> Tuple[str, str]:
     match = parse_filename_pattern.search(filename)
@@ -255,7 +258,7 @@ class Info(ContractPortionBase):
                AMOUNT_OVER, AMOUNT_UNDER, CONTRACT_CODE]
         
     # narrow from the beginning of the file to the first occurrence of BID RANK or POSTPONED CONTRACT
-    NARROW_REGEX = r'(?s)(^.*?(?:BID RANK|POSTPONED CONTRACT))'
+    NARROW_REGEX = r'(?s)(^.*?(?:Bid Rank|Postponed Contract))'  # TODO find postponded contract in the example file
     
     @staticmethod
     def _parse(text: str, identifier: str):
@@ -273,21 +276,21 @@ class Info(ContractPortionBase):
         
         row = defaultdict(str)
         row[IDENTIFIER] = identifier
-        row[POSTPONED_CONTRACT] = int(bool(_extract(r"(POSTPONED CONTRACT)")))
-        row[BID_OPENING_DATE], row[CONTRACT_DATE] = _extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
-        row[CONTRACT_NUMBER] = _extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
+        row[POSTPONED_CONTRACT] = int(bool(_extract(r"(Postponed Contract)")))
+        row[BID_OPENING_DATE] = _extract(r"Bid Opening Date:\s+(\d+\/\d+\/\d+)")
+        row[CONTRACT_NUMBER], row[CONTRACT_DATE] = _extract(r"Contract Number:\s*([\w-]+)\s+(\d+\/\d+\/\d+)", (1, 2))
+        
         if row[CONTRACT_NUMBER] != identifier[:len(row[CONTRACT_NUMBER])]:
             raise ValueError(f'Contract number {row[CONTRACT_NUMBER]} does not match the identifier {identifier}')
-        row[CONTRACT_CODE] = _extract(r"CONTRACT CODE\s+'([^']+)'").strip()
-        row[CONTRACT_ITEMS] = _extract(r"(\d+)\s+CONTRACT ITEMS")
-        row[TOTAL_NUMBER_OF_WORKING_DAYS] = _extract(r"TOTAL NUMBER OF WORKING DAYS\s+(\d+)")
-        row[NUMBER_OF_BIDDERS] = _extract(r"NUMBER OF BIDDERS\s+(\d+)")
-        row[ENGINEERS_EST] = _extract(r"ENGINEERS EST\s+([\d,]+\.\d{2})")
-        row[AMOUNT_OVER] = _extract(r"AMOUNT OVER\s+([\d,]+\.\d{2})")
-        row[AMOUNT_UNDER] = _extract(r"AMOUNT UNDER\s+([\d,]+\.\d{2})")
-        row[PERCENT_OVER_EST] = _extract(r"PERCENT OVER EST\s+(\d+.\d{2})")
-        row[PERCENT_UNDER_EST] = _extract(r"PERCENT UNDER EST\s+(\d+.\d{2})")
-        row[CONTRACT_DESCRIPTION] = _extract(r"(?:\n)?(.*?)FEDERAL AID").strip()
+        
+        row[CONTRACT_CODE] = _extract(r"Contract Code:(.+)").strip()
+        row[CONTRACT_ITEMS] = _extract(r"Number of Items:\s*(\d+)")
+        row[TOTAL_NUMBER_OF_WORKING_DAYS] = _extract(r"Total Number of Working Days: \s*(\d+)")
+        row[NUMBER_OF_BIDDERS] = _extract(r"Number of Bidders:\s*(\d+)")
+        row[ENGINEERS_EST] = _extract(r"Engineers Est:\s*([\d,]+\.\d{2})")
+        row[AMOUNT_OVER_UNDER] = _extract(r"Overrun\/Underrun:\s*(-?[\d,]+\.\d{2})")
+        row[PERCENT_OVER_UNDER_EST] = _extract(r"Over\/Under Est:\s*(-?[\d,]+\.\d{2})\%")
+        row[CONTRACT_DESCRIPTION] = _extract(r"(.+)Number of Items:").strip()
         processed_lines = [row]
         return processed_lines
 

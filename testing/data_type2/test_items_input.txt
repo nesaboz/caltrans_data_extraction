@@ -1,0 +1,309 @@
+                                                          Contract Proposal of  Low  Bidder
+
+Item  Item                                     Item Description                              Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                   Measure  Quantity
+
+0001  070030       LEAD COMPLIANCE PLAN                                                      LS       LUMP SUM   2,000.00     2,000.00
+
+0002  080060       LEVEL 2 CRITICAL PATH METHOD SCHEDULE                                     LS       LUMP SUM   12,000.00    12,000.00
+
+0003  090105       TIME-RELATED OVERHEAD (LS)                                                LS       LUMP SUM   203,000.00   203,000.00
+
+0004  090200       DISPUTE RESOLUTION ADVISOR ON-SITE MEETING                                EA       5.0        2,000.00     10,000.00
+
+0005  090207       HOURLY OFF-SITE DISPUTE-RESOLUTION-ADVISOR-RELATED  TASKS                 HR       10.0            200.00  2,000.00
+
+0006  120090       CONSTRUCTION AREA SIGNS                                                   LS       LUMP SUM   11,175.00    11,175.00
+
+0007  120100       TRAFFIC CONTROL SYSTEM                                                    LS       LUMP SUM   720,000.00   720,000.00
+
+0008  010413       PORTABLE RADAR SPEED FEEDBACK SIGN SYSTEMS (LS)                           LS       LUMP SUM   23,000.00    23,000.00
+
+0009  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                     LS       LUMP SUM   37,000.00    37,000.00
+
+0010  130100       JOB SITE MANAGEMENT                                                       LS       LUMP SUM   35,000.00    35,000.00
+
+
+
+                                                        Contract Proposal of Low Bidder
+
+Item  Item                       Item Description                                           Unit of  Estimated  Bid            Amount
+
+No.   Code                                                                                  Measure  Quantity
+
+0025  840623       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN  LF       1,640.0             0.90  1,476.00
+
+                   36-12)
+
+0026  846007       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)          LF       355,000.0           0.92  326,600.00
+
+0027  846030       REMOVE THERMOPLASTIC TRAFFIC STRIPE                                      LF       348,000.0           0.30  104,400.00
+
+0028  846035       REMOVE THERMOPLASTIC PAVEMENT MARKING                                    SQFT     2,890.0             5.50  15,895.00
+
+0029  870009       MAINTAINING EXISTING TRAFFIC MANAGEMENT SYSTEM ELEMENTS DURING           LS       LUMP SUM   2,000.00       2,000.00
+
+                   CONSTRUCTION
+
+0030  999990       MOBILIZATION                                                             LS       LUMP SUM   430,000.00     430,000.00
+
+                                                                                                                     A)        4,304,304.00
+
+
+                                                                                                                
+                                                                                                                        
+                                                        Contract Proposal  of  Low  Bidder
+
+Item  Item                                          Item Description                            Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                      Measure  Quantity
+
+0025  141001       HEALTH AND SAFETY PLAN                                                       LS       LUMP SUM   2,500.00     2,500.00
+
+0026  141120       TREATED WOOD WASTE                                                           LB       11,700.0        0.55    6,435.00
+
+0027  146002       CONTRACTOR-SUPPLIED BIOLOGIST (LS)                                           LS       LUMP SUM   23,100.00    23,100.00
+
+0028  160110       TEMPORARY HIGH-VISIBILITY FENCE                                              LF       1,500.0         4.00    6,000.00
+
+0029  170103       CLEARING AND GRUBBING (LS)                                                   LS       LUMP SUM   60,000.00    60,000.00
+
+0030  190101       ROADWAY EXCAVATION                                                           CY       21,900.0        40.00   876,000.00
+
+0031  190185       SHOULDER BACKING                                                             TON      400.0           70.00   28,000.00
+
+0032  194001       DITCH EXCAVATION                                                             CY       12.0            200.00  2,400.00
+
+0033  210010       MOVE-IN/MOVE-OUT (EROSION CONTROL)                                           EA       1.0        1,800.00     1,800.00
+
+0034  037634       HYDRAULIC BIOTIC GROWTH MEDIUM                                               SQFT     257,700.0       0.20    51,540.00
+
+0035  037633       FIBER REINFORCED MATRIX                                                      SQFT     257,700.0       0.12    30,924.00
+
+0036  210270       ROLLED EROSION CONTROL PRODUCT (NETTING)                                     SQFT     6,030.0         2.40    14,472.00
+
+0037  210350       FIBER ROLLS                                                                  LF       18,700.0        4.16    77,792.00
+
+0038  210610       COMPOST (CY)                                                                 CY       1,240.0         59.75   74,090.00
+
+0039  210630       INCORPORATE MATERIALS                                                        SQFT     67,000.0        0.14    9,380.00
+
+0040  260203       CLASS 2 AGGREGATE BASE (CY)                                                  CY       7,180.0         80.00   574,400.00
+
+0041  374207       CRACK TREATMENT                                                              LNMI     2.0        5,000.00     10,000.00
+
+0042  390132       HOT MIX ASPHALT (TYPE A)                                                     TON      8,140.0         142.00  1,155,880.00
+
+0043  390137       RUBBERIZED HOT MIX ASPHALT (GAP GRADED)                                      TON      2,800.0         162.00  453,600.00
+
+0044  391006       ASPHALT BINDER (GEOSYNTHETIC PAVEMENT INTERLAYER)                            TON      3.7             10.00   37.00
+
+0045  393004       GEOSYNTHETIC PAVEMENT INTERLAYER (PAVING FABRIC)                             SQYD     3,100.0         4.00    12,400.00
+
+0046  394060       DATA CORE                                                                    LS       LUMP SUM   4,000.00     4,000.00
+
+0047  394075       PLACE HOT MIX ASPHALT DIKE (TYPE D)                                          LF       200.0           40.00   8,000.00
+
+0048  394077       PLACE HOT MIX ASPHALT DIKE (TYPE F)                                          LF       100.0           40.00   4,000.00
+Bid Opening Date:  11/09/2022                                                                                                     Page 4
+
+Contract Number:   01-0E0104                                                                                                      11/09/2022
+
+                                                          Contract    Proposal  of  Low  Bidder
+
+Item     Item                                       Item Description                             Unit of  Estimated  Bid          Amount
+
+No.      Code                                                                                    Measure  Quantity
+
+0049     397005    TACK COAT                                                                     TON      18.0            10.00   180.00
+
+0050     398100    REMOVE ASPHALT CONCRETE DIKE                                                  LF       200.0           8.00    1,600.00
+
+0051     398200    COLD PLANE ASPHALT CONCRETE PAVEMENT                                          SQYD     2,010.0         9.00    18,090.00
+
+0052     398300    REMOVE BASE AND SURFACING                                                     CY       960.0           37.00   35,520.00
+
+0053  F  510094    STRUCTURAL CONCRETE, DRAINAGE INLET                                           CY       10.0       4,000.00     40,000.00
+
+0054  F  510501    MINOR CONCRETE                                                                CY       2.2        3,000.00     6,600.00
+
+0055     610103    12" ALTERNATIVE PIPE CULVERT                                                  LF       82.0            290.00  23,780.00
+
+0056     610108    18" ALTERNATIVE PIPE CULVERT                                                  LF       57.0            300.00  17,100.00
+
+0057     610112    24" ALTERNATIVE PIPE CULVERT                                                  LF       640.0           270.00  172,800.00
+
+0058     610117    30" ALTERNATIVE PIPE CULVERT                                                  LF       190.0           285.00  54,150.00
+
+0059  F  610300    CONCRETE BACKFILL (PIPE TRENCH)                                               CY       2.7             300.00  810.00
+
+0060     650010    12" REINFORCED CONCRETE PIPE                                                  LF       61.0            215.00  13,115.00
+
+0061     705315    24" ALTERNATIVE FLARED END SECTION                                            EA       1.0             530.00  530.00
+
+0062     707117    36" PRECAST CONCRETE PIPE INLET                                               LF       7.0             500.00  3,500.00
+
+0063     710132    REMOVE CULVERT (LF)                                                           LF       604.0           40.00   24,160.00
+
+0064     710150    REMOVE INLET                                                                  EA       2.0             800.00  1,600.00
+
+0065     710167    REMOVE FLARED END SECTION (EA)                                                EA       1.0             550.00  550.00
+
+0066  F  750001    MISCELLANEOUS IRON AND STEEL                                                  LB       954.0           4.00    3,816.00
+
+0067     782110    RESET MAILBOX                                                                 EA       3.0             900.00  2,700.00
+
+0068     782120    RELOCATE MAILBOX                                                              EA       8.0             700.00  5,600.00
+
+0069     800016    FENCE (TYPE BW, 6-STRAND, METAL POST)                                         LF       7,120.0         10.79   76,824.80
+
+0070     802580    12' CHAIN LINK GATE (TYPE CL-6)                                               EA       1.0        4,356.85     4,356.85
+
+0071     802601    14' CHAIN LINK GATE (TYPE CL-6)                                               EA       3.0        4,428.99     13,286.97
+
+0072     802620    16' CHAIN LINK GATE (TYPE CL-6)                                               EA       2.0        6,096.29     12,192.58
+Bid Opening Date:  11/09/2022                                                                                                  Page 5
+
+Contract Number:   01-0E0104                                                                                                   11/09/2022
+
+
+                                                             Contract Proposal of Low Bidder
+
+Item  Item                                   Item Description                                 Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                    Measure  Quantity
+
+0073  803020       REMOVE FENCE                                                               LF       690.0           17.50   12,075.00
+
+0074  803030       REMOVE FENCE (TYPE BW)                                                     LF       1,870.0         4.48    8,377.60
+
+0075  803040       REMOVE FENCE (TYPE WM)                                                     LF       300.0           8.00    2,400.00
+
+0076  803060       REMOVE GATE                                                                EA       4.0             600.00  2,400.00
+
+0077  810190       GUARD RAILING DELINEATOR                                                   EA       8.0             25.00   200.00
+
+0078  810230       PAVEMENT MARKER (RETROREFLECTIVE)                                          EA       480.0           10.00   4,800.00
+
+0079  820110       MILEPOST MARKER                                                            EA       8.0             75.00   600.00
+
+0080  820112       MARKER (CULVERT)                                                           EA       25.0            65.00   1,625.00
+
+0081  820113       TREATMENT BEST MANAGEMENT PRACTICE MARKER                                  EA       22.0            75.00   1,650.00
+
+0082  820250       REMOVE ROADSIDE SIGN                                                       EA       15.0            150.00  2,250.00
+
+0083  820750       FURNISH SINGLE SHEET ALUMINUM SIGN (0.063"-UNFRAMED)                       SQFT     28.0            17.00   476.00
+
+0084  820760       FURNISH SINGLE SHEET ALUMINUM SIGN (0.080"-UNFRAMED)                       SQFT     101.0           18.00   1,818.00
+
+0085  820780       FURNISH SINGLE SHEET ALUMINUM SIGN (0.063"-FRAMED)                         SQFT     63.0            23.00   1,449.00
+
+0086  820790       FURNISH SINGLE SHEET ALUMINUM SIGN (0.080"-FRAMED)                         SQFT     45.0            24.00   1,080.00
+
+0087  820840       ROADSIDE SIGN - ONE POST                                                   EA       12.0            325.00  3,900.00
+
+0088  820850       ROADSIDE SIGN - TWO POST                                                   EA       7.0             650.00  4,550.00
+
+0089  832018       MIDWEST GUARDRAIL SYSTEM (8' STEEL POST)                                   LF       340.0           50.00   17,000.00
+
+0090  832070       VEGETATION CONTROL (MINOR CONCRETE)                                        SQYD     250.0           115.00  28,750.00
+
+0091  839584       ALTERNATIVE IN-LINE TERMINAL SYSTEM                                        EA       4.0        3,675.00     14,700.00
+
+0092  839752       REMOVE GUARDRAIL                                                           LF       270.0           7.50    2,025.00
+
+0093  840516       THERMOPLASTIC PAVEMENT MARKING (ENHANCED WET NIGHT VISIBILITY)             SQFT     190.0           12.00   2,280.00
+
+0094  840615       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN    LF       700.0           1.50    1,050.00
+
+                   18-12)
+
+0095  846007       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)            LF       31,200.0        1.50    46,800.00
+
+0096  870009       MAINTAINING EXISTING TRAFFIC MANAGEMENT SYSTEM ELEMENTS DURING             LS       LUMP SUM   6,000.00     6,000.00
+
+                   CONSTRUCTION
+Bid Opening Date:  11/09/2022                                                                                       Page 6
+
+
+                                                          Contract Proposal of  Low  Bidder
+
+Item  Item                                      Item Description                             Unit of  Estimated  Bid          Amount
+
+No.   Code                                                                                   Measure  Quantity
+
+0001  070030       LEAD COMPLIANCE PLAN                                                      LS       LUMP SUM   2,000.00     2,000.00
+
+0002  080060       LEVEL 2 CRITICAL PATH METHOD SCHEDULE                                     LS       LUMP SUM   5,000.00     5,000.00
+
+0003  090105       TIME-RELATED OVERHEAD (LS)                                                LS       LUMP SUM   125,000.00   125,000.00
+
+0004  090200       DISPUTE RESOLUTION ADVISOR ON-SITE MEETING                                EA       2.0        2,000.00     4,000.00
+
+0005  090207       HOURLY OFF-SITE DISPUTE-RESOLUTION-ADVISOR-RELATED  TASKS                 HR       10.0            200.00  2,000.00
+
+0006  120090       CONSTRUCTION AREA SIGNS                                                   LS       LUMP SUM   6,000.00     6,000.00
+
+0007  120100       TRAFFIC CONTROL SYSTEM                                                    LS       LUMP SUM   25,000.00    25,000.00
+
+0008  120120       TYPE III BARRICADE                                                        EA       12.0            175.00  2,100.00
+
+0009  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                     LS       LUMP SUM   16,000.00    16,000.00
+
+0010  130100       JOB SITE MANAGEMENT                                                       LS       LUMP SUM   25,000.00    25,000.00
+
+0011  130200       PREPARE WATER POLLUTION CONTROL PROGRAM                                   LS       LUMP SUM   1,700.00     1,700.00
+
+0012  130520       TEMPORARY HYDRAULIC MULCH                                                 SQYD     290.0           18.00   5,220.00
+
+0013  130570       TEMPORARY COVER                                                           SQYD     290.0           12.00   3,480.00
+
+0014  130610       TEMPORARY CHECK DAM                                                       LF       50.0            19.00   950.00
+
+0015  130640       TEMPORARY FIBER ROLL                                                      LF       350.0           5.25    1,837.50
+
+0016  130680       TEMPORARY SILT FENCE                                                      LF       240.0           5.00    1,200.00
+
+0017  130710       TEMPORARY CONSTRUCTION ENTRANCE                                           EA       1.0        4,000.00     4,000.00
+
+0018  130900       TEMPORARY CONCRETE WASHOUT                                                LS       LUMP SUM   3,000.00     3,000.00
+
+0019  131103       WATER QUALITY SAMPLING AND ANALYSIS DAY                                   EA       65.0            600.00  39,000.00
+
+0020  131104       WATER QUALITY MONITORING REPORT                                           EA       13.0            500.00  6,500.00
+
+0021  131105       WATER QUALITY ANNUAL REPORT                                               EA       2.0        1,250.00     2,500.00
+
+0022  131201       TEMPORARY CREEK DIVERSION SYSTEMS                                         LS       LUMP SUM   16,500.00    16,500.00
+
+0023  146002       CONTRACTOR-SUPPLIED BIOLOGIST (LS)                                        LS       LUMP SUM   30,000.00    30,000.00
+
+0024  146003       NATURAL RESOURCE PROTECTION PLAN                                          LS       LUMP SUM   4,500.00     4,500.00
+Bid Opening Date:  11/16/2022                                                                                                   Page 4
+
+Contract Number:   01-0E7904                                                                                                    11/16/2022
+
+                                                             Contract Proposal of Low  Bidder
+
+Item     Item                                       Item Description                           Unit of  Estimated  Bid          Amount
+
+No.      Code                                                                                  Measure  Quantity
+
+0025     160110    TEMPORARY HIGH-VISIBILITY FENCE                                             LF       760.0           3.00    2,280.00
+
+0026     170103    CLEARING AND GRUBBING (LS)                                                  LS       LUMP SUM   47,000.00    47,000.00
+
+0027     190101    ROADWAY EXCAVATION                                                          CY       3,500.0         48.00   168,000.00
+
+0028     190185    SHOULDER BACKING                                                            TON      1.6        1,250.00     2,000.00
+
+0029  F  192020    STRUCTURE EXCAVATION (TYPE D)                                               CY       320.0           120.00  38,400.00
+
+0030  F  193003    STRUCTURE BACKFILL (BRIDGE)                                                 CY       65.0            340.00  22,100.00
+
+0031     210120    DUFF (SQFT)                                                                 SQFT     15,600.0        0.75    11,700.00
+
+0032     210270    ROLLED EROSION CONTROL PRODUCT (NETTING)                                    SQFT     4,860.0         1.50    7,290.00
+

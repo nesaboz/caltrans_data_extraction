@@ -1,0 +1,159 @@
+Bid Rank               Bid Total      Bidder Id            Bidder Information (Name/Address/Location)
+
+1            A)        $1,369,000.00  VC1300004803         KEVIN MACK CONSTRUCTION INC                         Phone  (530)547-3360
+
+             B)     95 Days * 3500                         23420 Millville Way                                 CSLB#  471831         SB  PREF CLAIMED
+
+             A+B)      $1,701,500.00                       Millville CA  96062                                 Fax    (530)547-6045
+
+2            A)        $1,360,179.00  VC2100002296         SAN PATRICIO CONSTRUCTION                           Phone  (915)487-2325
+
+             B)     105 Days * 3500                        4820 Escalon Bellota Road                           CSLB#  01025193       SB PREF CLAIMED
+
+             A+B)      $1,727,679.00                       Farmington CA  95230
+
+3            A)        $1,465,000.00  VC2000001958         MCCUEN CONSTRUCTION, INC.                           Phone  (916)652-7824
+
+             B)     130 Days * 3500                        3269 SWETZER ROAD                                   CSLB#  00880160       SB PREF CLAIMED
+
+             A+B)      $1,920,000.00                       LOOMIS CA     95650                                 Fax    (916)652-7602
+
+             A)                       VC1900001805         ALLEN GILL CONSTRUCTION,    INC.                    Phone  (530)547-1112
+
+             B)        0 Days * 3500                       9050 DESCHUTES ROAD                                 CSLB#  623652         CC PREF CLAIMED
+
+             A+B)                                          PALO CEDRO CA        96073                          Fax    (530)547-1118
+
+                                      31 - Incomplete BID
+
+
+
+Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Address/Location)
+
+1            A)     $6,022,880.75    VC0000007021  GR SUNDBERG, INC.                                      Phone  (707)825-6565
+
+             B)     140 Days * 6800                5211 BOYD ROAD                                         CSLB#  00732695       SB PREF CLAIMED
+
+             A+B)   $6,974,880.75                  ARCATA CA       95521                                  Fax    (707)825-6563
+
+2            A)     $6,087,875.00    VC0000014127  R. BROWN CONSTRUCTION COMPANY                          Phone  (530)629-3702
+
+             B)     140 Days * 6800                18 CHINA CREEK RD.                                     CSLB#  00634826       SB PREF CLAIMED
+
+             A+B)   $7,039,875.00                  WILLOW CREEK CA        95573
+
+3            A)     $6,311,311.00    VC0000003985  MERCER FRASER COMPANY                                  Phone  (707)443-6371
+
+             B)     140 Days * 6800                200 DINSMORE DR                                        CSLB#  00105709       CC PREF CLAIMED
+
+             A+B)   $7,263,311.00                  FORTUNA CA      95540                                  Fax    (707)443-0277
+
+4            A)     $6,323,951.70    VC0000101698  FORD LOGGING, INC. DBA PACIFIC EARTHSCAPE              Phone  (707)840-9442
+
+             B)     190 Days * 6800                1225 Central Avenue, suite #11                         CSLB#  00793279       SB PREF CLAIMED
+
+             A+B)   $7,615,951.70                  McKinleyville CA  95519
+Bid Opening Date: 09/01/2022                                                                                                Page 2
+
+
+Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Address/Location)
+
+1            A)     $3,329,448.58    VC0000003985  MERCER FRASER COMPANY                                          Phone  (707)443-6371
+
+             B)     190 Days * 4800                200 DINSMORE DR                                                CSLB#  00105709
+
+             A+B)   $4,241,448.58                  FORTUNA CA      95540                                          Fax    (707)443-0277
+
+2            A)     $3,947,804.32    VC1400003011  MCCULLOUGH CONSTRUCTION INC                                    Phone  (707)825-1014
+
+             B)     190 Days * 4800                57 ALDERGROVE ROAD                                             CSLB#  00715577
+
+             A+B)   $4,859,804.32                  ARCATA CA       95521
+
+3            A)     $4,143,997.00    VC0000022972  J.F. SHEA CONSTRUCTION, INC.                                   Phone  (909)594-9500
+
+             B)     190 Days * 4800                667 BREA CANYON ROAD, SUITE 30                                 CSLB#  00769989
+
+             A+B)   $5,055,997.00                  WALNUT CA       91789
+
+4            A)     $4,267,440.80    VC0000019858  BUGLER CONSTRUCTION                                            Phone  (925)416-0700
+
+             B)     190 Days * 4800                4847 HOPYARD RD.SUITE 4 NO.395                                 CSLB#  00740863
+
+             A+B)   $5,179,440.80                  PLEASANTON CA          94588
+Bid Opening Date:  11/08/2022                                                                          Page 2
+
+Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Address/Location)
+
+1                   $2,098,989.00  VC0000014024  HAT CREEK CONSTRUCTION & MATERIALS, INC.                    Phone  (530)335-5501
+
+                                                 24339 STATE HWY 89 N.                                       CSLB#  00590546       CC  PREF CLAIMED
+
+                                                 BURNEY CA        96013
+
+2                   $2,100,000.00  VC1400003400  AMERICAN PAVEMENT SYSTEMS, INC.                             Phone  (209)522-2277
+
+                                                 1012 11TH STREET                                            CSLB#  00943792       NSB PREF
+
+                                                 MODESTO CA       95354                                                            CLAIMED
+
+                                                                                                                                   Comparison Amount:
+
+                                                                                                                                   $2,050,000.00
+
+3                   $2,310,618.00  VC0000007181  S.T. RHOADES CONSTRUCTION, INC.                             Phone  (530)223-9322
+
+                                                 8585 COMMERCIAL WAY                                         CSLB#  00930684       SB PREF CLAIMED
+
+                                                 REDDING CA       96002                                                            BID IS OVER SB
+
+                                                                                                                                   PREFERENCE
+
+                                                                                                                                   LIMITS
+
+4                   $2,394,120.00  VC1300003799  VSS INTERNATIONAL, INC.                                     Phone  (916)373-1500
+
+                                                 3785 CHANNEL DRIVE                                          CSLB#  00293727       NSB PREF
+
+                                                 WEST SACRAMENTO         CA CA  95624                                              CLAIMED
+
+Bid Rank            Bid Total       Bidder Id     Bidder Information (Name/Address/Location)
+
+1            A)     $2,261,035.00   VC1200002736  CENTRAL COAST FINANCIAL GROUP INC.                              Phone  (209)743-4911
+
+             B)     55 Days * 4200                17750 WARDS FERRY RD                                            CSLB#  00959915
+
+             A+B)   $2,492,035.00                 SONORA CA       95370                                           Fax    (209)396-2681
+
+2            A)     $2,297,740.00   VC0000007181  S.T. RHOADES CONSTRUCTION, INC.                                 Phone  (530)223-9322
+
+             B)     54 Days * 4200                8585 COMMERCIAL WAY                                             CSLB#  00930684
+
+             A+B)   $2,524,540.00                 REDDING CA      96002
+
+
+Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Address/Location)
+
+1                   $2,273,715.84  VC0000000213  GRANITE CONSTRUCTION COMPANY                                 Phone  (707)467-4100
+
+                                                 1324 S. State Street                                         CSLB#  00000089       CC  PREF CLAIMED
+
+                                                 Ukiah CA      95482                                          Fax    (707)467-4143
+
+2                   $2,499,930.90  VC0000007021  GR SUNDBERG, INC.                                            Phone  (707)825-6565
+
+                                                 5211 BOYD ROAD                                               CSLB#  00732695       SB PREF CLAIMED
+
+                                                 ARCATA CA         95521                                      Fax    (707)825-6563  BID IS OVER SB
+
+                                                                                                                                    PREFERENCE
+
+                                                                                                                                    LIMITS
+
+3                   $2,609,799.60  VC0000014187  GHILOTTI CONSTRUCTION COMPANY, INC.                          Phone  (707)585-1221
+
+                                                 246 GHILOTTI AVENUE                                          CSLB#  00644515       CC PREF CLAIMED
+
+                                                 SANTA ROSA CA         95407                                  Fax    (707)585-1601
+
+IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS                  FIRST,
