@@ -1,4 +1,21 @@
-Bid Rank               Bid Total      Bidder Id            Bidder Information (Name/Address/Location)
+1                   $1,272,320.00  VC0000017494  BALDWIN CONTRACTING CO., INC. DBA KNIFE                     Phone  (530)891-6555
+
+                                                 RIVER CONSTRUCTION
+
+                                                 1764 SKYWAY                                                 CSLB#  00091712       NSB PREF
+
+                                                 CHICO CA         95928                                                            CLAIMED
+
+2                   $1,286,513.00  VC0000022972  J.F. SHEA CONSTRUCTION, INC.                                Phone  (909)594-9500
+
+                                                 667 BREA CANYON ROAD, SUITE 30                              CSLB#  00769989       NSB PREF
+
+                                                 WALNUT CA        91789                                                            CLAIMED
+
+                                                                                                                                   Comparison Amount:
+
+                                                                                                                                   $1,236,513.00
+
 
 1            A)        $1,369,000.00  VC1300004803         KEVIN MACK CONSTRUCTION INC                         Phone  (530)547-3360
 
@@ -24,11 +41,7 @@ Bid Rank               Bid Total      Bidder Id            Bidder Information (N
 
              A+B)                                          PALO CEDRO CA        96073                          Fax    (530)547-1118
 
-                                      31 - Incomplete BID
 
-
-
-Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Address/Location)
 
 1            A)     $6,022,880.75    VC0000007021  GR SUNDBERG, INC.                                      Phone  (707)825-6565
 
@@ -53,10 +66,7 @@ Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Addr
              B)     190 Days * 6800                1225 Central Avenue, suite #11                         CSLB#  00793279       SB PREF CLAIMED
 
              A+B)   $7,615,951.70                  McKinleyville CA  95519
-Bid Opening Date: 09/01/2022                                                                                                Page 2
 
-
-Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Address/Location)
 
 1            A)     $3,329,448.58    VC0000003985  MERCER FRASER COMPANY                                          Phone  (707)443-6371
 
@@ -81,9 +91,6 @@ Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Addr
              B)     190 Days * 4800                4847 HOPYARD RD.SUITE 4 NO.395                                 CSLB#  00740863
 
              A+B)   $5,179,440.80                  PLEASANTON CA          94588
-Bid Opening Date:  11/08/2022                                                                          Page 2
-
-Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Address/Location)
 
 1                   $2,098,989.00  VC0000014024  HAT CREEK CONSTRUCTION & MATERIALS, INC.                    Phone  (530)335-5501
 
@@ -117,7 +124,6 @@ Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Addres
 
                                                  WEST SACRAMENTO         CA CA  95624                                              CLAIMED
 
-Bid Rank            Bid Total       Bidder Id     Bidder Information (Name/Address/Location)
 
 1            A)     $2,261,035.00   VC1200002736  CENTRAL COAST FINANCIAL GROUP INC.                              Phone  (209)743-4911
 
@@ -132,7 +138,6 @@ Bid Rank            Bid Total       Bidder Id     Bidder Information (Name/Addre
              A+B)   $2,524,540.00                 REDDING CA      96002
 
 
-Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Address/Location)
 
 1                   $2,273,715.84  VC0000000213  GRANITE CONSTRUCTION COMPANY                                 Phone  (707)467-4100
 
@@ -155,5 +160,3 @@ Bid Rank            Bid Total      Bidder Id     Bidder Information (Name/Addres
                                                  246 GHILOTTI AVENUE                                          CSLB#  00644515       CC PREF CLAIMED
 
                                                  SANTA ROSA CA         95407                                  Fax    (707)585-1601
-
-IN ACCORDANCE WITH G.C.14838, THE DEPARTMENT OF TRANSPORTATION SHALL APPLY THE SMALL BUSINESS PREFERENCE TO ELIGIBLE FIRMS                  FIRST,

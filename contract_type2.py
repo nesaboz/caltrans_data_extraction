@@ -107,7 +107,7 @@ split_pattern = re.compile(r'State of California Department of Transportation')
 parse_filename_pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
 contract_number_regex = re.compile(r"Contract Number:\s*([\w-]+)")
 
-BIDS_FIRST_LINE_PATTERN = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)(\d{3} \d{3}-\d{4})(.*)?")
+BIDS_FIRST_LINE_PATTERN = re.compile(r"^(\d+)\s+(A\))?\s+\$([\d,]+\.\d{2})\s*(\w+)\s*(.+)Phone\s*(\(\d{3}\)\d{3}-\d{4})(.*)?")
 SUBCONTRACTORS_FIRST_LINE_REGEX = r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
 ITEMS_FIRST_LINE_REGEX = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
 
@@ -297,7 +297,7 @@ class Info(ContractPortionBase):
 
 class Bids(ContractPortionBase):
     
-    NARROW_REGEX = r"(?s)BID RANK\s+BID TOTAL\s+BIDDER ID\s+BIDDER INFORMATION\s+\(NAME\/ADDRESS\/LOCATION\)(.*?)(?=L I S T   O F   S U B C O N T R A C T O R S)"
+    NARROW_REGEX = r"(?s)Bid Rank\s+Bid Total\s+Bidder Id\s+Bidder Information \(Name\/Address\/Location\)(.*?)(?=Contract  Proposal  of  Low  Bidder)"
     
     @staticmethod
     def _parse(text, identifier):
@@ -328,42 +328,48 @@ class Bids(ContractPortionBase):
                     
                 # moving onto the second line:    
                 i += 1
+                while lines[i].strip() == '':
+                    i += 1
+                
                 name_starts = match.start(5)
                 name_ends = match.end(5)
                 delta = name_ends - name_starts
-                match_second_line = re.match(rf"^(.{{{name_starts}}})(.{{{delta}}})(.+)$", lines[i])
+                match_cslb_line = re.search(r"CSLB#\s*(\w+)(.*)?", lines[i])
+                second_line = False
+                row[HAS_THIRD_ROW] = 0
                 
-                if match_second_line:
+                while not match_cslb_line:
                     # this should be the case if second line is present
-                    row[CONTRACT_NOTES] = match_second_line.group(1).strip()
-                    row[BIDDER_NAME] += ' ' + match_second_line.group(2).rstrip()  # this is the second line of the bidder name
-                    row[CSLB_NUMBER] = match_second_line.group(3)
+                    if second_line:
+                        # this is now third line:
+                        row[HAS_THIRD_ROW] = 1
+                    match_extra_name = re.match(rf"(?m)^.{{{name_starts}}}(.+)$", lines[i])
+                    row[BIDDER_NAME] += ' ' + match_extra_name.group(1)  # this is the second/third etc. line of the bidder name
+                    second_line = True
+                    i += 1
+                    while lines[i].strip() == '':
+                        i += 1
+                    match_cslb_line = re.search(r"CSLB#\s*(\w+)(.*)?", lines[i])
                 else:
-                    # log as error:
-                    raise ValueError(f'Second line is not in the standard format (notes, extra name, CLBS number, line: `{lines[i]}`')
+                    # there is no second line, extract CSLB number
+                    row[CSLB_NUMBER] = match_cslb_line.group(1)
+                    row[CONTRACT_NOTES] = match_cslb_line.group(2).strip()
                 
-                # moving onto the next line, here it might be a third line or an address followed by a FAX number:
                 i += 1
-                match_fax_number = re.match(r"^.*(FAX).*(?:\d{3} \d{3}-\d{4}).*$", lines[i])  # TODO do we need to capture text after FAX number?
-                if not match_fax_number:
-                    # this means we have a third line, so just strip and add to the name
-                    match_third_line = re.match(rf"^.{{{name_starts}}}(.+)$", lines[i])
-                    row[BIDDER_NAME] += match_third_line.group(1).strip()
-                    row[HAS_THIRD_ROW] = 1
-                else:
-                    # we don't have a third row
-                    row[HAS_THIRD_ROW] = 0
-                    # if there is A) then let's also keep moving until we find the "A+B)" (or "A+ADD)") line
-                    if row[A_PLUS_B_INDICATOR]:
-                        while i < n:
-                            match_a_plus_b = re.match(r".*(?:A\+B\)|A\+ADD\))\s+([\d,]+\.\d{2}).*", lines[i])
-                            if match_a_plus_b:
-                                row[BID_TOTAL] = match_a_plus_b.group(1)
-                                break
-                            i += 1
-                        if i == n:
-                            processed_lines.append(row)
-                            raise ValueError(f'MAJOR ERROR in contract {identifier}. Could not find A+B) line for BID_RANK number: {row[BID_RANK]}')
+                while lines[i].strip() == '':
+                    i += 1
+                        
+                # if there is A) then let's also keep moving until we find the "A+B)" (or "A+ADD)") line
+                if row[A_PLUS_B_INDICATOR]:
+                    while i < n:
+                        match_a_plus_b = re.match(r".*(?:A\+B\)|A\+ADD\))\s+\$([\d,]+\.\d{2})", lines[i])
+                        if match_a_plus_b:
+                            row[BID_TOTAL] = match_a_plus_b.group(1)
+                            break
+                        i += 1
+                    if i == n:
+                        processed_lines.append(row)
+                        raise ValueError(f'MAJOR ERROR in contract {identifier}. Could not find A+B) line for BID_RANK number: {row[BID_RANK]}')
                 processed_lines.append(row)
             i += 1  # we can allow this double jump since there is always empty line between the rows
         return processed_lines

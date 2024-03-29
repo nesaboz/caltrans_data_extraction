@@ -56,7 +56,7 @@ def test_items():
     processed_lines = contract.Items._parse(raw, "test")
     
     assert_against(processed_lines, TEST_DATA / 'test_items_output.csv')
-  
+
 
 def test_info2():
     with open(TEST_DATA_TYPE2 / 'test_info_input.txt') as f:
@@ -67,9 +67,6 @@ def test_info2():
     assert_against(processed_lines, TEST_DATA_TYPE2 / 'test_info_output.csv')
     
     
-    ### TODO ones below
-    
-    
 def test_bids2():
     with open(TEST_DATA_TYPE2 / 'test_bids_input.txt') as f:
         raw = f.read()
@@ -78,6 +75,9 @@ def test_bids2():
     
     # save_result_to_csv_as_output(processed_lines, 'test_bid_data_output.csv')
     assert_against(processed_lines, TEST_DATA_TYPE2 / 'test_bids_output.csv')
+    
+
+    ### TODO ones below
     
     
 def test_subcontractors2():
