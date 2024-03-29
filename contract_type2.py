@@ -54,7 +54,7 @@ ITEM_NUMBER = "Item_Number"
 ITEM_CODE = "Item_Code"
 ITEM_DESCRIPTION = "Item_Description"
 ITEM_DOLLAR_AMOUNT = "Item_Dollar_Amount"
-EXTRA1 = "Extra1"
+ITEM_FLAG = "Item_Flag"
 EXTRA2 = "Extra2"
 COULD_NOT_PARSE = "COULD NOT PARSE"
 ITEM_NUMBERS = "Item_Numbers"
@@ -109,13 +109,13 @@ contract_number_regex = re.compile(r"Contract Number:\s*([\w-]+)")
 
 BIDS_FIRST_LINE_PATTERN = re.compile(r"^(\d+)\s+(A\))?\s+\$([\d,]+\.\d{2})\s*(\w+)\s*(.+)Phone\s*(\(\d{3}\)\d{3}-\d{4})(.*)?")
 SUBCONTRACTORS_FIRST_LINE_REGEX = r"[^\S\r\n]*(BIDDER\s+ID)\s+(NAME\s+AND\s+ADDRESS)\s+(LICENSE\s+NUMBER)?\s+(DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED)"
-ITEMS_FIRST_LINE_REGEX = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
 
 no_bids_contract = r"NO\s+BIDS\s+FOR\s+THIS\s+CONTRACT"  # TODO some contracts have this phrase like data/type2/02-0H8004_10657.txt
 
 def get_next_line(i, lines):
     i += 1
-    while lines[i].strip() == '':
+    n = len(lines)
+    while i < n and lines[i].strip() == '':
         i += 1
     return i
                             
@@ -265,7 +265,7 @@ class Info(ContractPortionBase):
                AMOUNT_OVER, AMOUNT_UNDER, CONTRACT_CODE]
         
     # narrow from the beginning of the file to the first occurrence of BID RANK or POSTPONED CONTRACT
-    NARROW_REGEX = r'(?s)(^.*?(?:Bid Rank|Postponed Contract))'  # TODO find postponded contract in the example file
+    NARROW_REGEX = r'(?s)(^.*?(?:Bid Rank|Postponed Contract))'  # TODO find postponed contract in the example file
     
     @staticmethod
     def _parse(text: str, identifier: str):
@@ -467,19 +467,27 @@ class Subcontractors(ContractPortionBase):
 
 class Items(ContractPortionBase):
     
-    COLUMNS = [ITEM_NUMBER, EXTRA1, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
+    COLUMNS = [ITEM_NUMBER, ITEM_FLAG, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
     
-    NARROW_REGEX = r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)"
+    NARROW_REGEX = r"(?s)Contract\s+Proposal\s+of\s+Low\s+Bidder(.*?)(?=Contract\s+Proposal\s+of\s+Low\s+Bidder|\f|CONTINUED\s+ON\s+NEXT\s+PAGE)"
     
     @staticmethod
     def _parse(text: str, identifier: str):
         """
         Parses a table from a text line by line.
         """
-        pattern = ITEMS_FIRST_LINE_REGEX
+        
         lines = text.split('\n')
         
-        i = 0
+        i =  get_next_line(0, lines)
+        
+        header = lines[i]
+        match = re.match(r'.*(Unit).*(Amount)', header)
+        start_unit = match.start(1)
+        start_amount = match.start(2)
+        delta_amount_to_unit = start_amount - start_unit
+
+        i =  get_next_line(i, lines)
         
         n = len(lines)
         processed_lines = []
@@ -487,29 +495,33 @@ class Items(ContractPortionBase):
         first_line = False
         while i < n:
             line = lines[i]
-            match = re.match(pattern, line)
-            if match:
+            match1 = re.match(r'^\s*(\d+)\s+(?:(F|SF|S))?\s*(\d+)\s+(.+)', line)  # collects until ITEM DESCRIPTION
+            if match1:
                 # this mean we hit the first line, lets parse it and save it
                 # but first we need to save any previous line to precessed_lines
                 if row:
                     processed_lines.append(row)
                 
+                start_item_description = match1.start(4)
+                # collects Item Description, Extra, Item Dollar Amount
+                match2 = re.match(rf'^.{{{start_item_description}}}(.{{{start_unit - start_item_description}}}).{{{delta_amount_to_unit}}}(.*)$', line)
                 row = defaultdict(str)
                 row[IDENTIFIER] = identifier
-                row[ITEM_NUMBER] = match.group(1)
-                row[EXTRA1] = match.group(2)
-                row[ITEM_CODE] = match.group(3)
-                row[ITEM_DESCRIPTION] = match.group(4).strip()
-                row[EXTRA2] = match.group(5)
-                row[ITEM_DOLLAR_AMOUNT] = match.group(6)
+                row[ITEM_NUMBER] = match1.group(1)
+                row[ITEM_FLAG] = match1.group(2)
+                row[ITEM_CODE] = match1.group(3)
+                row[ITEM_DESCRIPTION] = match2.group(1).strip()
+                row[ITEM_DOLLAR_AMOUNT] = match2.group(2)
                 first_line = True
             elif row and first_line:
-                # this means we have a second line, let's append it to the ITEM_DESCRIPTION
-                row[ITEM_DESCRIPTION] += line.strip()
+                # this means we might have a second line, lets parse it 
+                if len(line) > start_unit:
+                    line = line[start_item_description:start_unit]  # we don't need any extra text
+                row[ITEM_DESCRIPTION] += ' ' + line.strip()
                 first_line = False
-            i += 1  
+            i = get_next_line(i, lines)
         
-        # save last line
+        # save the last line
         if row:
             processed_lines.append(row)  
         return processed_lines

@@ -1,3 +1,32 @@
+
+                                                        Contract Proposal of Low Bidder
+
+Item  Item                       Item Description                                           Unit of  Estimated  Bid            Amount
+
+No.   Code                                                                                  Measure  Quantity
+
+0025  840623       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN  LF       1,640.0             0.90  1,476.00
+
+                   36-12)
+
+0026  846007       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)          LF       355,000.0           0.92  326,600.00
+
+0027  846030       REMOVE THERMOPLASTIC TRAFFIC STRIPE                                      LF       348,000.0           0.30  104,400.00
+
+0028  846035       REMOVE THERMOPLASTIC PAVEMENT MARKING                                    SQFT     2,890.0             5.50  15,895.00
+
+0029  870009       MAINTAINING EXISTING TRAFFIC MANAGEMENT SYSTEM ELEMENTS DURING           LS       LUMP SUM   2,000.00       2,000.00
+
+                   CONSTRUCTION
+
+0030  999990       MOBILIZATION                                                             LS       LUMP SUM   430,000.00     430,000.00
+
+                                                                                                                     A)        4,304,304.00
+
+
+
+
+
                                                           Contract Proposal of  Low  Bidder
 
 Item  Item                                     Item Description                              Unit of  Estimated  Bid          Amount
@@ -23,32 +52,6 @@ No.   Code                                                                      
 0009  128652       PORTABLE CHANGEABLE MESSAGE SIGN (LS)                                     LS       LUMP SUM   37,000.00    37,000.00
 
 0010  130100       JOB SITE MANAGEMENT                                                       LS       LUMP SUM   35,000.00    35,000.00
-
-
-
-                                                        Contract Proposal of Low Bidder
-
-Item  Item                       Item Description                                           Unit of  Estimated  Bid            Amount
-
-No.   Code                                                                                  Measure  Quantity
-
-0025  840623       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY) (BROKEN  LF       1,640.0             0.90  1,476.00
-
-                   36-12)
-
-0026  846007       6" THERMOPLASTIC TRAFFIC STRIPE (ENHANCED WET NIGHT VISIBILITY)          LF       355,000.0           0.92  326,600.00
-
-0027  846030       REMOVE THERMOPLASTIC TRAFFIC STRIPE                                      LF       348,000.0           0.30  104,400.00
-
-0028  846035       REMOVE THERMOPLASTIC PAVEMENT MARKING                                    SQFT     2,890.0             5.50  15,895.00
-
-0029  870009       MAINTAINING EXISTING TRAFFIC MANAGEMENT SYSTEM ELEMENTS DURING           LS       LUMP SUM   2,000.00       2,000.00
-
-                   CONSTRUCTION
-
-0030  999990       MOBILIZATION                                                             LS       LUMP SUM   430,000.00     430,000.00
-
-                                                                                                                     A)        4,304,304.00
 
 
                                                                                                                 

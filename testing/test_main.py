@@ -83,11 +83,11 @@ def test_subcontractors2():
     with open(TEST_DATA_TYPE2 / 'test_subcontractors_input.txt') as f:
         raw = f.read()
         
-    sc = contract_type2.Subcontractors(raw, "test")
-    sc.extract()
+    subcontractors = contract_type2.Subcontractors(raw, "test")
+    subcontractors.extract()
     
     # save_result_to_csv_as_output(sc.rows, TEST_DATA_TYPE2 / 'test_subcontractors_output.csv')
-    assert_against(sc.rows, TEST_DATA_TYPE2 / 'test_subcontractors_output.csv')
+    assert_against(subcontractors.rows, TEST_DATA_TYPE2 / 'test_subcontractors_output.csv')
 
 
 def test_items2():
@@ -95,6 +95,7 @@ def test_items2():
     with open(TEST_DATA_TYPE2 / 'test_items_input.txt') as f:
         raw = f.read()
 
-    processed_lines = contract_type2.Items._parse(raw, "test")
-    
-    assert_against(processed_lines, TEST_DATA_TYPE2 / 'test_items_output.csv')
+    items = contract_type2.Items(raw, "test")
+    items.extract()
+    save_result_to_csv_as_output(items.rows, TEST_DATA_TYPE2 / 'test_items_output.csv')
+    assert_against(items.rows, TEST_DATA_TYPE2 / 'test_items_output.csv')

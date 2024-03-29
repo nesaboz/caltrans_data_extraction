@@ -52,7 +52,7 @@ ITEM_NUMBER = "Item_Number"
 ITEM_CODE = "Item_Code"
 ITEM_DESCRIPTION = "Item_Description"
 ITEM_DOLLAR_AMOUNT = "Item_Dollar_Amount"
-EXTRA1 = "Extra1"
+ITEM_FLAG = "Item_Flag"
 EXTRA2 = "Extra2"
 COULD_NOT_PARSE = "COULD NOT PARSE"
 ITEM_NUMBERS = "Item_Numbers"
@@ -458,7 +458,7 @@ class Subcontractors(ContractPortionBase):
 
 class Items(ContractPortionBase):
     
-    COLUMNS = [ITEM_NUMBER, EXTRA1, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
+    COLUMNS = [ITEM_NUMBER, ITEM_FLAG, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
     
     NARROW_REGEX = r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)"
     
@@ -488,7 +488,7 @@ class Items(ContractPortionBase):
                 row = defaultdict(str)
                 row[IDENTIFIER] = identifier
                 row[ITEM_NUMBER] = match.group(1)
-                row[EXTRA1] = match.group(2)
+                row[ITEM_FLAG] = match.group(2)
                 row[ITEM_CODE] = match.group(3)
                 row[ITEM_DESCRIPTION] = match.group(4).strip()
                 row[EXTRA2] = match.group(5)

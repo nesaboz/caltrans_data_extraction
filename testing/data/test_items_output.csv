@@ -1,4 +1,4 @@
-Identifier,Item_Number,Extra1,Item_Code,Item_Description,Extra2,Item_Dollar_Amount
+Identifier,Item_Number,Item_Flag,Item_Code,Item_Description,Extra2,Item_Dollar_Amount
 test,106,F,839727,CONCRETE BARRIER (TYPE 736 MODIFIED),LF          454              101.00       ,"45,854.00"
 test,107,,840504,"4"" THERMOPLASTIC TRAFFIC STRIPE","LF        1,240                1.00        ","1,240.00"
 test,108,S,840505,"6"" THERMOPLASTIC TRAFFIC STRIPE",LF          320                1.50          ,480.00
