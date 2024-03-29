@@ -175,7 +175,7 @@ class Info(ContractPortionBase):
         
         row = defaultdict(str)
         row[IDENTIFIER] = identifier
-        row[POSTPONED_CONTRACT] = int(bool(_extract(r"(POSTPONED CONTRACT)")))
+        row[POSTPONED_CONTRACT] = int(bool(_extract(r"POSTPONED CONTRACT")))
         row[BID_OPENING_DATE], row[CONTRACT_DATE] = _extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
         row[CONTRACT_NUMBER] = _extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
         if row[CONTRACT_NUMBER] != identifier[:len(row[CONTRACT_NUMBER])]:

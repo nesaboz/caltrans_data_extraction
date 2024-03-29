@@ -5,7 +5,7 @@
                      STATE OF CALIFORNIA            B I D   S U M M A R Y           DEPARTMENT OF TRANSPORTATION          BID211
                                                                                                                           PAGE  1
        BID OPENING DATE    03/29/11                    IN HUMBOLDT COUNTY NEAR ORLEANS                                    04/05/11
-       CONTRACT NUMBER     01-0A0904                   FROM SLATE CREEK BRIDGE TO KLAMATH                       CONTRACT CODE 'H '
+       CONTRACT NUMBER     01-AAAAAA                   FROM SLATE CREEK BRIDGE TO KLAMATH                       CONTRACT CODE 'H '
        LOCATION            01-HUM-96-R30.0/R38.6       RIVER BRIDGE                                              15 CONTRACT ITEMS
 
 
