@@ -108,11 +108,18 @@ parse_filename_pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE) 
 contract_number_regex = re.compile(r"Contract Number:\s*([\w-]+)")
 
 BIDS_FIRST_LINE_PATTERN = re.compile(r"^(\d+)\s+(A\))?\s+\$([\d,]+\.\d{2})\s*(\w+)\s*(.+)Phone\s*(\(\d{3}\)\d{3}-\d{4})(.*)?")
-SUBCONTRACTORS_FIRST_LINE_REGEX = r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
+SUBCONTRACTORS_FIRST_LINE_REGEX = r"[^\S\r\n]*(BIDDER\s+ID)\s+(NAME\s+AND\s+ADDRESS)\s+(LICENSE\s+NUMBER)?\s+(DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED)"
 ITEMS_FIRST_LINE_REGEX = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
 
-no_bids_contract = r"NO  BIDS  FOR  THIS  CONTRACT"  # TODO some contracts have this phrase like data/type2/02-0H8004_10657.txt
+no_bids_contract = r"NO\s+BIDS\s+FOR\s+THIS\s+CONTRACT"  # TODO some contracts have this phrase like data/type2/02-0H8004_10657.txt
 
+def get_next_line(i, lines):
+    i += 1
+    while lines[i].strip() == '':
+        i += 1
+    return i
+                            
+                            
 def parse_filename(filename:str) -> Tuple[str, str]:
     match = parse_filename_pattern.search(filename)
     contract_number, tag = match.groups()
@@ -327,9 +334,7 @@ class Bids(ContractPortionBase):
                 row[EXTRA] = match.group(7)
                     
                 # moving onto the second line:    
-                i += 1
-                while lines[i].strip() == '':
-                    i += 1
+                i = get_next_line(i, lines)
                 
                 name_starts = match.start(5)
                 name_ends = match.end(5)
@@ -346,18 +351,14 @@ class Bids(ContractPortionBase):
                     match_extra_name = re.match(rf"(?m)^.{{{name_starts}}}(.+)$", lines[i])
                     row[BIDDER_NAME] += ' ' + match_extra_name.group(1)  # this is the second/third etc. line of the bidder name
                     second_line = True
-                    i += 1
-                    while lines[i].strip() == '':
-                        i += 1
+                    i = get_next_line(i, lines)
                     match_cslb_line = re.search(r"CSLB#\s*(\w+)(.*)?", lines[i])
                 else:
                     # there is no second line, extract CSLB number
                     row[CSLB_NUMBER] = match_cslb_line.group(1)
                     row[CONTRACT_NOTES] = match_cslb_line.group(2).strip()
                 
-                i += 1
-                while lines[i].strip() == '':
-                    i += 1
+                i = get_next_line(i, lines)
                         
                 # if there is A) then let's also keep moving until we find the "A+B)" (or "A+ADD)") line
                 if row[A_PLUS_B_INDICATOR]:
@@ -379,36 +380,33 @@ class Subcontractors(ContractPortionBase):
     
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER]
     
-    NARROW_REGEX = r"(?sm)^([^\S\r\n]*BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)(.*?)(?=[^\S\r\n]*BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED ON NEXT PAGE)"
+    NARROW_REGEX = r"(?sm)^([^\S\r\n]*BIDDER\s+ID\s+NAME\s+AND\s+ADDRESS\s+(?:LICENSE\s+NUMBER)?\s+DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED)(.*?)(?=[^\S\r\n]*BIDDER\s+ID\s+NAME\s+AND\s+ADDRESS\s+(?:LICENSE\s+NUMBER)?\s+DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED|\f|CONTINUED\s+ON\s+NEXT\s+PAGE)"
     
     @staticmethod
     def _parse(header_and_text, identifier):
+        """
+        This is different then other _parse methods (in other classes), as far as we store header and text and not just text. We use header then to extract the column start positions.
+        """
         
         header, text = header_and_text
         r = re.match(SUBCONTRACTORS_FIRST_LINE_REGEX, header)
         lines = text.split('\n')
         
-        delta = r.start(4) - r.start(2)
+        start0 = r.start(1)
+        delta1 = r.start(2) - r.start(1)
+        delta2 = r.start(4) - r.start(2)  # see testing/data_type_2/test_subcontractors_input.txt for some long names
         i = 0
         processed_lines = []
-        while i < len(lines) - 1:
+        while i < len(lines):
             line = lines[i]
-            match = re.match(rf"^\s+(\d+)?\s+(.{{{delta}}})\s+(.+)$", line)
+            match = re.match(rf"^.{{{start0}}}(.{{{delta1}}})(.{{{delta2}}})(.+)$", line)
             if match:
                 row = defaultdict(str)
                 row[IDENTIFIER] = identifier
                 
-                row[BIDDER_ID] = line[r.start(1):r.end(1)].strip()
-                row[SUBCONTRACTOR_NAME] = line[r.start(2):r.start(4)].strip()
-                row[SUBCONTRACTED_LINE_ITEM] = line[r.start(4):].strip()
-                
-                # alternate approach so just check if you get the same
-                if match.group(1):
-                    assert row[BIDDER_ID] == match.group(1), f"{row[BIDDER_ID]} is not {match.group(1)}"
-                if match.group(2).strip():
-                    assert row[SUBCONTRACTOR_NAME] == match.group(2).strip(), f"{row[SUBCONTRACTOR_NAME]} is not {match.group(2).strip()}"
-                if match.group(3).strip():
-                    assert row[SUBCONTRACTED_LINE_ITEM] == match.group(3).strip(), f"{row[SUBCONTRACTED_LINE_ITEM]} is not {match.group(3).strip()}"
+                row[BIDDER_ID] = match.group(1).strip()
+                row[SUBCONTRACTOR_NAME] = match.group(2).strip()
+                row[SUBCONTRACTED_LINE_ITEM] = match.group(3)
                 
                 if not any([x in row[SUBCONTRACTED_LINE_ITEM] for x in ("PER BID ITEM", "WORK AS DESCRIBED BY BID ITEM(S) LISTED")]):
                     # attempt parsing
@@ -418,12 +416,14 @@ class Subcontractors(ContractPortionBase):
                         if matches3.group(2):
                             row[PERCENT] = matches3.group(2).replace("%", "")
                 
-                if r.group(3) is not None:  # there is LICENSE NUMBER column
-                    i += 1
-                    line = lines[i]
-                    row[SUBCONTRACTOR_LICENSE_NUMBER] = line[r.start(3):].strip()
+                i = get_next_line(i, lines)
+                line = lines[i]
+                    
+                if r.group(3) is not None:  # there is a LICENSE NUMBER column
+                    row[SUBCONTRACTOR_LICENSE_NUMBER] = line[r.start(3):r.start(4)].strip()
                 else:
                     row[SUBCONTRACTOR_LICENSE_NUMBER] = ''
+                row[SUBCONTRACTED_LINE_ITEM] += ' ' + line[r.start(4):].strip()
                 processed_lines.append(row)
             i += 1
         

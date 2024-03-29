@@ -73,7 +73,6 @@ def test_bids2():
         
     processed_lines = contract_type2.Bids._parse(raw, "test")
     
-    # save_result_to_csv_as_output(processed_lines, 'test_bid_data_output.csv')
     assert_against(processed_lines, TEST_DATA_TYPE2 / 'test_bids_output.csv')
     
 
@@ -87,7 +86,7 @@ def test_subcontractors2():
     sc = contract_type2.Subcontractors(raw, "test")
     sc.extract()
     
-    # save_result_to_csv_as_output(sc.rows, 'test_subcontractor_data_output.csv')
+    # save_result_to_csv_as_output(sc.rows, TEST_DATA_TYPE2 / 'test_subcontractors_output.csv')
     assert_against(sc.rows, TEST_DATA_TYPE2 / 'test_subcontractors_output.csv')
 
 

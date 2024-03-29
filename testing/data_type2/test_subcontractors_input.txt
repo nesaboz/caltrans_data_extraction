@@ -1,4 +1,29 @@
 
+                                              LIST OF SUBCONTRACTORS
+
+BIDDER ID     NAME AND ADDRESS                LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000022972  PIPE JACKING TRENCHLESS,  INC.                          54" WELDED STEEL PIPE (TRENCHLESS) (.750" THICK) -
+
+              LAKE FOREST CA                  1018405                 PARTIAL - EXCLUDES WATER, SPOILS, OFF HAUL
+
+VC0000022972  T AND S DVBE, INC.                                      ITEM 6 (100%)
+
+              REDDING CA                      983087
+
+VC0000022972  T AND S DVBE, INC.                                      ITEM 93 (100%)
+
+              REDDING CA                      983087
+
+
+BIDDER ID      NAME AND ADDRESS              LICENSE NUMBER          DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
+
+VC0000101698   ROLL N ROCK CONSTRUCTION INC                          ITEM 4 (100%)
+
+               MOUNT SHASTA CA               971838
+
+
+
                                                LIST OF SUBCONTRACTORS
 
 BIDDER ID             NAME AND ADDRESS         LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
@@ -102,6 +127,7 @@ VC0000000213          C&W CONSTRUCTION SPECIALTIES                          ITEM
 
                       VENTURA CA                    256795
 
+
 CONTINUED ON NEXT PAGE
 05-1H8604                                                                                                    PAGE S3
 
@@ -156,6 +182,7 @@ VC0000000213          CAL STIPE                                              ITE
 VC0000000213          CAL STIPE                                              ITEM 141 (100%)
 
                       COLTON CA                      685387
+
 
 CONTINUED ON  NEXT PAGE
 05-1H8604                                                                                                       PAGE S4
@@ -212,6 +239,7 @@ VC0000000213          CENTRAL COAST TRAFFIC  SAFETY                          ITE
 
                       SANTA MARIA CA                 1020033
 
+
 CONTINUED ON  NEXT PAGE
 05-1H8604                                                                                                        PAGE S5
 
@@ -267,6 +295,7 @@ VC0000000213          CINDY TRUMP INC.                                       ITE
 
                       LA HABRA CA                    754500
 
+
 CONTINUED ON NEXT PAGE
 05-1H8604                                                                                                        PAGE S6
 
@@ -318,6 +347,7 @@ VC0000000213          CENTRAL COAST TRAFFIC  SAFETY                          TRA
 
                       SANTA MARIA CA                 1020033
 05-1H8604                                                                                              PAGE S7
+
 
 05-SB-101-46.2/R52.3                                                                                   12/1/2022
 
@@ -374,3 +404,13 @@ VC0000021358          SUPER SEAL & STRIPE                          ITEM 92 (100%
 CONTINUED ON NEXT PAGE
 05-1H8604                                                                                                  PAGE S8
 
+
+BIDDER ID            NAME AND ADDRESS              LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED
+
+VC0000500307         PACIFIC NORTHWEST OIL                                 ASPHALT BINDER (GEOSYNTHETIC INTERPAVEMENT
+
+                     SACRAMENTO CA                 705296                  LAYER)
+
+VC0000500307         PACIFIC NORTHWEST OIL                                 GEOSYNTHETIC PAVEMENT INTERLAYER
+
+                     SACRAMENTO CA                 705296
