@@ -1,7 +1,18 @@
 from typing import Dict
-from contract import *
 import random
-    
+from constants import *
+import shutil
+from collections import defaultdict
+from datetime import datetime
+from pathlib import Path
+import re
+from tqdm import tqdm
+import pandas as pd
+from enum import Enum
+from typing import List, Tuple
+
+from contract_type2 import Contract, parse_filename, split_contract, read_file
+
 
 def sort_contracts():
     """
@@ -88,7 +99,7 @@ def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
     return df, df['Contract_Type'].to_dict()
 
 
-def get_some_contracts(contract_type=ContractType.TYPE1, num_contracts=5, seed=42):
+def get_contract_filepaths(contract_type, num_contracts=None, seed=42):
     df_contract_types, _ = get_contract_types()
     files = list(df_contract_types[df_contract_types[CONTRACT_TYPE] == contract_type.value][RELATIVE_PATH].values)
     if seed:
@@ -106,31 +117,37 @@ class Experiment:
     The results folder will be determined automatically.
     """
     
-    def __init__(self, filepaths: List[Path], add_timestamp=True, tag="run", contract_type=ContractType.TYPE1):
-        self.filepaths = filepaths
-        self.contract_type = contract_type
-        
-        if add_timestamp:
-            timestamp = datetime.strftime(datetime.now(), '%m-%d-%Y-%H:%M:%S')
+    def __init__(self, filepaths: str | List[Path]):
+        if isinstance(filepaths, str):
+            self.filepaths = [Path(RAW_DATA_PATH / (filepaths + '.txt'))]
         else:
-            timestamp = ''
-        
-        # Define result path for this specific experiment
-        
-        if add_timestamp and tag:
-            results_filename = f'{timestamp}_tag:_{tag}_type:_{contract_type.value}'
-        elif add_timestamp:
-            results_filename = f'{timestamp}'
-        elif tag:
-            results_filename = f'{tag}'
-        else:
-            self.results_path = RESULTS_PATH 
+            self.filepaths = filepaths
             
+        self.timestamp = datetime.strftime(datetime.now(), '%m-%d-%Y-%H:%M:%S')
+        self.make_results_path()
+        
+    def make_results_path(self):
+        # Define result path for this specific experiment
+        if len(self.filepaths) == 1:
+            tag = self.filepaths[0].stem
+            contract_type = self.filepaths[0].parent.stem
+        else:
+            tag = f'{len(self.filepaths)}_contracts'
+            
+            # get contract_types
+            contract_types = {filepath.parent.stem for filepath in self.filepaths}
+            if len(contract_types) == 1:
+                contract_type = contract_types.pop()
+            else:
+                contract_type = 'type_mixed'
+                
+        results_filename = f'{self.timestamp}:_{tag}_{contract_type}'
         self.results_path = RESULTS_PATH / results_filename
         self.outliers_path = self.results_path / 'outliers'
         
         # Create the results folders
         self.results_path.mkdir(exist_ok=True, parents=True)
+
     
     def run(self):
         """
@@ -146,10 +163,16 @@ class Experiment:
         n = len(self.filepaths)
         
         for i, filepath in enumerate(self.filepaths):
+            contract_type = filepath.parent.stem
+
             if i % 100 == 0:
                 print(f"Processing {i+1}/{n} ... ")
             try:
-                contract = Contract(filepath.stem, self.contract_type)
+                contract = Contract(os.path.join(contract_type, filepath.stem))
+                    
+                if len(self.filepaths) == 1:
+                    self.contract = contract
+                    
                 contract.extract()
                 
                 self.df_info = pd.concat([self.df_info, contract.info.df])
@@ -158,8 +181,8 @@ class Experiment:
                 self.df_items = pd.concat([self.df_items, contract.items.df])
                 
             except Exception as e:
-                print({ERROR_FILENAME: filepath.stem, ERROR: e})
-                self.df_errors = pd.concat([self.df_errors, pd.DataFrame([{IDENTIFIER: filepath.stem, ERROR: str(e), CONTRACT_TYPE: str(self.contract_type.value)}])])
+                print({CONTRACT_TYPE: contract_type, IDENTIFIER: filepath.stem, ERROR: e})
+                self.df_errors = pd.concat([self.df_errors, pd.DataFrame([{IDENTIFIER: filepath.stem, ERROR: str(e), CONTRACT_TYPE: contract_type}])])
                 
                 self.outliers_path.mkdir(exist_ok=True, parents=True)
                 shutil.copy(filepath, self.outliers_path / filepath.name)

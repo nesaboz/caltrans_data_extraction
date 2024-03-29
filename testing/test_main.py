@@ -3,6 +3,8 @@ import contract_type2
 from pathlib import Path
 import pandas as pd
 import numpy as np
+import pytest
+from constants import ERROR
 
 
 NA_VALUES = [None, "None", '', 'N/A', np.nan, 'nan']
@@ -99,3 +101,16 @@ def test_items2():
     items.extract()
     save_result_to_csv_as_output(items.rows, TEST_DATA_TYPE2 / 'test_items_output.csv')
     assert_against(items.rows, TEST_DATA_TYPE2 / 'test_items_output.csv')
+    
+        
+def test_catch_bad_contract_name():
+    c = contract_type2.Contract('type2/02-1J1704_12603')
+    with pytest.raises(ValueError):
+        c.extract()
+    
+    
+# def test_catch_if_portion_cannot_be_extracted():
+#     c = contract_type2.Contract('<some contract that is missing bids>')
+#     c.extract()
+#     assert c.bids.rows == []
+#     assert c.bids.df[ERROR][0] == 1
