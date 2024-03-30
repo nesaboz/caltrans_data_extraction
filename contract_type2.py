@@ -12,12 +12,11 @@ from datetime import datetime
 import shutil
 from dotenv import load_dotenv
 from enum import Enum
-
+from utils import read_file
 from constants import *
 
 split_pattern = re.compile(r'State of California Department of Transportation')
-parse_filename_pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
-contract_number_regex = re.compile(r"Contract Number:\s*([\w-]+)")
+
 
 BIDS_FIRST_LINE_PATTERN = re.compile(r"^(\d+)\s+(A\))?\s+\$([\d,]+\.\d{2})\s*(\w+)\s*(.+)Phone\s*(\(\d{3}\)\d{3}-\d{4})(.*)?")
 SUBCONTRACTORS_FIRST_LINE_REGEX = r"[^\S\r\n]*(BIDDER\s+ID)\s+(NAME\s+AND\s+ADDRESS)\s+(LICENSE\s+NUMBER)?\s+(DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED)"
@@ -31,52 +30,9 @@ def get_next_line(i, lines):
         i += 1
     return i
                             
-                            
-def parse_filename(filename:str) -> Tuple[str, str]:
-    match = parse_filename_pattern.search(filename)
-    contract_number, tag = match.groups()
-    identifier = f"{contract_number}_{tag}"
-    return contract_number, tag, identifier
-    
-    
-def read_file(filepath: str):
-    # must use this encoding to avoid errors
-    with open(filepath, 'r', encoding='ISO-8859-1') as file:
-        return file.read()
 
 
-def split_contract(identifier, file_contents, tag) -> List[Tuple[str, str]]:
-    """
-    Uses phrase in the header to split the contract into multiple partial_texts, then saves those into separate files where new 
-    name is the contract_number + tag. If contract_number + tag is non-original, code skips at reports an issue.
-    
-    Returns a list of tuples with new identifier, new_file_contents.
-    """
-    matches = re.finditer(split_pattern, file_contents)
-
-    # Extract and print starting positions
-    positions = [match.start() for match in matches] + [None]
-
-    splits = []
-    new_identifiers = []
-    for i in range(len(positions) - 1):
-        new_file_contents = '\n\n\n' + file_contents[positions[i]:positions[i+1]]  # add some newlines at the beginning
-        # read the contract from the header:
-        match = re.search(contract_number_regex, new_file_contents)
-        
-        new_identifier = match.group(1) + '_' + tag
-        
-        if new_identifier in new_identifiers:
-            print(f"Found duplicate new identifier when parsing: {identifier}")
-            continue
-        
-        new_identifiers.append(new_identifier)
-        splits.append((new_identifier, new_file_contents))
-
-    return splits
-
-
-class Contract:
+class Contract2:
     def __init__(self, relative_filepath: str) -> None:
         """
         Relative_filepath, for example: 'type1/<identifier>.txt' or 'type2/<identifier>.txt'
@@ -90,10 +46,10 @@ class Contract:
         _, self.tag = self.identifier.split('_')
         self._file_contents = read_file(self.filepath)
         
-        self.info = Info(self.file_contents, self.identifier)
-        self.bids = Bids(self.file_contents, self.identifier)
-        self.subcontractors = Subcontractors(self.file_contents, self.identifier)
-        self.items = Items(self.file_contents, self.identifier)
+        self.info = Info2(self.file_contents, self.identifier)
+        self.bids = Bids2(self.file_contents, self.identifier)
+        self.subcontractors = Subcontractors2(self.file_contents, self.identifier)
+        self.items = Items2(self.file_contents, self.identifier)
     
     def extract(self):
         self.info.extract()
@@ -115,7 +71,7 @@ class Contract:
             )
 
 
-class ContractPortionBase(object):
+class ContractPortionBase2(object):
     def __init__(self, file_contents, identifier) -> None:
         self.file_contents = file_contents
         self.identifier = identifier
@@ -171,7 +127,7 @@ class ContractPortionBase(object):
         raise NotImplementedError
 
 
-class Info(ContractPortionBase):
+class Info2(ContractPortionBase2):
     
     COLUMNS = [IDENTIFIER, POSTPONED_CONTRACT, NUMBER_OF_BIDDERS, BID_OPENING_DATE, 
                CONTRACT_DATE, CONTRACT_NUMBER, TOTAL_NUMBER_OF_WORKING_DAYS, CONTRACT_ITEMS, 
@@ -181,10 +137,6 @@ class Info(ContractPortionBase):
     # narrow from the beginning of the file to the first occurrence of BID RANK or POSTPONED CONTRACT
     NARROW_REGEX = r'(?s)(^.*?(?:Bid Rank|Postponed Contract))'  # TODO find postponed contract in the example file
     
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.postponed_contract = False
-        
     @staticmethod
     def _parse(text: str, identifier: str):
         
@@ -220,10 +172,11 @@ class Info(ContractPortionBase):
         return processed_lines
 
 
-class Bids(ContractPortionBase):
+class Bids2(ContractPortionBase2):
     
     NARROW_REGEX = r"(?s)Bid\s+Rank\s+Bid\s+Total\s+Bidder\s+Id\s+Bidder\s+Information\s+\(Name\/Address\/Location\)(.*?)(?=Contract\s+Proposal\s+of\s+Low\s+Bidder)"
     
+
     COLUMNS = [IDENTIFIER, BID_RANK, A_PLUS_B_INDICATOR, BID_TOTAL, BIDDER_ID, 
                BIDDER_NAME, BIDDER_PHONE, EXTRA, CSLB_NUMBER, HAS_THIRD_ROW, CONTRACT_NOTES, ERROR]
     
@@ -297,7 +250,7 @@ class Bids(ContractPortionBase):
         return processed_lines
 
 
-class Subcontractors(ContractPortionBase):
+class Subcontractors2(ContractPortionBase2):
     
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER, ERROR]
     
@@ -386,7 +339,7 @@ class Subcontractors(ContractPortionBase):
             return []
 
 
-class Items(ContractPortionBase):
+class Items2(ContractPortionBase2):
     
     COLUMNS = [ITEM_NUMBER, ITEM_FLAG, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT, ERROR]
     
@@ -446,3 +399,4 @@ class Items(ContractPortionBase):
         if row:
             processed_lines.append(row)  
         return processed_lines
+    

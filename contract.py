@@ -12,29 +12,17 @@ from datetime import datetime
 import shutil
 from dotenv import load_dotenv
 from enum import Enum
-
+from utils import read_file
 from constants import *
 
 split_pattern = re.compile(r'[^\n]*STATE OF CALIFORNIA\s+B I D   S U M M A R Y\s+DEPARTMENT OF TRANSPORTATION')
-parse_filename_pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
 contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
 
 BIDS_FIRST_LINE_PATTERN = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\d+)\s+(.+)(\d{3} \d{3}-\d{4})(.*)?")
 SUBCONTRACTORS_FIRST_LINE_REGEX = r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
-ITEMS_FIRST_LINE_REGEX = re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
 
 
-def parse_filename(filename:str) -> Tuple[str, str]:
-    match = parse_filename_pattern.search(filename)
-    contract_number, tag = match.groups()
-    identifier = f"{contract_number}_{tag}"
-    return contract_number, tag, identifier
-    
-    
-def read_file(filepath: str):
-    # must use this encoding to avoid errors
-    with open(filepath, 'r', encoding='ISO-8859-1') as file:
-        return file.read()
+                            
 
 
 def split_contract(identifier, file_contents, tag) -> List[Tuple[str, str]]:
@@ -69,15 +57,16 @@ def split_contract(identifier, file_contents, tag) -> List[Tuple[str, str]]:
 
 
 class Contract:
-    def __init__(self, filepath_or_identifier: Path | str, contract_type = ContractType.TYPE1) -> None:
-        if isinstance(filepath_or_identifier, str):
-            identifier = filepath_or_identifier
-            filepath = contract_type_paths[contract_type.name] / (identifier + '.txt')
-        else:
-            filepath = filepath_or_identifier
+    def __init__(self, relative_filepath: str) -> None:
+        """
+        Relative_filepath, for example: 'type1/<identifier>.txt' or 'type2/<identifier>.txt'
+        """
+        self.contract_type, filename = os.path.split(relative_filepath)
+        if '.txt' in filename:
+            filename = filename.replace('.txt', '')
         
-        self.filepath = filepath
-        self.identifier = filepath.stem
+        self.filepath = RAW_DATA_PATH / self.contract_type / (filename + '.txt')
+        self.identifier = self.filepath.stem
         _, self.tag = self.identifier.split('_')
         self._file_contents = read_file(self.filepath)
         
@@ -88,9 +77,12 @@ class Contract:
     
     def extract(self):
         self.info.extract()
-        self.bids.extract()
-        self.subcontractors.extract()
-        self.items.extract()
+        if not self.info.rows:
+            raise ValueError(f"Failed to extract basic info for {os.path.join(self.contract_type, self.identifier)}")
+        elif int(self.info.rows[0][POSTPONED_CONTRACT]) == 0:
+            self.bids.extract()
+            self.subcontractors.extract()
+            self.items.extract()
         
     @property
     def file_contents(self):
@@ -101,6 +93,7 @@ class Contract:
             str(self.filepath), 
             to_folder / f'{self.filename}.txt'
             )
+
 
 class ContractPortionBase(object):
     def __init__(self, file_contents, identifier) -> None:
@@ -134,12 +127,21 @@ class ContractPortionBase(object):
         for match in matches:
             rows = self._parse(match, self.identifier)
             processed_lines.extend(rows)
-    
+                
         self.rows = processed_lines
         self._df = pd.DataFrame(self.rows)
         
-        if self.rows and 'postprocess' in self.__class__.__dict__:  # this checks if postprocess is implemented in the class
+        if self._df.empty:
+            d = {x: '' for x in self.COLUMNS}
+            d[IDENTIFIER] = self.identifier
+            d[ERROR] = 1
+            self._df = pd.DataFrame([d])
+            # or raise an error:
+            # raise ValueError(f"Failed to extracted info for {self.__class__.__name__} from {self.identifier}")
+        
+        if 'postprocess' in self.__class__.__dict__:  # this checks if postprocess is implemented in the class
             self._df = self.postprocess(self._df)
+            
 
     @staticmethod
     def postprocess(df):
@@ -154,7 +156,7 @@ class Info(ContractPortionBase):
     COLUMNS = [IDENTIFIER, POSTPONED_CONTRACT, NUMBER_OF_BIDDERS, BID_OPENING_DATE, 
                CONTRACT_DATE, CONTRACT_NUMBER, TOTAL_NUMBER_OF_WORKING_DAYS, CONTRACT_ITEMS, 
                CONTRACT_DESCRIPTION, PERCENT_OVER_EST, PERCENT_UNDER_EST, ENGINEERS_EST, 
-               AMOUNT_OVER, AMOUNT_UNDER, CONTRACT_CODE]
+               AMOUNT_OVER, AMOUNT_UNDER, CONTRACT_CODE, ERROR]
         
     # narrow from the beginning of the file to the first occurrence of BID RANK or POSTPONED CONTRACT
     NARROW_REGEX = r'(?s)(^.*?(?:BID RANK|POSTPONED CONTRACT))'
@@ -175,7 +177,8 @@ class Info(ContractPortionBase):
         
         row = defaultdict(str)
         row[IDENTIFIER] = identifier
-        row[POSTPONED_CONTRACT] = int(bool(_extract(r"POSTPONED CONTRACT")))
+        a = _extract(r"(POSTPONED CONTRACT)")
+        row[POSTPONED_CONTRACT] = int(bool(a))
         row[BID_OPENING_DATE], row[CONTRACT_DATE] = _extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
         row[CONTRACT_NUMBER] = _extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
         if row[CONTRACT_NUMBER] != identifier[:len(row[CONTRACT_NUMBER])]:
@@ -197,6 +200,9 @@ class Info(ContractPortionBase):
 class Bids(ContractPortionBase):
     
     NARROW_REGEX = r"(?s)BID RANK\s+BID TOTAL\s+BIDDER ID\s+BIDDER INFORMATION\s+\(NAME\/ADDRESS\/LOCATION\)(.*?)(?=L I S T   O F   S U B C O N T R A C T O R S)"
+    
+    COLUMNS = [IDENTIFIER, BID_RANK, A_PLUS_B_INDICATOR, BID_TOTAL, BIDDER_ID, 
+               BIDDER_NAME, BIDDER_PHONE, EXTRA, CSLB_NUMBER, HAS_THIRD_ROW, CONTRACT_NOTES, ERROR]
     
     @staticmethod
     def _parse(text, identifier):
@@ -270,12 +276,15 @@ class Bids(ContractPortionBase):
 
 class Subcontractors(ContractPortionBase):
     
-    COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER]
+    COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER, ERROR]
     
     NARROW_REGEX = r"(?sm)^([^\S\r\n]*BIDDER ID\s+NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)(.*?)(?=[^\S\r\n]*BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED\s+ON\s+NEXT\s+PAGE)"
     
     @staticmethod
     def _parse(header_and_text, identifier):
+        """
+        This is different then other _parse methods (in other classes), as far as we store header and text and not just text. We use header then to extract the column start positions.
+        """
         
         header, text = header_and_text
         r = re.match(SUBCONTRACTORS_FIRST_LINE_REGEX, header)
@@ -325,7 +334,7 @@ class Subcontractors(ContractPortionBase):
     @staticmethod
     def postprocess(df):
         # fill gaps in BIDDER_ID
-        df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
+        df[BIDDER_ID] = df[BIDDER_ID].replace('', str(np.nan))
         df[BIDDER_ID] = df[BIDDER_ID].ffill()
         return df
     
@@ -360,7 +369,7 @@ class Subcontractors(ContractPortionBase):
 
 class Items(ContractPortionBase):
     
-    COLUMNS = [ITEM_NUMBER, ITEM_FLAG, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT]
+    COLUMNS = [ITEM_NUMBER, ITEM_FLAG, ITEM_CODE, ITEM_DESCRIPTION, EXTRA2, ITEM_DOLLAR_AMOUNT, ERROR]
     
     NARROW_REGEX = r"(?s)C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R(.*?)(?=C O N T R A C T   P R O P O S A L   O F   L O W   B I D D E R|\f|CONTINUED ON NEXT PAGE)"
     
@@ -369,7 +378,7 @@ class Items(ContractPortionBase):
         """
         Parses a table from a text line by line.
         """
-        pattern = ITEMS_FIRST_LINE_REGEX
+        
         lines = text.split('\n')
         
         i = 0
@@ -380,7 +389,8 @@ class Items(ContractPortionBase):
         first_line = False
         while i < n:
             line = lines[i]
-            match = re.match(pattern, line)
+            match = re.match(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})(.*)\s+([\d,]+\.\d{2})', line)
+            # re.compile(r'^\s+(\d+)\s+(?:\((F|SF|S)\))?\s*(\d+)\s+(.{45})\s+(.*)\s+([\d,]+\.\d{2})')
             if match:
                 # this mean we hit the first line, lets parse it and save it
                 # but first we need to save any previous line to precessed_lines
@@ -393,16 +403,16 @@ class Items(ContractPortionBase):
                 row[ITEM_FLAG] = match.group(2)
                 row[ITEM_CODE] = match.group(3)
                 row[ITEM_DESCRIPTION] = match.group(4).strip()
-                row[EXTRA2] = match.group(5)
+
                 row[ITEM_DOLLAR_AMOUNT] = match.group(6)
                 first_line = True
             elif row and first_line:
                 # this means we have a second line, let's append it to the ITEM_DESCRIPTION
                 row[ITEM_DESCRIPTION] += line.strip()
                 first_line = False
-            i += 1  
+            i += 1
         
-        # save last line
+        # save the last line
         if row:
             processed_lines.append(row)  
         return processed_lines

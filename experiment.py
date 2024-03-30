@@ -11,7 +11,11 @@ import pandas as pd
 from enum import Enum
 from typing import List, Tuple
 
-from contract_type2 import Contract, parse_filename, split_contract, read_file
+from contract import Contract
+
+from utils import parse_filename, read_file
+from contract import Contract, split_contract
+from contract_type2 import Contract2
 
 
 def sort_contracts():
@@ -99,7 +103,7 @@ def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
     return df, df['Contract_Type'].to_dict()
 
 
-def get_contract_filepaths(contract_type, num_contracts=None, seed=42):
+def get_contract_filepaths(contract_type: ContractType, num_contracts=None, seed=42):
     df_contract_types, _ = get_contract_types()
     files = list(df_contract_types[df_contract_types[CONTRACT_TYPE] == contract_type.value][RELATIVE_PATH].values)
     if seed:
@@ -168,7 +172,12 @@ class Experiment:
             if i % 100 == 0:
                 print(f"Processing {i+1}/{n} ... ")
             try:
-                contract = Contract(os.path.join(contract_type, filepath.stem))
+                if contract_type == 'type1':
+                    contract = Contract(os.path.join(contract_type, filepath.stem))
+                elif contract_type == 'type2':
+                    contract = Contract2(os.path.join(contract_type, filepath.stem))
+                else:
+                    raise ValueError(f"Unknown contract type: {contract_type}")
                     
                 if len(self.filepaths) == 1:
                     self.contract = contract
