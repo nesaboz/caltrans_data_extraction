@@ -80,9 +80,13 @@ class Contract:
         
     def extract(self):
         self.info.extract()
+        
         if not self.info.rows:
             raise ValueError(f"Failed to extract basic info for {os.path.join(self.contract_type, self.identifier)}")
-        elif int(self.info.rows[0][POSTPONED_CONTRACT]) == 0:
+        
+        self.postponed = int(self.info.rows[0][POSTPONED_CONTRACT])
+        
+        if self.postponed == 0:
             self.bids.extract()
             self.subcontractors.extract()
             self.items.extract()

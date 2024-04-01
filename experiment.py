@@ -164,11 +164,11 @@ class Experiment:
         """
         
         # there is some overhead when appending to a DataFrame rather then creating a list and then converting to DataFrame, the only reason I don't annoying part is ffill 
-        self.df_info = pd.DataFrame()
-        self.df_bids = pd.DataFrame()
-        self.df_subcontractors = pd.DataFrame()
-        self.df_items = pd.DataFrame()
-        self.df_errors = pd.DataFrame()
+        self.info = []
+        self.bids = []
+        self.subcontractors = []
+        self.items = []
+        self.errors = []
         
         n = len(self.filepaths)
         
@@ -185,32 +185,34 @@ class Experiment:
                     
                 contract.extract()
                 
-                self.df_info = pd.concat([self.df_info, contract.info.df])
-                self.df_bids = pd.concat([self.df_bids, contract.bids.df])
-                self.df_subcontractors = pd.concat([self.df_subcontractors, contract.subcontractors.df])
-                self.df_items = pd.concat([self.df_items, contract.items.df])
+                self.info.extend(contract.info.rows)
+                if not contract.postponed: 
+                    self.subcontractors.extend(contract.subcontractors.rows)
+                    self.bids.extend(contract.bids.rows)
+                    self.items.extend(contract.items.rows)
                 
             except Exception as e:
                 print({CONTRACT_TYPE: contract_type, IDENTIFIER: filepath.stem, ERROR: e})
-                self.df_errors = pd.concat([self.df_errors, pd.DataFrame([{IDENTIFIER: filepath.stem, ERROR: str(e), CONTRACT_TYPE: contract_type}])])
-                
+                self.errors.append([{IDENTIFIER: filepath.stem, ERROR: str(e), CONTRACT_TYPE: contract_type}])
                 self.outliers_path.mkdir(exist_ok=True, parents=True)
                 shutil.copy(filepath, self.outliers_path / filepath.name)
+                
         print(f"Done processing {n} files.")
         
         self.write_to_disk()
                 
     # def write_to_disk(self, df: pd.DataFrame | List, name: str):
     def write_to_disk(self):
-        print("Writing to disk ...")
+        print("Writing to disk, please wait ...")
         
         # Create a Pandas Excel writer using openpyxl as the engine
         with pd.ExcelWriter(self.results_path / 'results.xlsx', engine='openpyxl') as writer:
-            for obj, name in zip((self.df_info, self.df_bids, self.df_subcontractors, self.df_items, self.df_errors), ('Info', 'Bids', 'Subcontractors', 'Items', 'Errors')):
+            for obj, name in zip((self.info, self.bids, self.subcontractors, self.items, self.errors), ('Info', 'Bids', 'Subcontractors', 'Items', 'Errors')):
+                obj = pd.DataFrame(obj)
                 if obj.empty:
                     continue
                 # Write the DataFrame to a new sheet in the Excel file using the file name as the sheet name
                 obj.to_csv(self.results_path / f'{name}.csv', index=False)
                 obj.to_excel(writer, sheet_name=name, index=False)
-                
+                print(f'Wrote {name}.')
         print(f"Saved data to: {self.results_path}.")
