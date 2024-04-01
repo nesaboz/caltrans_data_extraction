@@ -208,11 +208,11 @@ class Experiment:
         # Create a Pandas Excel writer using openpyxl as the engine
         with pd.ExcelWriter(self.results_path / 'results.xlsx', engine='openpyxl') as writer:
             for obj, name in zip((self.info, self.bids, self.subcontractors, self.items, self.errors), ('Info', 'Bids', 'Subcontractors', 'Items', 'Errors')):
+                print(f'Writing {name} ...')
                 obj = pd.DataFrame(obj)
                 if obj.empty:
                     continue
                 # Write the DataFrame to a new sheet in the Excel file using the file name as the sheet name
                 obj.to_csv(self.results_path / f'{name}.csv', index=False)
                 obj.to_excel(writer, sheet_name=name, index=False)
-                print(f'Wrote {name}.')
         print(f"Saved data to: {self.results_path}.")
