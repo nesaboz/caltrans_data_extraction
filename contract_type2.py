@@ -40,6 +40,9 @@ class Contract2:
         self.contract_type, filename = os.path.split(relative_filepath)
         if '.txt' in filename:
             filename = filename.replace('.txt', '')
+            
+        if self.contract_type != 'type2':
+            raise TypeError(f"Use Contract2 for type2")
         
         self.filepath = RAW_DATA_PATH / self.contract_type / (filename + '.txt')
         self.identifier = self.filepath.stem
