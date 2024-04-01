@@ -1,10 +1,10 @@
 # Data Extraction from Contracts
 
 We extract data from 11'000 PDF contracts available publicly for the purposes of research project. Considering well structured and high quality text, extraction was done using regex library in Python. 
+I relied heavily on [regex101.com](https://regex101.com) as a useful tool for quick prototyping and testing.
 
 ![sample contract snapshot](assets/sample.png)
 
-See actual contract in `sample` folder. 
 
 ## Quick install
 

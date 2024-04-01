@@ -1,6 +1,5 @@
-from typing import Dict
 import random
-from constants import *
+from typing import List, Tuple, Dict
 import shutil
 from collections import defaultdict
 from datetime import datetime
@@ -8,14 +7,17 @@ from pathlib import Path
 import re
 from tqdm import tqdm
 import pandas as pd
-from enum import Enum
-from typing import List, Tuple
 
-from contract import Contract
+from constants import *
+from contract import Contract, split_contract, read_file
 
-from utils import parse_filename, read_file
-from contract import Contract, split_contract
-from contract_type2 import Contract2
+
+def parse_filename(filename:str) -> Tuple[str, str]:
+    parse_filename_pattern = re.compile(r"^(\d{2}-\w+)\.pdf_(\d+)$", re.IGNORECASE)  # IGNORECASE is critical since names might have both PDF and pdf
+    match = parse_filename_pattern.search(filename)
+    contract_number, tag = match.groups()
+    identifier = f"{contract_number}_{tag}"
+    return contract_number, tag, identifier
 
 
 def sort_contracts():
@@ -172,15 +174,8 @@ class Experiment:
             if i % 100 == 0:
                 print(f"Processing {i+1}/{n} ... ")
             try:
-                if contract_type == 'type1':
-                    contract = Contract(os.path.join(contract_type, filepath.stem))
-                elif contract_type == 'type2':
-                    contract = Contract2(os.path.join(contract_type, filepath.stem))
-                elif contract_type == 'type3':
-                    contract = Contract(os.path.join(contract_type, filepath.stem))
-                else:
-                    raise ValueError(f"Unknown contract type: {contract_type}")
-                    
+                contract = Contract(os.path.join(contract_type, filepath.stem))
+                
                 if len(self.filepaths) == 1:
                     self.contract = contract
                     
