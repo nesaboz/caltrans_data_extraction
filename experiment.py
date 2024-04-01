@@ -99,13 +99,18 @@ def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
     """Use as:
     d = get_contract_types()
     d['01-1234.pdf_1']  # return 1 or 2
+    
+    Note: The idea was is to have this dictionary for quick look up but I rarely use it as such.
     """
     df = pd.read_csv('data/contract_types.csv')
     df.set_index('Filename', inplace=True)
     return df, df['Contract_Type'].to_dict()
 
 
-def get_contract_filepaths(contract_type: ContractType, num_contracts=None, seed=42):
+def get_contract_filepaths(contract_type: ContractType, num_contracts=None, seed=42) -> List[Path]:
+    """
+    Gets num_contracts contracts of a specific type from folder. In theory, one can encode contract type into identifier, so this method could be eliminated.
+    """
     df_contract_types, _ = get_contract_types()
     files = list(df_contract_types[df_contract_types[CONTRACT_TYPE] == contract_type.value][RELATIVE_PATH].values)
     if seed:
@@ -118,9 +123,8 @@ def get_contract_filepaths(contract_type: ContractType, num_contracts=None, seed
 
 class Experiment:
     """
-    Run extraction on many contracts provided in filepaths.
-    
-    The results folder will be determined automatically.
+    Run extraction on contracts provided in filepaths.
+    The results will be saved in a folder results using timestamp.
     """
     
     def __init__(self, filepaths: str | List[Path]):
@@ -154,12 +158,12 @@ class Experiment:
         # Create the results folders
         self.results_path.mkdir(exist_ok=True, parents=True)
 
-    
     def run(self):
         """
         Run a batch or a single file (by making `files` a single element list).
         """
         
+        # there is some overhead when appending to a DataFrame rather then creating a list and then converting to DataFrame, the only reason I don't annoying part is ffill 
         self.df_info = pd.DataFrame()
         self.df_bids = pd.DataFrame()
         self.df_subcontractors = pd.DataFrame()

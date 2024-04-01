@@ -61,7 +61,6 @@ def test_subcontractors_type1():
     raw = read_test_file('subcontractors', 1)
     sc = Subcontractors(raw, "test")
     sc.extract()
-
     assert compare(sc.df, 'subcontractors', 1)
 
 

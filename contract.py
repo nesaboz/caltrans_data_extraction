@@ -11,7 +11,7 @@ from constants import *
 
 
 def read_file(filepath: str):
-    # must use this encoding to avoid errors
+    # must use the ISO-8859-1 encoding to avoid errors
     with open(filepath, 'r', encoding='ISO-8859-1') as file:
         return file.read()
 
@@ -130,8 +130,9 @@ class ContractPortionBase(object):
         for match in matches:
             rows = self._parse(match, self.identifier)
             processed_lines.extend(rows)
-                
+        
         self.rows = processed_lines
+        
         self._df = pd.DataFrame(self.rows)
         
         if self._df.empty:
@@ -141,17 +142,6 @@ class ContractPortionBase(object):
             self._df = pd.DataFrame([d])
             # or raise an error:
             # raise ValueError(f"Failed to extracted info for {self.__class__.__name__} from {self.identifier}")
-        
-        if 'postprocess' in self.__class__.__dict__:  # this checks if postprocess is implemented in the class
-            self._df = self.postprocess(self._df)
-            
-
-    @staticmethod
-    def postprocess(df):
-        """
-        Optional postprocessing of extracted DataFrame.
-        """
-        raise NotImplementedError
 
 
 class Info(ContractPortionBase):
@@ -297,6 +287,7 @@ class Subcontractors(ContractPortionBase):
         delta = r.start(4) - r.start(2)
         i = 0
         processed_lines = []
+        previous_bidder_id = None
         while i < len(lines) - 1:
             line = lines[i]
             match = re.match(rf"^\s+(\d+)?\s+(.{{{delta}}})\s+(.+)$", line)
@@ -305,6 +296,11 @@ class Subcontractors(ContractPortionBase):
                 row[IDENTIFIER] = identifier
                 
                 row[BIDDER_ID] = line[r.start(1):r.end(1)].strip()
+                if row[BIDDER_ID] == '':
+                    row[BIDDER_ID] = previous_bidder_id
+                else:
+                    previous_bidder_id = row[BIDDER_ID]
+                                        
                 row[SUBCONTRACTOR_NAME] = line[r.start(2):r.start(4)].strip()
                 row[SUBCONTRACTED_LINE_ITEM] = line[r.start(4):].strip()
                 
@@ -335,12 +331,6 @@ class Subcontractors(ContractPortionBase):
         
         return processed_lines
 
-    @staticmethod
-    def postprocess(df):
-        # fill gaps in BIDDER_ID
-        df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
-        df[BIDDER_ID] = df[BIDDER_ID].ffill()
-        return df
     
     def _expand_ranges_in_subcontracted_line_item(self, line: str) -> str:
         """
@@ -614,13 +604,6 @@ class Subcontractors2(ContractPortionBase):
             i += 1
         
         return processed_lines
-
-    @staticmethod
-    def postprocess(df):
-        # fill gaps in BIDDER_ID
-        df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
-        df[BIDDER_ID] = df[BIDDER_ID].ffill()
-        return df
     
     def _expand_ranges_in_subcontracted_line_item(self, line: str) -> str:
         """
