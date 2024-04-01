@@ -22,13 +22,9 @@ BIDS_FIRST_LINE_PATTERN = re.compile(r"^\s+(\d+)\s+(A\))?\s+([\d,]+\.\d{2})\s+(\
 SUBCONTRACTORS_FIRST_LINE_REGEX = r"(?s)\s*(BIDDER ID)\s+(NAME AND ADDRESS)\s+(LICENSE NUMBER)?\s+(DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)"
 
 
-                            
-
-
 def split_contract(identifier, file_contents, tag) -> List[Tuple[str, str]]:
     """
-    Uses phrase in the header to split the contract into multiple partial_texts, then saves those into separate files where new 
-    name is the contract_number + tag. If contract_number + tag is non-original, code skips at reports an issue.
+    Uses phrase in the header to split the contract into multiple partial_texts. If contract_number + tag is non-original, code skips at reports an issue.
     
     Returns a list of tuples with new identifier, new_file_contents.
     """
@@ -334,7 +330,7 @@ class Subcontractors(ContractPortionBase):
     @staticmethod
     def postprocess(df):
         # fill gaps in BIDDER_ID
-        df[BIDDER_ID] = df[BIDDER_ID].replace('', str(np.nan))
+        df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
         df[BIDDER_ID] = df[BIDDER_ID].ffill()
         return df
     

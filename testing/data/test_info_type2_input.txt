@@ -1,3 +1,36 @@
+
+                                                    State of California Department of Transportation
+
+                                                                      Bid Summary
+
+Bid Opening Date: 08/24/2022                                                                                                                       Page 1
+
+Contract Number:    01-4H5814                                                                                                                08/24/2022
+
+Project ID:         0320000240           SACRAMENTO COUNTY IN AND NEAR SACRAMENTO FROM 0.5                        Contract Code:        A
+
+                                         MILE SOUTH OF ARENA BOULEVARD OVERCROSSING TO 0.4 MILE
+
+                                         SOUTH OF 99/5 INTERCHANGE AND FROM 0.5 MILE NORTH OF THE
+
+                                         99/5 INTERCHANGE TO 0.4 MILE SOUTH OF THE YOLO COUNTY
+
+                                         LINE
+
+Location: 03-Sac-5-27.6/29.5, 30.4/34.3  Roadway excavation, place CL2 AB, HMA & RHMA, & modify ramp              Number of Items:      181
+
+                                         meters.
+
+DBE - 27.0%                                                                                                       Federal Aid #1: ACIM-0056(360)E
+
+Proposals Issued:   6          Total Number of Working Days:  145     Overrun/Underrun:               734,512.25
+
+Number of Bidders:  6          Engineers Est:          27,952,173.75  % Over/Under Est:               2.63%
+
+Bid Rank            Bid Total            Bidder Id     Bidder Information (Name/Address/Location)
+
+
+
                                              State of California Department of Transportation
 
                                                                   Bid Summary
@@ -19,4 +52,27 @@ Proposals Issued:   4          Total Number of Working Days:  45    Overrun/Unde
 Number of Bidders:  4          Engineers Est:     1,100,513.75      % Over/Under Est:            86.28%
 
 Bid Rank            Bid Total       Bidder Id     Bidder Information (Name/Address/Location)
+
+
+                                                State of California Department of Transportation
+
+                                                                   Bid Summary
+
+Bid Opening Date: 12/01/2022                                                                                                          Page 1
+
+Contract Number:    01-0H1914                                                                                                         12/01/2022
+
+Project ID:         0117000211       HUMBOLDT COUNTY NEAR WEITCHPEC FROM 0.6 MILE TO 0.2                    Contract Code:        B
+
+                                     MILE WEST OF BLUFF CREEK ROAD
+
+Location: 01-Hum-96-27.0/27.4        Drill ground anchor holes, place soldier piles, and excavate roadway.  Number of Items:      81
+
+DBE - 22.0%                                                                                                 Federal Aid #1: ACST-ER-31S4(004)E
+
+Proposals Issued:   12         Total Number of Working Days:  110  Overrun/Underrun:  -687,097.50
+
+Number of Bidders:  6          Engineers Est:      5,998,650.00    % Over/Under Est:              -11.45%
+
+Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Address/Location)
 

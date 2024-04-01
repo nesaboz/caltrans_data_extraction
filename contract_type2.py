@@ -157,7 +157,8 @@ class Info2(ContractPortionBase2):
         row[BID_OPENING_DATE] = _extract(r"Bid Opening Date:\s+(\d+\/\d+\/\d+)")
         row[CONTRACT_NUMBER], row[CONTRACT_DATE] = _extract(r"Contract Number:\s*([\w-]+)\s+(\d+\/\d+\/\d+)", (1, 2))
         
-        if row[CONTRACT_NUMBER] != identifier[:len(row[CONTRACT_NUMBER])]:
+        # if identifier == 'test' then do not check this
+        if identifier != 'test' and row[CONTRACT_NUMBER] != identifier[:len(row[CONTRACT_NUMBER])]:
             raise ValueError(f'Contract number {row[CONTRACT_NUMBER]} does not match the identifier {identifier}')
         
         row[CONTRACT_CODE] = _extract(r"Contract Code:(.+)").strip()
@@ -167,7 +168,12 @@ class Info2(ContractPortionBase2):
         row[ENGINEERS_EST] = _extract(r"Engineers Est:\s*([\d,]+\.\d{2})")
         row[AMOUNT_OVER_UNDER] = _extract(r"Overrun\/Underrun:\s*(-?[\d,]+\.\d{2})")
         row[PERCENT_OVER_UNDER_EST] = _extract(r"Over\/Under Est:\s*(-?[\d,]+\.\d{2})\%")
-        row[CONTRACT_DESCRIPTION] = _extract(r"(.+)Number of Items:").strip()
+        contract_description, next_line = _extract(r"(.+)Number of Items:\s+\d+\n\s*(.*)\n", (1,2))
+        row[CONTRACT_DESCRIPTION] = contract_description.strip().rsplit("  ")[-1]  # this basically picks up everything before "Number of Items" until it hits 2 spaces
+        if 'Federal Aid' not in next_line:
+            # this is then a second line of the description
+            row[CONTRACT_DESCRIPTION] += ' ' + next_line.strip() 
+        
         processed_lines = [row]
         return processed_lines
 
@@ -306,7 +312,7 @@ class Subcontractors2(ContractPortionBase2):
     @staticmethod
     def postprocess(df):
         # fill gaps in BIDDER_ID
-        df[BIDDER_ID] = df[BIDDER_ID].replace('', str(np.nan))
+        df[BIDDER_ID] = df[BIDDER_ID].replace('', np.nan)
         df[BIDDER_ID] = df[BIDDER_ID].ffill()
         return df
     

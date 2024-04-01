@@ -176,6 +176,8 @@ class Experiment:
                     contract = Contract(os.path.join(contract_type, filepath.stem))
                 elif contract_type == 'type2':
                     contract = Contract2(os.path.join(contract_type, filepath.stem))
+                elif contract_type == 'type3':
+                    contract = Contract(os.path.join(contract_type, filepath.stem))
                 else:
                     raise ValueError(f"Unknown contract type: {contract_type}")
                     
