@@ -1,4 +1,3 @@
-from enum import Enum
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -63,20 +62,23 @@ WRONG_INDENTATION = "Wrong_Indentation"
 
 ERROR_FILENAME = "Error_Filename"
 ERROR = "Error"
-    
-load_dotenv()
-RAW_DATA_PATH = Path(os.getenv('RAW_DATA_PATH'))
-if not RAW_DATA_PATH.exists():
-    raise ValueError('Make sure to set a path to raw data in the .env file or copy data into root of the repo')
 
-LINEPRINTER_LABEL = 'lineprinter'
-TABLE_LABEL = 'table'
-DOC = 'doc'
 
-RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_LABEL
-RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_LABEL
-RAW_DATA_PATH_DOC = RAW_DATA_PATH / DOC
+# Check if the code is running in GitHub Actions
+if os.environ.get('GITHUB_ACTIONS') != 'true':
+    # This code block will only execute locally
+    load_dotenv()
+    RAW_DATA_PATH = Path(os.getenv('RAW_DATA_PATH'))
+    if not RAW_DATA_PATH.exists():
+        raise ValueError('Make sure to set a path to raw data in the .env file or copy data into root of the repo')
+    LINEPRINTER_LABEL = 'lineprinter'
+    TABLE_LABEL = 'table'
+    DOC = 'doc'
 
-PROCESSED_DATA_PATH = RAW_DATA_PATH / 'processed'
+    RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_LABEL
+    RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_LABEL
+    RAW_DATA_PATH_DOC = RAW_DATA_PATH / DOC
 
-RESULTS_PATH = Path('results')
+    PROCESSED_DATA_PATH = RAW_DATA_PATH / 'processed'
+
+    RESULTS_PATH = Path('results')
