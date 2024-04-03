@@ -4,7 +4,6 @@ import numpy as np
 import re
 
 from contract import Info, Info2, Bids, Bids2, Subcontractors, Subcontractors2, Items, Items2, Contract, read_file, split_contract
-from constants import RAW_DATA_PATH_DOC
 
 NA_VALUES = [None, "None", '', 'N/A', np.nan, 'nan']
 TEST_DATA = Path('testing/data')
@@ -85,8 +84,7 @@ def test_items_type2():
     
         
 def test_split_contract():
-    f = list(RAW_DATA_PATH_DOC.glob('*3073.txt'))[0]
-    file_contents = read_file(f)
+    file_contents = read_file(TEST_DATA / 'doc_3073.txt')
     a = split_contract(file_contents, '3073')
     assert len(a) == 28
     

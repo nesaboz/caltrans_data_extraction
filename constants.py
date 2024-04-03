@@ -70,7 +70,8 @@ if os.environ.get('GITHUB_ACTIONS') != 'true':
     load_dotenv()
     RAW_DATA_PATH = Path(os.getenv('RAW_DATA_PATH'))
     if not RAW_DATA_PATH.exists():
-        raise ValueError('Make sure to set a path to raw data in the .env file or copy data into root of the repo')
+        raise ValueError('Make sure to set a path to raw data in the .env file.')
+    
     LINEPRINTER_LABEL = 'lineprinter'
     TABLE_LABEL = 'table'
     DOC = 'doc'
