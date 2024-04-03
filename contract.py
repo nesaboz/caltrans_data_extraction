@@ -38,7 +38,6 @@ def split_contract(file_contents, tag) -> dict[str, str]:
         
     return splits
 
-
 class Contract:
     def __init__(self, filename: str) -> None:
         """
@@ -46,7 +45,7 @@ class Contract:
         """
         if '.txt' in filename:
             filename = filename.replace('.txt', '')
-        self.filepath = PROCESSED_PATH / (filename + '.txt')
+        self.filepath = PROCESSED_DATA_PATH / (filename + '.txt')
         
         self.contract_type = filename[0:2]
         self.identifier = filename[3:]
@@ -144,7 +143,7 @@ class Info(ContractPortionBase):
                AMOUNT_OVER, AMOUNT_UNDER, CONTRACT_CODE, ERROR]
         
     # narrow from the beginning of the file to the first occurrence of BID RANK or POSTPONED CONTRACT
-    NARROW_REGEX = r'(?s)(^.*?(?:BID RANK|POSTPONED CONTRACT))'
+    NARROW_REGEX = r'(?s)(^.*?(?:BID RANK|POSTPONED CONTRACT))'     # TODO add |NO BIDDERS|CANCELLED CONTRACT)
     
     @staticmethod
     def _parse(text: str, identifier: str):

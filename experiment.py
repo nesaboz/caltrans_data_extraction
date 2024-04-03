@@ -20,21 +20,21 @@ def parse_filename(filename:str) -> Tuple[str, str]:
     return contract_number, tag, identifier
 
 
-def sort_contracts():
+def check_lineprinter_table_files():
+    filepaths_lineprinter = list(RAW_DATA_PATH_LINEPRINTER.glob('*.txt'))
+    filepaths_table = list(RAW_DATA_PATH_TABLE.glob('*.txt'))
+    assert [x.name for x in filepaths_lineprinter] == [x.name for x in filepaths_table]
+    
+    
+def sort_contracts(filepaths: List[Path], destination_path: Path):
     """
     Goes through all the files and sorts them accordingly into 3 types. Saves contract types and other info to a CSV file.
     """
     
-    filepaths_lineprinter = list(RAW_DATA_PATH_LINEPRINTER.glob('*.txt'))
-    filepaths_table = list(RAW_DATA_PATH_TABLE.glob('*.txt'))
-    assert [x.name for x in filepaths_lineprinter] == [x.name for x in filepaths_table]
-
-    filepaths_doc = list(RAW_DATA_PATH_DOC.glob('*.txt'))
+    print(f'Found {len(filepaths)} files.')
+    print('Starting sort ...')
     
-    print(f'Found {len(filepaths_lineprinter)} files in lineprinter/table folder. ')
-    print(f'Found {len(filepaths_doc)} files in doc folder. Started sorting ...')
-    
-    PROCESSED_PATH.mkdir(exist_ok=True, parents=True)
+    destination_path.mkdir(exist_ok=True, parents=True)
 
     contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
 
@@ -42,8 +42,6 @@ def sort_contracts():
     
     cache = set()
     
-    filepaths = filepaths_lineprinter + filepaths_doc
-
     for filepath in tqdm(filepaths):
         row = defaultdict(str)
         
@@ -57,6 +55,7 @@ def sort_contracts():
         matches = re.findall(contract_number_regex, file_contents)
 
         if len(matches) == 1:
+            # single contract files
             row[IDENTIFIER] = 't1_' + tag
             row[CONTRACT_TYPE] = 1
             if row[IDENTIFIER] in cache:
@@ -66,11 +65,11 @@ def sort_contracts():
             if row[IDENTIFIER].strip() == '':
                 print(f'Empty identifier: {row[IDENTIFIER]}.')
 
-            shutil.copy(filepath.parent / filepath.name, PROCESSED_PATH / (row[IDENTIFIER] + '.txt'))
+            shutil.copy(filepath.parent / filepath.name, destination_path / (row[IDENTIFIER] + '.txt'))
             contract_types.append(row)
             
         elif len(matches) > 1:
-            # here we need to split the file into multiple contracts
+            # these are multiple contract files
             for key, new_file_contents in split_contract(file_contents, tag).items():
                 identifier = 't1_' + key
                 if identifier in cache:
@@ -86,12 +85,13 @@ def sort_contracts():
                 if identifier.strip() == '':
                     print(f'Empty identifier: {row[IDENTIFIER]}.')
  
-                with open(PROCESSED_PATH / (new_row[IDENTIFIER] + '.txt'), 'w') as output_file:
+                with open(destination_path / (new_row[IDENTIFIER] + '.txt'), 'w') as output_file:
                     output_file.write(new_file_contents)
                 
                 contract_types.append(new_row)
         
         elif len(matches) == 0:
+            # these are type2 contracts
             row[IDENTIFIER] = 't2_' + tag
             row[CONTRACT_TYPE] = 2
             
@@ -101,7 +101,7 @@ def sort_contracts():
             
             if row[IDENTIFIER].strip() == '':
                 print(f'Empty identifier: {row[IDENTIFIER]}.')
-            shutil.copy(RAW_DATA_PATH_TABLE / filepath.name, PROCESSED_PATH / (row[IDENTIFIER] + '.txt'))
+            shutil.copy(RAW_DATA_PATH_TABLE / filepath.name, destination_path / (row[IDENTIFIER] + '.txt'))
             contract_types.append(row)
 
 
@@ -109,7 +109,7 @@ def sort_contracts():
     df.set_index('Filename', inplace=True)
     df.to_csv(RAW_DATA_PATH / 'contract_types.csv', index=True)
     
-    print(f'Saved contracts to processed folder')
+    print(f'Saved contracts to {destination_path}.')
     
 
 def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
@@ -135,7 +135,7 @@ def get_contract_filepaths(contract_type: int, num_contracts=None, seed=42) -> L
         random.seed(seed)
     if num_contracts:
         files = random.sample(files, num_contracts)
-    filepaths = [PROCESSED_PATH / (x + '.txt') for x in files]
+    filepaths = [PROCESSED_DATA_PATH / (x + '.txt') for x in files]
     return filepaths
 
 
@@ -147,7 +147,7 @@ class Experiment:
     
     def __init__(self, filepaths: str | List[Path]):
         if isinstance(filepaths, str):
-            self.filepaths = [Path(PROCESSED_PATH / (filepaths + '.txt'))]
+            self.filepaths = [Path(PROCESSED_DATA_PATH / (filepaths + '.txt'))]
         else:
             self.filepaths = filepaths
             
