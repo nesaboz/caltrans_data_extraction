@@ -1,7 +1,6 @@
 from pathlib import Path
 import pandas as pd
 import numpy as np
-import pytest
 import re
 
 from contract import Info, Info2, Bids, Bids2, Subcontractors, Subcontractors2, Items, Items2, Contract, read_file, split_contract
