@@ -1,3 +1,34 @@
+                                                       LIST OF SUBCONTRACTORS
+
+BIDDER ID             NAME AND ADDRESS                       LICENSE NUMBER    DESCRIPTION OF  PORTION  OF  WORK  SUBCONTRACTED
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,    INC.                    ITEM 36 (100%)
+
+                      REDDING CA                       751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,    INC.                    ITEM 37 (100%)
+
+                      REDDING CA                       751931
+
+VC0000003985          M&S ENVIRONMENTAL LANDSCAPES,    INC.                    ITEM 38 (100%)
+
+                      REDDING CA                       751931
+
+
+                                           LIST OF SUBCONTRACTORS
+
+BIDDER ID         NAME AND ADDRESS         LICENSE NUMBER          DESCRIPTION OF PORTION OF WORK SUBCONTRACTED  
+
+VC0000108276      SYNERGY TRAFFIC CONTROL                          PORTABLE RADAR SPEED FEEDBACK SIGN DAY, PCMS
+
+                  ESCONDIDO CA             931953
+
+VC0000108276      SYNERGY TRAFFIC CONTROL                          ALTERNATIVE TEMP CRASH CUSION TL-3, TEMP RADAR
+
+                  ESCONDIDO CA             931953                  SPEED FEEDBACK SIGN SYSTEM, AUTOMATED FLAGGER
+
+                                                                   ASSISTANCE
+
 
                                               LIST OF SUBCONTRACTORS
 
@@ -15,6 +46,7 @@ VC0000022972  T AND S DVBE, INC.                                      ITEM 93 (1
 
               REDDING CA                      983087
 
+                                            LIST OF SUBCONTRACTORS
 
 BIDDER ID      NAME AND ADDRESS              LICENSE NUMBER          DESCRIPTION OF PORTION OF  WORK  SUBCONTRACTED
 

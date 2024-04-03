@@ -15,8 +15,7 @@
                                                                                                                                    Comparison Amount:
 
                                                                                                                                    $1,236,513.00
-
-
+                                                                                                                                   
 1            A)        $1,369,000.00  VC1300004803         KEVIN MACK CONSTRUCTION INC                         Phone  (530)547-3360
 
              B)     95 Days * 3500                         23420 Millville Way                                 CSLB#  471831         SB  PREF CLAIMED
@@ -40,7 +39,6 @@
              B)        0 Days * 3500                       9050 DESCHUTES ROAD                                 CSLB#  623652         CC PREF CLAIMED
 
              A+B)                                          PALO CEDRO CA        96073                          Fax    (530)547-1118
-
 
 
 1            A)     $6,022,880.75    VC0000007021  GR SUNDBERG, INC.                                      Phone  (707)825-6565
@@ -160,3 +158,86 @@
                                                  246 GHILOTTI AVENUE                                          CSLB#  00644515       CC PREF CLAIMED
 
                                                  SANTA ROSA CA         95407                                  Fax    (707)585-1601
+
+
+
+10                 $1,177,860.00  VC1700000455  STURGEON ELECTRIC CALIFORNIA, LLC
+
+                                                13501 BENSON AVE                           CSLB#  01009619       CC PREF CLAIMED
+
+                                                CHINO CA
+
+
+
+Bid Rank            Bid Total        Bidder Id     Bidder Information (Name/Address/Location)
+
+1            A)     $795,759.00      VC0000018386  M.C.M. CONSTRUCTION, INC.                                Phone  (916)334-1221
+
+             B)     100 Days * 3600                6413 32ND STREET                                         CSLB#  00286430       CC PREF CLAIMED
+
+             A+B)   $1,155,759.00                  NORTH HIGHLANDS CA     95660                             Fax    (916)334-0562
+
+2            A)     $815,542.00      VC0000014625  VIKING CONSTRUCTION COMPANY, INC.                        Phone  (916)852-5530
+
+             B)     100 Days * 3600                11315 SUNRISE GOLD CIR STE A                             CSLB#  00745029       CC PREF CLAIMED
+
+             A+B)   $1,175,542.00                  RANCHO CORDOVA CA      95741                             Fax    (916)852-5533
+
+3            A)     $920,456.60      VC0000009886  GOLDEN STATE BRIDGE, INC.                                Phone  (925)372-8000
+
+             B)     100 Days * 3600                3701 MALLARD DRIVE                                       CSLB#  00851187       CC PREF CLAIMED
+
+             A+B)   $1,280,456.60                  BENICIA CA      94510                                    Fax    (925)372-8001
+
+4            A)     $971,607.00      VC0000014878  STEWART ENGINEERING INC.                                 Phone  (530)244-8464
+
+             B)     100 Days * 3600                4839 CATERPILLAR ROAD                                    CSLB#  00796880       SB PREF CLAIMED
+
+             A+B)   $1,331,607.00                  REDDING CA      96003                                    Fax    (530)244-8462  BID IS OVER SB
+
+                                                                                                                                  PREFERENCE
+
+                                                                                                                                  LIMITS
+Bid Opening Date: 08/31/2022                                                                                                Page 2
+
+Contract Number:  03-2H4504                                                                                                 09/13/2022
+
+5  A)             $1,250,309.00    VC1800002280  MYERS & SONS CONSTRUCTION, LLC      Phone  (916)283-9950
+
+   B)             100 Days * 3600                45 MORRIS AVE                       CSLB#  00944155       CC PREF CLAIMED
+
+   A+B)           $1,610,309.00                  Sacramento CA            95838      Fax    (916)614-9520
+
+   A)             $656,024.85      VC1600003601  BRIDGEWAY CIVIL CONSTRUCTORS, INC.  Phone  (707)455-7033
+
+   B)             100 Days * 3600                4950 ALLISON PARKWAY, SUITE A       CSLB#  01011836       CC PREF CLAIMED
+
+   A+B)           $1,016,024.85                  VACAVILLE  CA CA         95688
+
+                                   14 - Failed to Submit DVBE/DBE quotes
+
+
+
+
+Bid Rank            Bid Total       Bidder Id     Bidder Information (Name/Address/Location)
+
+1            A)     $2,198,888.00   VC1800001127  CALIFORNIA HIGHWAY CONSTRUCTION GROUP,                     Phone  (925)766-7014
+
+                                                  INC.
+
+             B)     65 Days * 4800                1647 WILLOW PASS ROAD                                      CSLB#  01027700
+
+             A+B)   $2,510,888.00                 CONCORD CA      94520                                      Fax    (925)265-9101
+
+2            A)     $2,654,037.00   VC0000008623  QUIMU CONTRACTING, INC.                                    Phone  (707)693-0286
+
+             B)     65 Days * 4800                5830 DIXON AVENUE WEST                                     CSLB#  00809085
+
+             A+B)   $2,966,037.00                 Dixon CA    92620                                          Fax    (707)678-8384
+
+3            A)     $2,897,011.00   VC0000019794  TENNYSON ELECTRIC INC.                                     Phone  (925)606-1038
+
+             B)     90 Days * 4800                7275 NATIONAL DR STE A2                                    CSLB#  00717998
+
+             A+B)   $3,329,011.00                 LIVERMORE CA       94550                                   Fax    (925)606-7655
+Bid Opening Date:  09/08/2022                                                                                                   Page 2

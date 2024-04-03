@@ -14,63 +14,51 @@ def read_file(filepath: str):
     # must use the ISO-8859-1 encoding to avoid errors
     with open(filepath, 'r', encoding='ISO-8859-1') as file:
         return file.read()
+    
+    
+def has_more_digits_than_non_digits(s):
+    digit_count = sum(c.isdigit() for c in s)
+    non_digit_count = len(s) - digit_count
+    return digit_count > non_digit_count
 
 
-
-def split_contract(identifier, file_contents, tag) -> List[Tuple[str, str]]:
+def split_contract(file_contents, tag) -> dict[str, str]:
     """
     Uses phrase in the header to split the contract into multiple partial_texts. If contract_number + tag is non-original, code skips at reports an issue.
     
-    Returns a list of tuples with new identifier, new_file_contents.
+    Returns a dict: new identifier: new_file_contents.
     """
     split_pattern = re.compile(r'[^\n]*STATE OF CALIFORNIA\s+B I D   S U M M A R Y\s+DEPARTMENT OF TRANSPORTATION')
-    contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
-
     matches = re.finditer(split_pattern, file_contents)
 
     # Extract and print starting positions
     positions = [match.start() for match in matches] + [None]
 
-    splits = []
-    new_identifiers = []
-    for i in range(len(positions) - 1):
-        new_file_contents = '\n\n\n' + file_contents[positions[i]:positions[i+1]]  # add some newlines at the beginning
-        # read the contract from the header:
-        match = re.search(contract_number_regex, new_file_contents)
+    splits = {tag + '_' + f"{i:02}": '\n\n\n' + file_contents[positions[i]:positions[i+1]] for i in range(len(positions) - 1)}
         
-        new_identifier = match.group(1) + '_' + tag
-        
-        if new_identifier in new_identifiers:
-            print(f"Found duplicate new identifier when parsing: {identifier}")
-            continue
-        
-        new_identifiers.append(new_identifier)
-        splits.append((new_identifier, new_file_contents))
-
     return splits
 
 
 class Contract:
-    def __init__(self, relative_filepath: str) -> None:
+    def __init__(self, filename: str) -> None:
         """
-        Relative_filepath, for example: 'type1/<identifier>.txt' or 'type2/<identifier>.txt'
+        Relative_filepath, for example: 't1_<identifier>.txt' or 't2_<identifier>.txt'
         """
-        self.contract_type, filename = os.path.split(relative_filepath)
         if '.txt' in filename:
             filename = filename.replace('.txt', '')
-            
+        self.filepath = PROCESSED_PATH / (filename + '.txt')
         
-        self.filepath = RAW_DATA_PATH / self.contract_type / (filename + '.txt')
-        self.identifier = self.filepath.stem
-        _, self.tag = self.identifier.split('_')
+        self.contract_type = filename[0:2]
+        self.identifier = filename[3:]
+        
         self._file_contents = read_file(self.filepath)
         
-        if self.contract_type in {'type1', 'type3'}:
+        if self.contract_type == 't1':
             self.info = Info(self.file_contents, self.identifier)
             self.bids = Bids(self.file_contents, self.identifier)
             self.subcontractors = Subcontractors(self.file_contents, self.identifier)
             self.items = Items(self.file_contents, self.identifier)
-        elif self.contract_type == 'type2':
+        elif self.contract_type == 't2':
             self.info = Info2(self.file_contents, self.identifier)
             self.bids = Bids2(self.file_contents, self.identifier)
             self.subcontractors = Subcontractors2(self.file_contents, self.identifier)
@@ -82,7 +70,7 @@ class Contract:
         self.info.extract()
         
         if not self.info.rows:
-            raise ValueError(f"Failed to extract basic info for {os.path.join(self.contract_type, self.identifier)}")
+            raise ValueError(f"Failed to extract basic info for {self.identifier}")
         
         self.postponed = int(self.info.rows[0][POSTPONED_CONTRACT])
         
@@ -178,8 +166,6 @@ class Info(ContractPortionBase):
         row[POSTPONED_CONTRACT] = int(bool(a))
         row[BID_OPENING_DATE], row[CONTRACT_DATE] = _extract(r"BID OPENING DATE\s+(\d+\/\d+\/\d+).+\s+(\d+\/\d+\/\d+)", (1, 2))
         row[CONTRACT_NUMBER] = _extract(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
-        if row[CONTRACT_NUMBER] != identifier[:len(row[CONTRACT_NUMBER])]:
-            raise ValueError(f'Contract number {row[CONTRACT_NUMBER]} does not match the identifier {identifier}')
         row[CONTRACT_CODE] = _extract(r"CONTRACT CODE\s+'([^']+)'").strip()
         row[CONTRACT_ITEMS] = _extract(r"(\d+)\s+CONTRACT ITEMS")
         row[TOTAL_NUMBER_OF_WORKING_DAYS] = _extract(r"TOTAL NUMBER OF WORKING DAYS\s+(\d+)")
@@ -205,8 +191,8 @@ class Bids(ContractPortionBase):
     @staticmethod
     def _parse(text, identifier):
         """
-        Parses a table from a text line by line, works even if BIDER NAME has 3 rows (very rare). Just having a regex pattern does not work since columns are very variable in width, and we need
-        extra logic, hence, we parse line by line in 3 steps.
+        Parses a table from a text line by line, with the following logic:
+        TODO: add more details
         """
         bids_pattern = Bids.BIDS_FIRST_LINE_PATTERN
         lines = text.split('\n')
@@ -245,10 +231,11 @@ class Bids(ContractPortionBase):
                     # log as error:
                     raise ValueError(f'Second line is not in the standard format (notes, extra name, CLBS number, line: `{lines[i]}`')
                 
-                # moving onto the next line, here it might be a third line or an address followed by a FAX number:
+                # moving onto the next line, here it might be a third line or an address followed by a FAX number
+                # if it is a third line, it must be shorter then `name_ends`, so I'll just ask if there is any text after
                 i += 1
-                match_fax_number = re.match(r"^.*(FAX).*(?:\d{3} \d{3}-\d{4}).*$", lines[i])  # TODO do we need to capture text after FAX number?
-                if not match_fax_number:
+                line = lines[i]
+                if len(line) < name_ends:
                     # this means we have a third line, so just strip and add to the name
                     match_third_line = re.match(rf"^.{{{name_starts}}}(.+)$", lines[i])
                     row[BIDDER_NAME] += match_third_line.group(1).strip()
@@ -276,6 +263,7 @@ class Subcontractors(ContractPortionBase):
     
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER, ERROR]
     
+    # some don't have CONTINUED ON NEXT PAGE, ugh, see below for resolution
     NARROW_REGEX = r"(?sm)^([^\S\r\n]*BIDDER ID\s+NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED)(.*?)(?=[^\S\r\n]*BIDDER ID NAME AND ADDRESS\s+(?:LICENSE NUMBER)?\s+DESCRIPTION OF PORTION OF WORK SUBCONTRACTED|\f|CONTINUED\s+ON\s+NEXT\s+PAGE)"
     
     @staticmethod
@@ -294,8 +282,11 @@ class Subcontractors(ContractPortionBase):
         previous_bidder_id = None
         while i < len(lines) - 1:
             line = lines[i]
-            match = re.match(rf"^\s+(\d+)?\s+(.{{{delta}}})\s+(.+)$", line)
-            if match:
+            match = re.match(rf"^\s+(\d+)?\s+(.{{{delta}}})\s+(.+)$", line)  # pick up 1) bidder id, 2) subcontractor name, and 3) subcontracted line item
+            if match and has_more_digits_than_non_digits(match.group(2).strip()): 
+                # stop further since we picked up a contract number for a name, this happens when there is no CONTINUED ON NEXT PAGE text
+                break
+            if match: 
                 row = defaultdict(str)
                 row[IDENTIFIER] = identifier
                 
@@ -312,7 +303,8 @@ class Subcontractors(ContractPortionBase):
                 if match.group(1):
                     assert row[BIDDER_ID] == match.group(1), f"{row[BIDDER_ID]} is not {match.group(1)}"
                 if match.group(2).strip():
-                    assert row[SUBCONTRACTOR_NAME] == match.group(2).strip(), f"{row[SUBCONTRACTOR_NAME]} is not {match.group(2).strip()}"
+                    if row[SUBCONTRACTOR_NAME] != match.group(2).strip():
+                        assert row[SUBCONTRACTOR_NAME] == match.group(2).strip(), f"{row[SUBCONTRACTOR_NAME]} is not {match.group(2).strip()}"
                 if match.group(3).strip():
                     assert row[SUBCONTRACTED_LINE_ITEM] == match.group(3).strip(), f"{row[SUBCONTRACTED_LINE_ITEM]} is not {match.group(3).strip()}"
                 
@@ -324,7 +316,8 @@ class Subcontractors(ContractPortionBase):
                         if matches3.group(2):
                             row[PERCENT] = matches3.group(2).replace("%", "")
                 
-                if r.group(3) is not None:  # there is LICENSE NUMBER column
+                if r.group(3) is not None:  
+                    # there is a LICENSE NUMBER column
                     i += 1
                     line = lines[i]
                     row[SUBCONTRACTOR_LICENSE_NUMBER] = line[r.start(3):].strip()
@@ -454,11 +447,6 @@ class Info2(ContractPortionBase):
         row[POSTPONED_CONTRACT] = int(bool(_extract(r"(Postponed Contract)")))
         row[BID_OPENING_DATE] = _extract(r"Bid Opening Date:\s+(\d+\/\d+\/\d+)")
         row[CONTRACT_NUMBER], row[CONTRACT_DATE] = _extract(r"Contract Number:\s*([\w-]+)\s+(\d+\/\d+\/\d+)", (1, 2))
-        
-        # if identifier == 'test' then do not check this
-        if identifier != 'test' and row[CONTRACT_NUMBER] != identifier[:len(row[CONTRACT_NUMBER])]:
-            raise ValueError(f'Contract number {row[CONTRACT_NUMBER]} does not match the identifier {identifier}')
-        
         row[CONTRACT_CODE] = _extract(r"Contract Code:(.+)").strip()
         row[CONTRACT_ITEMS] = _extract(r"Number of Items:\s*(\d+)")
         row[TOTAL_NUMBER_OF_WORKING_DAYS] = _extract(r"Total Number of Working Days: \s*(\d+)")
@@ -480,7 +468,7 @@ class Bids2(ContractPortionBase):
     
     NARROW_REGEX = r"(?s)Bid\s+Rank\s+Bid\s+Total\s+Bidder\s+Id\s+Bidder\s+Information\s+\(Name\/Address\/Location\)(.*?)(?=Contract\s+Proposal\s+of\s+Low\s+Bidder)"
     
-    BIDS_FIRST_LINE_PATTERN = re.compile(r"^(\d+)\s+(A\))?\s+\$([\d,]+\.\d{2})\s*(\w+)\s*(.+)Phone\s*(\(\d{3}\)\d{3}-\d{4})(.*)?")
+    BIDS_FIRST_LINE_PATTERN = re.compile(r"(\d+)\s+(A\))?\s+(?:\$([\d,]+\.\d{2}))?\s+(\w+)\s+(.*?)(?=Phone|$)")
     
     COLUMNS = [IDENTIFIER, BID_RANK, A_PLUS_B_INDICATOR, BID_TOTAL, BIDDER_ID, 
                BIDDER_NAME, BIDDER_PHONE, EXTRA, CSLB_NUMBER, HAS_THIRD_ROW, CONTRACT_NOTES, ERROR]
@@ -488,70 +476,91 @@ class Bids2(ContractPortionBase):
     @staticmethod
     def _parse(text, identifier):
         """
-        Parses a table from a text line by line, works even if BIDER NAME has 3 rows (very rare). Just having a regex pattern does not work since columns are very variable in width, and we need
-        extra logic, hence, we parse line by line in 3 steps.
+        Parses a bidder table from a text line by line with the following logic:
+    
+        - find a first bid by finding a line that starts with a number
+        - note where the group #5 (BIDDER NAME starts and ends since we might have more lines
+        - go to the next line
+        - while there is no text after group #5 ends, append to BIDDER NAME and keep loading lines
+        - check if the CSLB is present, if not raise an issue
+        - extract CSLB and notes
+        - go to the next line
+        - if there is A) then this line should have "A+B)" (or "A+ADD)") line, if not raise an issue
+        - find a new bid or stop
+        
         """
         bids_pattern = Bids2.BIDS_FIRST_LINE_PATTERN
         lines = text.split('\n')
         
         i = 0
-        
         n = len(lines)
         processed_lines = []
-        while i < n:
-            match = re.match(bids_pattern, lines[i])
-            if match:
-                # this mean we hit the first line, lets parse it and save it
-                row = defaultdict(str)
-                row[IDENTIFIER] = identifier
-                row[BID_RANK] = match.group(1)
-                row[A_PLUS_B_INDICATOR] = 1 if match.group(2) else 0
-                row[BID_TOTAL] = match.group(3)
-                row[BIDDER_ID] = match.group(4).strip()
-                row[BIDDER_NAME] = match.group(5).strip()
-                row[BIDDER_PHONE] = match.group(6).strip()
-                row[EXTRA] = match.group(7)
-                    
-                # moving onto the second line:    
-                i = get_next_line(i, lines)
-                
-                name_starts = match.start(5)
-                name_ends = match.end(5)
-                delta = name_ends - name_starts
-                match_cslb_line = re.search(r"CSLB#\s*(\w+)(.*)?", lines[i])
-                second_line = False
-                row[HAS_THIRD_ROW] = 0
-                
-                while not match_cslb_line:
-                    # this should be the case if second line is present
-                    if second_line:
-                        # this is now third line:
-                        row[HAS_THIRD_ROW] = 1
-                    match_extra_name = re.match(rf"(?m)^.{{{name_starts}}}(.+)$", lines[i])
-                    row[BIDDER_NAME] += ' ' + match_extra_name.group(1)  # this is the second/third etc. line of the bidder name
-                    second_line = True
-                    i = get_next_line(i, lines)
-                    match_cslb_line = re.search(r"CSLB#\s*(\w+)(.*)?", lines[i])
+        
+        def find_next_bid(i, lines):
+            while i < n:
+                match = re.match(bids_pattern, lines[i])
+                if not match or (match and match.start(1) != 0):
+                    i += 1
                 else:
-                    # there is no second line, extract CSLB number
-                    row[CSLB_NUMBER] = match_cslb_line.group(1)
-                    row[CONTRACT_NOTES] = match_cslb_line.group(2).strip()
-                
+                    break
+            return i, match
+        
+        i, match = find_next_bid(i, lines)
+
+        # this is the first line now
+        while i < n:
+            row = defaultdict(str)
+            row[IDENTIFIER] = identifier
+            row[BID_RANK] = match.group(1)
+            row[A_PLUS_B_INDICATOR] = 1 if match.group(2) else 0
+            row[BID_TOTAL] = match.group(3)
+            row[BIDDER_ID] = match.group(4).strip()
+            row[BIDDER_NAME] = match.group(5).strip()
+            
+            name_starts = match.start(5)
+            name_ends = match.end(5)
+            delta = name_ends - name_starts
+            
+            # moving onto the next line:    
+            i = get_next_line(i, lines)
+            
+            name_lines_counter = 1
+            while len(lines[i]) < name_ends:
+                name_lines_counter += 1
+                # this is the second/third etc. line of the bidder name
+                match_extra_name = re.match(rf"(?m)^.{{{name_starts}}}(.+)$", lines[i])
+                row[BIDDER_NAME] += ' ' + match_extra_name.group(1)  
                 i = get_next_line(i, lines)
-                        
-                # if there is A) then let's also keep moving until we find the "A+B)" (or "A+ADD)") line
-                if row[A_PLUS_B_INDICATOR]:
-                    while i < n:
-                        match_a_plus_b = re.match(r".*(?:A\+B\)|A\+ADD\))\s+\$([\d,]+\.\d{2})", lines[i])
-                        if match_a_plus_b:
-                            row[BID_TOTAL] = match_a_plus_b.group(1)
-                            break
-                        i += 1
-                    if i == n:
-                        processed_lines.append(row)
-                        raise ValueError(f'MAJOR ERROR in contract {identifier}. Could not find A+B) line for BID_RANK number: {row[BID_RANK]}')
-                processed_lines.append(row)
-            i += 1  # we can allow this double jump since there is always empty line between the rows
+                if name_lines_counter == 3:
+                    row[HAS_THIRD_ROW] = 1
+                elif name_lines_counter > 3: 
+                    raise ValueError(f'For {identifier}, there are more then 3 lines.')
+                    
+            match_cslb_line = re.search(r"CSLB#\s*(\w+)(.*)?", lines[i])
+            if not match_cslb_line:
+                raise ValueError(f'For {identifier}, could not find CSLB line for BID_RANK number: {row[BID_RANK]}')
+            
+            row[CSLB_NUMBER] = match_cslb_line.group(1)
+            row[CONTRACT_NOTES] = match_cslb_line.group(2).strip()
+            
+            i = get_next_line(i, lines)
+            
+            # if there is A) then there must be A+B here (or "A+ADD)"), if it's not there we raise an error
+            if row[A_PLUS_B_INDICATOR]:
+                match_a_plus_b = re.match(r".*(?:A\+B\)|A\+ADD\))\s+(?:\$([\d,]+\.\d{2}))?", lines[i])
+                if match_a_plus_b:
+                    if match_a_plus_b.group(1):
+                        row[BID_TOTAL] = match_a_plus_b.group(1)
+                    else:
+                        raise ValueError(f'For {identifier}, A+B) line does not have dollars, bid rank: {row[BID_RANK]}')
+                else:
+                    raise ValueError(f'For {identifier}, could not find A+B) line for BID_RANK number: {row[BID_RANK]}')
+            
+            processed_lines.append(row)
+            
+            # find next bid:
+            i, match = find_next_bid(i, lines)
+                
         return processed_lines
 
 
@@ -560,7 +569,7 @@ class Subcontractors2(ContractPortionBase):
     COLUMNS = [IDENTIFIER, BIDDER_ID, SUBCONTRACTOR_NAME, SUBCONTRACTED_LINE_ITEM, CITY, SUBCONTRACTOR_LICENSE_NUMBER, ERROR]
     SUBCONTRACTORS_FIRST_LINE_REGEX = r"[^\S\r\n]*(BIDDER\s+ID)\s+(NAME\s+AND\s+ADDRESS)\s+(LICENSE\s+NUMBER)?\s+(DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED)"
     
-    NARROW_REGEX = r"(?sm)^([^\S\r\n]*BIDDER\s+ID\s+NAME\s+AND\s+ADDRESS\s+(?:LICENSE\s+NUMBER)?\s+DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED)(.*?)(?=[^\S\r\n]*BIDDER\s+ID\s+NAME\s+AND\s+ADDRESS\s+(?:LICENSE\s+NUMBER)?\s+DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED|\f|CONTINUED\s+ON\s+NEXT\s+PAGE)"
+    NARROW_REGEX = r"(?sm)^([^\S\r\n]*BIDDER\s+ID\s+NAME\s+AND\s+ADDRESS\s+(?:LICENSE\s+NUMBER)?\s+DESCRIPTION\s+OF\s+PORTION\s+OF\s+WORK\s+SUBCONTRACTED)(.*?)(?=[^\S\r\n]*LIST\s+OF\s+SUBCONTRACTORS|\f|CONTINUED\s+ON\s+NEXT\s+PAGE)"
     
     @staticmethod
     def _parse(header_and_text, identifier):
@@ -577,10 +586,20 @@ class Subcontractors2(ContractPortionBase):
         delta2 = r.start(4) - r.start(2)  # see testing/data_type_2/test_subcontractors_input.txt for some long names
         i = 0
         processed_lines = []
+        row = None
         while i < len(lines):
             line = lines[i]
             match = re.match(rf"^.{{{start0}}}(.{{{delta1}}})(.{{{delta2}}})(.+)$", line)
-            if match:
+            if match and match.group(1).strip() == '' and match.group(2).strip() == '' and match.group(3).strip() != '':
+                # this means we have a third row
+                row[HAS_THIRD_ROW] = 1
+                row[SUBCONTRACTED_LINE_ITEM] += ' ' + match.group(3).strip()
+                processed_lines.append(row)
+            elif match:  
+                # this means we have a first row
+                if row:
+                    # save the previous row
+                    processed_lines.append(row)
                 row = defaultdict(str)
                 row[IDENTIFIER] = identifier
                 
@@ -600,13 +619,34 @@ class Subcontractors2(ContractPortionBase):
                 line = lines[i]
                     
                 if r.group(3) is not None:  # there is a LICENSE NUMBER column
-                    row[SUBCONTRACTOR_LICENSE_NUMBER] = line[r.start(3):r.start(4)].strip()
+                    # approach #1 is just to look in that column, assumes correct indentation
+                    row[SUBCONTRACTOR_LICENSE_NUMBER_POST] = line[r.start(3):r.start(4)].strip()             
+                    
+                    # in addition, some indentations are messed up, so let's start going backwards from the start to find maybe extra license number: 
+                    starting_point = min(len(line), r.start(3))  # we don't want to include anything after r.start(3)
+                    line1 = line[:starting_point]  # we trim down the line
+                    j = len(line1) - 1
+                    while j > 0 and line1[j] == ' ':
+                        j -= 1
+                    license_number = []
+                    while j > 0 and line1[j].isdigit():
+                        license_number.append(line1[j])
+                        j -= 1
+                        row[WRONG_INDENTATION] = 1 # so we found a digit before the indentation
+                    row[SUBCONTRACTOR_LICENSE_NUMBER_PRE] = ''.join(reversed(license_number))
+                    row[SUBCONTRACTOR_LICENSE_NUMBER] = row[SUBCONTRACTOR_LICENSE_NUMBER_PRE] + row[SUBCONTRACTOR_LICENSE_NUMBER_POST]
+                    
                 else:
                     row[SUBCONTRACTOR_LICENSE_NUMBER] = ''
                 row[SUBCONTRACTED_LINE_ITEM] += ' ' + line[r.start(4):].strip()
                 processed_lines.append(row)
             i += 1
         
+        if row:
+            # save the last row
+            processed_lines.append(row)
+            i += 1
+    
         return processed_lines
     
     def _expand_ranges_in_subcontracted_line_item(self, line: str) -> str:

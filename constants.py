@@ -57,16 +57,13 @@ SUBCONTRACTOR_NAME1 = "Subcontractor_Name1"
 SUBCONTRACTED_LINE_ITEM1 = "Subcontracted_Line_Item1"
 CITY = "City"
 SUBCONTRACTOR_LICENSE_NUMBER = "Subcontractor_License_Number"
+SUBCONTRACTOR_LICENSE_NUMBER_PRE = "Subcontractor_License_Number_Pre"
+SUBCONTRACTOR_LICENSE_NUMBER_POST = "Subcontractor_License_Number_Post"
+WRONG_INDENTATION = "Wrong_Indentation"
 
 ERROR_FILENAME = "Error_Filename"
 ERROR = "Error"
-
-
-class ContractType(Enum):
-    TYPE1 = 1
-    TYPE2 = 2 
-    TYPE3 = 3  # these files were produced by splitting the type1 files
-
+    
 load_dotenv()
 RAW_DATA_PATH = Path(os.getenv('RAW_DATA_PATH'))
 if not RAW_DATA_PATH.exists():
@@ -74,14 +71,13 @@ if not RAW_DATA_PATH.exists():
 
 LINEPRINTER_LABEL = 'lineprinter'
 TABLE_LABEL = 'table'
+DOC = 'doc'
 
 RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_LABEL
 RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_LABEL
+RAW_DATA_PATH_DOC = RAW_DATA_PATH / DOC
 
-TYPE1_PATH = RAW_DATA_PATH / 'type1'
-TYPE2_PATH = RAW_DATA_PATH / 'type2'
-TYPE3_PATH = RAW_DATA_PATH / 'type3'
+PROCESSED_PATH = RAW_DATA_PATH / 'processed'
 
-contract_type_paths = {ContractType.TYPE1.name: TYPE1_PATH, ContractType.TYPE2.name: TYPE2_PATH, ContractType.TYPE3.name: TYPE3_PATH} 
 
 RESULTS_PATH = Path('results')

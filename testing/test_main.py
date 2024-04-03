@@ -4,7 +4,8 @@ import numpy as np
 import pytest
 import re
 
-from contract import Info, Info2, Bids, Bids2, Subcontractors, Subcontractors2, Items, Items2, Contract
+from contract import Info, Info2, Bids, Bids2, Subcontractors, Subcontractors2, Items, Items2, Contract, read_file, split_contract
+from constants import RAW_DATA_PATH_DOC
 
 NA_VALUES = [None, "None", '', 'N/A', np.nan, 'nan']
 TEST_DATA = Path('testing/data')
@@ -84,10 +85,11 @@ def test_items_type2():
     assert compare(items.df, 'items', 2)
     
         
-def test_catch_bad_contract_name():
-    c = Contract('type2/02-1J1704_12603')
-    with pytest.raises(ValueError):
-        c.extract()
+def test_split_contract():
+    f = list(RAW_DATA_PATH_DOC.glob('*3073.txt'))[0]
+    file_contents = read_file(f)
+    a = split_contract(file_contents, '3073')
+    assert len(a) == 28
     
     
 # TODO # extra tests
