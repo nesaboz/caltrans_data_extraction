@@ -1,6 +1,4 @@
-import os
 from pathlib import Path
-from dotenv import load_dotenv
 
 FILENAME = "Filename"
 TAG = "Tag"
@@ -64,22 +62,10 @@ ERROR_FILENAME = "Error_Filename"
 ERROR = "Error"
 
 
-# Check if the code is running in GitHub Actions
-if os.environ.get('GITHUB_ACTIONS') != 'true':
-    # This code block will only execute locally
-    load_dotenv()
-    RAW_DATA_PATH = Path(os.getenv('RAW_DATA_PATH'))
-    if not RAW_DATA_PATH.exists():
-        raise ValueError('Make sure to set a path to raw data in the .env file.')
-    
-    LINEPRINTER_LABEL = 'lineprinter'
-    TABLE_LABEL = 'table'
-    DOC = 'doc'
+RAW_DATA_PATH = Path('data')
+RESULTS_PATH = Path('results')
 
-    RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / LINEPRINTER_LABEL
-    RAW_DATA_PATH_TABLE = RAW_DATA_PATH / TABLE_LABEL
-    RAW_DATA_PATH_DOC = RAW_DATA_PATH / DOC
-
-    PROCESSED_DATA_PATH = RAW_DATA_PATH / 'processed'
-
-    RESULTS_PATH = Path('results')
+RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / 'lineprinter'
+RAW_DATA_PATH_TABLE = RAW_DATA_PATH / 'table'
+RAW_DATA_PATH_DOC = RAW_DATA_PATH / 'doc'
+PROCESSED_DATA_PATH = RAW_DATA_PATH / 'processed'

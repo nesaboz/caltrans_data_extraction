@@ -4,7 +4,6 @@ import re
 import pandas as pd
 import re
 import shutil
-from dotenv import load_dotenv
 from constants import *
 
 

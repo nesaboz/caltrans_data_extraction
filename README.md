@@ -5,14 +5,24 @@ I relied heavily on [regex101.com](https://regex101.com) as a useful tool for qu
 
 ![sample contract snapshot](assets/sample.png)
 
+## Colab
 
-## Quick install
+Go to this [link](https://githubtocolab.com/nesaboz/caltrans_data_extraction/blob/main/main.ipynb).
 
-1) Get raw data locally from [Google Drive](https://drive.google.com/drive/folders/1X-8v6XCqYComYpxVVtznc05AA6-G5Tvu?usp=share_link) (email [Maria](mkhrakov@chicagobooth.edu) for access)
-2) Edit path in .env file to point to the raw data.
-3) Follow main.ipynb to set up the environment and perform single and buld contract parsing.
+## Local quick install
 
-## Detailed setup (optional)
+1) Get raw data.zip from [Google Drive](https://drive.google.com/file/d/1y-ufhK56J3h994I5HKiarcFzbCkB6h_h/view?usp=share_link)
+2) Unzip and make sure the structure is as follows (all names are hard-coded in the script so if you are changing them, make sure you change them in the code as well):
+```text
+- data
+    - lineprinter
+    - table
+    - doc
+```
+
+3) Follow main.ipynb to set up the environment.
+
+## Detailed setup
 
 1) Make sure Python 3.11.4 is installed on the system you are using (likely anything 3.8+ will do it but still 3.11.4 will work for sure).
 
@@ -27,7 +37,7 @@ source <env_name>/bin/activate
 
 4) Run the following command in the terminal/cmd to install required packages:
 ```bash
-pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1 python-dotenv==1.0.1 openpyxl==3.1.2 pytest==8.1.1 pyperclip==1.8.2
+pip install pandas==2.2.1 numpy==1.26.4 tqdm==4.66.2 ipykernel==6.29.3 notebook==7.1.1 openpyxl==3.1.2 pytest==8.1.1 pyperclip==1.8.2
 ```
 or, install the libraries using the requirements.txt file:
 ```bash
@@ -44,4 +54,3 @@ python -m ipykernel install --user --name=<env_name>
 7) Set up kernel to the one you just created in the previous step.
 ![](assets/kernel.jpg)
 
-7) Check hard-coded path in the main.ipynb pointing to raw data, or edit path in `.env` for `RAW_DATA_PATH`.
