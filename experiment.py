@@ -26,15 +26,22 @@ def check_lineprinter_table_files():
     assert [x.name for x in filepaths_lineprinter] == [x.name for x in filepaths_table]
     
     
-def sort_contracts(filepaths: List[Path], destination_path: Path):
+def sort_contracts():
     """
     Goes through all the files and sorts them accordingly into 3 types. Saves contract types and other info to a CSV file.
     """
-    
+    check_lineprinter_table_files()
+
+    filepaths_lineprinter = list(RAW_DATA_PATH_LINEPRINTER.glob('*.txt'))
+    filepaths_doc = list(RAW_DATA_PATH_DOC.glob('*.txt'))
+
+    filepaths = filepaths_lineprinter + filepaths_doc
+    destination_path = PROCESSED_DATA_PATH
+
     print(f'Found {len(filepaths)} files.')
-    print('Starting sort ...')
+    print('Sorting by type and splitting multi-contract documents ...')
     
-    destination_path.mkdir(exist_ok=True, parents=True)
+    destination_path.mkdir(exist_ok=True, parents=True) 
 
     contract_number_regex = re.compile(r"CONTRACT NUMBER\s+([A-Za-z0-9-]+)")
 
@@ -104,12 +111,12 @@ def sort_contracts(filepaths: List[Path], destination_path: Path):
             shutil.copy(RAW_DATA_PATH_TABLE / filepath.name, destination_path / (row[IDENTIFIER] + '.txt'))
             contract_types.append(row)
 
-
     df = pd.DataFrame(contract_types)
     df.set_index('Filename', inplace=True)
-    df.to_csv(RAW_DATA_PATH / 'contract_types.csv', index=True)
+    df.to_csv(RESULTS_PATH / 'contract_types.csv', index=True)
     
     print(f'Saved contracts to {destination_path}.')
+    print('Generated results/contract_types.csv.')
     
 
 def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
@@ -128,14 +135,14 @@ def get_contract_filepaths(contract_type: int, num_contracts=None, seed=42) -> L
     """
     Gets num_contracts contracts of a specific type from folder. In theory, one can encode contract type into identifier, so this method could be eliminated.
     """
-    df_contract_types, _ = get_contract_types()
-    files = list(df_contract_types[df_contract_types[CONTRACT_TYPE] == contract_type].Identifier.values)
+    if contract_type not in (1, 2):
+        raise ValueError('contract_type must be 1 or 2.')
+    filepaths = list(PROCESSED_DATA_PATH.glob(f't{contract_type}_*'))
     
     if seed:
         random.seed(seed)
     if num_contracts:
-        files = random.sample(files, num_contracts)
-    filepaths = [PROCESSED_DATA_PATH / (x + '.txt') for x in files]
+        filepaths = random.sample(filepaths, num_contracts)
     return filepaths
 
 

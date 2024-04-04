@@ -61,11 +61,11 @@ WRONG_INDENTATION = "Wrong_Indentation"
 ERROR_FILENAME = "Error_Filename"
 ERROR = "Error"
 
-
-RAW_DATA_PATH = Path('data')
+RAW_DATA_PATH = Path('raw_data')
+PROCESSED_DATA_PATH = Path('processed_data')
 RESULTS_PATH = Path('results')
 
 RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / 'lineprinter'
 RAW_DATA_PATH_TABLE = RAW_DATA_PATH / 'table'
 RAW_DATA_PATH_DOC = RAW_DATA_PATH / 'doc'
-PROCESSED_DATA_PATH = RAW_DATA_PATH / 'processed'
+

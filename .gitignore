@@ -1,4 +1,5 @@
-/data
+/raw_data
+/processed_data
 results
 venv
 venv3.9

@@ -1,6 +1,6 @@
 # Data Extraction from Contracts
 
-We extract data from 11'000 PDF contracts available publicly for the purposes of research project. Considering well structured and high quality text, extraction was done using regex library in Python. 
+We extract data from 11'000+ text files that contain California Transportation contracts available publicly for the purposes of a research project. Considering well structured and high quality text, extraction was done using regex library in Python. 
 I relied heavily on [regex101.com](https://regex101.com) as a useful tool for quick prototyping and testing.
 
 ![sample contract snapshot](assets/sample.png)
@@ -9,7 +9,7 @@ I relied heavily on [regex101.com](https://regex101.com) as a useful tool for qu
 
 Go to this [link](https://githubtocolab.com/nesaboz/caltrans_data_extraction/blob/main/main.ipynb).
 
-## Local quick install
+## Local (quick install)
 
 1) Get raw data.zip from [Google Drive](https://drive.google.com/file/d/1y-ufhK56J3h994I5HKiarcFzbCkB6h_h/view?usp=share_link)
 2) Unzip and make sure the structure is as follows (all names are hard-coded in the script so if you are changing them, make sure you change them in the code as well):
@@ -19,10 +19,9 @@ Go to this [link](https://githubtocolab.com/nesaboz/caltrans_data_extraction/blo
     - table
     - doc
 ```
-
 3) Follow main.ipynb to set up the environment.
 
-## Detailed setup
+## Local (detailed setup)
 
 1) Make sure Python 3.11.4 is installed on the system you are using (likely anything 3.8+ will do it but still 3.11.4 will work for sure).
 
