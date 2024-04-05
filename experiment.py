@@ -114,10 +114,11 @@ def sort_contracts():
     df = pd.DataFrame(contract_types)
     df.set_index('Filename', inplace=True)
     RESULTS_PATH.mkdir(exist_ok=True, parents=True)
-    df.to_csv(RESULTS_PATH / 'contract_types.csv', index=True)
+    contract_types_path = RESULTS_PATH / 'contract_types.csv'
+    df.to_csv(contract_types_path, index=True)
     
     print(f'Saved contracts to {destination_path}.')
-    print(f'Generated {RESULTS_PATH / 'contract_types.csv'}')
+    print(f"Generated {contract_types_path} (not used in the code).")
     
 
 def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:

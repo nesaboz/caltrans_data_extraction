@@ -1,6 +1,6 @@
 /raw_data
-/processed_data
-results
+/sorted_data
+/results
 venv
 venv3.9
 .env
