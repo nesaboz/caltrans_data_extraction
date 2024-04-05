@@ -7,14 +7,15 @@ I relied heavily on [regex101.com](https://regex101.com) as a useful tool for qu
 
 ## Colab
 
-Go to this <a href="https://githubtocolab.com/nesaboz/caltrans_data_extraction/blob/main/main.ipynb/" target="_blank">link</a>.
+Follow this <a href="https://colab.research.google.com/github/nesaboz/caltrans_data_extraction/blob/main/main.ipynb" target="_blank">link</a> to run the main.ipynb in Google Colab.
 
 ## Local (quick install)
 
-1) Get raw data.zip from [Google Drive](https://drive.google.com/file/d/1y-ufhK56J3h994I5HKiarcFzbCkB6h_h/view?usp=share_link)
-2) Unzip and make sure the structure is as follows (all names are hard-coded in the script so if you are changing them, make sure you change them in the code as well):
+1) Get raw_data.zip and sorted_data.zip from [Google Drive](https://drive.google.com/file/d/1y-ufhK56J3h994I5HKiarcFzbCkB6h_h/view?usp=share_link)
+
+2) Unzip and make sure the structure is as follows:
 ```text
-- data
+- raw_data
     - lineprinter
     - table
     - doc
