@@ -21,6 +21,7 @@ def parse_filename(filename:str) -> Tuple[str, str]:
 
 
 def check_lineprinter_table_files():
+    # Check that lineprinter and table folder have the same filenames
     filepaths_lineprinter = list(RAW_DATA_PATH_LINEPRINTER.glob('*.txt'))
     filepaths_table = list(RAW_DATA_PATH_TABLE.glob('*.txt'))
     assert [x.name for x in filepaths_lineprinter] == [x.name for x in filepaths_table]
