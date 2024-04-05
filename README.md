@@ -1,7 +1,7 @@
 # Data Extraction from Contracts
 
 We extract data from 11'000+ text files that contain California Transportation contracts available publicly for the purposes of a research project. Considering well structured and high quality text, extraction was done using regex library in Python. 
-I relied heavily on [regex101.com](https://regex101.com) as a useful tool for quick prototyping and testing.
+I relied heavily on [regex101.com](https://regex101.com) as a useful tool for quick prototyping and testing. There are many regex tutorials available online.
 
 ![sample contract snapshot](assets/sample.png)
 

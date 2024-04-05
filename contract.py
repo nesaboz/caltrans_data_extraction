@@ -40,7 +40,7 @@ class Contract:
         """
         Relative_filepath, for example: 't1_<identifier>.txt' or 't2_<identifier>.txt'
         """
-        self.filepath = PROCESSED_DATA_PATH / (filename + '.txt')
+        self.filepath = SORTED_DATA_PATH / (filename + '.txt')
         
         self.contract_type = filename[0:2]
         self.identifier = filename[3:]

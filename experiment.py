@@ -36,7 +36,7 @@ def sort_contracts():
     filepaths_doc = list(RAW_DATA_PATH_DOC.glob('*.txt'))
 
     filepaths = filepaths_lineprinter + filepaths_doc
-    destination_path = PROCESSED_DATA_PATH
+    destination_path = SORTED_DATA_PATH
 
     print(f'Found {len(filepaths)} files.')
     print('Sorting by type and splitting multi-contract documents ...')
@@ -113,10 +113,11 @@ def sort_contracts():
 
     df = pd.DataFrame(contract_types)
     df.set_index('Filename', inplace=True)
+    RESULTS_PATH.mkdir(exist_ok=True, parents=True)
     df.to_csv(RESULTS_PATH / 'contract_types.csv', index=True)
     
     print(f'Saved contracts to {destination_path}.')
-    print('Generated results/contract_types.csv.')
+    print(f'Generated {RESULTS_PATH / 'contract_types.csv'}')
     
 
 def get_contract_types() -> Tuple[pd.DataFrame, Dict[str, int]]:
@@ -137,7 +138,7 @@ def get_contract_filepaths(contract_type: int, num_contracts=None, seed=42) -> L
     """
     if contract_type not in (1, 2):
         raise ValueError('contract_type must be 1 or 2.')
-    filepaths = list(PROCESSED_DATA_PATH.glob(f't{contract_type}_*'))
+    filepaths = list(SORTED_DATA_PATH.glob(f't{contract_type}_*'))
     
     if seed:
         random.seed(seed)
@@ -154,7 +155,7 @@ class Experiment:
     
     def __init__(self, filepaths: str | List[Path]):
         if isinstance(filepaths, str):
-            self.filepaths = [Path(PROCESSED_DATA_PATH / (filepaths + '.txt'))]
+            self.filepaths = [Path(SORTED_DATA_PATH / (filepaths + '.txt'))]
         else:
             self.filepaths = filepaths
             

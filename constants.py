@@ -62,7 +62,7 @@ ERROR_FILENAME = "Error_Filename"
 ERROR = "Error"
 
 RAW_DATA_PATH = Path('raw_data')
-PROCESSED_DATA_PATH = Path('processed_data')
+SORTED_DATA_PATH = Path('sorted_data')
 RESULTS_PATH = Path('results')
 
 RAW_DATA_PATH_LINEPRINTER = RAW_DATA_PATH / 'lineprinter'
