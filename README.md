@@ -7,7 +7,7 @@ I relied heavily on [regex101.com](https://regex101.com) as a useful tool for qu
 
 ## Colab
 
-Go to this [link](https://githubtocolab.com/nesaboz/caltrans_data_extraction/blob/main/main.ipynb).
+Go to this <a href="https://githubtocolab.com/nesaboz/caltrans_data_extraction/blob/main/main.ipynb/" target="_blank">link</a>.
 
 ## Local (quick install)
 
