@@ -5,6 +5,10 @@ I relied heavily on [regex101.com](https://regex101.com) as a useful tool for qu
 
 ![sample contract snapshot](assets/sample.png)
 
+Example of extracted data:
+
+![demo](demo.m4v)
+
 ## Colab
 
 Follow this <a href="https://colab.research.google.com/github/nesaboz/caltrans_data_extraction/blob/main/main.ipynb" target="_blank">link</a> to run the main.ipynb in Google Colab.
