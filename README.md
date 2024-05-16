@@ -1,12 +1,14 @@
-# Data Extraction from Contracts
+# Data Extraction using regex
+"I learned more about `regex` that I probably wanted to know"
 
-We extract data from 11'000+ text files that contain California Transportation contracts available publicly for the purposes of a research project. Considering well structured and high quality text, extraction was done using regex library in Python. 
-I relied heavily on [regex101.com](https://regex101.com) as a useful tool for quick prototyping and testing. There are many regex tutorials available online.
+The goal of the project was to extract all sorts of data from 11'000+ pdf files that contain California Transportation contracts, available publicly, as part of a large research project. Considering well structured text the first decision was to extract data using [Regural expressions i.e. regex](https://en.wikipedia.org/wiki/Regular_expression), 
+and I relied heavily on [regex101.com](https://regex101.com) for prototyping. Initial EDA showed that there were dozens of formatting variations and final logic was a mix of regex and Python as regex alone was not able to cover
+all the use cases. I learned more about `regex` that I probably wanted to know, and realized its power and limitations.
 
+One of 100K+ pages to extract:
 ![sample contract snapshot](assets/sample.png)
 
 Example of extracted data:
-
 ![demo](demo.gif)
 
 ## Colab
